@@ -84,6 +84,7 @@ const UserController = {
         }
     },
     async perfil(req, res) {
+        // TODO: buscar información para enviar rol del usuario al back
         try {
             await TokenModel.findOne({
                 token: req.body.token,
