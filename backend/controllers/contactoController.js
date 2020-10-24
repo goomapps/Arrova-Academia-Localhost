@@ -1,4 +1,4 @@
-import ContactoModel from "../models/Contacto.js";
+import ContactoModel from "../models/contactoDTO.js";
 
 const ContactoController = {
     async insert(req, res) {
