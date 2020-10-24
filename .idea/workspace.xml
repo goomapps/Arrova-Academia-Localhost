@@ -51,7 +51,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd158dce-0048-40fe-b0d4-71217f497d51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/models/contactoDTO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/valoracionDTO.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603532284730</updated>
       <workItem from="1603532285777" duration="1537000" />
-      <workItem from="1603553246129" duration="6149000" />
+      <workItem from="1603553246129" duration="6802000" />
     </task>
     <servers />
   </component>
