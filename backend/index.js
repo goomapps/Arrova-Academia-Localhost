@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // CONEXION A LA BD
-// import "./config/dbconnect.js";
+import "./config/conexionbd.js";
 
 // IMPORTACIONES
 // MIDDLEWARES
