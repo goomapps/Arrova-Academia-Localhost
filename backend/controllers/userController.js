@@ -1,60 +1,68 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
-import UserModel from "backend/models/userDTO.js";
-import TokenModel from "backend/models/tokenDTO.js";
+import UserModel from "../models/userDTO.js";
+import TokenModel from "../models/tokenDTO.js";
 
 const UserController = {
-    async register(req, res) {
+    async registro(req, res) {
         try {
-            req.body.password = await bcrypt.hash(req.body.password, 10);
+            req.body.contrasenya = await bcrypt.hash(req.body.contrasenya, 10);
             const user = await UserModel.create(req.body);
-            res.status(201).send(user);
-        } catch (error) {
-            console.error(error);
-            res.status(500).send({
-                message: ">>>CANT CREATE USER",
-                error,
+            const message = `${user.nombre} HA SIDO REGISTRADO CORRECTAMENTE`;
+            res.status(201).send({
+                message: message,
+                usuario: user
             });
+            console.log(message);
+        } catch (error) {
+            const message = "EL USUARIO NO SE HA PODIDO REGISTRAR";
+            res.status(500).send({
+                message: message,
+                error: error
+            });
+            console.error(error);
         }
     },
     async login(req, res) {
         try {
             const user = await UserModel.findOne({
-                email: req.body.email,
+                correo: req.body.correo
             });
             if (!user) {
-                return res.status(400).send({
-                    message: ">>>BAD LOGIN",
+                return res.status(404).send({
+                    message: "USUARIO NO ENCONTRADO",
                 });
             }
-            const isMatch = await bcrypt.compare(req.body.password, user.password);
+            const isMatch = await bcrypt.compare(req.body.contrasenya, user.contrasenya);
             if (!isMatch) {
                 return res.status(400).send({
-                    message: ">>>BAD LOGIN",
+                    message: "LAS CONTRASEÑAS NO COINCIDEN",
                 });
             }
             const token = jwt.sign(
                 {
                     _id: user._id,
                 },
-                "miSecretito"
+                "secreto"
             );
+            // TODO: buscar información deprecated metodo
             await UserModel.findByIdAndUpdate(user._id, {
                 $push: {
                     tokens: token,
                 },
             });
             res.send({
-                user,
-                token,
+                usuario: user,
+                token: token,
             });
         } catch (error) {
-            console.error(error);
+            const message = "EL USUARIO NO SE HA PODIDO LOGEAR";
             res.status(500).send({
-                message: ">>>CANT LOGIN USER",
-                error,
+                message: message,
+                error: error,
             });
+            console.error(error);
         }
     },
     async logout(req, res) {
@@ -64,47 +72,28 @@ const UserController = {
                     tokens: req.headers.authorization,
                 },
             });
-            res.send({
-                message: ">>>USER LOGOUT",
+            res.status(200).send({
+                message: "EL USUARIO SE HA DESLOGEADO CORRECTAMENTE",
             });
         } catch (error) {
-            console.error(error);
             res.status(500).send({
-                message: ">>>CANT LOGOUT",
+                message: "EL USUARIO NO SE HA PODIDO DESLOGEAR",
                 error,
             });
-        }
-    },
-    async getUser(req, res) {
-        try {
-            await UserModel.findOne({
-                _id: req.body._id,
-            })
-                .then((users) => {
-                    if (users) {
-                        res.send(users);
-                    }
-                })
-                .catch((error) => console.log(error));
-        } catch (error) {
             console.error(error);
-            res.status(500).send({
-                message: ">>>CANT SHOW PROFILE",
-                error,
-            });
         }
     },
-    async profile(req, res) {
+    async perfil(req, res) {
         try {
             await TokenModel.findOne({
-                _id: req.body.token,
+                token: req.body.token,
             }).then((token) => {
                 if (token) {
                     const userConcreto = req.body;
 
                     //token is found and user is searched, if found, value will be returned.
                     UserModel.findOne({
-                        username: userConcreto.name,
+                        username: userConcreto.nombre,
                     })
                         .then((users) => {
                             if (users) {
@@ -114,14 +103,14 @@ const UserController = {
                         .catch((error) => console.log(error));
                 } else {
                     res.send({
-                        message: ">>>MUST BE LOGGED",
+                        message: "DEBES ESTAR LOGEADO",
                     });
                 }
             });
         } catch (error) {
             console.error(error);
             res.status(500).send({
-                message: ">>>CANT SHOW PROFILE",
+                message: "NO SE HA PODIDO ENCONTRAR TU PERFIL",
                 error,
             });
         }

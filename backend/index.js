@@ -12,10 +12,10 @@ import "./config/conexionbd.js";
 // MIDDLEWARES
 import cors from "./middlewares/cors.js";
 // ROUTERS
+import userRouter from "./routes/userRoute.js";
 // import adminRouter from "./routes/admin.js";
 // import cartRouter from "./routes/cart.js";
 // import ticketRouter from "./routes/ticket.js";
-// import userRouter from "./routes/user.js";
 // import cursoValencianoRouter from "./routes/curso_valenciano.js";
 // import ean_aRouter from "./routes/ean_a.js";
 // import ean_cRouter from "./routes/ean_c.js";
@@ -40,12 +40,12 @@ app.use(express.json());
 app.use(cors);
 
 // ENDPOINTS
+app.use("/usuarios", userRouter);
 /*
 app.use(express.static("client/frontend"));
 app.use("/admin", adminRouter);
 app.use("/cart", cartRouter);
 app.use("/ticket", ticketRouter);
-app.use("/user", userRouter);
 app.use("/cvalenciano", cursoValencianoRouter);
 app.use("/ean_a", ean_aRouter);
 app.use("/ean_c", ean_cRouter);

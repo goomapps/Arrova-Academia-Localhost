@@ -41,6 +41,7 @@ const UserSchema = new mongoose.Schema({
         default: "user",
         enum: ["admin", "user"],
     },
+    /*
     cursos: {
         // TODO: buscar información mapeo cursos por id
     },
@@ -48,6 +49,7 @@ const UserSchema = new mongoose.Schema({
         type: [String],
         // TODO: buscar información tokens
     }
+     */
 }, {
     timestamps: true
 });
