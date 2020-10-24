@@ -14,6 +14,7 @@ import cors from "./middlewares/cors.js";
 // ROUTERS
 import userRouter from "./routes/userRoute.js";
 import contactoRouter from "./routes/contactoRoute.js";
+import valoracionRouter from "./routes/valoracionRoute.js";
 // import cartRouter from "./routes/cart.js";
 // import ticketRouter from "./routes/ticket.js";
 // import cursoValencianoRouter from "./routes/curso_valenciano.js";
@@ -22,7 +23,6 @@ import contactoRouter from "./routes/contactoRoute.js";
 // import ean_rRouter from "./routes/ean_r.js";
 // import ean_tRouter from "./routes/ean_t.js";
 // import ean_vRouter from "./routes/ean_v.js";
-// import valoracionRouter from "./routes/valoracion.js";
 
 // MORGAN
 app.use(morgan("dev"));
@@ -41,6 +41,7 @@ app.use(cors);
 // ENDPOINTS
 app.use("/usuarios", userRouter);
 app.use("/contacto", contactoRouter);
+app.use("/valoracion", valoracionRouter);
 /*
 app.use(express.static("client/frontend"));
 app.use("/cart", cartRouter);
@@ -51,7 +52,6 @@ app.use("/ean_c", ean_cRouter);
 app.use("/ean_r", ean_rRouter);
 app.use("/ean_t", ean_tRouter);
 app.use("/ean_v", ean_vRouter);
-app.use("/valoracion", valoracionRouter);
  */
 
 // LEVANTAMOS SERVIDOR
