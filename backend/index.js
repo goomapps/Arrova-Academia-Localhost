@@ -10,7 +10,7 @@ import "./config/conexionbd.js";
 
 // IMPORTACIONES
 // MIDDLEWARES
-// import cors from "./middlewares/cors.js";
+import cors from "./middlewares/cors.js";
 // ROUTERS
 // import adminRouter from "./routes/admin.js";
 // import cartRouter from "./routes/cart.js";
@@ -37,7 +37,7 @@ app.use(
 app.use(express.json());
 
 // CORS Y HEADERS
-// app.use(cors);
+app.use(cors);
 
 // ENDPOINTS
 /*

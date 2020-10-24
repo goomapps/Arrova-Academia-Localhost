@@ -44,9 +44,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd158dce-0048-40fe-b0d4-71217f497d51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/config/conexionbd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/middlewares/cors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/userDTO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/routes/userRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/translations/es.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
