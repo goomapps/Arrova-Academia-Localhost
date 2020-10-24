@@ -13,7 +13,7 @@ import "./config/conexionbd.js";
 import cors from "./middlewares/cors.js";
 // ROUTERS
 import userRouter from "./routes/userRoute.js";
-// import adminRouter from "./routes/admin.js";
+import contactoRouter from "./routes/contactoRoute.js";
 // import cartRouter from "./routes/cart.js";
 // import ticketRouter from "./routes/ticket.js";
 // import cursoValencianoRouter from "./routes/curso_valenciano.js";
@@ -22,7 +22,6 @@ import userRouter from "./routes/userRoute.js";
 // import ean_rRouter from "./routes/ean_r.js";
 // import ean_tRouter from "./routes/ean_t.js";
 // import ean_vRouter from "./routes/ean_v.js";
-// import contactoRouter from "./routes/contacto.js";
 // import valoracionRouter from "./routes/valoracion.js";
 
 // MORGAN
@@ -41,9 +40,9 @@ app.use(cors);
 
 // ENDPOINTS
 app.use("/usuarios", userRouter);
+app.use("/contacto", contactoRouter);
 /*
 app.use(express.static("client/frontend"));
-app.use("/admin", adminRouter);
 app.use("/cart", cartRouter);
 app.use("/ticket", ticketRouter);
 app.use("/cvalenciano", cursoValencianoRouter);
@@ -52,7 +51,6 @@ app.use("/ean_c", ean_cRouter);
 app.use("/ean_r", ean_rRouter);
 app.use("/ean_t", ean_tRouter);
 app.use("/ean_v", ean_vRouter);
-app.use("/contacto", contactoRouter);
 app.use("/valoracion", valoracionRouter);
  */
 
