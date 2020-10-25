@@ -15,6 +15,7 @@ import cors from "./middlewares/cors.js";
 import userRouter from "./routes/userRoute.js";
 import contactoRouter from "./routes/contactoRoute.js";
 import valoracionRouter from "./routes/valoracionRoute.js";
+import cursoRouter from "./routes/cursoRoute.js";
 // import cartRouter from "./routes/cart.js";
 // import ticketRouter from "./routes/ticket.js";
 // import cursoValencianoRouter from "./routes/curso_valenciano.js";
@@ -39,11 +40,12 @@ app.use(express.json());
 app.use(cors);
 
 // ENDPOINTS
-app.use("/usuarios", userRouter);
-app.use("/contacto", contactoRouter);
-app.use("/valoracion", valoracionRouter);
-/*
 app.use(express.static("client/frontend"));
+app.use("/usuarios", userRouter);
+app.use("/contactos", contactoRouter);
+app.use("/valoraciones", valoracionRouter);
+app.use("/cursos", cursoRouter);
+/*
 app.use("/cart", cartRouter);
 app.use("/ticket", ticketRouter);
 app.use("/cvalenciano", cursoValencianoRouter);
