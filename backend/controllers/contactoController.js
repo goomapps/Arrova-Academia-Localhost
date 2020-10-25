@@ -4,7 +4,10 @@ const ContactoController = {
     async insert(req, res) {
         try {
             const contacto = await ContactoModel.create(req.body);
-            res.status(201).send(contacto);
+            res.status(201).send({
+                message: "EL CONTACTO SE HA INSERTADO CON ÉXITO",
+                contacto,
+            });
         } catch (error) {
             console.error(error);
             res.status(500).send({
