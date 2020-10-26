@@ -20,7 +20,7 @@ const CursoSchema = new mongoose.Schema(
             required: true,
         },
     },
-    { timestamps: true }
+    {timestamps: true}
 );
 
 const CursoModel = mongoose.model("Curso", CursoSchema);

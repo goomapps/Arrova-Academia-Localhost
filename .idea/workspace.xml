@@ -51,8 +51,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd158dce-0048-40fe-b0d4-71217f497d51" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/.idea/backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/contactoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/contactoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/cursoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/tokenDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/tokenDTO.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/models/userDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/userDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/valoracionDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/valoracionDTO.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +78,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/backend/package.json" />
+  </component>
   <component name="ProjectId" id="1jJpwAQR2OohRiTgyH8EfjTzRDE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,9 +91,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +108,8 @@
       <updated>1603532284730</updated>
       <workItem from="1603532285777" duration="1537000" />
       <workItem from="1603553246129" duration="8340000" />
-      <workItem from="1603647685287" duration="5812000" />
+      <workItem from="1603647685287" duration="6339000" />
+      <workItem from="1603728843901" duration="2304000" />
     </task>
     <servers />
   </component>
@@ -126,9 +141,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603532785895">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1603730426077">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603532785895" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603730426077" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1603731643743">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603731643743" />
   </component>
 </project>

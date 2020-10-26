@@ -18,7 +18,8 @@ const ContactoSchema = new mongoose.Schema(
             type: Boolean,
             required: true
         }
-    }
+    },
+    {timestamps: true}
 );
 
 const ContactoModel = mongoose.model("Contacto", ContactoSchema);
