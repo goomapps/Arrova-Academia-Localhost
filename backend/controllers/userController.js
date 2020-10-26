@@ -8,18 +8,14 @@ import TokenModel from "../models/tokenDTO.js";
 const UserController = {
     async getAll(req, res) {
         try {
-            const usuarios = await UserModel.find().populate("Curso");
-            res.send({
-                message: "USUARIOS: ",
-                usuarios: usuarios
-            });
+            const usuarios = await UserModel.find({ }).populate("Curso");
+            res.send(usuarios);
         } catch (err) {
             res.status(404).send({
                 error: err
             });
         }
     },
-    // TODO: CREAR METODO QUE BUSQUE TODOS LOS CURSOS DEL USUARIO
     async registro(req, res) {
         try {
             req.body.contrasenya = await bcrypt.hash(req.body.contrasenya, 10);
@@ -39,7 +35,7 @@ const UserController = {
     },
     async login(req, res) {
         try {
-            const user = await UserModel.findOne(req.body.correo);
+            const user = await UserModel.findOne({correo: req.body.correo});
             if (!user) {
                 return res.status(404).send({
                     message: "EL EMAIL NO EXISTE EN NUESTRA BASE DE DATOS",
@@ -53,8 +49,8 @@ const UserController = {
             }
             const token = jwt.sign({_id: user._id,}, "secreto");
             // TODO: BUSCAR INFORMACIÓN SOBRE EL WARNING DE METODO DEPRECADO
-            await UserModel.findByIdAndUpdate(user._id, {
-                $push: {tokens: token,},
+            await UserModel.findByIdAndUpdate({_id: user._id}, {
+                $push: {tokens: token},
             });
             res.send({
                 usuario: user,
@@ -111,6 +107,7 @@ const UserController = {
             });
         }
     },
+    // TODO: CREAR METODO QUE BUSQUE TODOS LOS CURSOS DEL USUARIO
     // TODO: CREAR METODO PARA SUBIR IMAGEN DE PERFIL
     // TODO: CREAR METODO UPDATE
 };

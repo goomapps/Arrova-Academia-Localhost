@@ -13,8 +13,8 @@ const UserSchema = new mongoose.Schema(
         terminos: {type: Boolean},
         imagenPerfil: {type: String},
         rol: {type: String, default: "user", enum: ["admin", "user"]},
-        cursos: {type: Schema.Types.ObjectId, ref: "Curso"},
-        tokens: {type: String}
+        cursos: {type: [Schema.Types.ObjectId], ref: "Curso"},
+        tokens: {type: [String]}
     },
     {timestamps: true}
 );
