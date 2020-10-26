@@ -4,6 +4,8 @@ const ContactoController = {
     async insert(req, res) {
         try {
             const contacto = await ContactoModel.create(req.body);
+            // TODO: CONVERTIR EL JSON QUE NOS VIENE DEL BODY A TEXTO PLANO
+            // TODO: ENVIAR TEXTO PLANO A NUESTRO EMAIL DE CONTACTO -> CONTACTO@ARROVACADEMIA.ES
             res.status(201).send({
                 message: "EL CONTACTO SE HA INSERTADO CON ÉXITO",
                 contacto,
