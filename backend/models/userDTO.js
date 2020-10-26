@@ -28,7 +28,7 @@ const UserSchema = new mongoose.Schema({
         required: true,
     },
     fechaNacimiento: {
-        type: Date,
+        type: String,
         // TODO: buscar información format date
         required: true,
     },
