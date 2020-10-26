@@ -7,7 +7,7 @@ const db = mongoose
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
-            useFindAndModify: true,
+            useFindAndModify: false,
         }
     )
     .then(() => console.log("CONEXIÓN A LA BD REALIZADA CON ÉXITO"))
