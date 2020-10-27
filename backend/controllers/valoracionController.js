@@ -1,6 +1,16 @@
 import ValoracionModel from "../models/valoracionDTO.js";
 
 const ValoracionController = {
+    async getAll(req, res) {
+        try {
+            const valoraciones = await UserModel.find({ });
+            res.send(valoraciones);
+        } catch (err) {
+            res.status(404).send({
+                error: err
+            });
+        }
+    },
     async insert(req, res) {
         try {
             const valoracion = await ValoracionModel.create(req.body);
