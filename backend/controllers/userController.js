@@ -4,6 +4,7 @@ import dateFormat from "dateformat";
 
 import UserModel from "../models/userDTO.js";
 import TokenModel from "../models/tokenDTO.js";
+import nodemailer from "../config/nodemailer.js";
 
 const UserController = {
     async getAll(req, res) {
@@ -26,6 +27,7 @@ const UserController = {
                 message: "USUARIO REGISTRADO CORRECTAMENTE",
                 usuario: user
             });
+            nodemailer.envioMensaje();
         } catch (err) {
             res.status(500).send({
                 message: "EL USUARIO NO SE HA PODIDO REGISTRAR",
