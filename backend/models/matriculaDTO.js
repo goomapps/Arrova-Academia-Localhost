@@ -11,7 +11,5 @@ const MatriculaSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-
 const MatriculaModel = mongoose.model("Matricula", MatriculaSchema);
-
 export default MatriculaModel;

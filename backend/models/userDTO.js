@@ -8,11 +8,11 @@ const UserSchema = new mongoose.Schema(
         apellido2: {type: String, uppercase: true},
         nombreUsuario: {type: String, unique: true, uppercase: true},
         correo: {type: String, unique: true, uppercase: true},
-        contrasenya: {type: String, uppercase: true},
+        contrasenya: {type: String},
         fechaNacimiento: {type: String, uppercase: true},
         terminos: {type: Boolean},
         imagenPerfil: {type: String},
-        rol: {type: String, default: "user", enum: ["admin", "user"], uppercase: true},
+        rol: {type: String, default: "user", enum: ["ADMIN", "USER"], uppercase: true},
         cursos: {type: [Schema.Types.ObjectId], ref: "Curso"},
         tokens: {type: [String]}
     },

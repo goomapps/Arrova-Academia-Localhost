@@ -9,7 +9,5 @@ const ValoracionSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-
 const ValoracionModel = mongoose.model("Valoracion", ValoracionSchema);
-
 export default ValoracionModel;
