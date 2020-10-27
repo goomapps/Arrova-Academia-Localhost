@@ -18,7 +18,7 @@ import ecnRouter from "./routes/ecnRoute.js";
 // import cursoValencianoRouter from "./routes/curso_valenciano.js";
 
 // MIDDLEWARES
-app.use(morgan("dev"));
+app.use(morgan("combined"));
 app.use(
     express.urlencoded({
         extended: true,
