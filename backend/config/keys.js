@@ -1,8 +1,8 @@
 const config = {
     SECRET: "",
     GMAIL: {
-      email: "email",
-      password: "contraseña",
+      email: "rmorenor97@gmail.com",
+      password: "contrasenya",
     },
     EMAIL_SECRET: "",
     SESSION_SECRET: "",

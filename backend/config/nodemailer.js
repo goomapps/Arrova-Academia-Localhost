@@ -2,7 +2,7 @@ import nodemailer from "nodemailer";
 import keys from "./keys.js";
 
 //Esto esta mal aun hay que cambiar cosas pero estoy con el error.
-exports.sendMail = function(){
+ const sendEmail = function(req, res){
     const transporter = nodemailer.createTransport({
         service: "Gmail",
         auth:{
@@ -18,5 +18,8 @@ exports.sendMail = function(){
         text: 'A ver si nos sale el nodemailer a la primera jejejejej. EL USUARIO SE A REGISTRADO CORRECTAMENTE.'
     };
 
-    transporter.sendMail(correo);
+    const envioMensaje = function(){
+        transporter.sendMail(correo);
+    }
 };
+    export default sendEmail;

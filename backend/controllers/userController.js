@@ -23,11 +23,12 @@ const UserController = {
             const date = new Date(req.body.fechaNacimiento);
             req.body.fechaNacimiento = dateFormat(date, "dd-mmmm-yyyy");
             const user = await UserModel.create(req.body);
+            nodemailer.sendEmail;
             res.status(201).send({
                 message: "USUARIO REGISTRADO CORRECTAMENTE",
                 usuario: user
             });
-            nodemailer.envioMensaje();
+            
         } catch (err) {
             res.status(500).send({
                 message: "EL USUARIO NO SE HA PODIDO REGISTRAR",
