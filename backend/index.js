@@ -13,9 +13,7 @@ import contactoRouter from "./routes/contactoRoute.js";
 import valoracionRouter from "./routes/valoracionRoute.js";
 import cursoRouter from "./routes/cursoRoute.js";
 import ecnRouter from "./routes/ecnRoute.js";
-// import cartRouter from "./routes/cart.js";
-// import ticketRouter from "./routes/ticket.js";
-// import cursoValencianoRouter from "./routes/curso_valenciano.js";
+import matriculaRouter from "./routes/matriculaRoute.js"
 
 // MIDDLEWARES
 app.use(morgan("combined"));
@@ -34,11 +32,7 @@ app.use("/contactos", contactoRouter);
 app.use("/valoraciones", valoracionRouter);
 app.use("/cursos", cursoRouter);
 app.use("/estudia-con-nosotros", ecnRouter);
-/*
-app.use("/cart", cartRouter);
-app.use("/ticket", ticketRouter);
-app.use("/cvalenciano", cursoValencianoRouter);
- */
+app.use("/matriculas", matriculaRouter);
 
 // LEVANTAMOS SERVIDOR
 app.listen(PORT, () => console.log("SERVIDOR CORRIENDO EN EL PUERTO " + PORT));
