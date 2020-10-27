@@ -44,10 +44,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/contactoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/contactoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ecnDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ecnDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tokenDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tokenDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/valoracionDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/valoracionDTO.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

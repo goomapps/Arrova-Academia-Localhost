@@ -3,15 +3,15 @@ import mongoose from "mongoose";
 const EcnSchema = new mongoose.Schema(
     {
         parte1: {type: [Boolean]},
-        comentario1: {type: String},
+        comentario1: {type: String, uppercase: true},
         parte2: {type: [Boolean]},
-        comentario2: {type: String},
+        comentario2: {type: String, uppercase: true},
         parte3: {type: [Boolean]},
-        comentario3: {type: String},
+        comentario3: {type: String, uppercase: true},
         parte4: {type: [Boolean]},
-        comentario4: {type: String},
+        comentario4: {type: String, uppercase: true},
         parte5: {type: [Boolean]},
-        comentario5: {type: String},
+        comentario5: {type: String, uppercase: true},
     },
     {timestamps: true}
 );

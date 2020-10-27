@@ -3,16 +3,16 @@ import Schema from "mongoose";
 
 const UserSchema = new mongoose.Schema(
     {
-        nombre: {type: String},
-        apellido1: {type: String},
-        apellido2: {type: String},
-        nombreUsuario: {type: String, unique: true,},
-        correo: {type: String, unique: true,},
-        contrasenya: {type: String},
-        fechaNacimiento: {type: String},
+        nombre: {type: String, uppercase: true},
+        apellido1: {type: String, uppercase: true},
+        apellido2: {type: String, uppercase: true},
+        nombreUsuario: {type: String, unique: true, uppercase: true},
+        correo: {type: String, unique: true, uppercase: true},
+        contrasenya: {type: String, uppercase: true},
+        fechaNacimiento: {type: String, uppercase: true},
         terminos: {type: Boolean},
         imagenPerfil: {type: String},
-        rol: {type: String, default: "user", enum: ["admin", "user"]},
+        rol: {type: String, default: "user", enum: ["admin", "user"], uppercase: true},
         cursos: {type: [Schema.Types.ObjectId], ref: "Curso"},
         tokens: {type: [String]}
     },

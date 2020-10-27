@@ -3,19 +3,9 @@ import Schema from "mongoose";
 
 const TokenSchema = new mongoose.Schema(
     {
-        token: {
-            type: String,
-            required: true,
-        },
-        usuario: {
-            type: Schema.Types.ObjectId,
-            ref: "User",
-            required: true,
-        },
-        usado: {
-            type: Boolean,
-            required: true,
-        },
+        token: {type: String, required: true},
+        usuario: {type: Schema.Types.ObjectId, ref: "User", required: true},
+        usado: {type: Boolean, required: true},
     },
     {timestamps: true}
 );
