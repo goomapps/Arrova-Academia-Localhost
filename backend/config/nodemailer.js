@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import keys from "./keys.js";
 
-
+//Esto esta mal aun hay que cambiar cosas pero estoy con el error.
 exports.sendMail = function(){
     const transporter = nodemailer.createTransport({
         service: "Gmail",
