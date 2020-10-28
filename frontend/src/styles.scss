@@ -1,7 +1,7 @@
 @import './assets/fontawesome/css/all.css';
 @import '~ngx-toastr/toastr';
 
-
+@import 'src/app/styles/index.scss';
 
 * {
   margin: 0;
@@ -16,7 +16,7 @@
     }
 
     &-thumb {
-
+      background: $text-color-dark;
     }
   }
 }
