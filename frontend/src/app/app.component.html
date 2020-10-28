@@ -1,10 +1,7 @@
-<router-outlet></router-outlet>
-<div style="background: red">
-  <h1>HOLA</h1>
-  <h2>HOLA</h2>
-  <h3>HOLA</h3>
-  <h4>HOLA</h4>
-  <h5>HOLA</h5>
-  <p>HOLA</p>
-  <small>HOLA</small>
+<div class="site">
+  <app-header></app-header>
+  <div class="layout">
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
+  </div>
+  <app-footer></app-footer>
 </div>
