@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/fontawesome/css/all.css';
+@import '~ngx-toastr/toastr';
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+
+    &-track {
+      background: transparent;
+    }
+
+    &-thumb {
+
+    }
+  }
+}
