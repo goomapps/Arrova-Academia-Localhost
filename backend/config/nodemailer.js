@@ -1,25 +1,32 @@
 import nodemailer from "nodemailer";
 import keys from "./keys.js";
 
-//Esto esta mal aun hay que cambiar cosas pero estoy con el error.
- const sendEmail = function(req, res){
-    const transporter = nodemailer.createTransport({
-        service: "Gmail",
-        auth:{
+
+    // Definimos el transporter
+
+    var transporter = nodemailer.createTransport({
+        pool: true,
+        host: "smtp.arrovacademia.es",
+        port: "25",
+        auth: {
             user: keys.GMAIL.email,
             pass: keys.GMAIL.password
+        },
+        tls: { 
+            rejectUnauthorized: false 
         }
     });
-
-    const correo = {
-        from: 'rmorenor97@gmail.com',
-        to: 'ramorenorodriguez@gmail.com',
-        subject: 'Este es un correo de prueba',
-        text: 'A ver si nos sale el nodemailer a la primera jejejejej. EL USUARIO SE A REGISTRADO CORRECTAMENTE.'
+    
+    // Definimos el email
+    var mailOptions = {
+        from: 'Remitente',
+        to: 'rmorenor97@gmail.com',
+        subject: 'Arrova Academia',
+        text: 'jodeeer'
     };
+    // Enviamos el email
+    /*var envio = function(){
+    transporter.sendMail(mailOptions, function(error, info){});
+    }*/
 
-    const envioMensaje = function(){
-        transporter.sendMail(correo);
-    }
-};
-    export default sendEmail;
+    export default transporter;

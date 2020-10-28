@@ -1,8 +1,8 @@
 const config = {
     SECRET: "",
     GMAIL: {
-      email: "rmorenor97@gmail.com",
-      password: "contrasenya",
+      email: "contacto@arrovacademia.es",
+      password: "Jofx2co8a",
     },
     EMAIL_SECRET: "",
     SESSION_SECRET: "",

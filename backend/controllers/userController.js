@@ -4,7 +4,7 @@ import dateFormat from "dateformat";
 
 import UserModel from "../models/userDTO.js";
 import TokenModel from "../models/tokenDTO.js";
-import nodemailer from "../config/nodemailer.js";
+import transporter from "../config/nodemailer.js";
 
 const UserController = {
     async getAll(req, res) {
@@ -23,12 +23,18 @@ const UserController = {
             const date = new Date(req.body.fechaNacimiento);
             req.body.fechaNacimiento = dateFormat(date, "dd-mmmm-yyyy");
             const user = await UserModel.create(req.body);
-            nodemailer.sendEmail;
             res.status(201).send({
                 message: "USUARIO REGISTRADO CORRECTAMENTE",
                 usuario: user
             });
-            
+            var mailOptions = {
+                from: 'Remitente',
+                to: req.body.correo,
+                subject: 'Arrova Academia',
+                text: req.body.nombreUsuario + ' Usted se a registrado correctamente en la aplicacion'
+            };
+            transporter.sendMail(mailOptions);
+
         } catch (err) {
             res.status(500).send({
                 message: "EL USUARIO NO SE HA PODIDO REGISTRAR",
