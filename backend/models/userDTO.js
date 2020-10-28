@@ -11,7 +11,7 @@ const UserSchema = new mongoose.Schema(
         contrasenya: {type: String},
         fechaNacimiento: {type: String, uppercase: true},
         terminos: {type: Boolean},
-        correoConfirmado: {type: Boolean},
+        correoConfirmado: {type: Boolean, default: false},
         imagenPerfil: {type: String},
         rol: {type: String, default: "user", enum: ["ADMIN", "USER"], uppercase: true},
         cursos: {type: [Schema.Types.ObjectId], ref: "Curso"},

@@ -64,7 +64,7 @@ const UserController = {
                 });
             }
             const token = jwt.sign({_id: user._id,}, "secreto");
-            // TODO: BUSCAR INFORMACIÓN SOBRE EL WARNING DE METODO DEPRECADO
+            // TODO: COMPROBAR SI CORREOCONFIRMADO ES FALSO, SI ES FALSO, CAMBIAR POR TRUE, SI ES TRUE NO HACER NADA
             await UserModel.findByIdAndUpdate({_id: user._id}, {
                 $push: {tokens: token},
             });
@@ -72,6 +72,7 @@ const UserController = {
                 usuario: user,
                 token: token,
             });
+            // TODO: ENVIAR EMAIL CORREO CONFIRMADO
         } catch (err) {
             res.status(500).send({
                 message: "EL USUARIO NO SE HA PODIDO LOGEAR",
