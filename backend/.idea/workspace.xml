@@ -21,9 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/keys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/nodemailer.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/nodemailer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userDTO.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +88,7 @@
       <workItem from="1603819000934" duration="1256000" />
       <workItem from="1603830357770" duration="697000" />
       <workItem from="1603833366124" duration="15000" />
-      <workItem from="1603901572710" duration="668000" />
+      <workItem from="1603901572710" duration="2894000" />
     </task>
     <servers />
   </component>

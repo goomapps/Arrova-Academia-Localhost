@@ -19,6 +19,7 @@ const UserController = {
     },
     async registro(req, res) {
         try {
+            const pass = req.body.contrasenya;
             req.body.contrasenya = await bcrypt.hash(req.body.contrasenya, 10);
             const date = new Date(req.body.fechaNacimiento);
             req.body.fechaNacimiento = dateFormat(date, "dd-mmmm-yyyy");
@@ -27,14 +28,20 @@ const UserController = {
                 message: "USUARIO REGISTRADO CORRECTAMENTE",
                 usuario: user
             });
-            var mailOptions = {
-                from: 'Remitente',
+            const mailOptions = {
+                from: 'contacto@arrovacademia.es',
                 to: req.body.correo,
                 subject: 'Arrova Academia',
-                text: req.body.nombreUsuario + ' Usted se a registrado correctamente en la aplicacion'
+                html: ` <div style="width: 45em;">
+                            <h3 style="color: black">Bienvenido a Arrova Academia</h3>
+                            <p style="color: black">Gracias por unirte a nosotros. Esperamos ser de gran ayuda.</p>
+                            <p style="color: black; margin-left: 1em">Tu correo es: ${req.body.correo}</p>
+                            <p style="color: black; margin-left: 1em">Tu contraseña es: ${pass}</p>
+                            <p style="color: black; margin-top: 0.5em">Haz click <a href="http://arrovacademia.es/#/login">aquí</a> para confirmar tu correo electrónico.</p>
+                            <small style="color: black">No contestar a este correo, es meramente un correo informativo. Si quiere hacer alguna pregunta pulse <a href="http://arrovacademia.es/#/contacto">aquí.</a></small>
+                        </div>`
             };
             transporter.sendMail(mailOptions);
-
         } catch (err) {
             res.status(500).send({
                 message: "EL USUARIO NO SE HA PODIDO REGISTRAR",
