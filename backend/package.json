@@ -1,6 +1,6 @@
 {
   "name": "backend-arrovacademia",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "backend arrovacademia",
   "main": "index.js",
   "type": "module",
