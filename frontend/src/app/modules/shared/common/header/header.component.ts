@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +11,14 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $('#search').hide();
+  }
+  goSearch(): void {
+    $('#search').hide();
+    $('#menu').show('slow');
+  }
+  goMenu(): void {
+    $('#menu').hide();
+    $('#search').show('slow');
   }
 }

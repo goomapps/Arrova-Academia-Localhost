@@ -5,13 +5,13 @@
         <img routerLink="/" src="assets/img/logo.png">
       </div>
       <div class="busqueda">
-        <button id="search" class="boton dnone">
+        <button id="search" class="boton" (click)="goSearch()">
           <i class="fas fa-search boton-icon"></i>
           <p class="parrafo boton-text">BUSCAR</p>
         </button>
       </div>
       <div class="menu">
-        <button id="menu" class="boton">
+        <button id="menu" class="boton" (click)="goMenu()">
           <i class="fas fa-bars boton-icon"></i>
           <p class="parrafo boton-text">MENÚ</p>
         </button>
