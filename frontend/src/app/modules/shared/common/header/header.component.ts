@@ -15,10 +15,10 @@ export class HeaderComponent implements OnInit {
   }
   goSearch(): void {
     $('#search').hide();
-    $('#menu').show('slow');
+    $('#menu').show('fast');
   }
   goMenu(): void {
     $('#menu').hide();
-    $('#search').show('slow');
+    $('#search').show('fast');
   }
 }
