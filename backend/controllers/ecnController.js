@@ -12,10 +12,10 @@ const EcnController = {
                 subject: 'Arrova Academia',
                 html:   `<div style="width: 45em;">
                             <h3 style="color: black">Corrreo de contacto</h3>
-                            <p style="color: black">Nombre: ${}</p>
-                            <p style="color: black;">Correo: ${}</p>
-                            <p style="color: black; margin-left: 1em">Duda: ${}</p>
-                            <p style="color: black; margin-top: 0.5em">Terminos aceptados: ${}</p>
+                            <p style="color: black">Nombre:</p>
+                            <p style="color: black;">Correo:</p>
+                            <p style="color: black; margin-left: 1em">Duda:</p>
+                            <p style="color: black; margin-top: 0.5em">Terminos aceptados:</p>
                         </div>`
                 }
             transporter.sendMail(mailOptions);
