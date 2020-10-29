@@ -1,0 +1,84 @@
+@import "src/app/styles/index.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 9%;
+  background: $components-light;
+
+  &-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 90%;
+
+    &-izquierda {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 17%;
+
+      .logo {
+        img {
+          width: 80%;
+          min-width: 7rem;
+          height: 10%;
+          min-height: 3rem;
+          cursor: pointer;
+        }
+      }
+
+      .busqueda,
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+
+        .boton {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 4rem;
+          height: 4rem;
+          background: transparent;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &.dnone {
+            display: none;
+          }
+
+          &-icon {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: $text-color-emphasis;
+            font-size: 1rem;
+            transition: 0.3s;
+          }
+
+          &:hover {
+            background: $text-color-dark;
+
+            .boton-icon {
+              color: $text-color-hover;
+            }
+
+            .boton-text {
+              font-weight: bold;
+              color: $text-color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}
