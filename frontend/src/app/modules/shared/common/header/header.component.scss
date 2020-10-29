@@ -20,13 +20,15 @@
       justify-content: space-between;
       align-items: center;
       width: 17%;
+      min-width: 15%;
+      height: 100%;
 
       .logo {
         img {
           width: 80%;
-          min-width: 7rem;
+          min-width: 8rem;
           height: 10%;
-          min-height: 3rem;
+          min-height: 3.5rem;
           cursor: pointer;
         }
       }
@@ -43,8 +45,8 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          width: 4rem;
-          height: 4rem;
+          width: 4.5rem;
+          height: 4.5rem;
           background: transparent;
           border: none;
           border-radius: 50%;
@@ -57,12 +59,11 @@
 
           &-icon {
             display: flex;
-            flex-direction: row;
             align-items: center;
             justify-content: center;
             color: $text-color-emphasis;
             font-size: 1rem;
-            transition: 0.3s;
+            margin-bottom: 0.5rem;
           }
 
           &:hover {
@@ -73,7 +74,92 @@
             }
 
             .boton-text {
-              font-weight: bold;
+              color: $text-color-hover;
+            }
+          }
+        }
+      }
+    }
+
+    &-medio {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &-navegador {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          width: 100%;
+
+          &-elemento {
+            padding: 1rem;
+            cursor: pointer;
+
+            .elemento-titulo {
+              transition: 0.3s;
+            }
+
+            &:hover {
+              .elemento-titulo {
+                color: $text-color-hover;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-derecha {
+      display: flex;
+      align-items: center;
+      width: 9%;
+      min-width: 8%;
+      height: 100%;
+
+      .botonera {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .boton {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 4.5rem;
+          height: 4.5rem;
+          background: transparent;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $text-color-emphasis;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+          }
+
+          &:hover {
+            background: $text-color-dark;
+
+            .boton-icon {
+              color: $text-color-hover;
+            }
+
+            .boton-text {
               color: $text-color-hover;
             }
           }
