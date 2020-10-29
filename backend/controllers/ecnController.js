@@ -4,6 +4,7 @@ const EcnController = {
     async insert(req, res) {
         try {
             const ecn = await EcnModel.create(req.body);
+            console.log(req.body);
             // TODO: CONVERTIR EL JSON QUE NOS VIENE DEL BODY A TEXTO PLANO
             // TODO: ENVIAR TEXTO PLANO A NUESTRO EMAIL DE CONTACTO -> CONTACTO@ARROVACADEMIA.ES
             res.status(201).send({
