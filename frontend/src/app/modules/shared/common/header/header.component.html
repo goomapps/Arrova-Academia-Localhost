@@ -4,33 +4,38 @@
       <div class="logo">
         <img routerLink="/" src="assets/img/logo.png">
       </div>
-      <div class="busqueda">
-        <button id="search" class="boton-nav" (click)="goSearch()">
-          <i class="fas fa-search boton-nav-icon"></i>
-        </button>
-      </div>
-      <div class="menu">
-        <button id="menu" class="boton-nav" (click)="goMenu()">
-          <i class="fas fa-bars boton-nav-icon"></i>
-        </button>
+      <div class="botonera-izquierda">
+        <div class="busqueda">
+          <button id="search" class="boton-nav" (click)="goSearch()">
+            <i class="fas fa-search boton-nav-icon"></i>
+          </button>
+        </div>
+        <div class="menu">
+          <button id="menu" class="boton-nav" (click)="goMenu()">
+            <i class="fas fa-bars boton-nav-icon"></i>
+          </button>
+        </div>
       </div>
     </div>
     <div class="header-contenedor-medio">
-      <div class="menu">
+      <div id="navegador" class="menu">
         <ul class="menu-navegador">
-          <li class="menu-navegador-elemento">
-            <h5 class="elemento-titulo">ESTUDIA CON NOSOTROS</h5>
+          <li routerLink="/estudia-con-nosotros" class="menu-navegador-elemento">
+            <h5 class="elemento-titulo">ESTUDIA</h5>
           </li>
-          <li class="menu-navegador-elemento">
+          <li routerLink="/cursos" class="menu-navegador-elemento">
             <h5 class="elemento-titulo">CURSOS</h5>
           </li>
-          <li class="menu-navegador-elemento">
+          <li routerLink="/contacto" class="menu-navegador-elemento">
             <h5 class="elemento-titulo">CONTACTO</h5>
           </li>
-          <li class="menu-navegador-elemento">
+          <li routerLink="/nosotros" class="menu-navegador-elemento">
             <h5 class="elemento-titulo">NOSOTROS</h5>
           </li>
         </ul>
+      </div>
+      <div id="buscador" class="buscador">
+        <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
       </div>
     </div>
     <div class="header-contenedor-derecha">

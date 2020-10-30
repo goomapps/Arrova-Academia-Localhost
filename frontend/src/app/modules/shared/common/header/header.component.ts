@@ -11,14 +11,25 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $('#menu').hide();
+    $('#menu').css('display', 'none');
+    $('#buscador').css('display', 'none');
   }
   goSearch(): void {
-    $('#search').hide();
-    $('#menu').show('fast');
+    $('#search').css('display', 'none');
+    $('#navegador').css('display', 'none');
+    $('#menu').show('slow');
+    $('#buscador').show('slow');
   }
   goMenu(): void {
-    $('#menu').hide();
-    $('#search').show('fast');
+    $('#menu').css('display', 'none');
+    $('#buscador').css('display', 'none');
+    $('#search').show('slow');
+    $('#navegador').show('slow');
+  }
+  search(): void {
+  console.log('busqueda');
+  }
+  handleSearch(value: string): void {
+    console.log(value);
   }
 }

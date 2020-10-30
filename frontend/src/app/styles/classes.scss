@@ -15,7 +15,6 @@
   min-height: 100vh;
 }
 
-
 .boton-nav {
   display: flex;
   justify-content: center;
@@ -27,11 +26,12 @@
   border-radius: 1rem;
   cursor: pointer;
   transition: 0.5s;
+
   &-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $text-color-light;
+    color: $components-light;
     font-size: 1.3rem;
   }
 

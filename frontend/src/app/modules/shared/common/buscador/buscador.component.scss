@@ -1,0 +1,36 @@
+@import 'src/app/styles/index.scss';
+
+.contenedor-searcher {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  background: $text-color-dark;
+  border-radius: 1rem;
+
+  .buscador-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    color: $components-light;
+  }
+
+  .buscador-searcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: $text-color-hover;
+
+    &::placeholder {
+      color: $text-color-hover;
+      font-style: italic;
+    }
+  }
+}
