@@ -1,1 +1,37 @@
-<p>login works!</p>
+<div class="login">
+  <div class="login-contenedor">
+    <div class="headers">
+      <h1>LOGIN</h1>
+      <h3>¡Entra para empezar a estudiar!</h3>
+    </div>
+    <div class="form">
+      <form class="form-contenedor" #userForm="ngForm" (ngSubmit)="Login()">
+        <div class="input-contenedor">
+          <h5>Correo electrónico:</h5>
+          <div class="input">
+            <i class="fas fa-envelope input-icon"></i>
+            <input type="text" name="email" #email="ngModel" [(ngModel)]="credenciales.correo"
+                   placeholder="nombre@dominio.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          </div>
+        </div>
+        <div class="input-contenedor">
+          <h5>Contraseña</h5>
+          <div class="input">
+            <i class="fas fa-key input-icon"></i>
+            <input id="password" type="password" name="pass" #pass="ngModel" [(ngModel)]="credenciales.contrasenya"
+                   placeholder="*************" required>
+            <i class="fas fa-eye input-icon" (click)="mostrarOcultarContrasena()"></i>
+          </div>
+        </div>
+        <button class="boton" type="submit" [disabled]="userForm.invalid">
+          <h5>ENTRA</h5>
+        </button>
+      </form>
+    </div>
+    <div class="enlaces">
+      <a class="enlace" routerLink="/olvidado">
+        <p>¿Has olvidado la contraseña?</p>
+      </a>
+    </div>
+  </div>
+</div>
