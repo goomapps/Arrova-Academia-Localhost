@@ -1,5 +1,5 @@
 import ContactoModel from "../models/contactoDTO.js";
-import transporter from "../config/nodemailer.js"
+import transporter from "../config/nodemailer.js";
 
 const ContactoController = {
     async insert(req, res) {

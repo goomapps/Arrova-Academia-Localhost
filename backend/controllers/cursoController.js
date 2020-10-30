@@ -4,6 +4,20 @@ const CursoController = {
     async insert(req, res) {
         try {
             const curso = await CursoModel.create(req.body);
+            const mailOptions = {
+                from: 'contacto@arrovacademia.es',
+                to: 'rmorenor97@gmail.com',
+                subject: 'Arrova Academia',
+                html:   `<div style="width: 45em;">
+                            <h3 style="color: black">Corrreo Curso</h3>
+                            <p style="color: black">Nombre: ${curso.nombre}</p>
+                            <p style="color: black;">Tipo de pago: ${curso.precio}</p>
+                            <p style="color: black;">Catidad pago: ${curso.catidad}</p>
+                            <p style="color: black;">Activo: ${curso.activo}</p>
+                            <p style="color: black;">Matricula: ${curso.matricula}</p>
+                        </div>`
+                }
+            transporter.sendMail(mailOptions);
             res.status(201).send(curso);
         } catch (error) {
             console.error(error);
