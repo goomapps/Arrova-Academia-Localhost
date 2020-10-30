@@ -6,7 +6,9 @@ import { ContactoRoutingModule } from './contacto-routing.module';
 import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
-  declarations: [ContactoComponent],
+  declarations: [
+    ContactoComponent
+  ],
   imports: [
     CommonModule,
     ContactoRoutingModule

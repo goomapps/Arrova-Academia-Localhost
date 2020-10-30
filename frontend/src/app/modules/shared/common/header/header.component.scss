@@ -62,11 +62,12 @@
           width: 100%;
 
           &-elemento {
-            padding: 1rem;
             cursor: pointer;
+            position: relative;
 
             .elemento-titulo {
               transition: 0.3s;
+              padding: 1rem;
             }
 
             &:hover {

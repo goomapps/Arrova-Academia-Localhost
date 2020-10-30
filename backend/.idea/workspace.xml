@@ -20,40 +20,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto/contacto.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto/contacto.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto/contacto.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/services/contacto.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos/cursos.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos/cursos.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos/cursos.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros/estudia-con-nosotros.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros/estudia-con-nosotros.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros/estudia-con-nosotros.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/buscador/buscador.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/buscador/buscador.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/buscador/buscador.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-accesos/cursos-accesos.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-accesos/cursos-accesos.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-accesos/cursos-accesos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-refuerzos/cursos-refuerzos.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-refuerzos/cursos-refuerzos.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-refuerzos/cursos-refuerzos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-titulaciones/cursos-titulaciones.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-titulaciones/cursos-titulaciones.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-titulaciones/cursos-titulaciones.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/cursos-valenciano.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/cursos-valenciano.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/cursos-valenciano.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-accesos/ecn-accesos.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-accesos/ecn-accesos.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-accesos/ecn-accesos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-business/ecn-business.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-business/ecn-business.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-business/ecn-business.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-refuerzos/ecn-refuerzos.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-refuerzos/ecn-refuerzos.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-refuerzos/ecn-refuerzos.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-titulaciones/ecn-titulaciones.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-titulaciones/ecn-titulaciones.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-titulaciones/ecn-titulaciones.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-valenciano/ecn-valenciano.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-valenciano/ecn-valenciano.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/ecn-valenciano/ecn-valenciano.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/profesores/profesores.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/profesores/profesores.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/profesores/profesores.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/contacto/contacto.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/shared.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/colors.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/colors.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

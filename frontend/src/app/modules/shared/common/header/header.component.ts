@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
@@ -8,27 +8,50 @@ import * as $ from 'jquery';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
     $('#menu').css('display', 'none');
     $('#buscador').css('display', 'none');
+    $('#dropestudia').css('display', 'none');
+    $('#dropcursos').css('display', 'none');
+    $('#dropnosotros').css('display', 'none');
+    $('#estudia').hover(() => {
+      $('#dropestudia').show('slow');
+    }, () => {
+      $('#dropestudia').css('display', 'none');
+    });
+    $('#cursos').hover(() => {
+      $('#dropcursos').show('slow');
+    }, () => {
+      $('#dropcursos').css('display', 'none');
+    });
+    $('#nosotros').hover(() => {
+      $('#dropnosotros').show('slow');
+    }, () => {
+      $('#dropnosotros').css('display', 'none');
+    });
   }
+
   goSearch(): void {
     $('#search').css('display', 'none');
     $('#navegador').css('display', 'none');
     $('#menu').show('slow');
     $('#buscador').show('slow');
   }
+
   goMenu(): void {
     $('#menu').css('display', 'none');
     $('#buscador').css('display', 'none');
     $('#search').show('slow');
     $('#navegador').show('slow');
   }
+
   search(): void {
-  console.log('busqueda');
+    console.log('busqueda');
   }
+
   handleSearch(value: string): void {
     console.log(value);
   }

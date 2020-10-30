@@ -6,7 +6,9 @@ import { PoliticasRoutingModule } from './politicas-routing.module';
 import { PoliticasComponent } from './politicas/politicas.component';
 
 @NgModule({
-  declarations: [PoliticasComponent],
+  declarations: [
+    PoliticasComponent
+  ],
   imports: [
     CommonModule,
     PoliticasRoutingModule
