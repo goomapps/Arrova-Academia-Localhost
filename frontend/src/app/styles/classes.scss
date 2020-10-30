@@ -87,3 +87,20 @@
     }
   }
 }
+
+.boton {
+  background: none;
+  border: 2px solid $text-color-hover;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: $text-color-hover;
+
+    h5 {
+      color: $components-dark;
+    }
+  }
+}
