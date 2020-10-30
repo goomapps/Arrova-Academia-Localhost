@@ -1,3 +1,5 @@
+@import 'src/app/styles/colors';
+
 .layout {
   display: flex;
   flex-direction: column;
@@ -11,4 +13,33 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+
+.boton-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: none;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+  &-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $text-color-light;
+    font-size: 1.3rem;
+  }
+
+  &:hover {
+    background: $text-color-dark;
+
+    .boton-nav-icon {
+      color: $text-color-hover;
+    }
+  }
 }

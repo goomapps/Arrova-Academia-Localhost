@@ -19,15 +19,15 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 17%;
-      min-width: 15%;
+      width: 17rem;
+      min-width: 17rem;
       height: 100%;
 
       .logo {
         img {
-          width: 80%;
+          width: 11rem;
           min-width: 8rem;
-          height: 10%;
+          height: 4.5rem;
           min-height: 3.5rem;
           cursor: pointer;
         }
@@ -39,41 +39,6 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-
-        .boton {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 4.5rem;
-          height: 4.5rem;
-          background: transparent;
-          border: none;
-          border-radius: 50%;
-          cursor: pointer;
-          transition: 0.5s;
-
-          &-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $text-color-emphasis;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-          }
-
-          &:hover {
-            background: $text-color-dark;
-
-            .boton-icon {
-              color: $text-color-hover;
-            }
-
-            .boton-text {
-              color: $text-color-hover;
-            }
-          }
-        }
       }
     }
 
@@ -117,49 +82,14 @@
     &-derecha {
       display: flex;
       align-items: center;
-      width: 9%;
-      min-width: 8%;
+      width: 6rem;
+      min-width: 6rem;
       height: 100%;
 
       .botonera {
         display: flex;
         justify-content: space-between;
         width: 100%;
-
-        .boton {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 4.5rem;
-          height: 4.5rem;
-          background: transparent;
-          border: none;
-          border-radius: 50%;
-          cursor: pointer;
-          transition: 0.5s;
-
-          &-icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: $text-color-emphasis;
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-          }
-
-          &:hover {
-            background: $text-color-dark;
-
-            .boton-icon {
-              color: $text-color-hover;
-            }
-
-            .boton-text {
-              color: $text-color-hover;
-            }
-          }
-        }
       }
     }
   }
