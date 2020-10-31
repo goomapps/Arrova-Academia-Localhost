@@ -7,7 +7,7 @@ const CursoController = {
             const curso = await CursoModel.create(req.body);
             const mailOptions = {
                 from: 'contacto@arrovacademia.es',
-                to: 'rmorenor97@gmail.com',
+                to: 'contacto@arrovacademia.es',
                 subject: 'Arrova Academia',
                 html:   `<div style="width: 45em;">
                             <h3 style="color: black">Corrreo Curso</h3>
