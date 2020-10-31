@@ -1,4 +1,5 @@
 import CursoModel from "../models/cursoDTO.js";
+import transporter from "../config/nodemailer.js";
 
 const CursoController = {
     async insert(req, res) {
@@ -14,7 +15,11 @@ const CursoController = {
                             <p style="color: black;">Tipo de pago: ${curso.precio}</p>
                             <p style="color: black;">Catidad pago: ${curso.catidad}</p>
                             <p style="color: black;">Activo: ${curso.activo}</p>
-                            <p style="color: black;">Matricula: ${curso.matricula}</p>
+                            <p style="color: black;">Direccion: ${curso.direccion}</p>
+                            <p style="color: black;">Poblacion: ${curso.poblacion}</p>
+                            <p style="color: black;">Provincia: ${curso.provincia}</p>
+                            <p style="color: black;">Codigo postal: ${curso.codigoPostal}</p>
+                            <p style="color: black;">Telefono: ${curso.telefono}</p>
                         </div>`
                 }
             transporter.sendMail(mailOptions);
