@@ -20,18 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/models/Logged.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/models/Usuario.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias-routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias/noticias.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias/noticias.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias/noticias.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/models/Login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/models/Login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,8 @@
       <workItem from="1603922950179" duration="361000" />
       <workItem from="1603990872045" duration="1044000" />
       <workItem from="1604052598845" duration="1242000" />
-      <workItem from="1604140594575" duration="1569000" />
+      <workItem from="1604140594575" duration="1570000" />
+      <workItem from="1604163511501" duration="607000" />
     </task>
     <servers />
   </component>
@@ -137,21 +137,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603901579418" />
-    <state width="1897" height="198" key="GridCell.Tab.0.bottom" timestamp="1603915190205">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1897" height="198" key="GridCell.Tab.0.bottom" timestamp="1604145575321">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1897" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604145575321" />
     <state width="1897" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="198" key="GridCell.Tab.0.center" timestamp="1603915190205">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1897" height="198" key="GridCell.Tab.0.center" timestamp="1604145575321">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1897" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604145575321" />
     <state width="1897" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="198" key="GridCell.Tab.0.left" timestamp="1603915190205">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1897" height="198" key="GridCell.Tab.0.left" timestamp="1604145575321">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1897" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604145575321" />
     <state width="1897" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="198" key="GridCell.Tab.0.right" timestamp="1603915190205">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1897" height="198" key="GridCell.Tab.0.right" timestamp="1604145575321">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state width="1897" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604145575321" />
     <state width="1897" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
     <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1603779795137">
       <screen x="0" y="0" width="1920" height="1040" />

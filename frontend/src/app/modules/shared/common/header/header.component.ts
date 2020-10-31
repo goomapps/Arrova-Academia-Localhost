@@ -12,11 +12,15 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    $('#menu').css('display', 'none');
-    $('#buscador').css('display', 'none');
+    $('#dropbuscador').css('display', 'none');
     $('#dropestudia').css('display', 'none');
     $('#dropcursos').css('display', 'none');
     $('#dropnosotros').css('display', 'none');
+    $('#search').hover(() => {
+      $('#dropbuscador').show('slow');
+    }, () => {
+      $('#dropbuscador').css('display', 'none');
+    });
     $('#estudia').hover(() => {
       $('#dropestudia').show('slow');
     }, () => {
@@ -32,20 +36,6 @@ export class HeaderComponent implements OnInit {
     }, () => {
       $('#dropnosotros').css('display', 'none');
     });
-  }
-
-  goSearch(): void {
-    $('#search').css('display', 'none');
-    $('#navegador').css('display', 'none');
-    $('#menu').show('slow');
-    $('#buscador').show('slow');
-  }
-
-  goMenu(): void {
-    $('#menu').css('display', 'none');
-    $('#buscador').css('display', 'none');
-    $('#search').show('slow');
-    $('#navegador').show('slow');
   }
 
   search(): void {

@@ -18,7 +18,9 @@ const routes: Routes = [
   {path: 'nosotros', loadChildren: () =>
       import('./modules/nosotros/nosotros.module').then(m => m.NosotrosModule)},
   {path: 'politicas', loadChildren: () =>
-      import('./modules/politicas/politicas.module').then((m => m.PoliticasModule))},
+      import('./modules/politicas/politicas.module').then(m => m.PoliticasModule)},
+  {path: 'noticias', loadChildren: () =>
+      import('./modules/noticias/noticias.module').then(m => m.NoticiasModule)},
   {path: '**', redirectTo: 'page-not-found', pathMatch: 'full'},
   {path: 'page-not-found', component: PageNotFoundComponent}
 ];

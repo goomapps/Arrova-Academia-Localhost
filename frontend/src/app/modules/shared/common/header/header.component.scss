@@ -33,19 +33,19 @@
         }
       }
 
-      .busqueda,
-      .menu {
+      .busqueda {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100%;
+        position: relative;
       }
     }
 
     &-medio {
       display: flex;
       align-items: center;
-      width: 45em;
+      width: 55em;
       height: 100%;
 
       .menu {
@@ -90,7 +90,7 @@
     &-derecha {
       display: flex;
       align-items: center;
-      width: 6rem;
+      width: 8rem;
       min-width: 6rem;
       height: 100%;
 

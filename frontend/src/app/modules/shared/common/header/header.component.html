@@ -6,13 +6,11 @@
       </div>
       <div class="botonera-izquierda">
         <div class="busqueda">
-          <button id="search" class="boton-nav" (click)="goSearch()">
+          <button id="search" class="boton-nav">
             <i class="fas fa-search boton-nav-icon"></i>
-          </button>
-        </div>
-        <div class="menu">
-          <button id="menu" class="boton-nav" (click)="goMenu()">
-            <i class="fas fa-bars boton-nav-icon"></i>
+            <div id="dropbuscador" class="dropdown left">
+              <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
+            </div>
           </button>
         </div>
       </div>
@@ -20,6 +18,9 @@
     <div class="header-contenedor-medio">
       <div id="navegador" class="menu">
         <ul class="menu-navegador">
+          <li id="noticias" class="menu-navegador-elemento">
+            <h5 routerLink="/noticias" class="elemento-titulo">NOTICIAS</h5>
+          </li>
           <li id="estudia" class="menu-navegador-elemento">
             <h5 routerLink="/estudia-con-nosotros" class="elemento-titulo">ESTUDIA</h5>
             <div id="dropestudia" class="dropdown left">
@@ -78,9 +79,6 @@
             </div>
           </li>
         </ul>
-      </div>
-      <div id="buscador" class="buscador">
-        <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
       </div>
     </div>
     <div class="header-contenedor-derecha">
