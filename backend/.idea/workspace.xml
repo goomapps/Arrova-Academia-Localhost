@@ -20,16 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias/noticias.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias/noticias.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/noticias/noticias/noticias.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
