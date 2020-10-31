@@ -69,6 +69,11 @@ const UserController = {
             }
             const token = jwt.sign({_id: user._id,}, "secreto");
             // TODO: COMPROBAR SI CORREOCONFIRMADO ES FALSO, SI ES FALSO, CAMBIAR POR TRUE, SI ES TRUE NO HACER NADA
+            if(!user.correoConfirmado){
+                await UserModel.findByIdAndUpdate({_id: user._id}, {
+                    $push: {correoConfirmado: true},
+                });
+            };
             await UserModel.findByIdAndUpdate({_id: user._id}, {
                 $push: {tokens: token},
             });
