@@ -104,3 +104,31 @@
     }
   }
 }
+
+.toast {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 1rem;
+
+  &.success {
+    background: $color-success;
+    color: $text-color-dark;
+  }
+
+  &.info {
+    background: $color-info;
+    color: $text-color-light;
+  }
+
+  &.warning {
+    background: $color-warning;
+    color: $text-color-dark;
+  }
+
+  &.error {
+    background: $color-error;
+    color: $text-color-light;
+  }
+}
