@@ -8,6 +8,7 @@ import {environment} from '../environments/environment';
 
 import {ToastrModule} from 'ngx-toastr';
 import {LoggerModule} from 'ngx-logger';
+import {NgxSpinnerModule} from 'ngx-spinner';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -32,6 +33,7 @@ import {SharedModule} from './modules/shared/shared.module';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    NgxSpinnerModule,
     ToastrModule.forRoot({
       timeOut: 3500,
     }),
