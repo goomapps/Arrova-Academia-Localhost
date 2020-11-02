@@ -4,7 +4,7 @@ import ValoracionController from "../controllers/valoracionController.js";
 
 const router = express.Router();
 
-router.get("/getAll", ValoracionController.getAll);
+router.get("/valoraciones", ValoracionController.getAll);
 router.post("/insert", ValoracionController.insert);
 
 export default router;
