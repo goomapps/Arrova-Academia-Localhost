@@ -1,0 +1,146 @@
+@import 'src/app/styles/index.scss';
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      app-slider {
+        width: 80%;
+      }
+    }
+
+    .conectividad {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      &-imagen {
+        img {
+          width: 22rem;
+        }
+      }
+    }
+
+    .ventajas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      &-contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem 3rem 1rem 3rem;
+
+        .ventaja {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid $text-color-hover;
+          border-radius: 2rem;
+          padding: 2rem;
+          margin: 1rem;
+
+          &-icon {
+            font-size: 2.5rem;
+            color: $text-color-hover;
+            margin-bottom: 0.5rem;
+          }
+
+          &-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .apuntate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      &-texto {
+        width: 85%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        h5 {
+          text-align: center;
+        }
+      }
+
+      &-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            p {
+              color: $text-color-hover;
+            }
+          }
+        }
+
+        p {
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    .empresas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      &-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

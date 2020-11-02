@@ -1,11 +1,15 @@
+@import "src/app/styles/index.scss";
+
 .slider{
-  width: 50%;
+  width: 100%;
   overflow: hidden;
+  background: $components-dark;
+  border-radius: 3rem;
 }
 .slider ul{
   display: flex;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 1.5rem 0 0 0;
   width: 400%;
   animation: cambio 15s infinite alternate;
 }
