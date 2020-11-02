@@ -153,6 +153,7 @@ const UserController = {
     // TODO: CREAR METODO QUE BUSQUE TODOS LOS CURSOS DEL USUARIO
     // TODO: CREAR METODO PARA SUBIR IMAGEN DE PERFIL
     // TODO: CREAR METODO UPDATE
+    
 };
 
 export default UserController;
