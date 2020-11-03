@@ -9,6 +9,7 @@ import {EcnTitulacionesComponent} from './ecn-titulaciones/ecn-titulaciones.comp
 import {EcnAccesosComponent} from './ecn-accesos/ecn-accesos.component';
 import {EcnRefuerzosComponent} from './ecn-refuerzos/ecn-refuerzos.component';
 import {EcnBusinessComponent} from './ecn-business/ecn-business.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -19,10 +20,11 @@ import {EcnBusinessComponent} from './ecn-business/ecn-business.component';
     EcnRefuerzosComponent,
     EcnBusinessComponent
   ],
-  imports: [
-    CommonModule,
-    EstudiaConNosotrosRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        EstudiaConNosotrosRoutingModule,
+        FormsModule
+    ]
 })
 export class EstudiaConNosotrosModule {
 }

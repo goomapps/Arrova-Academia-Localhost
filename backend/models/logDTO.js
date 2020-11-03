@@ -7,8 +7,6 @@ const LogsSchema = new mongoose.Schema(
         level: {type: Number, require:true},
         fileName: {type: String, require:true},
         lineNumbre: {type:String, require:true}
-
-        
     },
     {timestamps: true}
 );
