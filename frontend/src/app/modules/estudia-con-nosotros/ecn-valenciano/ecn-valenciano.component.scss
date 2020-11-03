@@ -1,21 +1,5 @@
 @import 'src/app/styles/index.scss';
 
-.breadcumb {
-  margin-bottom: 2rem;
-  display: flex;
-  width: 18rem;
-  justify-content: space-between;
-
-  a {
-    text-decoration: none;
-  }
-
-  p {
-    font-weight: bold;
-    color: $components-dark;
-  }
-}
-
 .valenciano {
   display: flex;
   flex-direction: column;

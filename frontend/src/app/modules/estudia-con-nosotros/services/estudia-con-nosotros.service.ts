@@ -14,4 +14,8 @@ export class EstudiaConNosotrosService {
   ecnInsert(form: object) {
     return this.httpClient.post(this.API_URL + '/estudia-con-nosotros/insert', form);
   }
+
+  profesionalInsert(form: object) {
+    return this.httpClient.post(this.API_URL + '/profesional/insert', form);
+  }
 }

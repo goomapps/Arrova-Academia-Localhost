@@ -10,7 +10,7 @@ const EcnSchema = new mongoose.Schema(
         comentario3: {type: String, uppercase: true},
         parte4: {type: [String]},
         comentario4: {type: String, uppercase: true},
-        email: {type: String},
+        correo: {type: String},
         terminos: {type: Boolean},
     },
     {timestamps: true}

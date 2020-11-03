@@ -132,3 +132,28 @@
     color: $text-color-light;
   }
 }
+
+.breadcumb {
+  margin-bottom: 2rem;
+  display: flex;
+ align-items: center;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      p {
+      color: $text-color-hover;
+      }
+    }
+  }
+
+  .separator {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  p {
+    font-weight: bold;
+    color: $components-dark;
+  }
+}

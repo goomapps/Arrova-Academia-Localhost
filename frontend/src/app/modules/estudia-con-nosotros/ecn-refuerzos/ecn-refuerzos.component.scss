@@ -1,0 +1,66 @@
+@import "src/app/styles/index.scss";
+
+.estudia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+    .cursos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      &-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        width: 100%;
+
+        .curso {
+          padding: 1rem;
+          width: 100%;
+
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $components-dark;
+            padding: 2rem;
+            border: 3px solid transparent;
+            border-radius: 3rem;
+            text-decoration: none;
+
+            .curso-texto {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 40rem;
+            }
+
+            .curso-imagen {
+              img {
+                width: 10rem;
+              }
+            }
+
+            &:hover {
+              border: 3px solid $text-color-hover;
+              .curso-texto {
+                h5, p {
+                  color: $text-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

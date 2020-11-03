@@ -1,1 +1,217 @@
-<p>ecn-accesos works!</p>
+<div class="accesos">
+  <div class="breadcumb">
+    <a routerLink="/estudia-con-nosotros">
+      <p>Estudia con nosotros</p>
+    </a>
+    <p class="separator"> > </p>
+      <p>Accesos</p>
+  </div>
+  <div class="formulario">
+    <form #accesosForm="ngForm" (ngSubmit)="insert()">
+      <a id="parte1" class="formulario-parte">
+        <h5>PRUEBAS DE ACCESO</h5>
+      </a>
+      <div id="contenedor1" class="formulario-contenedor active">
+        <div class="form">
+          <div class="form-cb">
+            <label class="input-container" for="ccffm">
+              <input type="checkbox" name="ccffm" #ccffm="ngModel" [(ngModel)]="ecnAccesos.parte1[0]"/>
+              <p>Ciclo de grado medio</p>
+            </label>
+            <label class="input-container" for="ccffs">
+              <input type="checkbox" name="ccffs" #ccffs="ngModel" [(ngModel)]="ecnAccesos.parte1[1]"/>
+              <p>Ciclo de grado superior</p>
+            </label>
+            <label class="input-container" for="uni">
+              <input type="checkbox" name="uni" #uni="ngModel" [(ngModel)]="ecnAccesos.parte1[2]"/>
+              <p>Universidad</p>
+            </label>
+            <label class="input-container" for="uni25">
+              <input type="checkbox" name="uni25" #uni25="ngModel" [(ngModel)]="ecnAccesos.parte1[3]"/>
+              <p>Universidad + 25 años</p>
+            </label>
+            <label class="input-container" for="uni40">
+              <input type="checkbox" name="uni40" #uni40="ngModel" [(ngModel)]="ecnAccesos.parte1[4]"/>
+              <p>Universidad + 40 años</p>
+            </label>
+          </div>
+          <div class="form-tb">
+            <textarea name="comentaccesos" #comentaccesos="ngModel" [(ngModel)]="ecnAccesos.comentario1"
+                      cols="30" rows="7"></textarea>
+          </div>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte2()">
+              <h5>SIGUIENTE</h5>
+            </button>
+          </div>
+          <p>Rellenad el campo de comentario para ayudar a los profesores a entender vuestra situación</p>
+        </div>
+      </div>
+      <a id="parte2" class="formulario-parte">
+        <h5>LENGUA MATERNA</h5>
+      </a>
+      <div id="contenedor2" class="formulario-contenedor">
+        <div class="form">
+          <div class="form-cb">
+            <label class="input-container" for="val">
+              <input type="checkbox" name="val" #val="ngModel" [(ngModel)]="ecnAccesos.parte2[0]"/>
+              <p>Valenciano</p>
+            </label>
+            <label class="input-container" for="cas">
+              <input type="checkbox" name="cas" #cas="ngModel" [(ngModel)]="ecnAccesos.parte2[1]"/>
+              <p>Castellano</p>
+            </label>
+          </div>
+          <div class="form-tb">
+            <textarea name="comentmaterna" #comentmaterna="ngModel" [(ngModel)]="ecnAccesos.comentario2"
+                      cols="30" rows="7"></textarea>
+          </div>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte1()">
+              <h5>VOLVER</h5>
+            </button>
+            <button type="button" class="boton" (click)="irParte3()">
+              <h5>SIGUIENTE</h5>
+            </button>
+          </div>
+          <p>Rellenad el campo de comentario para ayudar a los profesores a entender vuestra situación</p>
+        </div>
+      </div>
+      <a id="parte3" class="formulario-parte">
+        <h5>NIVEL DE INGLES</h5>
+      </a>
+      <div id="contenedor3" class="formulario-contenedor">
+        <div class="form">
+          <div class="form-cb">
+            <label class="input-container" for="a2">
+              <input type="checkbox" name="a2" #a2="ngModel" [(ngModel)]="ecnAccesos.parte3[0]"/>
+              <p>A2</p>
+            </label>
+            <label class="input-container" for="b1">
+              <input type="checkbox" name="b1" #b1="ngModel" [(ngModel)]="ecnAccesos.parte3[1]"/>
+              <p>B1</p>
+            </label>
+            <label class="input-container" for="b2">
+              <input type="checkbox" name="b2" #b2="ngModel" [(ngModel)]="ecnAccesos.parte3[2]"/>
+              <p>B2</p>
+            </label>
+            <label class="input-container" for="c1">
+              <input type="checkbox" name="c1" #c1="ngModel" [(ngModel)]="ecnAccesos.parte3[3]"/>
+              <p>C1</p>
+            </label>
+            <label class="input-container" for="c2">
+              <input type="checkbox" name="c2" #c2="ngModel" [(ngModel)]="ecnAccesos.parte3[4]"/>
+              <p>C2</p>
+            </label>
+          </div>
+          <div class="form-tb">
+            <textarea name="comentingles" #comentingles="ngModel" [(ngModel)]="ecnAccesos.comentario3"
+                      cols="30" rows="7"></textarea>
+          </div>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton m2" (click)="irParte2()">
+              <h5>VOLVER</h5>
+            </button>
+            <button type="button" class="boton m2" (click)="irParte4()">
+              <h5>SIGUIENTE</h5>
+            </button>
+          </div>
+          <p>Rellenad el campo de comentario para ayudar a los profesores a entender vuestra situación</p>
+        </div>
+      </div>
+      <a id="parte4" class="formulario-parte">
+        <h5>ESTUDIOS</h5>
+      </a>
+      <div id="contenedor4" class="formulario-contenedor">
+        <div class="form">
+          <div class="form-cb">
+            <label class="input-container" for="eso">
+              <input type="checkbox" name="eso" #eso="ngModel" [(ngModel)]="ecnAccesos.parte4[0]"/>
+              <p>ESO</p>
+            </label>
+            <label class="input-container" for="egb">
+              <input type="checkbox" name="egb" #egb="ngModel" [(ngModel)]="ecnAccesos.parte4[1]"/>
+              <p>EGB</p>
+            </label>
+            <label class="input-container" for="bup">
+              <input type="checkbox" name="bup" #bup="ngModel" [(ngModel)]="ecnAccesos.parte4[2]"/>
+              <p>BUP</p>
+            </label>
+            <label class="input-container" for="cou">
+              <input type="checkbox" name="cou" #cou="ngModel" [(ngModel)]="ecnAccesos.parte4[3]"/>
+              <p>COU</p>
+            </label>
+            <label class="input-container" for="bach">
+              <input type="checkbox" name="bach" #bach="ngModel" [(ngModel)]="ecnAccesos.parte4[4]"/>
+              <p>Bachillerato</p>
+            </label>
+            <label class="input-container" for="superiores">
+              <input type="checkbox" name="superiores" #superiores="ngModel" [(ngModel)]="ecnAccesos.parte4[5]"/>
+              <p>Estudios Superiores</p>
+            </label>
+            <label class="input-container" for="ccffm">
+              <input type="checkbox" name="ccffm" #ccffm="ngModel" [(ngModel)]="ecnAccesos.parte4[6]"/>
+              <p>Ciclos Formativos Grado Medio</p>
+            </label>
+            <label class="input-container" for="ccffs">
+              <input type="checkbox" name="ccffs" #ccffs="ngModel" [(ngModel)]="ecnAccesos.parte4[7]"/>
+              <p>Ciclos Formativos Grado Superior</p>
+            </label>
+            <label class="input-container" for="sin">
+              <input type="checkbox" name="sin" #sin="ngModel" [(ngModel)]="ecnAccesos.parte4[8]"/>
+              <p>Sin Estudios</p>
+            </label>
+          </div>
+          <div class="form-tb">
+            <textarea name="comentestudios" #comentestudios="ngModel" [(ngModel)]="ecnAccesos.comentario4"
+                      cols="30" rows="7"></textarea>
+          </div>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte3()">
+              <h5>VOLVER</h5>
+            </button>
+            <button type="button" class="boton" (click)="irParte5()">
+              <h5>SIGUIENTE</h5>
+            </button>
+          </div>
+          <p>Rellenad el campo de comentario para ayudar a los profesores a entender vuestra situación</p>
+        </div>
+      </div>
+      <a id="parte5" class="formulario-parte">
+        <h5>CONFIRMAR FORMULARIO</h5>
+      </a>
+      <div id="contenedor5" class="formulario-contenedor">
+        <div class="completado">
+          <input class="input-email" type="text" placeholder="Introduce aquí tu email" name="email"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #email="ngModel"
+                 [(ngModel)]="ecnAccesos.email"/>
+          <label class="terminos" for="terminos">
+            <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
+            <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
+                   [(ngModel)]="ecnAccesos.terminos" required/>
+          </label>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte4()">
+              <h5>VOLVER</h5>
+            </button>
+            <button type="submit" class="boton m2" [disabled]="ecnAccesos.invalid">
+              <h5>ENVIAR</h5>
+            </button>
+          </div>
+          <p>El formulario será revisado por nuestro profesorado.</p>
+          <p>Recibirás un correo con la respuesta.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
