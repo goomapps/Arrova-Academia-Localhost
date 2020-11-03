@@ -155,7 +155,8 @@ const UserController = {
     // TODO: CREAR METODO UPDATE
     async update(req, res){
         try{
-            let userId = req.params.id;
+            let userId = req.body._id;
+            console.log(userId);
             let dataUpdate = req.body;
             const user = await UserModel.findByIdAndUpdate(userId, dataUpdate);
             res.send(user);
