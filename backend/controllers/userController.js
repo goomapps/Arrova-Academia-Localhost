@@ -122,15 +122,17 @@ const UserController = {
         }
     },
     async perfil(req, res) {
+        
         try {
             await TokenModel.findOne({
                 token: req.body.token,
             }).then((token) => {
                 if (token) {
                     const userConcreto = req.body;
+                    console.log(userConcreto);
                     UserModel.findOne({
-                        username: userConcreto.nombre,
-                    }).populate("Curso")
+                        user: userConcreto.nombre,
+                    }).populate("Cursos")
                         .then((users) => {
                             if (users) {
                                 res.send(users);
@@ -156,7 +158,6 @@ const UserController = {
     async update(req, res){
         try{
             let userId = req.body._id;
-            console.log(userId);
             let dataUpdate = req.body;
             const user = await UserModel.findByIdAndUpdate(userId, dataUpdate);
             res.send(user);
