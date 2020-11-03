@@ -11,5 +11,6 @@ router.post("/login", UserController.login);
 router.get("/logout", UserController.logout);
 router.get("/perfil", UserController.perfil);
 router.get("/usuarios", UserController.getAll);
+router.patch("/updateUsuarios", UserController.update);
 
 export default router;
