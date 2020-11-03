@@ -153,6 +153,19 @@ const UserController = {
     // TODO: CREAR METODO QUE BUSQUE TODOS LOS CURSOS DEL USUARIO
     // TODO: CREAR METODO PARA SUBIR IMAGEN DE PERFIL
     // TODO: CREAR METODO UPDATE
+    async update(req, res){
+        try{
+            let userId = req.params.id;
+            let dataUpdate = req.body;
+            const user = await UserModel.findByIdAndUpdate(userId, dataUpdate);
+            res.send(user);
+        }catch(err){
+            res.status(500).send({
+                message: "Error al updatear el usuario.",
+                error: err,
+            });
+        }
+    }
     
 };
 
