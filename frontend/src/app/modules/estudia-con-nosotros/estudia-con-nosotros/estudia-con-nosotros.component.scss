@@ -5,16 +5,16 @@
   justify-content: center;
   width: 100%;
   @include tablet {
-    width: 765px;
+    width: 48rem;
   }
   @include mobileL {
-    width: 400px;
+    width: 25rem;
   }
   @include mobileM {
-    width: 373px;
+    width: 23.5rem;
   }
   @include mobileS {
-    width: 320px;
+    width: 20rem;
   }
 
   &-contenedor {
@@ -33,14 +33,14 @@
       border-radius: 3rem;
       @include mobileL {
         padding: 1.5rem;
-        width: 390px;
+        width: 24.5rem;
       }
       @include mobileM {
         padding: 1rem;
-        width: 372px;
+        width: 23.5rem;
       }
       @include mobileS {
-        width: 315px;
+        width: 20rem;
       }
 
       &-titulo {
@@ -57,7 +57,7 @@
         padding: 0 10rem 0 10rem;
 
         @include mobileL {
-          padding: 0px;
+          padding: 0;
         }
 
         p {
@@ -104,7 +104,7 @@
               width: 40rem;
 
               @include mobileL {
-                width: 168px;
+                width: 10.5rem;
               }
             }
 
