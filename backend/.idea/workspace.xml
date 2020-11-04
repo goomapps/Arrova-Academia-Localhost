@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/models/valoracion.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/valoracionDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/valoracionDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/services/nosotros.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/services/nosotros.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/userRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/userRoute.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +97,7 @@
       <workItem from="1604336786123" duration="453000" />
       <workItem from="1604348577522" duration="2328000" />
       <workItem from="1604419679225" duration="4807000" />
-      <workItem from="1604507343413" duration="4794000" />
+      <workItem from="1604507343413" duration="6304000" />
     </task>
     <servers />
   </component>

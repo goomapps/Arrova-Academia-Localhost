@@ -157,13 +157,13 @@ const UserController = {
     // TODO: CREAR METODO UPDATE
     async update(req, res){
         try{
-            let userId = req.body._id;
-            let dataUpdate = req.body;
-            const user = await UserModel.findByIdAndUpdate(userId, dataUpdate);
-            res.send(user);
+            const userId = req.body._id;
+            const dataUpdate = req.body;
+            const usuario = await UserModel.findByIdAndUpdate(userId, dataUpdate);
+            res.send({usuario});
         }catch(err){
             res.status(500).send({
-                message: "Error al updatear el usuario.",
+                message: "NO SE HA PODIDO ACTUALIZAR EL USUARIO",
                 error: err,
             });
         }
