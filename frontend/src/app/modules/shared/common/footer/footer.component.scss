@@ -22,6 +22,15 @@
       width: 27rem;
       min-width: 27rem;
       height: 100%;
+
+      @include mobileL{
+        min-width: 17rem;
+        margin-right: 30px;
+      }
+      @include mobileM{
+        min-width: 12rem;
+        margin-right: 20px;
+      }
     }
 
     &-derecha {
