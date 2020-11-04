@@ -2,14 +2,14 @@ import mongoose from "mongoose";
 
 const ProfesionalSchema = new mongoose.Schema(
     {
-        nombreEmpresa: {type: String},
-        localidadEmpresa: {type: String},
-        direccionEmpresa: {type: String},
-        telefonoEmpresa: {type: Number},
-        correoEmpresa: {type: String},
-        nombreContacto: {type: String},
-        telefonoContacto: {type: Number},
-        correoContacto: {type: String}
+        nombreEmpresa: {type: String, required: true},
+        localidadEmpresa: {type: String, required: true},
+        direccionEmpresa: {type: String, required: true},
+        telefonoEmpresa: {type: Number, required: true},
+        correoEmpresa: {type: String, required: true},
+        nombreContacto: {type: String, required: true},
+        telefonoContacto: {type: Number, required: true},
+        correoContacto: {type: String, required: true}
     },
     {timestamps: true}
 );

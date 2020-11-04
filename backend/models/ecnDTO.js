@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const EcnSchema = new mongoose.Schema(
     {
-        parte1: {type: [String]},
+        parte1: {type: [String], required: true},
         comentario1: {type: String, uppercase: true},
         parte2: {type: [String]},
         comentario2: {type: String, uppercase: true},
@@ -10,8 +10,8 @@ const EcnSchema = new mongoose.Schema(
         comentario3: {type: String, uppercase: true},
         parte4: {type: [String]},
         comentario4: {type: String, uppercase: true},
-        correo: {type: String},
-        terminos: {type: Boolean},
+        correo: {type: String, required: true},
+        terminos: {type: Boolean, required: true},
     },
     {timestamps: true}
 );
