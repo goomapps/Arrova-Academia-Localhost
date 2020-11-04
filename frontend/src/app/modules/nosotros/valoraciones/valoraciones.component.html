@@ -1,1 +1,58 @@
-<p>valoraciones works!</p>
+<div class="valoraciones">
+  <div class="valoraciones-contenedor">
+    <form class="formulario" #valoracionForm="ngForm" (ngSubmit)="sendValoracion()">
+      <label class="picker" for="picker">
+        <p>Selecciona el tipo de valoración</p>
+        <input type="text" name="picker" #picker="ngModel" [(ngModel)]="valoracion.tipo" readonly/>
+        <div class="dropdown dropdown-content">
+          <ul>
+            <li id="item1" class="item1">
+              <p>
+                CURSO
+              </p>
+            </li>
+            <li id="item2" class="item2">
+              <p>
+                PROFESOR
+              </p>
+            </li>
+            <li id="item3" class="item3">
+              <p>
+                APP
+              </p>
+            </li>
+            <li id="item4" class="item4">
+              <p>
+                GENERAL
+              </p>
+            </li>
+          </ul>
+        </div>
+      </label>
+      <label for="valoracion">
+        <p>Escriba aquí su valoración</p>
+        <textarea name="texto" #texto="ngModel" [(ngModel)]="valoracion.texto" cols="50" rows="6"></textarea>
+      </label>
+      <div class="p-rating">
+        <a id="rate5" class="p-rating-star">
+          <i id="icon1" class="fas fa-star icon"></i>
+        </a>
+        <a id="rate4" class="p-rating-star">
+          <i id="icon2" class="fas fa-star icon"></i>
+        </a>
+        <a id="rate3" class="p-rating-star">
+          <i id="icon3" class="fas fa-star icon"></i>
+        </a>
+        <a id="rate2" class="p-rating-star">
+          <i id="icon4" class="fas fa-star icon"></i>
+        </a>
+        <a id="rate1" class="p-rating-star">
+          <i id="icon5" class="fas fa-star icon"></i>
+        </a>
+      </div>
+      <button class="boton" type="submit" [disabled]="valoracionForm.invalid">
+        <h5>ENVIAR</h5>
+      </button>
+    </form>
+  </div>
+</div>
