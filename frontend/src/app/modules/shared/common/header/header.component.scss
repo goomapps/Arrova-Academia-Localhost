@@ -22,6 +22,9 @@
       width: 15rem;
       min-width: 15rem;
       height: 100%;
+      @include mobileS{
+        min-width: 12rem;
+      }
 
       .logo {
         img {
@@ -30,6 +33,11 @@
           height: 4.5rem;
           min-height: 3.5rem;
           cursor: pointer;
+
+          @include mobileS{
+            width: 7rem;
+            height: 3rem;
+          }
         }
       }
 
@@ -47,6 +55,9 @@
       align-items: center;
       width: 55em;
       height: 100%;
+      @include tablet{
+        display:none;
+      }
 
       .menu {
         display: flex;

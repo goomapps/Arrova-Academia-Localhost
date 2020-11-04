@@ -1,10 +1,20 @@
 @import './colors.scss';
+@import './mixinsResponsive.scss';
 
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   font-size: 2.5rem;
   color: $text-color-light;
+  @include tablet{
+    font-size: 1.7rem;
+  }
+  @include mobileL{
+    font-size: 1.3rem;
+  }
+  @include mobileS{
+    font-size: 1.1rem;
+  }
 
   &.title {
     color: $text-color-emphasis;
@@ -27,6 +37,15 @@ h3 {
   font-weight: 700;
   font-size: 2rem;
   color: $text-color-light;
+  @include tablet{
+    font-size:1.2rem;
+  }
+  @include mobileL{
+    font-size: 1rem;
+  }
+  @include mobileS{
+    font-size: 0.8rem;
+  }
 
   &.title {
     color: $text-color-emphasis;
@@ -49,6 +68,15 @@ h5 {
   font-weight: 500;
   font-size: 1.5rem;
   color: $text-color-light;
+  @include laptop{
+    font-size: 1rem;
+  }
+  @include mobileL{
+    font-size: 0.8rem;
+  }
+  @include mobileS{
+    font-size: 0.7rem;
+  }
 
   &.title {
     color: $text-color-emphasis;
@@ -58,6 +86,9 @@ h5 {
 p {
   font-family: 'Montserrat', sans-serif;
   color: $text-color-light;
+  @include mobileS{
+    font-size: 0.8rem;
+  }
 
   &.frase {
     font-weight: 400;

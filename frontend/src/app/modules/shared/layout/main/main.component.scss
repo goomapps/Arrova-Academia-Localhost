@@ -4,6 +4,9 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  @include mobileS{
+    width: 300px;
+  }
 
   &-contenedor {
     display: flex;
@@ -30,11 +33,25 @@
       width: 80%;
       margin-top: 3rem;
       border-radius: 3rem;
+      @include laptop{
+        flex-direction: column;
+      }
 
       &-imagen {
         img {
           width: 22rem;
+
+          @include tablet{
+            width: 16rem;
+          }
+          @include mobileL{
+            width: 13rem;
+          }
+          @include mobileS{
+            width: 11rem;
+          }
         }
+        
       }
     }
 
@@ -140,6 +157,20 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 0.5rem;
+      }
+
+      &-imagen{
+        img{
+          @include tablet{
+            width: 16rem;
+          }
+          @include mobileL{
+            width: 13rem;
+          }
+          @include mobileS{
+            width: 11rem;
+          }
+        }
       }
     }
   }
