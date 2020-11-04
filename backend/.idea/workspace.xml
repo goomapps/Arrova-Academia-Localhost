@@ -21,12 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ecnDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ecnDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/logDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/logDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/profesionalDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/profesionalDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/userDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/nosotros/nosotros.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +97,7 @@
       <workItem from="1604336786123" duration="453000" />
       <workItem from="1604348577522" duration="2328000" />
       <workItem from="1604419679225" duration="4807000" />
-      <workItem from="1604507343413" duration="2825000" />
+      <workItem from="1604507343413" duration="4034000" />
     </task>
     <servers />
   </component>
