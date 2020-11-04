@@ -4,12 +4,24 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  @include tablet {
+    width: 765px;
+  }
+  @include mobileL {
+    width: 400px;
+  }
+  @include mobileM {
+    width: 373px;
+  }
+  @include mobileS {
+    width: 320px;
+  }
 
   &-contenedor {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
+    width: 90%;
 
     .header {
       display: flex;
@@ -19,6 +31,17 @@
       background: $components-dark;
       padding: 3rem;
       border-radius: 3rem;
+      @include mobileL {
+        padding: 1.5rem;
+        width: 390px;
+      }
+      @include mobileM {
+        padding: 1rem;
+        width: 372px;
+      }
+      @include mobileS {
+        width: 315px;
+      }
 
       &-titulo {
         display: flex;
@@ -32,6 +55,10 @@
         flex-direction: column;
         align-items: center;
         padding: 0 10rem 0 10rem;
+
+        @include mobileL {
+          padding: 0px;
+        }
 
         p {
           text-align: center;
@@ -66,12 +93,19 @@
             border: 3px solid transparent;
             border-radius: 3rem;
             text-decoration: none;
+            @include mobileL {
+              flex-direction: column;
+            }
 
             .curso-texto {
               display: flex;
               flex-direction: column;
               justify-content: center;
               width: 40rem;
+
+              @include mobileL {
+                width: 168px;
+              }
             }
 
             .curso-imagen {
