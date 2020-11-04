@@ -1,4 +1,4 @@
-export class EcnValenciano {
+export class EcnAccesos {
   parte1: [string];
   comentario1: string;
   parte2: [string];

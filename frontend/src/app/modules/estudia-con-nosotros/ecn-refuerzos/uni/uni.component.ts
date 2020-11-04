@@ -4,31 +4,25 @@ import {Router} from '@angular/router';
 import {NGXLogger} from 'ngx-logger';
 import {ToastrService} from 'ngx-toastr';
 
-import {EstudiaConNosotrosService} from '../services/estudia-con-nosotros.service';
-import {EcnProfesional} from '../models/ecn-profesional';
+import {EstudiaConNosotrosService} from '../../services/estudia-con-nosotros.service';
+import {EcnRefuerzos} from '../../models/ecn-refuerzos';
 
 @Component({
-  selector: 'app-ecn-business',
-  templateUrl: './ecn-business.component.html',
-  styleUrls: ['./ecn-business.component.scss']
+  selector: 'app-uni',
+  templateUrl: './uni.component.html',
+  styleUrls: ['./uni.component.scss']
 })
-export class EcnBusinessComponent implements OnInit {
-  profesional;
+export class UniComponent implements OnInit {
+  ecnUniversidad;
   constructor(
     private ecnService: EstudiaConNosotrosService,
     private router: Router,
     private logger: NGXLogger,
     private toastr: ToastrService
   ) {
-    this.profesional = {
-      nombreEmpresa: '',
-      localidadEmpresa: '',
-      direccionEmpresa: '',
-      telefonoEmpresa: '',
-      correoEmpresa: '',
-      nombreContacto: '',
-      telefonoContacto: '',
-      correoContacto: '',
+    this.ecnUniversidad = {
+      comentario1: '',
+      email: '',
       terminos: false
     };
   }
@@ -46,11 +40,11 @@ export class EcnBusinessComponent implements OnInit {
   }
 
   insert(): void {
-    const formulario: EcnProfesional = this.profesional;
-    this.ecnService.profesionalInsert(formulario).subscribe({
+    const formulario: EcnRefuerzos = this.ecnUniversidad;
+    this.ecnService.ecnInsert(formulario).subscribe({
       next: (data) => {
-        this.logger.log('PROFESIONAL INSERTADO CORRECTAMENTE');
-        this.toastr.success('FORMULARIO ENVIADO', 'PROFESIONAL', {
+        this.logger.log('UNIVERSIDAD INSERTADO CORRECTAMENTE');
+        this.toastr.success('FORMULARIO ENVIADO', 'UNIVERSIDAD', {
           toastClass: 'toast success'
         });
         setTimeout(() => {

@@ -10,16 +10,16 @@ const EcnController = {
                 to: 'contacto@arrovacademia.es',
                 subject: 'Arrova Academia',
                 html:   `<div style="width: 45em;">
-                            <h3 style="color: black">Corrreo Estudia con nosotros</h3>
-                            <p style="color: black">Curso valenciano: ${ecn.parte1}</p>
-                            <p style="color: black; margin-left: 1em">Comentario: ${ecn.comentario1}</p>
-                            <p style="color: black">Lengua materna: ${ecn.parte2}</p>
-                            <p style="color: black; margin-left: 1em">Comentario: ${ecn.comentario2}</p>
-                            <p style="color: black">Titulacion anterior: ${ecn.parte3}</p>
-                            <p style="color: black; margin-left: 1em">Comentario: ${ecn.comentario3}</p>
-                            <p style="color: black">Estudios: ${ecn.parte4}</p>
-                            <p style="color: black; margin-left: 1em">Comentario: ${ecn.comentario4}</p>
-                            <p style="color: black">Correo: ${ecn.parte5}</p>
+                            <h3 style="color: black">Correo Estudia con nosotros</h3>
+                            <p style="color: black">Parte1: ${ecn.parte1}</p>
+                            <p style="color: black; margin-left: 1em">Comentario1: ${ecn.comentario1}</p>
+                            <p style="color: black">Parte2: ${ecn.parte2}</p>
+                            <p style="color: black; margin-left: 1em">Comentario2: ${ecn.comentario2}</p>
+                            <p style="color: black">Parte3: ${ecn.parte3}</p>
+                            <p style="color: black; margin-left: 1em">Comentario3: ${ecn.comentario3}</p>
+                            <p style="color: black">Parte4: ${ecn.parte4}</p>
+                            <p style="color: black; margin-left: 1em">Comentario4: ${ecn.comentario4}</p>
+                            <p style="color: black">Correo: ${ecn.correo}</p>
                         </div>`
                 }
             transporter.sendMail(mailOptions);

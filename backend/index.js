@@ -13,6 +13,7 @@ import contactoRouter from "./routes/contactoRoute.js";
 import valoracionRouter from "./routes/valoracionRoute.js";
 import cursoRouter from "./routes/cursoRoute.js";
 import ecnRouter from "./routes/ecnRoute.js";
+import profesionalRouter from "./routes/profesionalRoute.js"
 import logRouter from "./routes/logRoute.js";
 
 // MIDDLEWARES
@@ -32,6 +33,7 @@ app.use("/contactos", contactoRouter);
 app.use("/valoraciones", valoracionRouter);
 app.use("/cursos", cursoRouter);
 app.use("/estudia-con-nosotros", ecnRouter);
+app.use("/profesional", profesionalRouter);
 app.use("/logs", logRouter);
 
 // LEVANTAMOS SERVIDOR
