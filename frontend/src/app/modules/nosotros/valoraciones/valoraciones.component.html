@@ -55,4 +55,72 @@
       </button>
     </form>
   </div>
+  <div class="valoraciones-messages">
+    <div *ngFor="let valoracion of valoraciones">
+      <div class="valoracion">
+        <div class="header">
+          <div *ngIf="valoracion.rate === 5" class="p-rating">
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+          </div>
+          <div *ngIf="valoracion.rate === 4" class="p-rating">
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+          </div>
+          <div *ngIf="valoracion.rate === 3" class="p-rating">
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+          </div>
+          <div *ngIf="valoracion.rate === 2" class="p-rating">
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+          </div>
+          <div *ngIf="valoracion.rate === 1" class="p-rating">
+            <a class="p-rating-star">
+              <i class="fas fa-star icon"></i>
+            </a>
+          </div>
+          <p>{{valoracion.createdAt | date: 'dd/MM/yyyy HH:mm'}}</p>
+        </div>
+        <div class="contenido">
+          <h3>{{valoracion.tipo}}</h3>
+          <p>{{valoracion.texto}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -14,6 +14,7 @@ import {Valoracion} from '../models/valoracion';
 })
 export class ValoracionesComponent implements OnInit {
   valoracion;
+  public valoraciones: Valoracion[];
   constructor(
     private nosotrosService: NosotrosService,
     private router: Router,
@@ -28,6 +29,7 @@ export class ValoracionesComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getValoraciones();
     document.getElementById('item1').addEventListener('click', () => {
       this.valoracion.tipo = 'Curso';
     });
@@ -80,6 +82,13 @@ export class ValoracionesComponent implements OnInit {
       document.getElementById('icon3').classList.add('rated');
       document.getElementById('icon4').classList.add('rated');
       document.getElementById('icon5').classList.add('rated');
+    });
+  }
+
+  getValoraciones(): void {
+    this.nosotrosService.getValoraciones().subscribe(valoraciones => {
+      this.valoraciones = valoraciones;
+      console.log(this.valoraciones);
     });
   }
 

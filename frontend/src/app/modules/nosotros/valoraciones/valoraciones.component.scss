@@ -2,6 +2,7 @@
 
 .valoraciones {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 40rem;
@@ -134,6 +135,41 @@
 
       .rated {
         color: $text-color-hover;
+      }
+    }
+  }
+
+  &-messages {
+    width: 100%;
+
+    .valoracion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      border-radius: 2rem;
+      width: 90%;
+      background: $components-dark;
+
+      .header {
+        padding: 1rem;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon {
+          color: $text-color-hover;
+        }
+      }
+
+      .contenido {
+        margin-bottom: 2rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
       }
     }
   }
