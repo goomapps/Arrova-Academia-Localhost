@@ -7,6 +7,16 @@
   align-items: center;
   width: 40rem;
 
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
   &-contenedor {
     display: flex;
     justify-content: center;
@@ -15,6 +25,15 @@
     padding: 3rem;
     background: $components-dark;
     border-radius: 2rem;
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 22rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
 
     .formulario {
       display: flex;
@@ -46,6 +65,16 @@
           color: $text-color-hover;
           background-color: $text-color-dark;
           border: 1px dotted $text-color-hover;
+
+          @include mobileL {
+            width: 20rem;
+          }
+          @include mobileM {
+            width: 17rem;
+          }
+          @include mobileS {
+            width: 16rem;
+          }
         }
       }
 
@@ -69,6 +98,13 @@
           width: 20rem;
           height: 13rem;
 
+          @include mobileL {
+            width: 15.7rem;
+          }
+          @include mobileS {
+            width: 15rem;
+          }
+
           ul {
             list-style: none;
             display: flex;
@@ -86,6 +122,10 @@
               height: 2.5rem;
               width: 19rem;
               padding-left: 1rem;
+
+              @include mobileL {
+                width: 10rem;
+              }
 
               p {
                 color: $text-color-dark;
