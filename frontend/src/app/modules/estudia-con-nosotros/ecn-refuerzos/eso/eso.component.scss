@@ -7,6 +7,19 @@
   align-items: center;
   width: 100%;
 
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
   .formulario {
     display: flex;
     flex-direction: column;
@@ -21,6 +34,15 @@
       background: $components-dark;
       width: 45rem;
       border-bottom: 1px solid $text-color-light;
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
     }
 
     &-contenedor {
@@ -32,6 +54,15 @@
       background: $components-dark;
       width: 100%;
       border-bottom: 1px solid $text-color-light;
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
 
       .form {
         display: flex;

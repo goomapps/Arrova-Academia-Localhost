@@ -21,6 +21,12 @@
       background: $components-dark;
       padding: 2rem;
       border-radius: 2rem;
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
 
       h3 {
         text-align: center;
@@ -40,6 +46,9 @@
           border: 1px dotted $text-color-hover;
           width: 20rem;
           margin-bottom: 0.5rem;
+          @include mobileS{
+            width: 17rem;
+          }
 
           &:hover {
             border: 1px solid $text-color-hover;
@@ -56,6 +65,10 @@
           background-color: $text-color-dark;
           border: 1px dotted $text-color-hover;
           margin-bottom: 0.5rem;
+          @include mobileS{
+            width: 17rem;
+            height: 6rem;
+          }
 
           &:hover {
             border: 1px solid $text-color-hover;

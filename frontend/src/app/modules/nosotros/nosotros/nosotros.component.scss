@@ -6,6 +6,19 @@
   align-items: center;
   width: 100%;
 
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
   &-contenedor {
     display: flex;
     justify-content: center;
@@ -14,6 +27,18 @@
     padding: 3rem;
     border-radius: 2rem;
     background: $components-dark;
+    @include laptop{
+      width: 75%;
+    }
+    @include mobileL{
+      width: 95%;
+    }
+    @include mobileL{
+      width: 97%;
+    }
+    @include mobileS{
+      width: 99%;
+    }
 
     .academia {
       display: flex;
@@ -40,11 +65,19 @@
 
           h5 {
             margin-right: 0.5rem;
+
+            @include mobileL{
+              margin-left: 0.5rem;
+            }
           }
 
           .icon {
             font-size: 2rem;
             color: $text-color-light;
+
+            @include mobileS{
+              font-size: 1rem;
+            }
           }
 
           &:hover {
