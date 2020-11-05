@@ -37,6 +37,12 @@
       @include mobileL {
         width: 25rem;
       }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
     }
 
     &-contenedor {
@@ -51,12 +57,21 @@
       @include mobileL {
         width: 25rem;
       }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
 
       .form {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        @include mobileL {
+          flex-direction: column;
+        }
 
         &-cb {
           .input-container {
