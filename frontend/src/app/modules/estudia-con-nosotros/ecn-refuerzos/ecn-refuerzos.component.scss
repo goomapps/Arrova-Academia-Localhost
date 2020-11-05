@@ -5,6 +5,19 @@
   justify-content: center;
   width: 100%;
 
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
   &-contenedor {
     display: flex;
     flex-direction: column;
@@ -36,12 +49,20 @@
             border: 3px solid transparent;
             border-radius: 3rem;
             text-decoration: none;
+            @include mobileL {
+              padding: 1rem;
+              flex-direction: column;
+            }
 
             .curso-texto {
               display: flex;
               flex-direction: column;
               justify-content: center;
               width: 40rem;
+
+              @include mobileL {
+                width: 10.5rem;
+              }
             }
 
             .curso-imagen {
