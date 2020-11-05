@@ -20,11 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/services/nosotros.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/services/nosotros.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas/politicas.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas/politicas.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas/politicas.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +104,7 @@
       <workItem from="1604348577522" duration="2328000" />
       <workItem from="1604419679225" duration="4807000" />
       <workItem from="1604507343413" duration="6396000" />
-      <workItem from="1604595246917" duration="606000" />
+      <workItem from="1604595246917" duration="1804000" />
     </task>
     <servers />
   </component>
