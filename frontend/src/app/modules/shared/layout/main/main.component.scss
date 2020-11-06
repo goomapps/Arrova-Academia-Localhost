@@ -5,7 +5,7 @@
   justify-content: center;
   width: 100%;
   @include mobileS{
-    width: 300px;
+    width: 20rem;
   }
 
   &-contenedor {
@@ -36,6 +36,16 @@
       @include laptop{
         flex-direction: column;
       }
+      @include mobileL{
+        width: 24rem;
+        text-align: center;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
 
       &-imagen {
         img {
@@ -48,7 +58,7 @@
             width: 13rem;
           }
           @include mobileS{
-            width: 11rem;
+            width: 12rem;
           }
         }
         
@@ -66,6 +76,17 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
+      @include mobileL{
+        width: 24rem;
+        text-align: center;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
+
       &-contenedor {
         display: flex;
         flex-direction: row;
@@ -73,6 +94,11 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 3rem 3rem 1rem 3rem;
+
+        @include mobileS{
+          padding-left: 0;
+          padding-right: 0;
+        }
 
         .ventaja {
           display: flex;
@@ -84,6 +110,10 @@
           padding: 2rem;
           margin: 1rem;
 
+          @include mobileL{
+            width: 15rem;
+          }
+          
           &-icon {
             font-size: 2.5rem;
             color: $text-color-hover;
@@ -110,6 +140,17 @@
       width: 80%;
       margin-top: 3rem;
       border-radius: 3rem;
+
+      @include mobileL{
+        width: 24rem;
+        text-align: center;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
 
       &-texto {
         width: 85%;
@@ -151,6 +192,17 @@
       width: 80%;
       margin-top: 3rem;
       border-radius: 3rem;
+
+      @include mobileL{
+        width: 24rem;
+        text-align: center;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
 
       &-texto {
         display: flex;

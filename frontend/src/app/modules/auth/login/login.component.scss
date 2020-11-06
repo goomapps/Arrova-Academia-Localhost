@@ -9,6 +9,16 @@
   background: $components-dark;
   padding: 3rem;
 
+  @include mobileL {
+    width: 24rem;
+  }
+  @include mobileM {
+    width: 22rem;
+  }
+  @include mobileS {
+    width: 19rem;
+  }
+
   &-contenedor {
     display: flex;
     flex-direction: column;
@@ -25,6 +35,15 @@
       display: flex;
       justify-content: center;
       padding: 2rem;
+      @include mobileL {
+        width: 23rem;
+      }
+      @include mobileM {
+        width: 21rem;
+      }
+      @include mobileS {
+        width: 20rem;
+      }
 
       &-contenedor {
         display: flex;
@@ -70,6 +89,10 @@
               background: none;
               border: none;
               color: $text-color-emphasis;
+
+              @include mobileL {
+                width: 12rem;
+              }
 
               &::placeholder {
                 color: $components-light;

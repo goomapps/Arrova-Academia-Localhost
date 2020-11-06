@@ -74,6 +74,16 @@
       margin-top: 3rem;
       width: 80%;
 
+      @include mobileL {
+        width: 24rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
       &-contenedor {
         display: flex;
         flex-direction: column;
@@ -84,6 +94,8 @@
           padding: 1rem;
           width: 100%;
 
+         
+
           a {
             display: flex;
             justify-content: space-between;
@@ -93,9 +105,6 @@
             border: 3px solid transparent;
             border-radius: 3rem;
             text-decoration: none;
-            @include mobileL {
-              flex-direction: column;
-            }
 
             .curso-texto {
               display: flex;
@@ -111,6 +120,16 @@
             .curso-imagen {
               img {
                 width: 10rem;
+
+                @include mobileL {
+                  width: 10rem;
+                }
+                @include mobileM {
+                  width: 9rem;
+                }
+                @include mobileS {
+                  width: 7rem;
+                }
               }
             }
 
