@@ -9,36 +9,36 @@
           <div class="form-cb">
             <h5>EMPRESA</h5>
             <label class="input-container" for="val">
-              <input class="input-email" type="text" name="val" #val="ngModel" [(ngModel)]="profesional.nombreEmpresa"/>
+              <input class="input-email" type="text" name="val" #val="ngModel" [(ngModel)]="profesional.nombreEmpresa" pattern="^[A-Za-z\s]+$" required/>
               <p>Nombre</p>
             </label>
             <label class="input-container" for="cas">
-              <input class="input-email" type="text" name="cas" #cas="ngModel" [(ngModel)]="profesional.localidadEmpresa"/>
+              <input class="input-email" type="text" name="cas" #cas="ngModel" [(ngModel)]="profesional.localidadEmpresa" pattern="^[A-Za-z\s]+$" required/>
               <p>Localidad</p>
             </label>
             <label class="input-container" for="latin">
-              <input class="input-email" type="text" name="latin" #latin="ngModel" [(ngModel)]="profesional.direccionEmpresa"/>
+              <input class="input-email" type="text" name="latin" #latin="ngModel" [(ngModel)]="profesional.direccionEmpresa" required/>
               <p>Dirección</p>
             </label>
             <label class="input-container" for="griego">
-              <input class="input-email" type="text" name="griego" #griego="ngModel" [(ngModel)]="profesional.telefonoEmpresa"/>
+              <input class="input-email" type="text" name="griego" #griego="ngModel" [(ngModel)]="profesional.telefonoEmpresa" required/>
               <p>Teléfono</p>
             </label>
             <label class="input-container" for="filo">
-              <input class="input-email" type="text" name="filo" #filo="ngModel" [(ngModel)]="profesional.correoEmpresa"/>
+              <input class="input-email" type="text" name="filo" #filo="ngModel" [(ngModel)]="profesional.correoEmpresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
               <p>Correo Electrónico</p>
             </label>
             <h5>CONTACTO</h5>
             <label class="input-container" for="ingles">
-              <input class="input-email" type="text" name="ingles" #ingles="ngModel" [(ngModel)]="profesional.nombreContacto"/>
+              <input class="input-email" type="text" name="ingles" #ingles="ngModel" [(ngModel)]="profesional.nombreContacto" pattern="^[A-Za-z\s]+$" required/>
               <p>Nombre</p>
             </label>
             <label class="input-container" for="geo">
-              <input class="input-email" type="text" name="geo" #geo="ngModel" [(ngModel)]="profesional.telefonoContacto"/>
+              <input class="input-email" type="text" name="geo" #geo="ngModel" [(ngModel)]="profesional.telefonoContacto" required/>
               <p>Teléfono</p>
             </label>
             <label class="input-container" for="hist">
-              <input class="input-email" type="text" name="hist" #hist="ngModel" [(ngModel)]="profesional.correoContacto"/>
+              <input class="input-email" type="text" name="hist" #hist="ngModel" [(ngModel)]="profesional.correoContacto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
               <p>Correo Electrónico</p>
             </label>
           </div>
@@ -67,7 +67,7 @@
             <button type="button" class="boton" (click)="irParte1()">
               <h5>VOLVER</h5>
             </button>
-            <button type="submit" class="boton m2" [disabled]="profesional.invalid">
+            <button type="submit" class="boton m2" [disabled]="businessForm.invalid">
               <h5>ENVIAR</h5>
             </button>
           </div>

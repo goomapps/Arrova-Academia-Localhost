@@ -25,7 +25,7 @@
           </div>
           <div class="form-tb">
             <textarea name="comenttitulaciones" #comenttitulaciones="ngModel" [(ngModel)]="ecnTitulaciones.comentario1"
-                      cols="30" rows="7"></textarea>
+                      cols="30" rows="7" pattern="^[A-Za-z\s]+$" required></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -54,7 +54,7 @@
           </div>
           <div class="form-tb">
             <textarea name="comentmaterna" #comentmaterna="ngModel" [(ngModel)]="ecnTitulaciones.comentario2"
-                      cols="30" rows="7"></textarea>
+                      cols="30" rows="7" pattern="^[A-Za-z\s]+$" required></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -98,7 +98,7 @@
           </div>
           <div class="form-tb">
             <textarea name="comentingles" #comentingles="ngModel" [(ngModel)]="ecnTitulaciones.comentario3"
-                      cols="30" rows="7"></textarea>
+                      cols="30" rows="7" pattern="^[A-Za-z\s]+$" required></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -142,7 +142,7 @@
           </div>
           <div class="form-tb">
             <textarea name="comentestudios" #comentestudios="ngModel" [(ngModel)]="ecnTitulaciones.comentario4"
-                      cols="30" rows="7"></textarea>
+                      cols="30" rows="7" pattern="^[A-Za-z\s]+$" required></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -176,7 +176,7 @@
             <button type="button" class="boton" (click)="irParte4()">
               <h5>VOLVER</h5>
             </button>
-            <button type="submit" class="boton m2" [disabled]="ecnTitulaciones.invalid">
+            <button type="submit" class="boton m2" [disabled]="titulacionesForm.invalid">
               <h5>ENVIAR</h5>
             </button>
           </div>

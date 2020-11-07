@@ -19,7 +19,7 @@
         <div class="form">
           <div class="form-tb">
             <textarea name="comentuni" #comentuni="ngModel" [(ngModel)]="ecnUniversidad.comentario1"
-                      cols="30" rows="7"></textarea>
+                      cols="30" rows="7" pattern="^[A-Za-z\s]+$" required></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -50,7 +50,7 @@
             <button type="button" class="boton" (click)="irParte1()">
               <h5>VOLVER</h5>
             </button>
-            <button type="submit" class="boton m2" [disabled]="ecnUniversidad.invalid">
+            <button type="submit" class="boton m2" [disabled]="uniForm.invalid">
               <h5>ENVIAR</h5>
             </button>
           </div>

@@ -3,7 +3,7 @@
     <form class="formulario" #valoracionForm="ngForm" (ngSubmit)="sendValoracion()">
       <label class="picker" for="picker">
         <p>Selecciona el tipo de valoración</p>
-        <input type="text" name="picker" #picker="ngModel" [(ngModel)]="valoracion.tipo" readonly/>
+        <input type="text" name="picker" #picker="ngModel" [(ngModel)]="valoracion.tipo" readonly required/>
         <div class="dropdown dropdown-content">
           <ul>
             <li id="item1" class="item1">
@@ -31,7 +31,7 @@
       </label>
       <label for="valoracion">
         <p>Escriba aquí su valoración</p>
-        <textarea name="texto" #texto="ngModel" [(ngModel)]="valoracion.texto" cols="50" rows="6"></textarea>
+        <textarea name="texto" #texto="ngModel" [(ngModel)]="valoracion.texto" cols="50" rows="6" pattern="^[A-Za-z\s]+$" required></textarea>
       </label>
       <div class="p-rating">
         <a id="rate5" class="p-rating-star">

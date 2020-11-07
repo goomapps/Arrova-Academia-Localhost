@@ -4,22 +4,25 @@
       <h3>ENVIANOS TUS DUDAS, QUEJAS O PROBLEMAS Y SERÁN ATENDIDAS EN LA MAYOR BREVEDAD DE TIEMPO</h3>
       <label for="nombre">
         <h5>NOMBRE</h5>
-        <input class="input-email" type="text" name="nombre" #nombre="ngModel" [(ngModel)]="contacto.nombre">
+        <input class="input-email" type="text" name="nombre" #nombre="ngModel" [(ngModel)]="contacto.nombre"
+               pattern="^[A-Za-z\s]+$" required>
       </label>
       <label for="correo">
         <h5>CORREO ELECTRÓNICO</h5>
-        <input class="input-email" type="text" name="correo" #correo="ngModel" [(ngModel)]="contacto.correo">
+        <input class="input-email" type="text" name="correo" #correo="ngModel" [(ngModel)]="contacto.correo"
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
       </label>
       <label for="razon">
         <h5>RAZÓN</h5>
-        <textarea class="text-area" type="text" name="razon" #razon="ngModel" [(ngModel)]="contacto.texto" cols="45" rows="8"></textarea>
+        <textarea class="text-area" type="text" name="razon" #razon="ngModel" [(ngModel)]="contacto.texto" cols="45"
+                  rows="8" pattern="^[A-Za-z\s]+$" required></textarea>
       </label>
       <label class="terminos" for="terminos">
         <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
         <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
                [(ngModel)]="contacto.terminos" required/>
       </label>
-      <button type="submit" class="boton m2" [disabled]="contacto.invalid">
+      <button type="submit" class="boton m2" [disabled]="contactForm.invalid">
         <h5>ENVIAR</h5>
       </button>
     </form>
