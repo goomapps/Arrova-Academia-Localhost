@@ -1,0 +1,22 @@
+@import 'src/app/styles/index.scss';
+
+.contenedor-container {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  padding: 2rem;
+  background: $components-dark;
+  align-items: initial;
+
+  .p2 {
+    padding: 0.5rem;
+  }
+
+  .p4 {
+    padding: 1rem;
+  }
+}
+
+.subtitle {
+  color: $text-color-hover;
+}

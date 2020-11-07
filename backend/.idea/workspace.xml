@@ -20,8 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/conexionbd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/middlewares/cors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/aviso-legal/aviso-legal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/aviso-legal/aviso-legal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/aviso-legal/aviso-legal.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/aviso-legal/aviso-legal.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/aviso-legal/aviso-legal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/aviso-legal/aviso-legal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/contratacion/contratacion.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/contratacion/contratacion.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/contratacion/contratacion.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/contratacion/contratacion.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/contratacion/contratacion.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/contratacion/contratacion.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/cookies/cookies.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/cookies/cookies.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/cookies/cookies.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/cookies/cookies.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/cookies/cookies.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/cookies/cookies.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/politicas.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad-redes/privacidad-redes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad-redes/privacidad-redes.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad-redes/privacidad-redes.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad-redes/privacidad-redes.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad-redes/privacidad-redes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad-redes/privacidad-redes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/politicas/privacidad/privacidad.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,25 +154,25 @@
     </state>
     <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604507439905" />
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603901579418" />
-    <state width="1897" height="197" key="GridCell.Tab.0.bottom" timestamp="1604609008879">
+    <state width="1897" height="197" key="GridCell.Tab.0.bottom" timestamp="1604738795138">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604609008879" />
+    <state width="1897" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604738795138" />
     <state width="1897" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="197" key="GridCell.Tab.0.center" timestamp="1604609008879">
+    <state width="1897" height="197" key="GridCell.Tab.0.center" timestamp="1604738795138">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604609008879" />
+    <state width="1897" height="197" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604738795138" />
     <state width="1897" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="197" key="GridCell.Tab.0.left" timestamp="1604609008879">
+    <state width="1897" height="197" key="GridCell.Tab.0.left" timestamp="1604738795138">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604609008879" />
+    <state width="1897" height="197" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604738795138" />
     <state width="1897" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="197" key="GridCell.Tab.0.right" timestamp="1604609008879">
+    <state width="1897" height="197" key="GridCell.Tab.0.right" timestamp="1604738795138">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604609008879" />
+    <state width="1897" height="197" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604738795138" />
     <state width="1897" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
     <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1603779795137">
       <screen x="0" y="0" width="1920" height="1040" />
