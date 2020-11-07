@@ -29,7 +29,7 @@ export class EcnTitulacionesComponent implements OnInit {
       comentario3: '',
       parte4: ['', '', '', '', ''],
       comentario4: '',
-      email: '',
+      correo: '',
       terminos: false
     };
   }

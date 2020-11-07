@@ -1,7 +1,7 @@
 export class EcnRefuerzos {
   parte1: [string];
   comentario1: string;
-  email: string;
+  correo: string;
   terminos: boolean;
   constructor(
     parte1,
@@ -11,7 +11,7 @@ export class EcnRefuerzos {
   ) {
     this.parte1 = parte1;
     this.comentario1 = comentario1;
-    this.email = email;
+    this.correo = email;
     this.terminos = terminos;
   }
 }

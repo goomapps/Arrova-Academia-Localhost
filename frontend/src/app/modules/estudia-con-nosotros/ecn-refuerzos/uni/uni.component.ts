@@ -22,7 +22,7 @@ export class UniComponent implements OnInit {
   ) {
     this.ecnUniversidad = {
       comentario1: '',
-      email: '',
+      correo: '',
       terminos: false
     };
   }

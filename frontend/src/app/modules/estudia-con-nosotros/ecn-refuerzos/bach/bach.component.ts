@@ -22,7 +22,7 @@ export class BachComponent implements OnInit {
   ) {
     this.ecnBach = {
       parte1: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
-      email: '',
+      correo: '',
       terminos: false
     };
   }

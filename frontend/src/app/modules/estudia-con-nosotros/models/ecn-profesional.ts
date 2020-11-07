@@ -27,6 +27,6 @@ export class EcnProfesional {
     this.nombreContacto = nombreContacto;
     this.telefonoContacto = telefonoContacto;
     this.correoContacto = correoContacto;
-    this.terminos =terminos;
+    this.terminos = terminos;
   }
 }

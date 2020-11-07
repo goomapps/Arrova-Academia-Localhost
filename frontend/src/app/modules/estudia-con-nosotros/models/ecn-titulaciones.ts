@@ -7,7 +7,7 @@ export class EcnTitulaciones {
   comentario3: string;
   parte4: [string];
   comentario4: string;
-  email: string;
+  correo: string;
   terminos: boolean;
   constructor(
     parte1,
@@ -29,7 +29,7 @@ export class EcnTitulaciones {
     this.comentario3 = comentario3;
     this.parte4 = parte4;
     this.comentario4 = comentario4;
-    this.email = email;
+    this.correo = email;
     this.terminos = terminos;
   }
 }

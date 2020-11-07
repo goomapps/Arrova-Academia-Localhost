@@ -22,7 +22,7 @@ export class EsoComponent implements OnInit {
   ) {
     this.ecnESO = {
       parte1: ['', '', '', '', '', '', '', ''],
-      email: '',
+      correo: '',
       terminos: false
     };
   }
