@@ -1,0 +1,25 @@
+@import 'src/app/styles/index.scss';
+
+.modal {
+  display: block;
+  bottom: 20px;
+  border: 3px solid $text-color-dark;
+  border-radius: 2rem;
+  width: 40rem;
+  background: $components-dark;
+  padding: 2rem;
+
+  .header-modal {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-modal {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &.dnone {
+    display: none;
+  }
+}

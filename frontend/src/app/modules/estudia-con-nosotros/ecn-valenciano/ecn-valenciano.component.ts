@@ -35,6 +35,11 @@ export class EcnValencianoComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const cb = document.getElementById('cb');
+
+    cb.addEventListener('click', () => {
+      document.getElementById('modal').classList.remove('dnone');
+    });
   }
 
   irParte1(): void {

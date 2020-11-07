@@ -13,6 +13,7 @@ import {EcnBusinessComponent} from './ecn-business/ecn-business.component';
 import { EsoComponent } from './ecn-refuerzos/eso/eso.component';
 import { BachComponent } from './ecn-refuerzos/bach/bach.component';
 import { UniComponent } from './ecn-refuerzos/uni/uni.component';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { UniComponent } from './ecn-refuerzos/uni/uni.component';
     imports: [
         CommonModule,
         EstudiaConNosotrosRoutingModule,
-        FormsModule
+        FormsModule,
+        SharedModule
     ]
 })
 export class EstudiaConNosotrosModule {

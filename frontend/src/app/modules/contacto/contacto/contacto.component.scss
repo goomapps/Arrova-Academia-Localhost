@@ -6,6 +6,10 @@
   align-items: center;
   width: 100%;
 
+  app-modal-terminos {
+    position: absolute;
+  }
+
   &-contenedor {
     display: flex;
     flex-direction: column;

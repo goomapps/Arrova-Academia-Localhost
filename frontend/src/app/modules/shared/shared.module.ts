@@ -16,9 +16,10 @@ import {BuscadorComponent} from './common/buscador/buscador.component';
     ModalTerminosComponent,
     BuscadorComponent
   ],
-  exports: [
-    BuscadorComponent
-  ],
+    exports: [
+        BuscadorComponent,
+        ModalTerminosComponent
+    ],
   imports: [
     CommonModule,
     SharedRoutingModule,

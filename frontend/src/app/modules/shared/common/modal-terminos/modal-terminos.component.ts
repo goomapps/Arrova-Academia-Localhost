@@ -10,6 +10,11 @@ export class ModalTerminosComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const btn = document.getElementById('btn');
+
+    btn.addEventListener('click', () => {
+      document.getElementById('modal').classList.add('dnone');
+    });
   }
 
 }

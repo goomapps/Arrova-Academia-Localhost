@@ -7,6 +7,10 @@
   align-items: center;
   width: 100%;
 
+  app-modal-terminos {
+    position: absolute;
+  }
+
   @include tablet {
     width: 48rem;
   }
