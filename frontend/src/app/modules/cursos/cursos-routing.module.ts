@@ -6,10 +6,22 @@ import {CursosValencianoComponent} from './cursos-valenciano/cursos-valenciano.c
 import {CursosTitulacionesComponent} from './cursos-titulaciones/cursos-titulaciones.component';
 import {CursosRefuerzosComponent} from './cursos-refuerzos/cursos-refuerzos.component';
 import {CursosAccesosComponent} from './cursos-accesos/cursos-accesos.component';
+import {A2Component} from './cursos-valenciano/a2/a2.component';
+import {B1Component} from './cursos-valenciano/b1/b1.component';
+import {B2Component} from './cursos-valenciano/b2/b2.component';
+import {C1Component} from './cursos-valenciano/c1/c1.component';
+import {C2Component} from './cursos-valenciano/c2/c2.component';
+import {IntensivoComponent} from './cursos-valenciano/intensivo/intensivo.component';
 
 const routes: Routes = [
   {path: '', component: CursosComponent},
   {path: 'valenciano', component: CursosValencianoComponent},
+  {path: 'valenciano/a2', component: A2Component},
+  {path: 'valenciano/b1', component: B1Component},
+  {path: 'valenciano/b2', component: B2Component},
+  {path: 'valenciano/c1', component: C1Component},
+  {path: 'valenciano/c2', component: C2Component},
+  {path: 'valenciano/intensivos', component: IntensivoComponent},
   {path: 'titulaciones', component: CursosTitulacionesComponent},
   {path: 'accesos', component: CursosAccesosComponent},
   {path: 'refuerzos', component: CursosRefuerzosComponent}

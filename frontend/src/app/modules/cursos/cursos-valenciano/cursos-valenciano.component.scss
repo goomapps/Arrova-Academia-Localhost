@@ -1,0 +1,42 @@
+@import 'src/app/styles/index.scss';
+
+.contenedor-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-enlace {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 70rem;
+
+  a {
+    text-decoration: none;
+    width: 20rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background: $components-dark;
+    margin: 1rem;
+
+    &.disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+      background: transparentize($color: $components-dark, $amount: 0.3);
+    }
+
+    &:hover {
+
+      h3,
+      p {
+        color: $text-color-hover;
+      }
+    }
+  }
+}
