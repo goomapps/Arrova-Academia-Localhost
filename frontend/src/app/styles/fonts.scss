@@ -122,3 +122,9 @@ small {
     color: $color-error;
   }
 }
+
+::placeholder{
+  @include mobileL{
+    font-size: 0.8rem;
+  }
+}

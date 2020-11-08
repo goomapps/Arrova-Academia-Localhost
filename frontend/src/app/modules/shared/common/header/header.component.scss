@@ -47,6 +47,10 @@
         align-items: center;
         height: 100%;
         position: relative;
+
+        @include tablet{
+          display: none;
+        }
       }
     }
 
@@ -111,5 +115,126 @@
         width: 100%;
       }
     }
+  }
+}
+
+
+.boton-menu{
+  border: none;
+  background-color: $components-dark;
+  font-size: 1.4rem;
+  color: $components-light;
+}
+.menuResponsive{
+  display:none;
+}
+
+@include tablet{
+  .menuResponsive1{
+    display: none;
+  }
+  .menuResponsive {
+    display: block;
+    width: 17em;
+    height: 19em;
+    background-color: $components-dark;
+    position: absolute;
+    border-bottom-right-radius: 3em;
+    transition: 0.3s linear;
+    z-index: 9999;
+    @include mobileL{
+      height: 18em;
+    }
+    @include mobileS{
+      height: 17em;
+    }
+
+    &-navegador{
+      
+    }
+
+    &-menuNavegador{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-lista{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-elemento{
+      cursor: pointer;
+      //position: relative;
+      border-bottom: 2px solid $text-color-hover;
+    }
+    &-elemento-titulo{
+      width: 17rem;
+      transition: 0.3s;
+      padding: 1rem;
+    }
+
+    /*.menuResponsive_menuNavegador-elemento{
+      list-style: none;
+      color: $text-color-dark;
+      border-bottom: 2px solid $text-color-dark;
+    }
+
+    .menuResponsive_lista{
+      display: flex;
+      flex-direction: column;
+    }
+
+    li:hover {
+      color: $text-color-emphasis;
+      border-bottom: 2px solid $text-color-emphasis;
+      cursor: pointer;
+    }
+
+    .btns {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 10em;
+
+      button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+      }
+
+      i {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        font-size: 30px;
+        color: $text-color-dark;
+        cursor: pointer;
+      }
+
+      i:hover {
+        background-color: $text-color-emphasis;
+        color: $components-light;
+      }
+    }
+  }
+  .active {
+      visibility: visible;
+      opacity: 1;
+    }*/
   }
 }

@@ -31,6 +31,10 @@
       background: $components-dark;
       padding: 3rem;
       border-radius: 3rem;
+
+      @include laptop{
+        text-align: center;
+      }
       @include mobileL {
         padding: 1.5rem;
         width: 24.5rem;

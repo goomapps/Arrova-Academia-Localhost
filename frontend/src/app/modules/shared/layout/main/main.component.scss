@@ -13,6 +13,18 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
+    @include tablet{
+      width: 35rem;
+    }
+    @include mobileL{
+      width: 24rem;
+    }
+    @include mobileM{
+      width: 22rem;
+    }
+    @include mobileS{
+      width: 20rem;
+    }
 
     .slider {
       display: flex;
@@ -21,6 +33,18 @@
 
       app-slider {
         width: 80%;
+        @include laptop{
+          width: 100%;
+        }
+        @include mobileL{
+          width: 24rem;
+        }
+        @include mobileM{
+          width: 22rem;
+        }
+        @include mobileS{
+          width: 19rem;
+        }
       }
     }
 
@@ -35,10 +59,11 @@
       border-radius: 3rem;
       @include laptop{
         flex-direction: column;
+        text-align: center;
+        width: 35rem;
       }
       @include mobileL{
         width: 24rem;
-        text-align: center;
       }
       @include mobileM{
         width: 22rem;
@@ -76,9 +101,13 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
       @include mobileL{
         width: 24rem;
-        text-align: center;
       }
       @include mobileM{
         width: 22rem;
@@ -110,6 +139,10 @@
           padding: 2rem;
           margin: 1rem;
 
+          @include laptop{
+            text-align: center;
+            width: 21rem;
+          }
           @include mobileL{
             width: 15rem;
           }
@@ -141,9 +174,13 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
       @include mobileL{
         width: 24rem;
-        text-align: center;
       }
       @include mobileM{
         width: 22rem;
@@ -193,9 +230,13 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
       @include mobileL{
         width: 24rem;
-        text-align: center;
       }
       @include mobileM{
         width: 22rem;
