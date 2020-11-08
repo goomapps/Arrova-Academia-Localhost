@@ -1,0 +1,43 @@
+@import "src/app/styles/index.scss";
+
+.noticias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+
+    .noticia {
+      background: $components-dark;
+      margin: 2rem;
+      padding: 3rem;
+      border-radius: 2rem;
+
+      h5 {
+        margin-bottom: 0.5rem;
+      }
+
+      img {
+        width: 50rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+      }
+
+      a {
+        text-decoration: none;
+
+        p {
+          color: $text-color-hover;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
