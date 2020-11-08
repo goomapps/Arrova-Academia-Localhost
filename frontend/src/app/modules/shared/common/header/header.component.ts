@@ -36,6 +36,11 @@ export class HeaderComponent implements OnInit {
     }, () => {
       $('#dropnosotros').css('display', 'none');
     });
+
+    $('#menu').click(() => {
+      $('#menuResponsive').toggleClass('menuResponsive1');
+      $('#menuResponsive').removeClass('menuResponsive');
+    });
   }
 
   search(): void {

@@ -98,12 +98,12 @@
           width: 20rem;
           height: 13rem;
 
-          @include mobileL {
-            width: 15.7rem;
-            height: 11.5rem;
+          @include laptopL {
+            width: 15.5rem;
           }
-          @include mobileS {
+          @include mobileL {
             width: 15rem;
+            height: 11.5rem;
           }
 
           ul {

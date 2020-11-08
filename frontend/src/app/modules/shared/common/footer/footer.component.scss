@@ -24,12 +24,10 @@
       height: 100%;
 
       @include mobileL{
-        min-width: 17rem;
-        margin-right: 30px;
+        min-width: 7rem;
       }
       @include mobileM{
-        min-width: 12rem;
-        margin-right: 20px;
+        min-width: 10rem;
       }
     }
 
@@ -37,6 +35,18 @@
       display: flex;
       align-items: center;
       height: 100%;
+
+      @include mobileL{
+       width: 12rem;
+       margin-left: 5rem;
+      }
+      @include mobileM{
+        margin-left: 2.5rem;
+       }
+       @include mobileM{
+        width: 13rem;
+        margin-left: 1.5rem;
+       }
 
       h5 {
         cursor: pointer;
