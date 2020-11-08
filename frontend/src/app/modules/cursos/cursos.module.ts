@@ -14,6 +14,7 @@ import { B2Component } from './cursos-valenciano/b2/b2.component';
 import { C1Component } from './cursos-valenciano/c1/c1.component';
 import { C2Component } from './cursos-valenciano/c2/c2.component';
 import { IntensivoComponent } from './cursos-valenciano/intensivo/intensivo.component';
+import { CursoIntensivoComponent } from './cursos-valenciano/intensivo/curso-intensivo/curso-intensivo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { IntensivoComponent } from './cursos-valenciano/intensivo/intensivo.comp
     B2Component,
     C1Component,
     C2Component,
-    IntensivoComponent
+    IntensivoComponent,
+    CursoIntensivoComponent
   ],
   imports: [
     CommonModule,

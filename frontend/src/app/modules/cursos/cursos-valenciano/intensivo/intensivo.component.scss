@@ -1,0 +1,51 @@
+@import "src/app/styles/index.scss";
+
+.intensivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .curso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: initial;
+      width: 45rem;
+      background: $components-dark;
+      padding: 2rem;
+      margin: 2rem;
+      border: 3px solid transparent;
+      border-radius: 2rem;
+      cursor: pointer;
+
+      &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+
+      a {
+        text-decoration: none;
+
+        .curso-texto {
+          h5 {
+            margin-bottom: 1rem;
+          }
+
+          p {
+            margin-left: 5rem;
+          }
+        }
+      }
+
+      &:hover {
+        border: 3px solid $text-color-hover;
+      }
+    }
+  }
+}
