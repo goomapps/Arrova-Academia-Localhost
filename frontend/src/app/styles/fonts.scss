@@ -86,6 +86,7 @@ h5 {
 p {
   font-family: 'Montserrat', sans-serif;
   color: $text-color-light;
+  text-align: justify;
   @include mobileL{
     font-size: 0.6rem;
   }

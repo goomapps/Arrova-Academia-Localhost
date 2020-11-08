@@ -1,0 +1,21 @@
+@import 'src/app/styles/index.scss';
+
+.profesores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    background: $components-dark;
+    padding: 3rem;
+    border-radius: 2rem;
+    p {
+      padding: 0.75rem;
+    }
+  }
+}
