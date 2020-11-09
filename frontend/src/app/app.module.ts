@@ -38,7 +38,7 @@ import {SharedModule} from './modules/shared/shared.module';
       timeOut: 3500,
     }),
     LoggerModule.forRoot({
-      serverLoggingUrl: `${environment.API_URL}/logs`,
+      serverLoggingUrl: `${environment.API_URL}/logs/insert`,
       level: environment.logLevel,
       serverLogLevel: environment.serverLogLevel
     }),

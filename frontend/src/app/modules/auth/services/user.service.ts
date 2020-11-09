@@ -22,6 +22,10 @@ export class UserService {
       this.API_URL + '/usuarios/login', credentials);
   }
 
+  userRegister(formulario: Usuario) {
+    return this.httpClient.post(this.API_URL + '/usuarios/registro', formulario);
+  }
+
   setUser(user: Usuario): void {
     this.user = user;
   }
