@@ -8,7 +8,7 @@
           <div class="input-contenedor">
             <p class="frase-importante">Nombre:</p>
             <div class="input">
-              <i class="fas fa-envelope input-icon"></i>
+              <i class="fas fa-user input-icon"></i>
               <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre"
                      placeholder="nombre" required pattern="^[A-Za-z\s]+$">
             </div>
@@ -16,7 +16,7 @@
           <div class="input-contenedor">
             <p class="frase-importante">Primer Apellido:</p>
             <div class="input">
-              <i class="fas fa-envelope input-icon"></i>
+              <i class="fas fa-user input-icon"></i>
               <input type="text" name="papellido" #papellido="ngModel" [(ngModel)]="usuario.apellido1"
                      placeholder="primer apellido" required pattern="^[A-Za-z\s]+$">
             </div>
@@ -24,7 +24,7 @@
           <div class="input-contenedor">
             <p class="frase-importante">Segundo Apellido:</p>
             <div class="input">
-              <i class="fas fa-envelope input-icon"></i>
+              <i class="fas fa-user input-icon"></i>
               <input type="text" name="sapellido" #sapellido="ngModel" [(ngModel)]="usuario.apellido2"
                      placeholder="segundo apellido" required pattern="^[A-Za-z\s]+$">
             </div>
@@ -32,7 +32,7 @@
           <div class="input-contenedor">
             <p class="frase-importante">Nombre de Usuario:</p>
             <div class="input">
-              <i class="fas fa-envelope input-icon"></i>
+              <i class="fas fa-user input-icon"></i>
               <input type="text" name="username" #username="ngModel" [(ngModel)]="usuario.nombreUsuario"
                      placeholder="nombre de usuario" required pattern="^[A-Za-z\s]+$">
             </div>
@@ -66,10 +66,15 @@
           <div class="input-contenedor">
             <p class="frase-importante">Fecha de Nacimiento:</p>
             <div class="input">
-              <i class="fas fa-envelope input-icon"></i>
+              <i class="fas fa-calendar-alt input-icon"></i>
               <input type="date" name="birth" #birth="ngModel" [(ngModel)]="usuario.fechaNacimiento" required>
             </div>
           </div>
+          <label class="terminos" for="terminos">
+            <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
+            <input id="cb" class="checkbox" type="checkbox" name="terminos" #terminos="ngModel"
+                   [(ngModel)]="usuario.terminos" required/>
+          </label>
           <button class="boton" type="submit" [disabled]="userForm.invalid">
             <h5>ENTRA</h5>
           </button>
@@ -77,4 +82,5 @@
       </div>
     </div>
   </div>
+  <app-modal-terminos></app-modal-terminos>
 </div>

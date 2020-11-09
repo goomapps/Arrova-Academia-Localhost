@@ -50,6 +50,12 @@ export class RegisterComponent implements OnInit {
       $('#password2').attr('type', 'password');
       $('#mostrarOcultar2').removeClass('fa-eye-slash').addClass('fa-eye');
     });
+
+    const cb = document.getElementById('cb');
+
+    cb.addEventListener('click', () => {
+      document.getElementById('modal').classList.remove('dnone');
+    });
   }
 
   Registro(): void {

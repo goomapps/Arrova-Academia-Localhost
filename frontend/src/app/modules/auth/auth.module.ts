@@ -9,6 +9,7 @@ import {RegisterComponent} from './register/register.component';
 import {FormsModule} from "@angular/forms";
 import { OlvidadoComponent } from './olvidado/olvidado.component';
 import { ConfirmadoComponent } from './confirmado/confirmado.component';
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { ConfirmadoComponent } from './confirmado/confirmado.component';
     OlvidadoComponent,
     ConfirmadoComponent
   ],
-  imports: [
-    CommonModule,
-    AuthRoutingModule,
-    FormsModule
-  ]
+    imports: [
+        CommonModule,
+        AuthRoutingModule,
+        FormsModule,
+        SharedModule
+    ]
 })
 export class AuthModule { }
