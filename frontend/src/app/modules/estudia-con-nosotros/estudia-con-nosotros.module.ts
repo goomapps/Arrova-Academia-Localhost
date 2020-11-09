@@ -14,6 +14,7 @@ import { EsoComponent } from './ecn-refuerzos/eso/eso.component';
 import { BachComponent } from './ecn-refuerzos/bach/bach.component';
 import { UniComponent } from './ecn-refuerzos/uni/uni.component';
 import {SharedModule} from "../shared/shared.module";
+import { SuccesfullComponent } from './succesfull/succesfull.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {SharedModule} from "../shared/shared.module";
     EcnBusinessComponent,
     EsoComponent,
     BachComponent,
-    UniComponent
+    UniComponent,
+    SuccesfullComponent
   ],
     imports: [
         CommonModule,

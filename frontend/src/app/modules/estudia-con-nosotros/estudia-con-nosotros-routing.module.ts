@@ -10,9 +10,11 @@ import {EcnBusinessComponent} from './ecn-business/ecn-business.component';
 import {EsoComponent} from './ecn-refuerzos/eso/eso.component';
 import {BachComponent} from './ecn-refuerzos/bach/bach.component';
 import {UniComponent} from './ecn-refuerzos/uni/uni.component';
+import {SuccesfullComponent} from './succesfull/succesfull.component';
 
 const routes: Routes = [
   {path: '', component: EstudiaConNosotrosComponent},
+  {path: 'succesfull', component: SuccesfullComponent},
   {path: 'valenciano', component: EcnValencianoComponent},
   {path: 'titulaciones', component: EcnTitulacionesComponent},
   {path: 'accesos', component: EcnAccesosComponent},

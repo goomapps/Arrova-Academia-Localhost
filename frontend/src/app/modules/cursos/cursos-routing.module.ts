@@ -12,9 +12,12 @@ import {B2Component} from './cursos-valenciano/b2/b2.component';
 import {C1Component} from './cursos-valenciano/c1/c1.component';
 import {C2Component} from './cursos-valenciano/c2/c2.component';
 import {IntensivoComponent} from './cursos-valenciano/intensivo/intensivo.component';
+import {CursoIntensivoComponent} from './cursos-valenciano/intensivo/curso-intensivo/curso-intensivo.component';
+import {MatriculaComponent} from './matricula/matricula.component';
 
 const routes: Routes = [
   {path: '', component: CursosComponent},
+  {path: 'matricula', component: MatriculaComponent},
   {path: 'valenciano', component: CursosValencianoComponent},
   {path: 'valenciano/a2', component: A2Component},
   {path: 'valenciano/b1', component: B1Component},
@@ -22,6 +25,7 @@ const routes: Routes = [
   {path: 'valenciano/c1', component: C1Component},
   {path: 'valenciano/c2', component: C2Component},
   {path: 'valenciano/intensivos', component: IntensivoComponent},
+  {path: 'valenciano/intensivos/curso-intensivo', component: CursoIntensivoComponent},
   {path: 'titulaciones', component: CursosTitulacionesComponent},
   {path: 'accesos', component: CursosAccesosComponent},
   {path: 'refuerzos', component: CursosRefuerzosComponent}

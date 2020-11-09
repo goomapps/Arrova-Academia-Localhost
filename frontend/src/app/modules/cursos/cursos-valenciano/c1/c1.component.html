@@ -1,1 +1,230 @@
-<p>c1 works!</p>
+<div class="contenedor-container">
+  <div class="breadcumb">
+    <a routerLink="/cursos" routerLinkActive="router-link-active">
+      <p>Cursos</p>
+    </a>
+    <p class="separator"> > </p>
+    <a
+      routerLink="/cursos/valenciano"
+    >
+      <p>Valenciano</p>
+    </a>
+    <p class="separator"> > </p>
+    <p>C1</p>
+  </div>
+  <div class="container">
+    <div class="heading">
+      <div class="info">
+        <h3>
+          {{ title | uppercase }}
+        </h3>
+        <p>
+          {{ desc | uppercase }}
+        </p>
+        <p>{{ usuarios }}{{ numusuarios }}</p>
+        <p>
+          {{ creado }}
+          <a routerLink="/nosotros/profesores">
+            {{ adrian }}
+          </a>
+        </p>
+        <p>{{ lengua }}{{ lengua_valenciano }}</p>
+      </div>
+      <div class="previa">
+        <p>
+          {{ precio_mes }}
+        </p>
+        <ul>
+          <li class="subtitle">
+            <p>
+              {{ incluye | uppercase }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ videos }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ exercicis1 }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ exercicis2 }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ exercicis3 }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ dossier }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ examen }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ practiques }}
+            </p>
+          </li>
+          <li>
+            <p>
+              {{ acceso }}
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contenedor-objetivos">
+      <h3>
+        {{ objetivos }}
+      </h3>
+      <p>
+        {{ desc_objetivos }}
+      </p>
+      <div>
+        <p>
+          {{ ce }}
+        </p>
+        <p>
+          {{ el }}
+        </p>
+        <p>
+          {{ eie }}
+        </p>
+        <p>
+          {{ eio }}
+        </p>
+      </div>
+    </div>
+    <div class="contenedor-contenidos">
+      <h3>
+        {{ contenidos }}
+      </h3>
+      <div class="feo">
+        <p class="titlefeo">
+          {{ feo }}
+        </p>
+        <p>
+          {{ feo1 }}
+        </p>
+        <p>
+          {{ feo2 }}
+        </p>
+        <p>
+          {{ feo3 }}
+        </p>
+        <p>
+          {{ feo4 }}
+        </p>
+        <p>
+          {{ feo5 }}
+        </p>
+        <p>
+          {{ feo6 }}
+        </p>
+        <p>
+          {{ feo7 }}
+        </p>
+        <p>
+          {{ feo8 }}
+        </p>
+        <p>
+          {{ feo9 }}
+        </p>
+        <p>
+          {{ feo10 }}
+        </p>
+      </div>
+      <div class="morfosintaxi">
+        <p class="titlemorfo">
+          {{ morfosintaxi }}
+        </p>
+        <p>
+          {{ morfosintaxi1 }}
+        </p>
+        <p>
+          {{ morfosintaxi2 }}
+        </p>
+        <p>
+          {{ morfosintaxi3 }}
+        </p>
+        <p>
+          {{ morfosintaxi4 }}
+        </p>
+        <p>
+          {{ morfosintaxi5 }}
+        </p>
+        <p>
+          {{ morfosintaxi6 }}
+        </p>
+        <p>
+          {{ morfosintaxi7 }}
+        </p>
+        <p>
+          {{ morfosintaxi8 }}
+        </p>
+      </div>
+      <div class="ls">
+        <p class="titlels">
+          {{ ls }}
+        </p>
+        <p>
+          {{ ls1 }}
+        </p>
+        <p>
+          {{ ls2 }}
+        </p>
+        <p>
+          {{ ls3 }}
+        </p>
+        <p>
+          {{ ls4 }}
+        </p>
+        <p>
+          {{ ls5 }}
+        </p>
+      </div>
+    </div>
+    <div class="contenedor-descargable">
+      <button class="boton" routerLink="/usuario/registro">
+        <h5>MATRICULATE</h5>
+      </button>
+      <a
+        download="Boletin_Curso_C1.pdf"
+        href="assets/documentacion/butlleti_curs_C1.pdf"
+      >
+        <h5 class="download">
+          {{ boletin_informativo | uppercase }}
+          <i class="fas fa-file-pdf"></i>
+        </h5>
+      </a>
+      <a
+        download="Hoja_Inscripcion_Curso_C1.pdf"
+        href="assets/documentacion/full_inscripcio.pdf"
+      >
+        <h5 class="download">
+          {{ hoja_inscripcion | uppercase }}
+          <i class="fas fa-file-pdf"></i>
+        </h5>
+      </a>
+      <a
+        download="Proteccion_Datos_Curso_C1.pdf"
+        href="assets/documentacion/proteccio_dades.pdf"
+      >
+        <h5 class="download">
+          {{ proteccion_datos | uppercase }}
+          <i class="fas fa-file-pdf"></i>
+        </h5>
+      </a>
+    </div>
+  </div>
+</div>

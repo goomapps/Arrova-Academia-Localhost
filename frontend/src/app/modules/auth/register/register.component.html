@@ -1,1 +1,86 @@
-<p>register works!</p>
+<div class="register">
+  <div class="register-contenedor">
+    <div class="headers">
+      <h1 class="title">REGISTRO</h1>
+      <h5>¡Rellena el formulario para empezar a estudiar!</h5>
+      <div class="form">
+        <form class="form-contenedor" #userForm="ngForm" (ngSubmit)="Registro()">
+          <div class="input-contenedor">
+            <p class="frase-importante">Nombre:</p>
+            <div class="input">
+              <i class="fas fa-user input-icon"></i>
+              <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre"
+                     placeholder="nombre" required pattern="^[A-Za-z\s]+$">
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Primer Apellido:</p>
+            <div class="input">
+              <i class="fas fa-user input-icon"></i>
+              <input type="text" name="papellido" #papellido="ngModel" [(ngModel)]="usuario.apellido1"
+                     placeholder="primer apellido" required pattern="^[A-Za-z\s]+$">
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Segundo Apellido:</p>
+            <div class="input">
+              <i class="fas fa-user input-icon"></i>
+              <input type="text" name="sapellido" #sapellido="ngModel" [(ngModel)]="usuario.apellido2"
+                     placeholder="segundo apellido" required pattern="^[A-Za-z\s]+$">
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Nombre de Usuario:</p>
+            <div class="input">
+              <i class="fas fa-user input-icon"></i>
+              <input type="text" name="username" #username="ngModel" [(ngModel)]="usuario.nombreUsuario"
+                     placeholder="nombre de usuario" required pattern="^[A-Za-z\s]+$">
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Correo electrónico:</p>
+            <div class="input">
+              <i class="fas fa-envelope input-icon"></i>
+              <input type="text" name="email" #email="ngModel" [(ngModel)]="usuario.correo"
+                     placeholder="nombre@dominio.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Contraseña</p>
+            <div class="input">
+              <i class="fas fa-key input-icon"></i>
+              <input id="password1" type="password" name="pass" #pass="ngModel" [(ngModel)]="usuario.contrasenya"
+                     placeholder="*************" required>
+              <i id="mostrarOcultar1" class="fas fa-eye input-icon"></i>
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Repetir contraseña</p>
+            <div class="input">
+              <i class="fas fa-key input-icon"></i>
+              <input id="password2" type="password" name="pass2" #pass2="ngModel" [(ngModel)]="repitcontrasenya"
+                     placeholder="*************" required>
+              <i id="mostrarOcultar2" class="fas fa-eye input-icon"></i>
+            </div>
+          </div>
+          <div class="input-contenedor">
+            <p class="frase-importante">Fecha de Nacimiento:</p>
+            <div class="input">
+              <i class="fas fa-calendar-alt input-icon"></i>
+              <input type="date" name="birth" #birth="ngModel" [(ngModel)]="usuario.fechaNacimiento" required>
+            </div>
+          </div>
+          <label class="terminos" for="terminos">
+            <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
+            <input id="cb" class="checkbox" type="checkbox" name="terminos" #terminos="ngModel"
+                   [(ngModel)]="usuario.terminos" required/>
+          </label>
+          <button class="boton" type="submit" [disabled]="userForm.invalid">
+            <h5>ENTRA</h5>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <app-modal-terminos></app-modal-terminos>
+</div>

@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/curso-intensivo.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/curso-intensivo.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/curso-intensivo.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/intensivo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/intensivo.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/intensivo.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/intensivo.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +51,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../frontend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -105,7 +101,8 @@
       <workItem from="1604595246917" duration="1810000" />
       <workItem from="1604752251911" duration="493000" />
       <workItem from="1604765747329" duration="16000" />
-      <workItem from="1604858671724" duration="750000" />
+      <workItem from="1604858671724" duration="751000" />
+      <workItem from="1604939885533" duration="3149000" />
     </task>
     <servers />
   </component>
@@ -138,30 +135,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1181" y="274" key="FileChooserDialogImpl" timestamp="1604507439905">
+    <state x="-1181" y="274" key="FileChooserDialogImpl" timestamp="1604939923536">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604507439905" />
+    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604939923536" />
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603901579418" />
-    <state width="1897" height="197" key="GridCell.Tab.0.bottom" timestamp="1604750499914">
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom" timestamp="1604871220804">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604750499914" />
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220804" />
     <state width="1897" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="197" key="GridCell.Tab.0.center" timestamp="1604750499914">
+    <state width="1897" height="279" key="GridCell.Tab.0.center" timestamp="1604871220803">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604750499914" />
+    <state width="1897" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220803" />
     <state width="1897" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="197" key="GridCell.Tab.0.left" timestamp="1604750499914">
+    <state width="1897" height="279" key="GridCell.Tab.0.left" timestamp="1604871220803">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604750499914" />
+    <state width="1897" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220803" />
     <state width="1897" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="197" key="GridCell.Tab.0.right" timestamp="1604750499914">
+    <state width="1897" height="279" key="GridCell.Tab.0.right" timestamp="1604871220803">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="197" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604750499914" />
+    <state width="1897" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220803" />
     <state width="1897" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
     <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1603779795137">
       <screen x="0" y="0" width="1920" height="1040" />

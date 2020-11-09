@@ -13,16 +13,23 @@ import {Usuario} from '../models/Usuario';
 })
 export class UserService {
   API_URL: string = environment.API_URL;
-  user: Usuario;
+  user;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {}
 
   userLogin(credentials: Login): Observable<Logged> {
     return this.httpClient.post<Logged>(
       this.API_URL + '/usuarios/login', credentials);
   }
 
+  userRegister(formulario: Usuario) {
+    return this.httpClient.post(this.API_URL + '/usuarios/registro', formulario);
+  }
+
   setUser(user: Usuario): void {
     this.user = user;
+  }
+  getUser(): Usuario {
+    return this.user;
   }
 }
