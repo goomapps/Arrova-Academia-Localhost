@@ -13,9 +13,11 @@ import {C1Component} from './cursos-valenciano/c1/c1.component';
 import {C2Component} from './cursos-valenciano/c2/c2.component';
 import {IntensivoComponent} from './cursos-valenciano/intensivo/intensivo.component';
 import {CursoIntensivoComponent} from './cursos-valenciano/intensivo/curso-intensivo/curso-intensivo.component';
+import {MatriculaComponent} from './matricula/matricula.component';
 
 const routes: Routes = [
   {path: '', component: CursosComponent},
+  {path: 'matricula', component: MatriculaComponent},
   {path: 'valenciano', component: CursosValencianoComponent},
   {path: 'valenciano/a2', component: A2Component},
   {path: 'valenciano/b1', component: B1Component},
