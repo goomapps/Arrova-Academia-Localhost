@@ -104,65 +104,26 @@
 <div class="menuResponsive" id="menuResponsive">
   <div id="menuResponsive-navegador" class="menu">
     <ul class="menuResponsive-menuNavegador">
+      <div id="dropbuscador" >
+        <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
+      </div>
       <li id="noticias" class="menuResponsive-elemento">
         <h5 routerLink="/noticias" class="menuResponsive-elemento-titulo">NOTICIAS</h5>
       </li>
       <li id="estudia" class="menuResponsive-elemento">
         <h5 routerLink="/estudia-con-nosotros" class="menuResponsive-elemento-titulo">ESTUDIA</h5>
-        <div id="dropestudia" class="dropdown">
-          <!--<ul class='menuResponsive-lista'>
-            <li routerLink="/estudia-con-nosotros/valenciano">
-              <h5>VALENCIANO</h5>
-            </li>
-            <li routerLink="/estudia-con-nosotros/titulaciones">
-              <h5>TITULACIONES</h5>
-            </li>
-            <li routerLink="/estudia-con-nosotros/accesos">
-              <h5>ACCESOS</h5>
-            </li>
-            <li routerLink="/estudia-con-nosotros/refuerzos">
-              <h5>REFUERZOS</h5>
-            </li>
-            <li routerLink="/estudia-con-nosotros/profesional">
-              <h5>PROFESIONAL</h5>
-            </li>
-          </ul>-->
-        </div>
       </li>
       <li id="cursos" class="menuResponsive-elemento">
         <h5 routerLink="/cursos" class="menuResponsive-elemento-titulo">CURSOS</h5>
-        <div id="dropcursos" class="dropdown">
-          <!--<ul class='menuResponsive-lista'>
-            <li routerLink="/cursos/valenciano">
-              <h5>VALENCIANO</h5>
-            </li>
-            <li routerLink="/cursos/titulaciones">
-              <h5>TITULACIONES</h5>
-            </li>
-            <li routerLink="/cursos/accesos">
-              <h5>ACCESOS</h5>
-            </li>
-            <li routerLink="/cursos/refuerzos">
-              <h5>REFUERZOS</h5>
-            </li>
-          </ul>-->
-        </div>
+      </li>
+      <li id="cursos" class="menuResponsive-elemento">
+        <h5 routerLink="/estudia-con-nosotros/profesional" class="menuResponsive-elemento-titulo">PROFESIONAL</h5>
       </li>
       <li id="contacto" class="menuResponsive-elemento">
         <h5 routerLink="/contacto" class="menuResponsive-elemento-titulo">CONTACTO</h5>
       </li>
       <li id="nosotros" class="menuResponsive-elemento">
         <h5 routerLink="/nosotros" class="menuResponsive-elemento-titulo">NOSOTROS</h5>
-        <div id="dropnosotros" class="dropdown">
-          <!--<ul class='menuResponsive-lista'>
-            <li routerLink="/nosotros/profesores">
-              <h5>PROFESORES</h5>
-            </li>
-            <li routerLink="/nosotros/valoraciones">
-              <h5>VALORACIONES</h5>
-            </li>
-          </ul>-->
-        </div>
       </li>
     </ul>
   </div>

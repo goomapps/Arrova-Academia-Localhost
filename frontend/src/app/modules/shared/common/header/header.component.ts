@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
 
     $('#menu').click(() => {
       $('#menuResponsive').toggleClass('menuResponsive1');
-      $('#menuResponsive').removeClass('menuResponsive');
+      $('#menuResponsive').toggleClass('menuResponsive');
     });
   }
 
