@@ -1,6 +1,5 @@
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import dateFormat from "dateformat";
 
 import UserModel from "../models/userDTO.js";
 import TokenModel from "../models/tokenDTO.js";
@@ -21,8 +20,6 @@ const UserController = {
         try {
             const pass = req.body.contrasenya;
             req.body.contrasenya = await bcrypt.hash(req.body.contrasenya, 10);
-            const date = new Date(req.body.fechaNacimiento);
-            req.body.fechaNacimiento = dateFormat(date, "dd-mmmm-yyyy");
             const user = await UserModel.create(req.body);
             res.status(201).send({
                 message: "USUARIO REGISTRADO CORRECTAMENTE",

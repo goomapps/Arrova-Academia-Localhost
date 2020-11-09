@@ -10,7 +10,7 @@
             <div class="input">
               <i class="fas fa-envelope input-icon"></i>
               <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre"
-                     placeholder="nombre" required>
+                     placeholder="nombre" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
           <div class="input-contenedor">
@@ -18,7 +18,7 @@
             <div class="input">
               <i class="fas fa-envelope input-icon"></i>
               <input type="text" name="papellido" #papellido="ngModel" [(ngModel)]="usuario.apellido1"
-                     placeholder="primer apellido" required>
+                     placeholder="primer apellido" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
           <div class="input-contenedor">
@@ -26,7 +26,7 @@
             <div class="input">
               <i class="fas fa-envelope input-icon"></i>
               <input type="text" name="sapellido" #sapellido="ngModel" [(ngModel)]="usuario.apellido2"
-                     placeholder="segundo apellido" required>
+                     placeholder="segundo apellido" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
           <div class="input-contenedor">
@@ -34,7 +34,7 @@
             <div class="input">
               <i class="fas fa-envelope input-icon"></i>
               <input type="text" name="username" #username="ngModel" [(ngModel)]="usuario.nombreUsuario"
-                     placeholder="nombre de usuario" required>
+                     placeholder="nombre de usuario" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
           <div class="input-contenedor">
@@ -67,8 +67,7 @@
             <p class="frase-importante">Fecha de Nacimiento:</p>
             <div class="input">
               <i class="fas fa-envelope input-icon"></i>
-              <input type="text" name="birth" #birth="ngModel" [(ngModel)]="usuario.fechaNacimiento"
-                     placeholder="01/01/1970" required>
+              <input type="date" name="birth" #birth="ngModel" [(ngModel)]="usuario.fechaNacimiento" required>
             </div>
           </div>
           <button class="boton" type="submit" [disabled]="userForm.invalid">

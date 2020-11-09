@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/guards/auth.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/auth-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/auth-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/register/register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/register/register.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <workItem from="1604752251911" duration="493000" />
       <workItem from="1604765747329" duration="16000" />
       <workItem from="1604858671724" duration="751000" />
-      <workItem from="1604939885533" duration="1417000" />
+      <workItem from="1604939885533" duration="2484000" />
     </task>
     <servers />
   </component>
