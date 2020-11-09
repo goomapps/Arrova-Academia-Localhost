@@ -104,8 +104,18 @@
 <div class="menuResponsive1" id="menuResponsive">
   <div id="menuResponsive-navegador" class="menu">
     <ul class="menuResponsive-menuNavegador">
-      <div id="dropbuscador1" >
+      <div id="dropbuscador1">
         <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
+        <div id="dropbuscar" class="">
+          <ul>
+            <li routerLink="/nosotros/profesores">
+              <h5>PROFESORES</h5>
+            </li>
+            <li routerLink="/nosotros/valoraciones">
+              <h5>VALORACIONES</h5>
+            </li>
+          </ul>
+        </div>
       </div>
       <li id="noticias" class="menuResponsive-elemento">
         <h5 routerLink="/noticias" class="menuResponsive-elemento-titulo">NOTICIAS</h5>
