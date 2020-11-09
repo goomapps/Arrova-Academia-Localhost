@@ -119,13 +119,8 @@
 }
 
 
-.boton-menu{
-  border: none;
-  background-color: $components-dark;
-  font-size: 1.4rem;
-  color: $components-light;
-}
-.menuResponsive{
+
+.menuResponsive, #dropbuscador1, .boton-menu, .menuResponsive-elemento-titulo{
   display:none;
 }
 
@@ -136,17 +131,17 @@
   .menuResponsive {
     display: block;
     width: 17em;
-    height: 19em;
+    height: 25em;
     background-color: $components-dark;
     position: absolute;
     border-bottom-right-radius: 3em;
     transition: 0.3s linear;
     z-index: 9999;
     @include mobileL{
-      height: 18em;
+      height: 23em;
     }
     @include mobileS{
-      height: 17em;
+      height: 22em;
     }
 
     &-navegador{
@@ -175,66 +170,22 @@
       border-bottom: 2px solid $text-color-hover;
     }
     &-elemento-titulo{
+      display: block;
       width: 17rem;
       transition: 0.3s;
       padding: 1rem;
     }
 
-    /*.menuResponsive_menuNavegador-elemento{
-      list-style: none;
-      color: $text-color-dark;
-      border-bottom: 2px solid $text-color-dark;
-    }
-
-    .menuResponsive_lista{
-      display: flex;
-      flex-direction: column;
-    }
-
-    li:hover {
-      color: $text-color-emphasis;
-      border-bottom: 2px solid $text-color-emphasis;
-      cursor: pointer;
-    }
-
-    .btns {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      height: 10em;
-
-      button {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: none;
-      }
-
-      i {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 2em;
-        height: 2em;
-        border-radius: 50%;
-        font-size: 30px;
-        color: $text-color-dark;
-        cursor: pointer;
-      }
-
-      i:hover {
-        background-color: $text-color-emphasis;
-        color: $components-light;
-      }
-    }
   }
-  .active {
-      visibility: visible;
-      opacity: 1;
-    }*/
+
+  .boton-menu{
+    display:block;
+    border: none;
+    background-color: $components-dark;
+    font-size: 1.4rem;
+    color: $components-light;
+  }
+  #dropbuscador1{
+    display:block;
   }
 }

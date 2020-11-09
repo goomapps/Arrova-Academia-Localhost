@@ -9,6 +9,15 @@
   background: $text-color-dark;
   border-radius: 1rem;
 
+  @include tablet{
+    width: 17rem;
+    border-radius: 0;
+    padding-left: 1rem;
+  }
+  @include mobileL{
+    padding-left: 3rem;
+  }
+
   .buscador-icon {
     display: flex;
     justify-content: center;
@@ -28,6 +37,7 @@
     background: none;
     border: none;
     color: $text-color-hover;
+
 
     &::placeholder {
       color: $text-color-hover;
