@@ -11,6 +11,25 @@
     width: 90rem;
     background: $components-dark;
 
+    @include laptop {
+      width: 63rem;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    @include tablet {
+      width: 48rem;
+    }
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 23rem;
+    }
+    @include mobileS {
+      width: 20rem;
+    }
+
     .video {
       display: flex;
       flex-direction: column;
@@ -48,6 +67,10 @@
           margin-left: 3rem;
           margin-bottom: 2rem;
 
+          @include mobileL{
+            margin-left: 0;
+          }
+
           h5 {
             margin-bottom: 2rem;
           }
@@ -64,16 +87,41 @@
       width: 30%;
       display: flex;
       flex-direction: column;
+      @include laptop {
+        width: 70%;
+      }
+      @include mobileL{
+        width: 85%;
+      }
+      @include mobileM{
+        width: 80%;
+      }
+      @include mobileS{
+        width: 80%;
+      }
 
       .unidades {
         margin-top: 3rem;
         margin-left: 1rem;
         margin-bottom: 2rem;
+        @include laptop{
+          width: 100%;
+        }
+        @include mobileL{
+          margin-left: 0;
+        }
+        @include mobileS{
+          width: 16rem;
+        }
 
         ul {
           display: flex;
           flex-wrap: wrap;
           list-style: none;
+
+          @include mobileL{
+            flex-wrap: nowrap;
+          }
 
           li {
             display: flex;
