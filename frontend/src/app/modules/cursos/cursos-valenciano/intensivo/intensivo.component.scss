@@ -11,6 +11,19 @@
     justify-content: center;
     align-items: center;
 
+    @include tablet {
+      width: 48rem;
+    }
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 23.5rem;
+    }
+    @include mobileS {
+      width: 20rem;
+    }
+
     .curso {
       display: flex;
       flex-direction: column;
@@ -22,7 +35,18 @@
       margin: 2rem;
       border: 3px solid transparent;
       border-radius: 2rem;
+      text-align: center;
       cursor: pointer;
+
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
 
       &.disabled {
         cursor: not-allowed;
@@ -33,12 +57,13 @@
         text-decoration: none;
 
         .curso-texto {
+          text-align: center;
           h5 {
             margin-bottom: 1rem;
           }
 
           p {
-            margin-left: 5rem;
+            text-align: center;
           }
         }
       }

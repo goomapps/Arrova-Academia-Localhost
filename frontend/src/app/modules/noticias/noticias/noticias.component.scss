@@ -12,11 +12,37 @@
     align-items: center;
     width: 60rem;
 
+    @include tablet {
+      width: 48rem;
+    }
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 23.5rem;
+    }
+    @include mobileS {
+      width: 20rem;
+    }
+
     .noticia {
       background: $components-dark;
       margin: 2rem;
       padding: 3rem;
       border-radius: 2rem;
+
+      @include tablet {
+        width: 46rem;
+      }
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 23rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
 
       h5 {
         margin-bottom: 0.5rem;
@@ -24,6 +50,19 @@
 
       img {
         width: 50rem;
+
+        @include tablet {
+          width: 40rem;
+        }
+        @include mobileL {
+          width: 19rem;
+        }
+        @include mobileM {
+          width: 17rem;
+        }
+        @include mobileS {
+          width: 13rem;
+        }
       }
 
       p {

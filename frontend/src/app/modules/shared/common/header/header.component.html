@@ -14,7 +14,8 @@
           <button id="search" class="boton-nav">
             <i class="fas fa-search boton-nav-icon"></i>
             <div id="dropbuscador" class="dropdown left">
-              <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
+              <!---->
+              <app-buscador  (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
             </div>
           </button>
         </div>
@@ -105,7 +106,8 @@
   <div id="menuResponsive-navegador" class="menu">
     <ul class="menuResponsive-menuNavegador">
       <div id="dropbuscador1">
-        <app-buscador (search)="handleSearch($event)" (keyup.enter)="search()"></app-buscador>
+        <!--"-->
+        <app-buscador  (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
         <div id="dropbuscar" class="">
           <ul>
             <li routerLink="/nosotros/profesores">

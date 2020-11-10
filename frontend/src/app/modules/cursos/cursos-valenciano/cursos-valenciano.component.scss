@@ -5,6 +5,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @include laptop{
+    width: 60rem;
+  }
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
 }
 
 .contenedor-enlace {
@@ -12,6 +28,22 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 70rem;
+
+  @include laptop{
+    width: 50rem;
+  }
+  @include tablet {
+    width: 40rem;
+  }
+  @include mobileL {
+    width: 18rem;
+  }
+  @include mobileM {
+    width: 22rem;
+  }
+  @include mobileS {
+    width: 19rem;
+  }
 
   a {
     text-decoration: none;
@@ -24,6 +56,11 @@
     border-radius: 2rem;
     background: $components-dark;
     margin: 1rem;
+
+    @include tablet {
+      width: 17rem;
+      height: 12rem;
+    }
 
     &.disabled {
       cursor: not-allowed;
