@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
         });
         this.usuarioService.setUser(res.usuario);
         setTimeout(() => {
-          this.router.navigate(['/']);
+          this.router.navigate(['/usuario']);
         }, 500);
       }, (error) => {
         this.logger.error('USUARIO O CONTRASEÑA NO EXISTE');

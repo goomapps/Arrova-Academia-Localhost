@@ -1,4 +1,5 @@
 export class Usuario {
+  _id: string;
   nombre: string;
   apellido1: string;
   apellido2: string;
@@ -11,6 +12,7 @@ export class Usuario {
   imagenPerfil: string;
   rol: string;
   constructor(
+    _id,
     nombre,
     apellido1,
     apellido2,
@@ -22,6 +24,7 @@ export class Usuario {
     correoConfirmado,
     imagenPerfil,
     rol) {
+    this._id = _id;
     this.nombre = nombre;
     this.apellido1 = apellido1;
     this.apellido2 = apellido2;

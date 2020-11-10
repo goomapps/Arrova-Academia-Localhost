@@ -47,6 +47,15 @@
         .descripcion {
           margin-left: 3rem;
           margin-bottom: 2rem;
+
+          h5 {
+            margin-bottom: 2rem;
+          }
+
+          p {
+            margin-left: 2rem;
+            margin-right: 2rem;
+          }
         }
       }
     }
@@ -59,7 +68,7 @@
       .unidades {
         margin-top: 3rem;
         margin-left: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         ul {
           display: flex;
@@ -76,6 +85,12 @@
             cursor: pointer;
             transition: 0.3s;
 
+            &.disabled {
+              pointer-events: none;
+              background: $components-light;
+              cursor: none;
+            }
+
             &:hover {
               background: $text-color-hover;
 
@@ -89,7 +104,7 @@
 
       .videos {
         margin-left: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
 
         ul {
           list-style: none;
@@ -98,16 +113,19 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-            height: 3rem;
-            cursor: pointer;
+            position: relative;
 
-            h5 {
-              text-decoration: underline;
+            p {
+              width: 100%;
+              padding: 1rem 0 1rem 2rem;
+              transition: 0.3s;
             }
 
             &:hover {
-              h5 {
-                color: $text-color-hover;
+              p {
+                cursor: pointer;
+                background: $text-color-hover;
+                color: $text-color-dark;
               }
             }
           }
