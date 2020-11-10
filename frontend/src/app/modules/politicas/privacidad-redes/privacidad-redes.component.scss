@@ -7,6 +7,23 @@
   padding: 2rem;
   background: $components-dark;
   align-items: initial;
+
+  @include laptop {
+    width: 48rem;
+  }
+  @include tablet {
+    width: 32rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM{
+    width: 20rem;
+  }
+  @include mobileM{
+    width: 19rem;
+  }
+
   .p2 {
     padding: 0.5rem;
   }
