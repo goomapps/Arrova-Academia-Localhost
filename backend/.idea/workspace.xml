@@ -20,9 +20,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/estudia-con-nosotros/estudia-con-nosotros.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Accentuacio_Dieresi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Flexio_Verbal.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Morfosintaxi_Adverbi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Morfosintaxi_Determinants.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Morfosintaxi_Flexio.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Morfosintaxi_Quantificadors.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Morfosintaxi_Verb.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Preposicions.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Relatius_Int_Exc.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_Vocalisme.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_combinacions_pronoms_febles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_connectors_conjuncions.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_introduccio_pronoms_febles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_introducció_combinacio_dos_pronoms_febles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_puntuacio.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Activitats_regles_us_pronoms_febles.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Examen_JQCV_C1_Octubre_2020.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Expressio_Escrita1.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Expressio_Escrita2.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Expressio_Escrita3.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Expressio_Escrita4.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Flexio_Verbal.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Recull_Exercicis_Oral.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Solucionari_Flexio_Verbal.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Solucionari_activitats_ortografia.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_Activitats_Lexic_Semantica.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_Activitats_Morfosintaxi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_Lexic_Habitatge.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_Lexic_Semantica.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_Morfosintaxi_alumnes.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_activitats_F_E_O.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U1_fonetica_elocucio_ortografia.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U2_Activitats_F_E_O.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U2_fonetica_elocucio_ortografia.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/dossier_morfosintaxi_C1_intensiu.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/dossier_ortografia_C1_intensiu.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/exercicis_CE.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/flexio verbal valencia.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/prova de nivell.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/prova simulacre fi de curs.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/solucionari_F_E_O.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/solucionari_activitats.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/solucionari_prova_simulacre.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/models/Usuario.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/models/Usuario.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/register/register.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +153,8 @@
       <workItem from="1604752251911" duration="493000" />
       <workItem from="1604765747329" duration="16000" />
       <workItem from="1604858671724" duration="751000" />
-      <workItem from="1604939885533" duration="3149000" />
+      <workItem from="1604939885533" duration="3152000" />
+      <workItem from="1605025303261" duration="1446000" />
     </task>
     <servers />
   </component>
@@ -135,30 +187,30 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1181" y="274" key="FileChooserDialogImpl" timestamp="1604939923536">
+    <state x="-1181" y="274" key="FileChooserDialogImpl" timestamp="1605025313657">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604939923536" />
+    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605025313657" />
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603901579418" />
-    <state width="1897" height="279" key="GridCell.Tab.0.bottom" timestamp="1604871220804">
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom" timestamp="1604959873391">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220804" />
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604959873391" />
     <state width="1897" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="279" key="GridCell.Tab.0.center" timestamp="1604871220803">
+    <state width="1897" height="279" key="GridCell.Tab.0.center" timestamp="1604959873391">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220803" />
+    <state width="1897" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604959873391" />
     <state width="1897" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="279" key="GridCell.Tab.0.left" timestamp="1604871220803">
+    <state width="1897" height="279" key="GridCell.Tab.0.left" timestamp="1604959873391">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220803" />
+    <state width="1897" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604959873391" />
     <state width="1897" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="279" key="GridCell.Tab.0.right" timestamp="1604871220803">
+    <state width="1897" height="279" key="GridCell.Tab.0.right" timestamp="1604959873391">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604871220803" />
+    <state width="1897" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604959873391" />
     <state width="1897" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
     <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1603779795137">
       <screen x="0" y="0" width="1920" height="1040" />

@@ -14,8 +14,7 @@
           <button id="search" class="boton-nav">
             <i class="fas fa-search boton-nav-icon"></i>
             <div id="dropbuscador" class="dropdown left">
-              <!---->
-              <app-buscador  (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
+              <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
             </div>
           </button>
         </div>
@@ -106,8 +105,7 @@
   <div id="menuResponsive-navegador" class="menu">
     <ul class="menuResponsive-menuNavegador">
       <div id="dropbuscador1">
-        <!--"-->
-        <app-buscador  (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
+        <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
         <div id="dropbuscar" class="">
           <ul>
             <li routerLink="/nosotros/profesores">
@@ -119,22 +117,22 @@
           </ul>
         </div>
       </div>
-      <li id="noticias" class="menuResponsive-elemento">
+      <li class="menuResponsive-elemento">
         <h5 routerLink="/noticias" class="menuResponsive-elemento-titulo">NOTICIAS</h5>
       </li>
-      <li id="estudia" class="menuResponsive-elemento">
+      <li class="menuResponsive-elemento">
         <h5 routerLink="/estudia-con-nosotros" class="menuResponsive-elemento-titulo">ESTUDIA</h5>
       </li>
-      <li id="cursos" class="menuResponsive-elemento">
+      <li class="menuResponsive-elemento">
         <h5 routerLink="/cursos" class="menuResponsive-elemento-titulo">CURSOS</h5>
       </li>
-      <li id="cursos" class="menuResponsive-elemento">
+      <li class="menuResponsive-elemento">
         <h5 routerLink="/estudia-con-nosotros/profesional" class="menuResponsive-elemento-titulo">PROFESIONAL</h5>
       </li>
-      <li id="contacto" class="menuResponsive-elemento">
+      <li class="menuResponsive-elemento">
         <h5 routerLink="/contacto" class="menuResponsive-elemento-titulo">CONTACTO</h5>
       </li>
-      <li id="nosotros" class="menuResponsive-elemento">
+      <li class="menuResponsive-elemento">
         <h5 routerLink="/nosotros" class="menuResponsive-elemento-titulo">NOSOTROS</h5>
       </li>
     </ul>

@@ -63,8 +63,9 @@ export class RegisterComponent implements OnInit {
     if (this.usuario.contrasenya === this.repitcontrasenya) {
       this.usuarioService.userRegister(formulario).subscribe(
         (res) => {
+          localStorage.setItem('idUsuario', JSON.stringify(res._id));
           this.logger.log('USUARIO LOGEADO CORRECTAMENTE');
-          this.toastr.success('BIENVENID@ A ARROVA ACADEMIA', `${formulario.nombreUsuario}`, {
+          this.toastr.success('BIENVENID@ A ARROVA ACADEMIA', `${res.nombreUsuario}`, {
             toastClass: 'toast success'
           });
           setTimeout(() => {
