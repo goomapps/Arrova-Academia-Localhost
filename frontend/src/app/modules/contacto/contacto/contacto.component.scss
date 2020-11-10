@@ -16,6 +16,9 @@
     justify-content: center;
     align-items: center;
     width: 60%;
+    @include laptop{
+      width: 100%;
+    }
 
     .formulario {
       display: flex;
@@ -25,6 +28,12 @@
       background: $components-dark;
       padding: 2rem;
       border-radius: 2rem;
+      @include tablet{
+        width: 40rem;
+      }
+      @include mobileL{
+        width: 24rem;
+      }
       @include mobileM{
         width: 22rem;
       }

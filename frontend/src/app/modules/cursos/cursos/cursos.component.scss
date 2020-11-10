@@ -31,6 +31,9 @@
       background: $components-dark;
       padding: 3rem;
       border-radius: 3rem;
+      @include laptop{
+        text-align: center;
+      }
       @include mobileL {
         padding: 1.5rem;
         width: 24.5rem;
@@ -106,6 +109,17 @@
             border-radius: 3rem;
             text-decoration: none;
 
+            @include mobileL {
+              padding: 1rem;
+              width: 24rem;
+            }
+            @include mobileM {
+              width: 22rem;
+            }
+            @include mobileS {
+              width: 19rem;
+            }
+
             &.disabled {
               cursor: none;
               pointer-events: none;
@@ -126,14 +140,17 @@
               img {
                 width: 10rem;
 
-                @include mobileL {
-                  width: 10rem;
-                }
-                @include mobileM {
+                @include tablet {
                   width: 9rem;
                 }
-                @include mobileS {
+                @include mobileL {
                   width: 7rem;
+                }
+                @include mobileM {
+                  width: 6rem;
+                }
+                @include mobileS {
+                  width: 5rem;
                 }
               }
             }

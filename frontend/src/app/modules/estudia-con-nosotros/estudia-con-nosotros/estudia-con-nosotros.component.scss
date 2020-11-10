@@ -37,14 +37,14 @@
       }
       @include mobileL {
         padding: 1.5rem;
-        width: 24.5rem;
+        width: 24rem;
       }
       @include mobileM {
         padding: 1rem;
-        width: 23.5rem;
+        width: 22rem;
       }
       @include mobileS {
-        width: 20rem;
+        width: 19rem;
       }
 
       &-titulo {
@@ -60,6 +60,9 @@
         align-items: center;
         padding: 0 10rem 0 10rem;
 
+        @include tablet {
+          padding: 3rem;
+        }
         @include mobileL {
           padding: 0;
         }
@@ -110,6 +113,17 @@
             border-radius: 3rem;
             text-decoration: none;
 
+            @include mobileL {
+              padding: 1rem;
+              width: 24rem;
+            }
+            @include mobileM {
+              width: 22rem;
+            }
+            @include mobileS {
+              width: 19rem;
+            }
+
             .curso-texto {
               display: flex;
               flex-direction: column;
@@ -125,14 +139,17 @@
               img {
                 width: 10rem;
 
-                @include mobileL {
-                  width: 10rem;
-                }
-                @include mobileM {
+                @include tablet {
                   width: 9rem;
                 }
-                @include mobileS {
+                @include mobileL {
                   width: 7rem;
+                }
+                @include mobileM {
+                  width: 6rem;
+                }
+                @include mobileS {
+                  width: 5rem;
                 }
               }
             }
