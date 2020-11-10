@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import Schema from "mongoose";
 
 const CursoSchema = new mongoose.Schema(
     {
@@ -13,6 +12,7 @@ const CursoSchema = new mongoose.Schema(
         provincia: {type: String, required: true, uppercase: true},
         codigoPostal: {type: Number, required: true},
         telefono: {type: Number, required: true},
+        metodoPago: {type: String, enum: ['DOMICILIACION', 'TRANSFERENCIA', 'ENTERO', 'PLAZOS'], required: true},
         proteccionDatos: {type: Boolean, required: true}
     },
     {timestamps: true}
