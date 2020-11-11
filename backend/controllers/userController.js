@@ -129,7 +129,7 @@ const UserController = {
                     console.log(userConcreto);
                     UserModel.findOne({
                         user: userConcreto.nombre,
-                    }).populate("Cursos")
+                    }).populate("cursos")
                         .then((users) => {
                             if (users) {
                                 res.send(users);

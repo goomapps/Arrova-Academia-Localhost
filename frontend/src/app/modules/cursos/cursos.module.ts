@@ -19,6 +19,7 @@ import { MatriculaComponent } from './matricula/matricula.component';
 import { ReproductorC1Component } from './cursos-valenciano/c1/reproductor-c1/reproductor-c1.component';
 import { ReproductorIntensivoComponent } from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component';
 import {FormsModule} from "@angular/forms";
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {FormsModule} from "@angular/forms";
     imports: [
         CommonModule,
         CursosRoutingModule,
-        FormsModule
+        FormsModule,
+        SharedModule
     ]
 })
 export class CursosModule { }

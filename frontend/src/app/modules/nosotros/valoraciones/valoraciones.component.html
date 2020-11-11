@@ -4,27 +4,19 @@
       <label class="picker" for="picker">
         <p>Selecciona el tipo de valoración</p>
         <input type="text" name="picker" #picker="ngModel" [(ngModel)]="valoracion.tipo" readonly required/>
-        <div class="dropdown dropdown-content">
+        <div class="dropdown left">
           <ul>
             <li id="item1" class="item1">
-              <p>
-                CURSO
-              </p>
+              <p>CURSO</p>
             </li>
             <li id="item2" class="item2">
-              <p>
-                PROFESOR
-              </p>
+              <p>PROFESOR</p>
             </li>
             <li id="item3" class="item3">
-              <p>
-                APP
-              </p>
+              <p>APP</p>
             </li>
             <li id="item4" class="item4">
-              <p>
-                GENERAL
-              </p>
+              <p>GENERAL</p>
             </li>
           </ul>
         </div>

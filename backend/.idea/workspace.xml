@@ -21,17 +21,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/guards/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/guards/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/userController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/services/curso.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/services/curso.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/models/matricula.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/models/matricula.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/nosotros/valoraciones/valoraciones.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,7 @@
       <workItem from="1604858671724" duration="751000" />
       <workItem from="1604939885533" duration="3152000" />
       <workItem from="1605025303261" duration="3037000" />
-      <workItem from="1605111861477" duration="2741000" />
+      <workItem from="1605111861477" duration="6755000" />
     </task>
     <servers />
   </component>
@@ -151,25 +152,25 @@
     </state>
     <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605025313657" />
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603901579418" />
-    <state width="1897" height="279" key="GridCell.Tab.0.bottom" timestamp="1605114881084">
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom" timestamp="1605123492716">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605114881084" />
+    <state width="1897" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605123492716" />
     <state width="1897" height="198" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="279" key="GridCell.Tab.0.center" timestamp="1605114881084">
+    <state width="1897" height="279" key="GridCell.Tab.0.center" timestamp="1605123492716">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605114881084" />
+    <state width="1897" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605123492716" />
     <state width="1897" height="198" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="279" key="GridCell.Tab.0.left" timestamp="1605114881084">
+    <state width="1897" height="279" key="GridCell.Tab.0.left" timestamp="1605123492716">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605114881084" />
+    <state width="1897" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605123492716" />
     <state width="1897" height="198" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
-    <state width="1897" height="279" key="GridCell.Tab.0.right" timestamp="1605114881084">
+    <state width="1897" height="279" key="GridCell.Tab.0.right" timestamp="1605123492716">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605114881084" />
+    <state width="1897" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605123492716" />
     <state width="1897" height="198" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603915190205" />
     <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1603779795137">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -223,9 +224,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603738158345" />
-    <state x="667" y="101" width="585" height="837" key="find.popup" timestamp="1603739055782">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1253" y="101" width="585" height="837" key="find.popup" timestamp="1605122150728">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1253" y="101" width="585" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605122150728" />
     <state x="667" y="101" width="585" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603739055782" />
   </component>
 </project>

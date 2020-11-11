@@ -1,5 +1,5 @@
 export class Matricula {
-  idUsuario: string;
+  usuario: string;
   nombre: string;
   precio: string;
   cantidad: number;
@@ -12,7 +12,7 @@ export class Matricula {
   metodoPago: string;
   proteccionDatos: boolean;
   constructor(
-    idUsuario,
+    usuario,
     nombre,
     precio,
     cantidad,
@@ -25,7 +25,7 @@ export class Matricula {
     metodoPago,
     proteccionDatos
   ) {
-    this.idUsuario = idUsuario;
+    this.usuario = usuario;
     this.nombre = nombre;
     this.precio = precio;
     this.cantidad = cantidad;

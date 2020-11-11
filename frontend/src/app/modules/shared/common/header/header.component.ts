@@ -26,13 +26,14 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    $('#dropperfil').css('display', 'none');
     $('#dropbuscador').css('display', 'none');
     $('#dropestudia').css('display', 'none');
     $('#dropcursos').css('display', 'none');
     $('#dropnosotros').css('display', 'none');
     $('#dropbuscar').css('display', 'none');
     $('#droptraducciones').css('display', 'none');
-    $('#dropperfil').css('display', 'none');
+
     $('#search').hover(() => {
       $('#dropbuscador').show('slow');
     }, () => {

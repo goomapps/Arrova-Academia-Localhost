@@ -81,11 +81,11 @@
       .picker {
         position: relative;
 
-        &:hover .dropdown-content {
+        &:hover .left {
           display: block;
         }
 
-        .dropdown-content {
+        .left {
           display: none;
         }
 
