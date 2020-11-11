@@ -80,7 +80,7 @@ const UserController = {
                 usuario: user,
                 token: token,
             });
-            const mailOptions = {
+            /*const mailOptions = {
                 from: 'contacto@arrovacademia.es',
                 to: user.correo,
                 subject: 'Arrova Academia',
@@ -95,7 +95,7 @@ const UserController = {
                             <p style="color: green">Antes de imprimir este mensaje, por favor compruebe que es verdaderamente necesario. El Medio Ambiente es cosa de todos.<p>
                         </div>`
             };
-            transporter.sendMail(mailOptions);
+            transporter.sendMail(mailOptions);*/
         } catch (err) {
             res.status(500).send({
                 message: "EL USUARIO NO SE HA PODIDO LOGEAR",

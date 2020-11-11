@@ -1,0 +1,136 @@
+@import "src/app/styles/index.scss";
+
+.contenedor-container{
+    width: 80rem;
+
+      @include laptop {
+        width: 55rem;
+      }
+      @include tablet {
+        width: 46rem;
+      }
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
+    .contenedor-preview{
+        display: flex;
+        flex-direction: row;
+        background-color: $components-dark;
+        border-radius: 2rem;
+        padding: 2rem;
+        width: 100%;
+
+        @include mobileL{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .info{
+            width: 30%;
+
+            @include tablet{
+                width: 40%;
+            }
+
+            img{
+                width: 8rem;
+                border: 1px solid $text-color-emphasis;
+                @include mobileL {
+                 width: 5rem;
+                }
+                @include mobileS {
+                 width: 4rem;
+                }
+            }
+        }
+
+        .datos{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 70%;
+            height: 100%;
+            @include tablet{
+                width: 60%;
+            }
+            @include mobileL{
+                margin-top: 2rem;
+            }
+
+            .datosHeader{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 40%;
+
+                @include tablet{
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+                
+                &-notificaciones{
+                    width: 50%;
+                    height: 40%;
+                    border:1px solid $text-color-emphasis;
+                }
+
+                &-calendario{
+                    width: 50%;
+                    height: 40%;
+                    border:1px solid $text-color-emphasis;
+                }
+            }
+
+            .datosBody{
+                display: flex;
+                flex-direction: column;
+                height: 60%;
+            }
+        }
+
+        .curso-titulo{
+            margin-top: 1rem;
+        }
+    }
+}
+
+/*.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: $components-dark;
+  border-radius: 2rem;
+  width: 60rem;
+}
+
+.contenedor {
+  &-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  &-cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+
+    .curso {
+      a {
+        text-decoration: none;
+        color: $text-color-light;
+      }
+    }
+  }
+}*/

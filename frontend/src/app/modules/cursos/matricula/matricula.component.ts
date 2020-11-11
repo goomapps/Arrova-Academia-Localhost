@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Matricula } from '../models/matricula';
 
 @Component({
   selector: 'app-matricula',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatriculaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public matricula: Matricula) { }
 
   ngOnInit(): void {
   }

@@ -19,6 +19,7 @@ export class HeaderComponent implements OnInit {
     'contacto',
     'nosotros'
   ];
+  public palabras = [];
   constructor(private router: Router,
               private toastr: ToastrService,
               public userService: UserService,
@@ -73,14 +74,14 @@ export class HeaderComponent implements OnInit {
 
   handleSearch(value: string): void {
     this.valor = value;
-    const palabras = [];
+    
     console.log(value.substring(1));
     // console.log(value.length);
     this.tags.forEach(e => {
       for (let i = 0; i <= value.length; i++) {
         if (e.charAt(i) == value.charAt(i)) {
-          if (!palabras.includes(e)) {
-            palabras.push(e);
+          if (!this.palabras.includes(e)) {
+            this.palabras.push(e);
           }
         } else {
           // palabras.splice(palabras.indexOf(e),2);

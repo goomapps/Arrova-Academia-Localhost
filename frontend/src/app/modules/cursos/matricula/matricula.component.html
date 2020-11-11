@@ -1,69 +1,70 @@
-<!--<div class="matricula">
+<div class="matricula">
   <div class="matricula-contenedor">
-    <form class="formulario-contenedor" #matriculaForm="ngForm" (ngSubmit)="enviarMatricula()">
+    <!--(ngSubmit)="enviarMatricula()"-->
+    <form class="formulario-contenedor" #matriculaForm="ngForm">
       <div class="input-contenedor">
         <p class="frase-importante">Nombre del curso:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="text" name="birth" #birth="ngModel" [(ngModel)]="matricula.nombre" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Tipo de pago:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.precio" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Cantidad:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.cantidad" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Dirección:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.direccion" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Población:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.poblacion" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Provincia:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.provincia" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Código Postal:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.codigoPostal" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Teléfono:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.telefono" required>
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Método de Pago:</p>
         <div class="input">
           <i class="fas fa-calendar-alt input-icon"></i>
-          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.fechaNacimiento" required>
+          <input type="date" name="birth" #birth="ngModel" [(ngModel)]="matricula.metodoPago" required>
         </div>
       </div>
     </form>
   </div>
-</div>-->
+</div>
