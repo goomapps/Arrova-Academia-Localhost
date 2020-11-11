@@ -3,6 +3,8 @@ import * as $ from 'jquery';
 import {ToastrService} from 'ngx-toastr';
 import {Router} from '@angular/router';
 
+import { UserService } from '../../../auth/services/user.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -18,7 +20,8 @@ export class HeaderComponent implements OnInit {
     'nosotros'
   ];
   constructor(private router: Router,
-              private toastr: ToastrService
+              private toastr: ToastrService,
+              public userService: UserService,
     ) {
   }
 
@@ -29,6 +32,7 @@ export class HeaderComponent implements OnInit {
     $('#dropnosotros').css('display', 'none');
     $('#dropbuscar').css('display', 'none');
     $('#droptraducciones').css('display', 'none');
+    $('#dropperfil').css('display', 'none');
     $('#search').hover(() => {
       $('#dropbuscador').show('slow');
     }, () => {
@@ -53,6 +57,11 @@ export class HeaderComponent implements OnInit {
       $('#droptraducciones').show('slow');
     }, () => {
       $('#droptraducciones').css('display', 'none');
+    });
+    $('#perfil').hover(() => {
+      $('#dropperfil').show('slow');
+    }, () => {
+      $('#dropperfil').css('display', 'none');
     });
 
     $('#menu').click(() => {

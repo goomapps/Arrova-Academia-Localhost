@@ -101,8 +101,20 @@
             </ul>
           </div>
         </button>
-        <button routerLink="/usuario/login" class="boton-nav">
+        <button id="perfil" routerLink="/usuario/login" class="boton-nav">
           <i class="fas fa-user boton-nav-icon"></i>
+          <div id="dropperfil" class="dropdown right" *ngIf="userService.loginDone()">
+            <ul>
+              <li routerLink="">
+                <h5>PERFIL</h5>
+              </li>
+              <li [routerLink]="['/']"
+                  routerLinkActive="router-link-active"
+                  (click)="userService.logout()">
+                <h5>LOGOUT</h5>
+              </li>
+            </ul>
+          </div>
         </button>
       </div>
     </div>

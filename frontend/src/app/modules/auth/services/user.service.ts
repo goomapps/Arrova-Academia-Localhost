@@ -26,6 +26,20 @@ export class UserService {
     return this.httpClient.post<Usuario>(this.API_URL + '/usuarios/registro', formulario);
   }
 
+  loginDone() {
+    if (localStorage.getItem('user') && localStorage.getItem('authToken')) {
+      return true;
+    }
+      return false;
+  }
+  
+  logout(): void {
+    this.httpClient.get(this.API_URL + '/user/logout').subscribe(console.log);
+    this.setUser(null);
+    localStorage.removeItem('user');
+    localStorage.removeItem('authToken');
+  }
+
   setUser(user: Usuario): void {
     this.user = user;
   }
