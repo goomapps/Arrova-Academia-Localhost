@@ -14,6 +14,7 @@ import {Usuario} from '../models/Usuario';
 export class UserService {
   API_URL: string = environment.API_URL;
   user;
+  identity;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -30,14 +31,13 @@ export class UserService {
     if (localStorage.getItem('user') && localStorage.getItem('authToken')) {
       return true;
     }
-      return false;
   }
-  
+
   logout(): void {
-    this.httpClient.get(this.API_URL + '/user/logout').subscribe(console.log);
+    this.httpClient.get(this.API_URL + '/user/logout');
     this.setUser(null);
-    localStorage.removeItem('user');
-    localStorage.removeItem('authToken');
+    this.identity = null;
+    localStorage.clear();
   }
 
   setUser(user: Usuario): void {
@@ -45,5 +45,15 @@ export class UserService {
   }
   getUser(): Usuario {
     return this.user;
+  }
+
+  getIdentity() {
+    const usuario = JSON.parse(localStorage.getItem('user'));
+    if (usuario !== 'undefined') {
+      this.identity = usuario;
+    } else {
+      this.identity = null;
+    }
+    return this.identity;
   }
 }

@@ -24,6 +24,7 @@ import {BuscadorComponent} from './common/buscador/buscador.component';
     CommonModule,
     SharedRoutingModule,
     ReactiveFormsModule
-  ]
+  ],
+  providers: [],
 })
 export class SharedModule { }
