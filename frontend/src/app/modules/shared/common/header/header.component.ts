@@ -28,6 +28,7 @@ export class HeaderComponent implements OnInit {
     $('#dropcursos').css('display', 'none');
     $('#dropnosotros').css('display', 'none');
     $('#dropbuscar').css('display', 'none');
+    $('#droptraducciones').css('display', 'none');
     $('#search').hover(() => {
       $('#dropbuscador').show('slow');
     }, () => {
@@ -47,6 +48,11 @@ export class HeaderComponent implements OnInit {
       $('#dropnosotros').show('slow');
     }, () => {
       $('#dropnosotros').css('display', 'none');
+    });
+    $('#traducciones').hover(() => {
+      $('#droptraducciones').show('slow');
+    }, () => {
+      $('#droptraducciones').css('display', 'none');
     });
 
     $('#menu').click(() => {

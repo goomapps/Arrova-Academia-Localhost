@@ -88,8 +88,18 @@
     </div>
     <div class="header-contenedor-derecha">
       <div class="botonera">
-        <button class="boton-nav">
+        <button id="traducciones" class="boton-nav">
           <i class="fas fa-flag boton-nav-icon"></i>
+          <div id="droptraducciones" class="dropdown right">
+            <ul>
+              <li routerLink="">
+                <h5>CASTELLANO</h5>
+              </li>
+              <li routerLink="">
+                <h5>CATALAN</h5>
+              </li>
+            </ul>
+          </div>
         </button>
         <button routerLink="/usuario/login" class="boton-nav">
           <i class="fas fa-user boton-nav-icon"></i>
