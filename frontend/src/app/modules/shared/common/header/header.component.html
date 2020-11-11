@@ -101,15 +101,14 @@
             </ul>
           </div>
         </button>
-        <button id="perfil" routerLink="/usuario/login" class="boton-nav">
-          <i class="fas fa-user boton-nav-icon"></i>
+        <button id="perfil" class="boton-nav">
+          <i class="fas fa-user boton-nav-icon" routerLink="/usuario"></i>
           <div id="dropperfil" class="dropdown right" *ngIf="userService.loginDone()">
             <ul>
-              <li routerLink="">
+              <li routerLink="/usuario">
                 <h5>PERFIL</h5>
               </li>
-              <li [routerLink]="['/']"
-                  routerLinkActive="router-link-active"
+              <li routerLink="/"
                   (click)="userService.logout()">
                 <h5>LOGOUT</h5>
               </li>

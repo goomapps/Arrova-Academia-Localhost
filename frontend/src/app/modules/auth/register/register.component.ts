@@ -6,7 +6,7 @@ import {NGXLogger} from 'ngx-logger';
 import {ToastrService} from 'ngx-toastr';
 
 import {UserService} from '../services/user.service';
-import {Usuario} from "../models/Usuario";
+import {Usuario} from '../models/Usuario';
 
 @Component({
   selector: 'app-register',
@@ -69,7 +69,7 @@ export class RegisterComponent implements OnInit {
             toastClass: 'toast success'
           });
           setTimeout(() => {
-            this.router.navigate(['/cursos/matricula']);
+            this.router.navigate(['/usuario/login']);
           }, 500);
         }, (error) => {
           this.logger.error('FORMULARIO MAL RELLENADO');
