@@ -130,12 +130,15 @@
         <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
         <div id="dropbuscar" class="">
           <ul>
-            <li routerLink="/nosotros/profesores">
+            <!--<li *ngFor="let ruta of '{{palabras}}'" routerLink="/nosotros/{{ruta}}}">
+                <h5>{{ruta}}</h5>
+              </li>-->
+            <!--<li routerLink="/nosotros/profesores">
               <h5>PROFESORES</h5>
             </li>
             <li routerLink="/nosotros/valoraciones">
               <h5>VALORACIONES</h5>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>
