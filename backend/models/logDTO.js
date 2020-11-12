@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const LogsSchema = new mongoose.Schema(
     {
-        message: {type: String, require: true, uppercase: true},
+        message: {type: String, require: true},
         additional: {type: [String]},
         level: {type: Number, require: true},
         fileName: {type: String, require: true},

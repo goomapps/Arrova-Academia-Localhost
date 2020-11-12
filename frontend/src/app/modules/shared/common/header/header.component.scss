@@ -125,8 +125,31 @@
 }
 
 
+.dropbuscarDesplegable{
+  position: absolute;
+  background-color: $components-light;
 
-.menuResponsive, .menuResponsive1, #dropbuscador1, .boton-menu, .menuResponsive-elemento-titulo{
+  @include tablet{
+    width: 17rem;
+
+  }
+
+  .dropbuscarDesplegable-item{
+    height: 2rem;
+
+    @include tablet{
+      border-bottom: 1px solid $components-dark;
+    }
+
+    h5{
+      height: 2rem;
+    }
+  }
+}
+
+
+
+.menuResponsive, .menuResponsive1, #dropbuscador, .boton-menu, .menuResponsive-elemento-titulo{
   display:none;
 }
 
@@ -187,7 +210,7 @@
     font-size: 1.4rem;
     color: $components-light;
   }
-  #dropbuscador1{
+  #dropbuscador{
     display:block;
   }
 }

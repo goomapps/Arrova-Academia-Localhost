@@ -3,13 +3,13 @@ import Schema from "mongoose";
 
 const UserSchema = new mongoose.Schema(
     {
-        nombre: {type: String, required: true, uppercase: true},
-        apellido1: {type: String, required: true, uppercase: true},
-        apellido2: {type: String, required: true, uppercase: true},
-        nombreUsuario: {type: String, required: true, unique: true, uppercase: true},
-        correo: {type: String, required: true, unique: true, uppercase: true},
+        nombre: {type: String, required: true},
+        apellido1: {type: String, required: true},
+        apellido2: {type: String, required: true},
+        nombreUsuario: {type: String, required: true, unique: true},
+        correo: {type: String, required: true, unique: true},
         contrasenya: {type: String, required: true},
-        fechaNacimiento: {type: String, required: true, uppercase: true},
+        fechaNacimiento: {type: String, required: true},
         terminos: {type: Boolean, required: true},
         correoConfirmado: {type: Boolean, default: false},
         imagenPerfil: {type: String},

@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
     'contacto',
     'nosotros'
   ];
-  public palabras = [];
+  public rutas = [];
   constructor(private router: Router,
               private toastr: ToastrService,
               public userService: UserService,
@@ -74,24 +74,20 @@ export class HeaderComponent implements OnInit {
 
 
   handleSearch(value: string): void {
+    this.rutas = [];
+    $("#dropbuscar-contenedor").children().remove();
     this.valor = value;
-    
-    console.log(value.substring(1));
-    // console.log(value.length);
     this.tags.forEach(e => {
       for (let i = 0; i <= value.length; i++) {
-        if (e.charAt(i) == value.charAt(i)) {
-          if (!this.palabras.includes(e)) {
-            this.palabras.push(e);
+        if (e.charAt(i) == value.charAt(i) && e.includes(this.valor)) {
+          if (!this.rutas.includes(e)) {
+            this.rutas.push(e);
           }
-        } else {
-          // palabras.splice(palabras.indexOf(e),2);
-        }
-      }
+        };
+      };
     });
 
     $('#dropbuscar').show('slow');
-      // $('#dropnosotros').css('display', 'none');
   }
 
   search(value: string): void {

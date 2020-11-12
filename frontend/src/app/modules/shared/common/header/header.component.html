@@ -15,6 +15,13 @@
             <i class="fas fa-search boton-nav-icon"></i>
             <div id="dropbuscador" class="dropdown left">
               <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
+              <div id="dropbuscar" class="dropbuscarDesplegable">
+                <ul id="dropbuscar-contenedor">
+                  <li *ngFor="let ruta of rutas" routerLink="/{{ruta}}" class='dropbuscarDesplegable-item'>
+                    <h5>{{ruta}}</h5>
+                  </li>
+                </ul>
+              </div>
             </div>
           </button>
         </div>
@@ -126,19 +133,13 @@
 <div class="menuResponsive1" id="menuResponsive">
   <div id="menuResponsive-navegador" class="menu">
     <ul class="menuResponsive-menuNavegador">
-      <div id="dropbuscador1">
+      <div id="dropbuscador">
         <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
-        <div id="dropbuscar" class="">
-          <ul>
-            <!--<li *ngFor="let ruta of '{{palabras}}'" routerLink="/nosotros/{{ruta}}}">
-                <h5>{{ruta}}</h5>
-              </li>-->
-            <!--<li routerLink="/nosotros/profesores">
-              <h5>PROFESORES</h5>
+        <div id="dropbuscar" class="dropbuscarDesplegable">
+          <ul id="dropbuscar-contenedor">
+            <li *ngFor="let ruta of rutas" routerLink="/{{ruta}}" class='dropbuscarDesplegable-item'>
+              <h5>{{ruta}}</h5>
             </li>
-            <li routerLink="/nosotros/valoraciones">
-              <h5>VALORACIONES</h5>
-            </li>-->
           </ul>
         </div>
       </div>
