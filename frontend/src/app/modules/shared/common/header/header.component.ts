@@ -12,7 +12,7 @@ import { UserService } from '../../../auth/services/user.service';
 })
 export class HeaderComponent implements OnInit {
   public valor: string;
-  public  tags = [
+  public tags:string[] = [
     'noticias',
     'estudia',
     'cursos',
@@ -75,19 +75,19 @@ export class HeaderComponent implements OnInit {
 
   handleSearch(value: string): void {
     this.rutas = [];
-    $("#dropbuscar-contenedor").children().remove();
     this.valor = value;
     this.tags.forEach(e => {
       for (let i = 0; i <= value.length; i++) {
         if (e.charAt(i) == value.charAt(i) && e.includes(this.valor)) {
           if (!this.rutas.includes(e)) {
             this.rutas.push(e);
-          }
+          };
         };
       };
+      $('#dropbuscar').show('slow');
     });
 
-    $('#dropbuscar').show('slow');
+    
   }
 
   search(value: string): void {

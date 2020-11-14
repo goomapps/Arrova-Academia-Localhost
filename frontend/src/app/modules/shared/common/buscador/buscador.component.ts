@@ -13,7 +13,5 @@ export class BuscadorComponent implements OnInit {
   search = new FormControl('');
   ngOnInit(): void {
     this.search.valueChanges.pipe(debounceTime(300)).subscribe(value => this.searchEmitter.emit(value));
-
-
   }
 }
