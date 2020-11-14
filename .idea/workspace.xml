@@ -50,11 +50,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd158dce-0048-40fe-b0d4-71217f497d51" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bd158dce-0048-40fe-b0d4-71217f497d51" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -111,6 +107,7 @@
       <workItem from="1603830461169" duration="930000" />
       <workItem from="1603833382060" duration="845000" />
       <workItem from="1603836445514" duration="19000" />
+      <workItem from="1605353382885" duration="713000" />
     </task>
     <servers />
   </component>
