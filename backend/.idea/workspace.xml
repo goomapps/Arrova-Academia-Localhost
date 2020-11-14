@@ -20,15 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/contactoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/contactoDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursoDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ecnDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ecnDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/profesionalDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/profesionalDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/tokenDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tokenDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/userDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/valoracionDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/valoracionDTO.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +53,7 @@
     <property name="last_opened_file_path" value="D:/MASTER EN CSS/CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -113,7 +107,7 @@
       <workItem from="1605111861477" duration="6755000" />
       <workItem from="1605286507060" duration="559000" />
       <workItem from="1605287089608" duration="630000" />
-      <workItem from="1605350045386" duration="1437000" />
+      <workItem from="1605350045386" duration="3111000" />
     </task>
     <servers />
   </component>
