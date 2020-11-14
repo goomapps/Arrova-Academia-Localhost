@@ -17,26 +17,35 @@
 
     &-izquierda {
       display: flex;
-      justify-content: space-between;
       align-items: center;
       width: 15rem;
-      min-width: 15rem;
       height: 100%;
       @include mobileS{
-        min-width: 12rem;
+        min-width: 4rem;
+      }
+      @include mobileS{
+        min-width: 3rem;
       }
 
       .logo {
         img {
           width: 11rem;
-          min-width: 8rem;
           height: 4.5rem;
-          min-height: 3.5rem;
+          //min-height: 3.5rem;
           cursor: pointer;
 
-          @include mobileS{
+          @include mobileL{
+            width: 8rem;
+            height: 3.5rem;
+            margin-right: 1.5rem;
+          }
+          @include mobileM{
             width: 7rem;
             height: 3rem;
+          }
+          @include mobileS{
+            width: 6rem;
+            height: 2.5rem;
           }
         }
       }
@@ -118,6 +127,53 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+
+        .botonNavLogin{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 3.5rem;
+          height: 5rem;
+          background: none;
+          border: none;
+          border-radius: 1rem;
+          cursor: pointer;
+          transition: 0.5s;
+          position: relative;
+          margin-right: 10px;
+
+          &:hover{
+            background: $text-color-dark;
+
+            .botonNavLogin-text{
+              color: $text-color-hover;
+              }
+          }
+        }
+
+        .botonNavRegistro{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 5rem;
+          height: 5rem;
+          background: none;
+          border: none;
+          border-radius: 1rem;
+          cursor: pointer;
+          transition: 0.5s;
+          position: relative;
+          margin-left: 10px;
+
+          &:hover{
+            background: $text-color-dark;
+
+            .botonNavRegistro-text{
+            color: $text-color-hover;
+            }
+          }
+        }
 
         #perfil {
           .dropdown {
