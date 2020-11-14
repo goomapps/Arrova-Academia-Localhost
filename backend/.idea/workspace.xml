@@ -21,7 +21,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/conexionbd.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/conexionbd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/contactoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/contactoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/ecnDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ecnDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/profesionalDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/profesionalDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/tokenDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/tokenDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/userDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/valoracionDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/valoracionDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/login/login.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +113,7 @@
       <workItem from="1605111861477" duration="6755000" />
       <workItem from="1605286507060" duration="559000" />
       <workItem from="1605287089608" duration="630000" />
+      <workItem from="1605350045386" duration="1437000" />
     </task>
     <servers />
   </component>
@@ -211,6 +219,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1897" height="347" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
+    <state x="-1241" y="139" key="RollbackChangesDialog" timestamp="1605351098058">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1241" y="139" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605351098058" />
     <state x="460" y="164" key="SettingsEditor" timestamp="1603738158345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

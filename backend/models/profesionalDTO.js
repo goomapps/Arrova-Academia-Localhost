@@ -13,5 +13,5 @@ const ProfesionalSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-const ProfesionalModel = mongoose.model("Profesional", ProfesionalSchema);
+const ProfesionalModel = mongoose.model("Profesionales", ProfesionalSchema);
 export default ProfesionalModel;

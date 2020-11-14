@@ -9,5 +9,5 @@ const ContactoSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-const ContactoModel = mongoose.model("Contacto", ContactoSchema);
+const ContactoModel = mongoose.model("Contactos", ContactoSchema);
 export default ContactoModel;
