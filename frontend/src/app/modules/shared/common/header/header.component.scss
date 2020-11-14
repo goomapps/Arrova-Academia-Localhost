@@ -94,6 +94,11 @@
         }
       }
 
+      .disabled{
+        cursor: none;
+        pointer-events: none;
+      }
+
       .buscador {
         display: flex;
         justify-content: center;

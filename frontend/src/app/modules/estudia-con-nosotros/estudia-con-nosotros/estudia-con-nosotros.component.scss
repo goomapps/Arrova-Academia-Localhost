@@ -29,7 +29,7 @@
       justify-content: center;
       align-items: center;
       background: $components-dark;
-      padding: 3rem;
+      padding: 2rem 2rem 3rem 2rem;
       border-radius: 3rem;
       width: 76%;
       text-align: center;
@@ -78,7 +78,7 @@
       justify-content: center;
       align-items: center;
       margin-top: 3rem;
-      width: 80%;
+      width: 100%;
 
       @include mobileL {
         width: 24rem;
@@ -93,15 +93,24 @@
       &-contenedor {
         display: flex;
         flex-direction: column;
-        align-items: initial;
+        align-items: center;
         width: 100%;
 
         .curso {
-          padding: 1rem;
-          width: 100%;
+          padding-bottom: 3rem;
+          width: 76%;
 
-         
+          @include mobileL {
+            width: 24rem;
+          }
+          @include mobileM {
+            width: 22rem;
+          }
+          @include mobileS {
+            width: 19rem;
+          }
 
+        
           a {
             display: flex;
             justify-content: space-between;
@@ -111,17 +120,6 @@
             border: 3px solid transparent;
             border-radius: 3rem;
             text-decoration: none;
-
-            @include mobileL {
-              padding: 1rem;
-              width: 24rem;
-            }
-            @include mobileM {
-              width: 22rem;
-            }
-            @include mobileS {
-              width: 19rem;
-            }
 
             .curso-texto {
               display: flex;

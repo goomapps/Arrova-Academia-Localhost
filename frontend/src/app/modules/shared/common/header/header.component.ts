@@ -67,6 +67,7 @@ export class HeaderComponent implements OnInit {
     });
 
     $('#menu').click(() => {
+      this.rutas = [];
       $('#menuResponsive').toggleClass('menuResponsive1');
       $('#menuResponsive').toggleClass('menuResponsive');
     });
