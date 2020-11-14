@@ -52,7 +52,7 @@ export class LoginComponent implements OnInit {
           this.router.navigate(['/usuario']);
         }, 500);
       }, (error) => {
-        this.logger.error('USUARIO O CONTRASEÑA NO EXISTE');
+        this.logger.error('USUARIO O CONTRASEÑA NO EXISTE', error);
         this.toastr.error('USUARIO O CONTRASEÑA NO EXISTE', 'HA HABIDO UN ERROR', {
           toastClass: 'toast error'
         });

@@ -9,5 +9,5 @@ const TokenSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-const TokenModel = mongoose.model("Token", TokenSchema);
+const TokenModel = mongoose.model("Tokens", TokenSchema);
 export default TokenModel;

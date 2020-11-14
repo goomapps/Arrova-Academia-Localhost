@@ -18,5 +18,5 @@ const CursoSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-const CursoModel = mongoose.model("Curso", CursoSchema);
+const CursoModel = mongoose.model("Cursos", CursoSchema);
 export default CursoModel;

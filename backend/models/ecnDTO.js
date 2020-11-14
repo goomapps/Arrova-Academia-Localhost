@@ -15,5 +15,5 @@ const EcnSchema = new mongoose.Schema(
     },
     {timestamps: true}
 );
-const EcnModel = mongoose.model("ECN", EcnSchema);
+const EcnModel = mongoose.model("ECNS", EcnSchema);
 export default EcnModel;
