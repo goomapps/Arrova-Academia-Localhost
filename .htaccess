@@ -1,6 +1,13 @@
 RewriteEngine on
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteCond %{REQUEST_URI} !\.(?.css|js|map|jpe?g|gif|png)$ [NC]
-RewriteRule ^(.*)$ /index.html?path=$1 [NC,L,QSA]
+# FORCE HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://www.arrovacademia.es [L,R=301]
+
+# IF AN EXISTING ASSET OR DIRECTORY IS REQUESTED GO TO IT AS IT IS
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# IF THE REQUESTED RESOURCE DOESN'T EXIST, USE INDEX.HTML
+RewriteRule ^ /index.html
