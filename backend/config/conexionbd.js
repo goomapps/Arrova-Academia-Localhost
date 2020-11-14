@@ -11,3 +11,6 @@ mongoose.connect(
     )
     .then(() => console.log("CONEXIÓN A LA BD REALIZADA CON ÉXITO"))
     .catch(console.error);
+mongoose.set("debug", (collectionName, method, query, doc) => {
+    console.log(`${collectionName}.${method}`, JSON.stringify(query), doc);
+});

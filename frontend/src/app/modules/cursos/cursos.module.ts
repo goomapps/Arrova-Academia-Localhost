@@ -20,6 +20,7 @@ import { ReproductorC1Component } from './cursos-valenciano/c1/reproductor-c1/re
 import { ReproductorIntensivoComponent } from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component';
 import {FormsModule} from "@angular/forms";
 import {SharedModule} from "../shared/shared.module";
+import { ReproductorIntensivoCieacovaComponent } from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import {SharedModule} from "../shared/shared.module";
     CursoIntensivoComponent,
     MatriculaComponent,
     ReproductorC1Component,
-    ReproductorIntensivoComponent
+    ReproductorIntensivoComponent,
+    ReproductorIntensivoCieacovaComponent
   ],
     imports: [
         CommonModule,

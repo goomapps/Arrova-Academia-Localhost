@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
-  selector: 'app-reproductor-intensivo',
-  templateUrl: './reproductor-intensivo.component.html',
-  styleUrls: ['./reproductor-intensivo.component.scss']
+  selector: 'app-reproductor-intensivo-cieacova',
+  templateUrl: './reproductor-intensivo-cieacova.component.html',
+  styleUrls: ['./reproductor-intensivo-cieacova.component.scss']
 })
-export class ReproductorIntensivoComponent implements OnInit {
+export class ReproductorIntensivoCieacovaComponent implements OnInit {
   videoSrc: string[];
   videoSrcNum: number;
   desc: string[];
