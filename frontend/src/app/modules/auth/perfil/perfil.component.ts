@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CursoService } from '../../cursos/services/curso.service';
 //import { UserService } from 'Arrova-Academia-Localhost/frontend/src/app/services/user.service';
 
 @Component({
@@ -9,13 +10,16 @@ import { Component, OnInit } from '@angular/core';
 export class PerfilComponent implements OnInit {
 
   userProfile: any = {};
+  cursos: any = [];
 
-  constructor() { }
+  constructor(private cursosService: CursoService) { }
 
   ngOnInit(): void {
     var dataLogin = JSON.parse(localStorage.getItem('user'));
 
     this.userProfile = dataLogin;
+
+    this.cursos = this.cursosService.getCursosByUserId();
 
     /*this.userService.showUser(this.userProfile);
 

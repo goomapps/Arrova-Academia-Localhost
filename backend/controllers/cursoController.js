@@ -33,9 +33,9 @@ const CursoController = {
         }
     },
 
-    async getAll(req, res) {
+    async getCursosByUserId(req, res) {
         try {
-            const cursos = await CursoModel.find({id: req._id});
+            const cursos = await CursoModel.find({id: req.params._id});
             res.send(cursos);
         } catch (err) {
             res.status(404).send({

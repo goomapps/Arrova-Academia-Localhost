@@ -1,5 +1,6 @@
 import {HttpClient} from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import {environment} from '../../../../environments/environment';
 import { UserService } from '../../auth/services/user.service';
@@ -21,7 +22,7 @@ export class CursoService {
     return this.httpClient.post(this.API_URL + '/cursos/insert', form);
   }
 
-  getAll(id: string) {
-    return this.httpClient.get(this.API_URL + '/cursos/get', this.identity._id);
+  getCursosByUserId():Observable<Object> {
+    return this.httpClient.get(this.API_URL + '/cursos/get/' + this.identity._id);
   }
 }
