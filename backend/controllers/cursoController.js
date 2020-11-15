@@ -31,7 +31,18 @@ const CursoController = {
                 error,
             });
         }
-    }
+    },
+
+    async getAll(req, res) {
+        try {
+            const cursos = await CursoModel.find({id: req._id});
+            res.send(cursos);
+        } catch (err) {
+            res.status(404).send({
+                error: err
+            });
+        }
+    },
 };
 
 export default CursoController;
