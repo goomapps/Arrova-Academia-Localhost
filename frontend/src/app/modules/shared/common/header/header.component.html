@@ -102,7 +102,7 @@
             <p class="botonNavRegistro-text">REGISTRATE</p>
           </button>
         </div>
-        <div  class="botonera">
+        <div *ngIf="userService.loginDone()" class="botonera">
           <button id="perfil" class="boton-nav">
             <i class="fas fa-user boton-nav-icon" routerLink="/usuario"></i>
             <div id="dropperfil" class="dropdown right">
