@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="" />
+    <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,7 +49,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/MASTER EN CSS/CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Arrova-Academia-Servidor" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -109,6 +111,8 @@
       <workItem from="1605460113757" duration="28000" />
       <workItem from="1605461361816" duration="1705000" />
       <workItem from="1605529831105" duration="3347000" />
+      <workItem from="1605561167390" duration="255000" />
+      <workItem from="1605561536671" duration="46000" />
     </task>
     <servers />
   </component>
@@ -141,10 +145,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="739" y="274" key="FileChooserDialogImpl" timestamp="1605460136726">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1181" y="274" key="FileChooserDialogImpl" timestamp="1605561580804">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605289101593" />
+    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605561580804" />
     <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605460136726" />
     <state width="1897" height="221" key="GridCell.Tab.0.bottom" timestamp="1605557969758">
       <screen x="-1920" y="0" width="1920" height="1040" />
