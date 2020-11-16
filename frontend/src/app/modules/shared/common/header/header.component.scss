@@ -128,6 +128,31 @@
         justify-content: space-between;
         width: 100%;
 
+        .botonNavLoged{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5rem;
+          background: none;
+          border: none;
+          cursor: pointer;
+          transition: 0.5s;
+          position: relative;
+          padding: 0.5rem;
+          padding: 0 10px 0 10px;
+          
+          .boton-nav-icon{
+            margin-right: 10px;
+          }
+
+          &:hover {
+            background: $text-color-dark;
+        
+            .boton-nav-icon, .boton-nav-text {
+              color: $text-color-hover;
+            }
+          }
+        }
 
         .botonNav{
           display: flex;

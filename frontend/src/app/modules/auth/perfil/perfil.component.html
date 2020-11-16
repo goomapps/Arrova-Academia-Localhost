@@ -35,22 +35,22 @@
           <h3 class="curso-titulo">Cursos:</h3>
           <div *ngIf="curso != ''">
             <div *ngIf="curso[0].nombre === 'VALENCIANO C1'">
-              <a routerLink="/cursos/valenciano/c1/reproductor">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/c1/reproductor">
                 <p>{{curso[0].nombre}}</p>
               </a>
             </div>
             <div *ngIf="curso[0].nombre === 'VALENCIANO C2'">
-              <a routerLink="/cursos/valenciano/c2/reproductor">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/c2/reproductor">
                 <p>{{curso[0].nombre}}</p>
               </a>
             </div>
             <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO JQCV'">
-              <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/jqcv/reproductor">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/intensivos/curso-intensivo/jqcv/reproductor">
                 <p>{{curso[0].nombre}}</p>
               </a>
             </div>
             <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO CIEACOVA'">
-              <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/cieacova/reproductor">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/intensivos/curso-intensivo/cieacova/reproductor">
                 <p>{{curso[0].nombre}}</p>
               </a>
             </div>
