@@ -1,7 +1,6 @@
 <div class="matricula">
   <div class="matricula-contenedor">
-    <!--(ngSubmit)="enviarMatricula()"-->
-    <form class="formulario-contenedor" #matriculaForm="ngForm">
+    <form class="formulario-contenedor" #matriculaForm="ngForm" (ngSubmit)="enviarMatricula()">
       <div class="input-contenedor">
         <p class="frase-importante">Nombre del curso:</p>
         <div id="nombre" class="input">
@@ -18,6 +17,7 @@
             </ul>
           </div>
         </div>
+
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Tipo de pago:</p>

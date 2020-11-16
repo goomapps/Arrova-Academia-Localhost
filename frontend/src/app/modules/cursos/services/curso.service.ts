@@ -17,7 +17,7 @@ export class CursoService {
 
   constructor(private httpClient: HttpClient,
               private userService: UserService
-              ) { 
+              ) {
                 this.identity = this.userService.getIdentity();
               }
 

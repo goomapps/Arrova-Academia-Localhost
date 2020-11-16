@@ -65,69 +65,71 @@ export class ReproductorIntensivoComponent implements OnInit {
       'Per finalitzar, presentem els dos exercicis que se’ns presentaran a les proves de certificació, el monòleg i el diàleg, de manera que us donem una sèrie de claus per millorar la vostra expressió i interacció orals.',
       'Amb aquest vídeo de fonètica, elocució i ortografia iniciem la unitat 2, en aquest cas amb l’estudi dels fenòmens de fonètica sintàctica així com de l’ortografia i l’ús de l’apòstrof, les contraccions, el guionet, les abreviatures, les sigles, els acrònims i els símbols.'
     ];
-    this.unidad = [
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-    ];
     this.descNum = 0;
     this.resumenNum = 0;
     this.videoSrcNum = 0;
-    this.unidadNum = 0;
   }
 
   ngOnInit(): void {
-    $('#dropfeou1').css('display', 'none');
+    $('#dropeie1').css('display', 'none');
+    $('#item1').hover(() => {
+      $('#dropeie1').show('slow');
+    }, () => {
+      $('#dropeie1').css('display', 'none');
+    });
+    $('#dropeie2').css('display', 'none');
     $('#item2').hover(() => {
-      $('#dropfeou1').show('slow');
+      $('#dropeie2').show('slow');
     }, () => {
-      $('#dropfeou1').css('display', 'none');
+      $('#dropeie2').css('display', 'none');
     });
-    $('#dropmorfu1').css('display', 'none');
-    $('#item7').hover(() => {
-      $('#dropmorfu1').show('slow');
+    $('#dropeie3').css('display', 'none');
+    $('#item3').hover(() => {
+      $('#dropeie3').show('slow');
     }, () => {
-      $('#dropmorfu1').css('display', 'none');
+      $('#dropeie3').css('display', 'none');
     });
-    $('#droplisu1').css('display', 'none');
+    $('#dropeie4').css('display', 'none');
+    $('#item4').hover(() => {
+      $('#dropeie4').show('slow');
+    }, () => {
+      $('#dropeie4').css('display', 'none');
+    });
+    $('#dropmorf').css('display', 'none');
+    $('#item6').hover(() => {
+      $('#dropmorf').show('slow');
+    }, () => {
+      $('#dropmorf').css('display', 'none');
+    });
+    $('#dropfv').css('display', 'none');
     $('#item8').hover(() => {
-      $('#droplisu1').show('slow');
+      $('#dropfv').show('slow');
     }, () => {
-      $('#droplisu1').css('display', 'none');
+      $('#dropfv').css('display', 'none');
     });
-    $('#dropfeou2').css('display', 'none');
-    $('#item11').hover(() => {
-      $('#dropfeou2').show('slow');
+    $('#dropeio').css('display', 'none');
+    $('#item9').hover(() => {
+      $('#dropeio').show('slow');
     }, () => {
-      $('#dropfeou2').css('display', 'none');
+      $('#dropeio').css('display', 'none');
     });
-
-    $('#item11').css('display', 'none');
-    /*
-    $('#item12').css('display', 'none');
-    $('#item13').css('display', 'none');
-    $('#item14').css('display', 'none');
-    $('#item15').css('display', 'none');
-    $('#item16').css('display', 'none');
-    $('#item17').css('display', 'none');
-    $('#item18').css('display', 'none');
-    $('#item19').css('display', 'none');
-    $('#item20').css('display', 'none');
-     */
+    $('#dropce').css('display', 'none');
+    $('#item10').hover(() => {
+      $('#dropce').show('slow');
+    }, () => {
+      $('#dropce').css('display', 'none');
+    });
+    $('#dropfc').css('display', 'none');
+    $('#item12').hover(() => {
+      $('#dropfc').show('slow');
+    }, () => {
+      $('#dropfc').css('display', 'none');
+    });
 
     const unidad1 = document.getElementById('unidad1');
     const unidad2 = document.getElementById('unidad2');
-    /*
-    const unidad3 = document.getElementById('unidad3');
-    const unidad4 = document.getElementById('unidad4');
-    const unidad5 = document.getElementById('unidad5');
-    const unidad6 = document.getElementById('unidad6');
-    const unidad7 = document.getElementById('unidad7');
-    const unidad8 = document.getElementById('unidad8');
-    const unidad9 = document.getElementById('unidad9');
-    const unidad10 = document.getElementById('unidad10');
-     */
 
     unidad1.addEventListener('click', () => {
-      this.unidadNum = 0;
       $('#item1').css('display', 'block');
       $('#item2').css('display', 'block');
       $('#item3').css('display', 'block');
@@ -138,21 +140,11 @@ export class ReproductorIntensivoComponent implements OnInit {
       $('#item8').css('display', 'block');
       $('#item9').css('display', 'block');
       $('#item10').css('display', 'block');
-      $('#item11').css('display', 'none');
-      /*
-      $('#item12').css('display', 'none');
-      $('#item13').css('display', 'none');
-      $('#item14').css('display', 'none');
-      $('#item15').css('display', 'none');
-      $('#item16').css('display', 'none');
-      $('#item17').css('display', 'none');
-      $('#item18').css('display', 'none');
-      $('#item19').css('display', 'none');
-      $('#item20').css('display', 'none');
-       */
+      $('#item11').css('display', 'block');
+      $('#item12').css('display', 'block');
     });
+
     unidad2.addEventListener('click', () => {
-      this.unidadNum = 1;
       $('#item1').css('display', 'none');
       $('#item2').css('display', 'none');
       $('#item3').css('display', 'none');
@@ -163,18 +155,8 @@ export class ReproductorIntensivoComponent implements OnInit {
       $('#item8').css('display', 'none');
       $('#item9').css('display', 'none');
       $('#item10').css('display', 'none');
-      $('#item11').css('display', 'block');
-      /*
-      $('#item12').css('display', 'block');
-      $('#item13').css('display', 'block');
-      $('#item14').css('display', 'block');
-      $('#item15').css('display', 'block');
-      $('#item16').css('display', 'block');
-      $('#item17').css('display', 'block');
-      $('#item18').css('display', 'block');
-      $('#item19').css('display', 'block');
-      $('#item20').css('display', 'block');
-       */
+      $('#item11').css('display', 'none');
+      $('#item12').css('display', 'none');
     });
 
     const item1 = document.getElementById('item1');
@@ -188,18 +170,9 @@ export class ReproductorIntensivoComponent implements OnInit {
     const item9 = document.getElementById('item9');
     const item10 = document.getElementById('item10');
     const item11 = document.getElementById('item11');
-    /*
     const item12 = document.getElementById('item12');
-    const item13 = document.getElementById('item13');
-    const item14 = document.getElementById('item14');
-    const item15 = document.getElementById('item15');
-    const item16 = document.getElementById('item16');
-    const item17 = document.getElementById('item17');
-    const item18 = document.getElementById('item18');
-    const item19 = document.getElementById('item19');
-    const item20 = document.getElementById('item20');
-     */
     const video = document.querySelector('video');
+
     item1.addEventListener('click', () => {
       video.pause();
       video.src = this.videoSrc[0];
@@ -266,13 +239,13 @@ export class ReproductorIntensivoComponent implements OnInit {
       this.descNum = 10;
       this.resumenNum = 10;
     });
-    /*
     item12.addEventListener('click', () => {
       video.pause();
       video.src = this.videoSrc[11];
       this.descNum = 11;
       this.resumenNum = 11;
     });
+    /*
     item13.addEventListener('click', () => {
       video.pause();
       video.src = this.videoSrc[12];

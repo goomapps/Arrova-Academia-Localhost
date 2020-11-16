@@ -8,7 +8,7 @@ import transporter from "../config/nodemailer.js";
 const UserController = {
     async getAll(req, res) {
         try {
-            const usuarios = await UserModel.find({ }).populate("Curso");
+            const usuarios = await UserModel.find({ }).populate("curso");
             res.send(usuarios);
         } catch (err) {
             res.status(404).send({
