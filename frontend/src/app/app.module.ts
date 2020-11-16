@@ -1,8 +1,9 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import {environment} from '../environments/environment';
 
@@ -17,6 +18,7 @@ import {FooterComponent} from 'src/app/modules/shared/common/footer/footer.compo
 import {PageNotFoundComponent} from 'src/app/modules/shared/page-not-found/page-not-found.component';
 import {LoadingComponent} from './modules/shared/layout/loading/loading.component';
 import {SharedModule} from './modules/shared/shared.module';
+import {AuthInterceptor} from './modules/auth/interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,17 @@ import {SharedModule} from './modules/shared/shared.module';
     }),
     SharedModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: HashLocationStrategy,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
