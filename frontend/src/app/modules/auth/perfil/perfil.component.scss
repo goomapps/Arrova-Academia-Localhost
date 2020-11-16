@@ -95,11 +95,16 @@
                 display: flex;
                 flex-direction: column;
                 height: 60%;
+
+                .perfilCursos{
+                    text-decoration: none;
+                }
             }
           }
 
         .curso-titulo{
             margin-top: 1rem;
+            margin-bottom: 1.5rem;
         }
     }
 }
