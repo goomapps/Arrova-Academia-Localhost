@@ -2,7 +2,7 @@
   <div class="contenedor-preview m8">
     <div class="info">
       <h3>Información de Usuario</h3>
-      <img src="assets/img/usuario.png" />
+      <img src="assets/img/usuario.png"/>
       <p>Nombre:</p>
       <h5>{{userProfile.nombre}}</h5>
       <p>Apellidos:</p>
@@ -33,25 +33,27 @@
       <div class="datosBody">
         <div class="curso">
           <h3 class="curso-titulo">Cursos:</h3>
-          <div *ngIf="curso[0].nombre === 'VALENCIANO C1'">
-            <a routerLink="/cursos/valenciano/c1/reproductor">
-              <p>{{curso[0].nombre}}</p>
-            </a>
-          </div>
-          <div *ngIf="curso[0].nombre === 'VALENCIANO C2'">
-            <a routerLink="/cursos/valenciano/c2/reproductor">
-              <p>{{curso[0].nombre}}</p>
-            </a>
-          </div>
-          <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO JQCV'">
-            <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/jqcv/reproductor">
-              <p>{{curso[0].nombre}}</p>
-            </a>
-          </div>
-          <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO CIEACOVA'">
-            <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/cieacova/reproductor">
-              <p>{{curso[0].nombre}}</p>
-            </a>
+          <div *ngIf="curso != ''">
+            <div *ngIf="curso[0].nombre === 'VALENCIANO C1'">
+              <a routerLink="/cursos/valenciano/c1/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
+            <div *ngIf="curso[0].nombre === 'VALENCIANO C2'">
+              <a routerLink="/cursos/valenciano/c2/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
+            <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO JQCV'">
+              <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/jqcv/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
+            <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO CIEACOVA'">
+              <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/cieacova/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
