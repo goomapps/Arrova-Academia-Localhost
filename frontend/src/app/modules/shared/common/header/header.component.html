@@ -94,95 +94,55 @@
       </div>
     </div>
     <div class="header-contenedor-derecha">
-        <div *ngIf="!userService.loginDone()" class="botonera">
-          <button class="botonNavLogin" routerLink="/usuario/login">
-            <p class="botonNavLogin-text">ENTRAR</p>
-          </button>
-          <button class="botonNavRegistro" routerLink="/usuario/registro">
-            <p class="botonNavRegistro-text">REGISTRATE</p>
-          </button>
-        </div>
-        <div *ngIf="userService.loginDone()" class="botonera">
-          <button id="perfil" class="boton-nav">
-            <i class="fas fa-user boton-nav-icon" routerLink="/usuario"></i>
-            <div id="dropperfil" class="dropdown right">
-              <ul>
-                <li routerLink="/usuario">
-                  <h5>PERFIL</h5>
-                </li>
-                <li routerLink="/"
-                    (click)="userService.logout()">
-                  <h5>LOGOUT</h5>
-                </li>
-              </ul>
-            </div>
-          </button>
-        </div>
-        <!--<button id="traducciones" class="boton-nav">
-          <i class="fas fa-flag boton-nav-icon"></i>
-          <div id="droptraducciones" class="dropdown right">
-            <ul>
-              <li routerLink="">
-                <h5>CASTELLANO</h5>
-              </li>
-              <li routerLink="">
-                <h5>CATALAN</h5>
-              </li>
-            </ul>
-          </div>
+      <div *ngIf="!userService.loginDone()" class="botonera">
+        <button class="botonNav" routerLink="/usuario/login">
+          <p class="botonNav-text">ENTRAR</p>
         </button>
-        <button id="perfil" class="boton-nav">
-          <i class="fas fa-user boton-nav-icon" routerLink="/usuario"></i>
-          <div *ngIf="userService.loginDone()">
-            <div id="dropperfil" class="dropdown right">
-              <ul>
-                <li routerLink="/usuario">
-                  <h5>PERFIL</h5>
-                </li>
-                <li routerLink="/"
-                    (click)="userService.logout()">
-                  <h5>LOGOUT</h5>
-                </li>
-              </ul>
+        <button class="botonNav" routerLink="/usuario/registro">
+          <p class="botonNav-text">REGISTRATE</p>
+        </button>
+      </div>
+        <div *ngIf="userService.loginDone()" class="botonera" routerLink="/usuario">
+          <button id="perfil" class="boton-nav">
+            <i class="fas fa-user boton-nav-icon" ></i>
+            <p class="boton-nav-text">{{identity.nombre | uppercase}}</p>
+          </button>
+        </div>
+      </div>
+      
+      
+
+      <div class="menuResponsive1" id="menuResponsive">
+        <div id="menuResponsive-navegador" class="menu">
+          <ul class="menuResponsive-menuNavegador">
+            <div id="dropbuscador">
+              <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
+              <div id="dropbuscar" class="dropbuscarDesplegable">
+                <ul id="dropbuscar-contenedor">
+                  <li *ngFor="let ruta of rutas" routerLink="/{{ruta}}" class='dropbuscarDesplegable-item'>
+                    <h5>{{ruta}}</h5>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </button>-->
-    </div>
-  </div>
-</div>
-
-
-<div class="menuResponsive1" id="menuResponsive">
-  <div id="menuResponsive-navegador" class="menu">
-    <ul class="menuResponsive-menuNavegador">
-      <div id="dropbuscador">
-        <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
-        <div id="dropbuscar" class="dropbuscarDesplegable">
-          <ul id="dropbuscar-contenedor">
-            <li *ngFor="let ruta of rutas" routerLink="/{{ruta}}" class='dropbuscarDesplegable-item'>
-              <h5>{{ruta}}</h5>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/noticias" class="menuResponsive-elemento-titulo">NOTICIAS</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/estudia-con-nosotros" class="menuResponsive-elemento-titulo">ESTUDIA</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/cursos" class="menuResponsive-elemento-titulo">CURSOS</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/estudia-con-nosotros/profesional" class="menuResponsive-elemento-titulo">PROFESIONAL</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/contacto" class="menuResponsive-elemento-titulo">CONTACTO</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/nosotros" class="menuResponsive-elemento-titulo">NOSOTROS</h5>
             </li>
           </ul>
         </div>
       </div>
-      <li class="menuResponsive-elemento">
-        <h5 routerLink="/noticias" class="menuResponsive-elemento-titulo">NOTICIAS</h5>
-      </li>
-      <li class="menuResponsive-elemento">
-        <h5 routerLink="/estudia-con-nosotros" class="menuResponsive-elemento-titulo">ESTUDIA</h5>
-      </li>
-      <li class="menuResponsive-elemento">
-        <h5 routerLink="/cursos" class="menuResponsive-elemento-titulo">CURSOS</h5>
-      </li>
-      <li class="menuResponsive-elemento">
-        <h5 routerLink="/estudia-con-nosotros/profesional" class="menuResponsive-elemento-titulo">PROFESIONAL</h5>
-      </li>
-      <li class="menuResponsive-elemento">
-        <h5 routerLink="/contacto" class="menuResponsive-elemento-titulo">CONTACTO</h5>
-      </li>
-      <li class="menuResponsive-elemento">
-        <h5 routerLink="/nosotros" class="menuResponsive-elemento-titulo">NOSOTROS</h5>
-      </li>
-    </ul>
-  </div>
-</div>

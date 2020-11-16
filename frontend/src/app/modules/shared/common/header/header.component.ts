@@ -20,11 +20,13 @@ export class HeaderComponent implements OnInit {
     'nosotros'
   ];
   public rutas = [];
+  identity;
   constructor(private router: Router,
               private toastr: ToastrService,
               public userService: UserService,
     ) {
-  }
+      this.identity = userService.getIdentity();  
+    }
 
   ngOnInit(): void {
     $('#dropperfil').css('display', 'none');

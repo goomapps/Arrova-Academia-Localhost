@@ -2,17 +2,23 @@
   <div class="contenedor-preview m8">
     <div class="info">
       <h3>Información de Usuario</h3>
-      <img src="assets/img/usuario.png"/>
-      <h5>Nombre:</h5>
-      <p>{{userProfile.nombre}}</p>
-      <h5>Apellidos:</h5>
-      <p>{{userProfile.apellido1}} {{userProfile.apellido2}}</p>
-      <h5>Usuario:</h5>
-      <p>{{userProfile.nombreUsuario}}</p>
-      <h5>Correo:</h5>
-      <p>{{userProfile.correo}}</p>
-      <h5>Fecha de Nacimiento</h5>
-      <p>{{userProfile.fechaNacimiento | date: 'dd/MM/yyyy'}}</p>
+      <img src="assets/img/usuario.png" />
+      <p>Nombre:</p>
+      <h5>{{userProfile.nombre}}</h5>
+      <p>Apellidos:</p>
+      <h5>{{userProfile.apellido1}} {{userProfile.apellido2}}</h5>
+      <p>Usuario:</p>
+      <h5>{{userProfile.nombreUsuario}}</h5>
+      <p>Correo:</p>
+      <h5>{{userProfile.correo}}</h5>
+      <p>Fecha de Nacimiento</p>
+      <h5>{{userProfile.fechaNacimiento | date: 'dd/MM/yyyy'}}</h5>
+      <div>
+        <button (click)="logout()" routerLink="/" class="boton-logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <h5 class="boton-logout-text">SALIR</h5>
+        </button>
+      </div>
     </div>
 
     <div class="datos">
