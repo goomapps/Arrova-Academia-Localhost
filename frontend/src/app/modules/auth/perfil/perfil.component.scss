@@ -96,7 +96,7 @@
                 flex-direction: column;
                 height: 60%;
             }
-        }
+          }
 
         .curso-titulo{
             margin-top: 1rem;
@@ -104,35 +104,3 @@
     }
 }
 
-/*.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background: $components-dark;
-  border-radius: 2rem;
-  width: 60rem;
-}
-
-.contenedor {
-  &-preview {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 50%;
-  }
-
-  &-cursos {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 50%;
-
-    .curso {
-      a {
-        text-decoration: none;
-        color: $text-color-light;
-      }
-    }
-  }
-}*/
