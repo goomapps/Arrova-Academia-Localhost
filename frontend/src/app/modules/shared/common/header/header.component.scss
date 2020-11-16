@@ -129,51 +129,24 @@
         width: 100%;
 
 
-        .botonNavLogin{
+        .botonNav{
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 3.5rem;
           height: 5rem;
           background: none;
           border: none;
-          border-radius: 1rem;
           cursor: pointer;
           transition: 0.5s;
           position: relative;
-          margin-right: 10px;
           padding: 0.5rem;
 
           &:hover{
             background: $text-color-dark;
 
-            .botonNavLogin-text{
+            .botonNav-text{
               color: $text-color-hover;
               }
-          }
-        }
-
-        .botonNavRegistro{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 5rem;
-          height: 5rem;
-          background: none;
-          border: none;
-          border-radius: 1rem;
-          cursor: pointer;
-          transition: 0.5s;
-          position: relative;
-          margin-left: 10px;
-          padding: 0.5rem;
-
-          &:hover{
-            background: $text-color-dark;
-
-            .botonNavRegistro-text{
-            color: $text-color-hover;
-            }
           }
         }
 
