@@ -26,9 +26,17 @@
   padding: 0 10px 0 10px;
   margin-top: 2rem;
 
+  &-icon{
+    font-size: 1.5rem;
+    color: $text-color-light;
+  }
+
   &:hover{
     background: $text-color-dark;
-
+    
+    .boton-login-icon{
+      color: $text-color-hover;
+    }
     .boton-logout-text{
       color: $text-color-hover;
     }
