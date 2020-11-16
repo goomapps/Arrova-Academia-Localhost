@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {UserService} from "../../../auth/services/user.service";
 
 @Component({
   selector: 'app-c2',
@@ -91,7 +92,7 @@ export class C2Component implements OnInit {
   hoja_inscripcion: string = 'Full d´Inscripció';
   proteccion_datos: string = 'Protecció de Dades';
 
-  constructor() { }
+  constructor(public userService: UserService) { }
 
   ngOnInit(): void {
   }

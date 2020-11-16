@@ -201,9 +201,16 @@
       </div>
     </div>
     <div class="contenedor-descargable">
-      <button class="boton" routerLink="/usuario/registro">
-        <h5>MATRICULATE</h5>
-      </button>
+      <div *ngIf="!userService.loginDone()">
+        <button class="boton" routerLink="/usuario/registro">
+          <h5>MATRICULATE</h5>
+        </button>
+      </div>
+      <div *ngIf="userService.loginDone()">
+        <button class="boton" routerLink="/cursos/matricula-intensivo">
+          <h5>MATRICULATE</h5>
+        </button>
+      </div>
       <a
         download="Boletin_Curso_Intensivo_C1.pdf"
         href="assets/documentacion/butlleti_curs_intesiu_C1.pdf"

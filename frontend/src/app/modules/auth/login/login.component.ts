@@ -50,7 +50,7 @@ export class LoginComponent implements OnInit {
           toastClass: 'toast success'
         });
         this.usuarioService.setUser(res.usuario);
-        this.getCursos();
+        this.getCursos(res.usuario._id);
         setTimeout(() => {
           this.router.navigate(['/usuario']);
         }, 500);
@@ -61,15 +61,15 @@ export class LoginComponent implements OnInit {
         });
       }
     );
-  };
+  }
 
-  getCursos():void{
-      this.cursoService.getCursosByUserId().subscribe(
+  getCursos(id: string): void {
+      this.cursoService.getCursosByUserId(id).subscribe(
       (res) => {
-        this.cursoService.setCurso(res),
-        localStorage.setItem('curso', JSON.stringify(res))
+        this.cursoService.setCurso(res);
+        localStorage.setItem('curso', JSON.stringify(res));
       },
       error => console.error(error)
-    )
+    );
   }
 }
