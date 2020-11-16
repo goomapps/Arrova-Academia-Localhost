@@ -9,23 +9,16 @@ import { CursoService } from '../../cursos/services/curso.service';
 })
 export class PerfilComponent implements OnInit {
 
+  curso:any = [];
   userProfile: any = {};
-  cursos: any = [];
 
   constructor(private cursosService: CursoService) { }
 
   ngOnInit(): void {
+    this.curso = this.cursosService.getCurso();
+
     var dataLogin = JSON.parse(localStorage.getItem('user'));
 
     this.userProfile = dataLogin;
-
-    this.cursos = this.cursosService.getCursosByUserId();
-
-    /*this.userService.showUser(this.userProfile);
-
-    this.userShow = this.userProfile;
-
-    console.log(this.userShow);*/
   }
-
 }

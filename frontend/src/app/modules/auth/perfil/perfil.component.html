@@ -27,29 +27,26 @@
           <div class="datosBody">
                 <div class="curso">
                   <h3 class="curso-titulo">Cursos:</h3>
-                  <a *ngIf="cursos !== ''" routerLink="/curso-valenciano-comprado">
-                    <p class="p2">Ir al Curso de Valenciano C1</p>
-                  </a>
-                  <!--<a *ngFor="let curso of cursos" routerLink="/cursos/valencia/{{curso.nombre}}/reproductor">
-                    <p>Valenciano {{curso}}</p>
-                  </a>-->
-                  <!--<a *ngIf="userProfile.cursos" [routerLink]="['/curso-valenciano-comprado']" routerLinkActive="router-link-active">
-                    <p class="p2">Ir al Curso de Valenciano C1</p>
-                  </a>
-                  <a *ngIf="userProfile.name.curso_valenciano_intensivo" [routerLink]="['/curso-valenciano-comprado-intensivo']" routerLinkActive="router-link-active">
-                    <p class="p2">Ir al Curso de Valenciano Intensivo</p>
-                  </a>
-                </div>
-                <div *ngIf="!userProfile.name.curso_valenciano_c1 || !userProfile.name.curso_valenciano_intensivo" class="contenedor-cursos m8">
-                    <div class="curso">
-                    <h2 class="mb8">
-                        Curso:
-                    </h2>
-                    <a [routerLink]="['/courses']" routerLinkActive="router-link-active">
-                        <p>Ver cursos</p>
+                  <div *ngIf="curso[0].nombre === 'VALENCIANO C1'">
+                    <a routerLink="/cursos/valenciano/c1/reproductor">
+                      <p>{{curso[0].nombre}}</p>
                     </a>
-                    </div>
-                </div>-->
+                  </div>
+                  <div *ngIf="curso[0].nombre === 'VALENCIANO C2'">
+                    <a routerLink="/cursos/valenciano/c2/reproductor">
+                      <p>{{curso[0].nombre}}</p>
+                    </a>
+                  </div>
+                  <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO JQCV'">
+                    <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/jqcv/reproductor">
+                      <p>{{curso[0].nombre}}</p>
+                    </a>
+                  </div>
+                  <div *ngIf="curso[0].nombre === 'VALENCIANO INTENSIVO CIEACOVA'">
+                    <a routerLink="/cursos/valenciano/intensivos/curso-intensivo/cieacova/reproductor">
+                      <p>{{curso[0].nombre}}</p>
+                    </a>
+                  </div>
           </div>
         </div>
     </div>

@@ -6,6 +6,7 @@ import {NGXLogger} from 'ngx-logger';
 import {ToastrService} from 'ngx-toastr';
 
 import {UserService} from '../services/user.service';
+import {CursoService} from '../../cursos/services/curso.service';
 import {Login} from '../models/Login';
 
 @Component({
@@ -17,6 +18,7 @@ export class LoginComponent implements OnInit {
   usuario;
   constructor(
     private usuarioService: UserService,
+    private cursoService: CursoService,
     private router: Router,
     private logger: NGXLogger,
     private toastr: ToastrService
@@ -48,6 +50,7 @@ export class LoginComponent implements OnInit {
           toastClass: 'toast success'
         });
         this.usuarioService.setUser(res.usuario);
+        this.getCursos();
         setTimeout(() => {
           this.router.navigate(['/usuario']);
         }, 500);
@@ -58,5 +61,15 @@ export class LoginComponent implements OnInit {
         });
       }
     );
+  };
+
+  getCursos():void{
+      this.cursoService.getCursosByUserId().subscribe(
+      (res) => {
+        this.cursoService.setCurso(res),
+        localStorage.setItem('curso', JSON.stringify(res))
+      },
+      error => console.error(error)
+    )
   }
 }
