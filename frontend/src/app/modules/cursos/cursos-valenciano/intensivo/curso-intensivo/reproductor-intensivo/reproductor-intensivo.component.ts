@@ -18,52 +18,52 @@ export class ReproductorIntensivoComponent implements OnInit {
 
   constructor() {
     this.videoSrc = [
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_F_E_O_1.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_F_E_O_2.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Morf_1.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Morf_2.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Morf_3.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Morf_4.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Morf_5.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Lexic_Semantica.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_EE.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_EIO.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U2_F_E_O.mp4'
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_EE1.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_EE2.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_EE3.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_EE4.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_EE5.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Morfosintaxi_Flexio_Verbal.mp4',
+      '',
+      '',
+      '',
+      '',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Mon%C3%B2leg.mp4',
+      ''
     ];
     this.desc = [
-      'U1.Fonètica, Elocució i Ortografia 1',
-      'U1.Fonètica, Elocució i Ortografia 2',
-      'U1.Morfosintaxis 1',
-      'U1.Morfosintaxis 2',
-      'U1.Morfosintaxis 3',
-      'U1.Morfosintaxis 4',
-      'U1.Morfosintaxis 5',
-      'U1.Léxic Semantica',
-      'U1.Expressió i Interacció Escrites',
-      'U1.Expressió i Interacció Orals',
-      'U2.Fonètica, Elocució i Ortografia',
-      'U2.Fonètica, Elocució i Ortografia 2',
-      'U2.Morfosintaxis 1',
-      'U2.Morfosintaxis 2',
-      'U2.Morfosintaxis 3',
-      'U2.Morfosintaxis 4',
-      'U2.Morfosintaxis 5',
-      'U2.Léxic Semantica',
-      'U2.Expressió i Interacció Escrites',
-      'U2.Expressió i Interacció Orals',
+      'Expressió i interacció escrites 1',
+      'Expressió i interacció escrites 2',
+      'Expressió i interacció escrites 3',
+      'Expressió i interacció escrites 4',
+      'Expressió i interacció escrites 5',
+      'Morfosintaxis',
+      'Ortografía',
+      'Flexió Verbal',
+      'Expressió i interacció oral',
+      'Comprensió escrita',
+      'Monóleg',
+      'Simulacre fí curs'
     ];
     this.resumen = [
-      'Per a introduir-nos en el curs de valencià començarem amb una xicoteta revisió de les grafies en valencià així com dels dígrafs i les lletres dobles i d’algunes de les particularitats que aquests presenten, sobretot pel que fa a la divisió sil·làbica i la partició de paraules a final de línia.',
-      'Amb aquest vídeo acabem l’apartat de fonètica, elocució i ortografia fent un xicotet repàs al concepte de la síl·laba així com alguns fenòmens que s’hi donen en relació a aquesta al nostre idioma, com és el funcionament dels diftongs, dels triftongs i dels hiats.',
-      'Comencem l’estudi de la gramàtica pròpia del nivell de suficiència repassant el funcionament morfològic i sintàctic de l’article definit, però aprofundint, a més, en els elements particulars propis del nivell de Suficiència: casos complexes de l’ús de l’article i expressions que discrepen pel que fa a l’ús de l’article respecte del castellà.',
-      'Si hi ha algun element que presente certa dificultat en relació a l’ús dels determinants és el del fals article lo, errada molt comuna i estesa arreu del territori valencià i que cal evitar. Així doncs, us presentem tota una sèrie de possibles solucions als usos més habituals d’aquest article, a més d’una sèrie de frases fetes en què s’evita l’ús del mateix.',
-      'Amb aquest vídeo presentem el funcionament, tant morfològic com sintàctic, dels articles indefinit i personal.',
-      'Els demostratius són un element molt important en el llenguatge. En aquest vídeo presentem el funcionament dels diferents demostratius i dels usos més particulars i concrets per tal d’evitar errades molt comunes a l’hora d’emprar-los.',
-      'Els possessius són un element que presenta certes particularitats al nostre idioma i que repassem amb aquest vídeo. Així doncs, mostrarem els dos tipus de possessius que hi ha en valencià, així com l’abús que en fem, errada molt freqüent i estesa que caldrà corregir per tal de demostrar el nivell C1.',
-      'El treball de l’àrea de Lèxic i Semàntica l’iniciem amb la derivació de paraules, en concret amb l’anàlisi de dos procediments: la prefixació i la parasíntesi. En aquesta unitat treballarem el camp de l’habitatge i la construcció, de manera que en aquest vídeo presentem els principals elements que caldrà tindre en compte per tal d’usar amb la màxima riquesa i precisió el vocabulari vinculat a aquest món.',
-      'Per concloure la Unitat 1 acabem treballant l’Àrea d’Expressió Escrita en què, d’una banda, revisem l’estructura textual descriptiva, presentada en la unitat, alhora que us oferim una sèrie de consells per tal de millorar les vostres redaccions en relació a les tasques que se us presentaran a les proves de certificació.',
-      'Per finalitzar, presentem els dos exercicis que se’ns presentaran a les proves de certificació, el monòleg i el diàleg, de manera que us donem una sèrie de claus per millorar la vostra expressió i interacció orals.',
-      'Amb aquest vídeo de fonètica, elocució i ortografia iniciem la unitat 2, en aquest cas amb l’estudi dels fenòmens de fonètica sintàctica així com de l’ortografia i l’ús de l’apòstrof, les contraccions, el guionet, les abreviatures, les sigles, els acrònims i els símbols.'
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
     ];
     this.descNum = 0;
     this.resumenNum = 0;
@@ -100,6 +100,12 @@ export class ReproductorIntensivoComponent implements OnInit {
       $('#dropmorf').show('slow');
     }, () => {
       $('#dropmorf').css('display', 'none');
+    });
+    $('#droporto').css('display', 'none');
+    $('#item7').hover(() => {
+      $('#droporto').show('slow');
+    }, () => {
+      $('#droporto').css('display', 'none');
     });
     $('#dropfv').css('display', 'none');
     $('#item8').hover(() => {

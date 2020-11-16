@@ -17,10 +17,12 @@ import {MatriculaComponent} from './matricula/matricula.component';
 import {ReproductorC1Component} from './cursos-valenciano/c1/reproductor-c1/reproductor-c1.component';
 import {ReproductorIntensivoComponent} from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component';
 import {ReproductorIntensivoCieacovaComponent} from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component';
+import {MatriulaIntensivoComponent} from './matriula-intensivo/matriula-intensivo.component';
 
 const routes: Routes = [
   {path: '', component: CursosComponent},
   {path: 'matricula', component: MatriculaComponent},
+  {path: 'matricula-intensivo', component: MatriulaIntensivoComponent},
   {path: 'valenciano', component: CursosValencianoComponent},
   {path: 'valenciano/a2', component: A2Component},
   {path: 'valenciano/b1', component: B1Component},
