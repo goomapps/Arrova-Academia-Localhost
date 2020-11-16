@@ -94,14 +94,59 @@
       </div>
     </div>
     <div class="header-contenedor-derecha">
-      <div class="botonera">
-        <button class="botonNavLogin" routerLink="/usuario/login">
-          <p class="botonNavLogin-text">ENTRAR</p>
+        <div *ngIf="!userService.loginDone()" class="botonera">
+          <button class="botonNavLogin" routerLink="/usuario/login">
+            <p class="botonNavLogin-text">ENTRAR</p>
+          </button>
+          <button class="botonNavRegistro" routerLink="/usuario/registro">
+            <p class="botonNavRegistro-text">REGISTRATE</p>
+          </button>
+        </div>
+        <div *ngIf="userService.loginDone()" class="botonera">
+          <button id="perfil" class="boton-nav">
+            <i class="fas fa-user boton-nav-icon" routerLink="/usuario"></i>
+            <div id="dropperfil" class="dropdown right">
+              <ul>
+                <li routerLink="/usuario">
+                  <h5>PERFIL</h5>
+                </li>
+                <li routerLink="/"
+                    (click)="userService.logout()">
+                  <h5>LOGOUT</h5>
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+        <!--<button id="traducciones" class="boton-nav">
+          <i class="fas fa-flag boton-nav-icon"></i>
+          <div id="droptraducciones" class="dropdown right">
+            <ul>
+              <li routerLink="">
+                <h5>CASTELLANO</h5>
+              </li>
+              <li routerLink="">
+                <h5>CATALAN</h5>
+              </li>
+            </ul>
+          </div>
         </button>
-        <button class="botonNavRegistro" routerLink="/usuario/registro">
-          <p class="botonNavRegistro-text">REGISTRATE</p>
-        </button>
-      </div>
+        <button id="perfil" class="boton-nav">
+          <i class="fas fa-user boton-nav-icon" routerLink="/usuario"></i>
+          <div *ngIf="userService.loginDone()">
+            <div id="dropperfil" class="dropdown right">
+              <ul>
+                <li routerLink="/usuario">
+                  <h5>PERFIL</h5>
+                </li>
+                <li routerLink="/"
+                    (click)="userService.logout()">
+                  <h5>LOGOUT</h5>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </button>-->
     </div>
   </div>
 </div>
