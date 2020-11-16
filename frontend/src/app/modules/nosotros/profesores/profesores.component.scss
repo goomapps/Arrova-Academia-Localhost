@@ -1,0 +1,36 @@
+@import 'src/app/styles/index.scss';
+
+.profesores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60rem;
+    background: $components-dark;
+    padding: 3rem;
+    border-radius: 2rem;
+
+    @include tablet {
+      width: 46rem;
+    }
+    @include mobileL {
+      width: 25rem;
+      padding: 1rem;
+    }
+    @include mobileM {
+      width: 22rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
+
+    p {
+      padding: 0.75rem;
+    }
+  }
+}

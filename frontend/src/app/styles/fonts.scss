@@ -1,0 +1,139 @@
+@import 'src/app/styles/colors.scss';
+@import 'src/app/styles/mixins.scss';
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: $text-color-light;
+  @include tablet{
+    font-size: 1.7rem;
+  }
+  @include mobileL{
+    font-size: 1.3rem;
+  }
+  @include mobileS{
+    font-size: 1.1rem;
+  }
+
+  &.title {
+    color: $text-color-emphasis;
+  }
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 2.25rem;
+  color: $text-color-light;
+
+  &.title {
+    color: $text-color-emphasis;
+  }
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: $text-color-light;
+  @include tablet{
+    font-size:1.2rem;
+  }
+  @include mobileL{
+    font-size: 0.8rem;
+  }
+  @include mobileS{
+    font-size: 0.7rem;
+  }
+
+  &.title {
+    color: $text-color-emphasis;
+  }
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: $text-color-light;
+  @include laptop{
+    font-size: 1rem;
+  }
+  @include mobileL{
+    font-size: 0.7rem;
+  }
+  @include mobileS{
+    font-size: 0.6rem;
+  }
+
+  &.title {
+    color: $text-color-emphasis;
+  }
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: $text-color-light;
+  @include laptop{
+    font-size: 1rem;
+  }
+  @include mobileL{
+    font-size: 0.7rem;
+  }
+  @include mobileS{
+    font-size: 0.6rem;
+  }
+
+  &.title {
+    color: $text-color-emphasis;
+  }
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-color-light;
+  text-align: justify;
+  @include mobileL{
+    font-size: 0.6rem;
+  }
+  @include mobileS{
+    font-size: 0.5rem;
+  }
+
+  &.frase {
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: $text-color-light;
+
+    &-importante {
+      color: $text-color-emphasis;
+    }
+  }
+
+  &.parrafo {
+    color: $text-color-light;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}
+
+small {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 0.75rem;
+  color: $text-color-light;
+
+  &.error {
+    font-weight: 100;
+    color: $color-error;
+  }
+}
+
+::placeholder{
+  @include mobileL{
+    font-size: 0.8rem;
+  }
+}

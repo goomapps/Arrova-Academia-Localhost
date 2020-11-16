@@ -1,0 +1,81 @@
+<div class="business">
+  <div class="formulario">
+    <form #businessForm="ngForm" (ngSubmit)="insert()">
+      <a id="parte1" class="formulario-parte">
+        <h5>ESTUDIA CON NOSOTROS PROFESIONAL</h5>
+      </a>
+      <div id="contenedor1" class="formulario-contenedor active">
+        <div class="form">
+          <div class="form-cb">
+            <h5>EMPRESA</h5>
+            <label class="input-container" for="val">
+              <input class="input-email" type="text" name="val" #val="ngModel" [(ngModel)]="profesional.nombreEmpresa" pattern="^[A-Za-z\s]+$" required/>
+              <p>Nombre</p>
+            </label>
+            <label class="input-container" for="cas">
+              <input class="input-email" type="text" name="cas" #cas="ngModel" [(ngModel)]="profesional.localidadEmpresa" pattern="^[A-Za-z\s]+$" required/>
+              <p>Localidad</p>
+            </label>
+            <label class="input-container" for="latin">
+              <input class="input-email" type="text" name="latin" #latin="ngModel" [(ngModel)]="profesional.direccionEmpresa" required/>
+              <p>Dirección</p>
+            </label>
+            <label class="input-container" for="griego">
+              <input class="input-email" type="text" name="griego" #griego="ngModel" [(ngModel)]="profesional.telefonoEmpresa" required/>
+              <p>Teléfono</p>
+            </label>
+            <label class="input-container" for="filo">
+              <input class="input-email" type="text" name="filo" #filo="ngModel" [(ngModel)]="profesional.correoEmpresa" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+              <p>Correo Electrónico</p>
+            </label>
+            <h5>CONTACTO</h5>
+            <label class="input-container" for="ingles">
+              <input class="input-email" type="text" name="ingles" #ingles="ngModel" [(ngModel)]="profesional.nombreContacto" pattern="^[A-Za-z\s]+$" required/>
+              <p>Nombre</p>
+            </label>
+            <label class="input-container" for="geo">
+              <input class="input-email" type="text" name="geo" #geo="ngModel" [(ngModel)]="profesional.telefonoContacto" required/>
+              <p>Teléfono</p>
+            </label>
+            <label class="input-container" for="hist">
+              <input class="input-email" type="text" name="hist" #hist="ngModel" [(ngModel)]="profesional.correoContacto" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+              <p>Correo Electrónico</p>
+            </label>
+          </div>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte2()">
+              <h5>SIGUIENTE</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+      <a id="parte2" class="formulario-parte">
+        <h5>CONFIRMAR FORMULARIO</h5>
+      </a>
+      <div id="contenedor2" class="formulario-contenedor">
+        <div class="completado">
+          <label class="terminos" for="terminos">
+            <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
+            <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
+                   [(ngModel)]="profesional.terminos" required/>
+          </label>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte1()">
+              <h5>VOLVER</h5>
+            </button>
+            <button type="submit" class="boton m2" [disabled]="businessForm.invalid">
+              <h5>ENVIAR</h5>
+            </button>
+          </div>
+          <p>El formulario será revisado por nuestro profesorado.</p>
+          <p>Recibirás un correo con la respuesta.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <app-modal-terminos></app-modal-terminos>
+</div>

@@ -1,0 +1,148 @@
+<div class="header">
+  <div class="header-contenedor">
+    <div class="header-contenedor-izquierda">
+      <div class="logo">
+        <img routerLink="/" src="assets/img/logo.png">
+      </div>
+      <div class="botonera-izquierda">
+        <div class="boton-menu">
+          <button id="menu" class="boton-menu" for="menu-checkbox">
+            <i class="fas fa-bars icon"></i>
+          </button>
+        </div>
+        <div class="busqueda">
+          <button id="search" class="boton-nav">
+            <i class="fas fa-search boton-nav-icon"></i>
+            <div id="dropbuscador" class="dropdown left">
+              <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
+              <div id="dropbuscar" class="dropbuscarDesplegable">
+                <ul id="dropbuscar-contenedor">
+                  <li *ngFor="let ruta of rutas" routerLink="/{{ruta}}" class='dropbuscarDesplegable-item'>
+                    <h5>{{ruta}}</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="header-contenedor-medio">
+      <div id="navegador" class="menu">
+        <ul class="menu-navegador">
+          <li id="noticias" class="menu-navegador-elemento">
+            <h5 routerLink="/noticias" class="elemento-titulo">NOTICIAS</h5>
+          </li>
+          <li id="estudia" class="menu-navegador-elemento">
+            <h5 routerLink="/estudia-con-nosotros" class="elemento-titulo">ESTUDIA</h5>
+            <div id="dropestudia" class="dropdown left">
+              <ul>
+                <li routerLink="/estudia-con-nosotros/valenciano">
+                  <h5>VALENCIANO</h5>
+                </li>
+                <li routerLink="/estudia-con-nosotros/titulaciones">
+                  <h5>TITULACIONES</h5>
+                </li>
+                <li routerLink="/estudia-con-nosotros/accesos">
+                  <h5>ACCESOS</h5>
+                </li>
+                <li routerLink="/estudia-con-nosotros/refuerzos">
+                  <h5>REFUERZOS</h5>
+                </li>
+                <li routerLink="/estudia-con-nosotros/profesional">
+                  <h5>PROFESIONAL</h5>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="cursos" class="menu-navegador-elemento">
+            <h5 routerLink="/cursos" class="elemento-titulo">CURSOS</h5>
+            <div id="dropcursos" class="dropdown left">
+              <ul>
+                <li routerLink="/cursos/valenciano">
+                  <h5>VALENCIANO</h5>
+                </li>
+                <li class="disabled" routerLink="/cursos/titulaciones">
+                  <h5>TITULACIONES</h5>
+                </li>
+                <li class="disabled" routerLink="/cursos/accesos">
+                  <h5>ACCESOS</h5>
+                </li>
+                <li class="disabled" routerLink="/cursos/refuerzos">
+                  <h5>REFUERZOS</h5>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="contacto" class="menu-navegador-elemento">
+            <h5 routerLink="/contacto" class="elemento-titulo">CONTACTO</h5>
+          </li>
+          <li id="nosotros" class="menu-navegador-elemento">
+            <h5 routerLink="/nosotros" class="elemento-titulo">NOSOTROS</h5>
+            <div id="dropnosotros" class="dropdown right">
+              <ul>
+                <li routerLink="/nosotros/profesores">
+                  <h5>PROFESORES</h5>
+                </li>
+                <li routerLink="/nosotros/valoraciones">
+                  <h5>VALORACIONES</h5>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-contenedor-derecha">
+      <div *ngIf="!userService.loginDone()" class="botonera">
+        <button class="botonNav" routerLink="/usuario/login">
+          <p class="botonNav-text">ENTRAR</p>
+        </button>
+        <button class="botonNav" routerLink="/usuario/registro">
+          <p class="botonNav-text">REGISTRATE</p>
+        </button>
+      </div>
+        <div *ngIf="userService.loginDone()" class="botonera" routerLink="/usuario">
+          <button id="perfil" class="botonNavLoged">
+            <i class="fas fa-user boton-nav-icon" ></i>
+            <p class="boton-nav-text">{{identity.nombre | uppercase}}</p>
+          </button>
+        </div>
+      </div>
+      
+      
+
+      <div class="menuResponsive1" id="menuResponsive">
+        <div id="menuResponsive-navegador" class="menu">
+          <ul class="menuResponsive-menuNavegador">
+            <div id="dropbuscador">
+              <app-buscador (search)="handleSearch($event)" (keyup.enter)="search($event)"></app-buscador>
+              <div id="dropbuscar" class="dropbuscarDesplegable">
+                <ul id="dropbuscar-contenedor">
+                  <li *ngFor="let ruta of rutas" routerLink="/{{ruta}}" class='dropbuscarDesplegable-item'>
+                    <h5>{{ruta}}</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/noticias" class="menuResponsive-elemento-titulo">NOTICIAS</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/estudia-con-nosotros" class="menuResponsive-elemento-titulo">ESTUDIA</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/cursos" class="menuResponsive-elemento-titulo">CURSOS</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/estudia-con-nosotros/profesional" class="menuResponsive-elemento-titulo">PROFESIONAL</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/contacto" class="menuResponsive-elemento-titulo">CONTACTO</h5>
+            </li>
+            <li class="menuResponsive-elemento">
+              <h5 routerLink="/nosotros" class="menuResponsive-elemento-titulo">NOSOTROS</h5>
+            </li>
+          </ul>
+        </div>
+      </div>

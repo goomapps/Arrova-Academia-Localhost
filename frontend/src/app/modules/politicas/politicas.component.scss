@@ -1,0 +1,88 @@
+@import 'src/app/styles/index.scss';
+
+.politicas {
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+
+  &-contenedor {
+    display: flex;
+    justify-content: center;
+
+    @include laptop {
+      width: 62rem;
+    }
+    @include tablet {
+      width: 46rem;
+    }
+    @include mobileL {
+      flex-direction: column;
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 20rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: $components-dark;
+      padding: 2rem;
+
+      @include laptop {
+        width: 20rem;
+      }
+      @include tablet {
+        width: 14rem;
+      }
+      @include mobileL {
+        flex-direction: row;
+        text-align: center;
+        border-bottom: 1px solid $text-color-emphasis;
+        padding: 0.5rem;
+        width: 25rem;
+      }
+      @include mobileM{
+        width: 20rem;
+      }
+      @include mobileM{
+        width: 19rem;
+      }
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 1rem;
+          cursor: pointer;
+          transition: 0.3s;
+
+          p {
+            transition: 0.2s;
+          }
+
+          &:hover {
+            background: $text-color-hover;
+
+            p {
+              color: $text-color-dark;
+            }
+          }
+        }
+      }
+    }
+
+    .contenido {
+      display: block;
+      flex: 1;
+
+      .dnone {
+        display: none;
+      }
+    }
+  }
+}

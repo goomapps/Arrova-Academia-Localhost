@@ -1,0 +1,25 @@
+{
+  "lang": "es",
+  "common": {
+    "botones": {
+      "loginOK": "te has",
+      "registro": "registro"
+    },
+    "link": {
+      "terminos": "términos",
+      "condiciones": "condiciones",
+      "ayuda": "ayuda"
+    }
+  },
+  "modules": {
+    "menu": {
+      "estudiaConNosotros": "estudia con nosotros",
+      "cursos": "cursos",
+      "contacto": "contacto",
+      "nosotros": "nosotros"
+    }
+  },
+  "keys": {
+
+  }
+}

@@ -1,0 +1,277 @@
+@import 'src/app/styles/index.scss';
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include mobileS{
+    width: 20rem;
+  }
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    @include tablet{
+      width: 35rem;
+    }
+    @include mobileL{
+      width: 24rem;
+    }
+    @include mobileM{
+      width: 22rem;
+    }
+    @include mobileS{
+      width: 20rem;
+    }
+
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      app-slider {
+        width: 80%;
+        @include laptop{
+          width: 100%;
+        }
+        @include mobileL{
+          width: 24rem;
+        }
+        @include mobileM{
+          width: 22rem;
+        }
+        @include mobileS{
+          width: 19rem;
+        }
+      }
+    }
+
+    .conectividad {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
+      @include mobileL{
+        width: 24rem;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
+
+      &-imagen {
+        img {
+          width: 22rem;
+
+          @include tablet{
+            width: 16rem;
+          }
+          @include mobileL{
+            width: 13rem;
+          }
+          @include mobileS{
+            width: 12rem;
+          }
+        }
+        
+      }
+    }
+
+    .ventajas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      @include laptopL{
+        text-align: center;
+      }
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
+      @include mobileL{
+        width: 24rem;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
+
+      &-contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3rem 3rem 1rem 3rem;
+
+        @include mobileS{
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+        .ventaja {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid $text-color-hover;
+          border-radius: 2rem;
+          padding: 2rem;
+          margin: 1rem;
+          width: 45%;
+
+          @include laptopL {
+            width: 80%;
+          }
+          @include laptop{
+            text-align: center;
+            width: 21rem;
+          }
+          @include mobileL{
+            width: 15rem;
+          }
+          
+          &-icon {
+            font-size: 2.5rem;
+            color: $text-color-hover;
+            margin-bottom: 0.5rem;
+          }
+
+          &-texto {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .apuntate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
+      @include mobileL{
+        width: 24rem;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
+
+      &-texto {
+        width: 85%;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        h5 {
+          text-align: center;
+        }
+      }
+
+      &-contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+          text-decoration: none;
+
+          &:hover {
+            p {
+              color: $text-color-hover;
+            }
+          }
+        }
+
+        p {
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    .empresas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 3rem;
+      width: 80%;
+      margin-top: 3rem;
+      border-radius: 3rem;
+
+      @include laptop{
+        flex-direction: column;
+        text-align: center;
+        width: 35rem;
+      }
+      @include mobileL{
+        width: 24rem;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
+
+      &-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      &-imagen{
+        img{
+          @include tablet{
+            width: 16rem;
+          }
+          @include mobileL{
+            width: 13rem;
+          }
+          @include mobileS{
+            width: 11rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import './assets/fontawesome/css/all.css';
+@import '~ngx-toastr/toastr';
+
+@import 'src/app/styles/index.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border: 0;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+
+    &-track {
+      background: transparent;
+    }
+
+    &-thumb {
+      background: $text-color-dark;
+    }
+  }
+}

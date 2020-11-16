@@ -1,0 +1,127 @@
+<div class="bach">
+  <div class="breadcumb">
+    <a routerLink="/estudia-con-nosotros">
+      <p>Estudia con nosotros</p>
+    </a>
+    <p class="separator"> > </p>
+    <a routerLink="/estudia-con-nosotros/refuerzos">
+      <p>Refuerzos</p>
+    </a>
+    <p class="separator"> > </p>
+      <p>Bachillerato</p>
+  </div>
+  <div class="formulario">
+    <form #bachForm="ngForm" (ngSubmit)="insert()">
+      <a id="parte1" class="formulario-parte">
+        <h5>REFUERZO BACHILLERATO</h5>
+      </a>
+      <div id="contenedor1" class="formulario-contenedor active">
+        <div class="form">
+          <div class="form-cb">
+            <h5>LETRAS</h5>
+            <label class="input-container" for="val">
+              <input type="checkbox" name="val" #val="ngModel" [(ngModel)]="ecnBach.parte1[0]"/>
+              <p>Valenciano</p>
+            </label>
+            <label class="input-container" for="cas">
+              <input type="checkbox" name="cas" #cas="ngModel" [(ngModel)]="ecnBach.parte1[1]"/>
+              <p>Castellano</p>
+            </label>
+            <label class="input-container" for="latin">
+              <input type="checkbox" name="latin" #latin="ngModel" [(ngModel)]="ecnBach.parte1[2]"/>
+              <p>Latín</p>
+            </label>
+            <label class="input-container" for="griego">
+              <input type="checkbox" name="griego" #griego="ngModel" [(ngModel)]="ecnBach.parte1[3]"/>
+              <p>Griego</p>
+            </label>
+            <label class="input-container" for="filo">
+              <input type="checkbox" name="filo" #filo="ngModel" [(ngModel)]="ecnBach.parte1[4]"/>
+              <p>Filosofía</p>
+            </label>
+            <label class="input-container" for="ingles">
+              <input type="checkbox" name="ingles" #ingles="ngModel" [(ngModel)]="ecnBach.parte1[5]"/>
+              <p>Inglés</p>
+            </label>
+            <label class="input-container" for="geo">
+              <input type="checkbox" name="geo" #geo="ngModel" [(ngModel)]="ecnBach.parte1[6]"/>
+              <p>Geografía</p>
+            </label>
+            <label class="input-container" for="hist">
+              <input type="checkbox" name="hist" #hist="ngModel" [(ngModel)]="ecnBach.parte1[7]"/>
+              <p>Historia</p>
+            </label>
+            <label class="input-container" for="hista">
+              <input type="checkbox" name="hista" #hista="ngModel" [(ngModel)]="ecnBach.parte1[8]"/>
+              <p>Historia del Arte</p>
+            </label>
+            <label class="input-container" for="histe">
+              <input type="checkbox" name="histe" #histe="ngModel" [(ngModel)]="ecnBach.parte1[9]"/>
+              <p>Historia de España</p>
+            </label>
+            <h5>CIENCIAS</h5>
+            <label class="input-container" for="mates">
+              <input type="checkbox" name="mates" #mates="ngModel" [(ngModel)]="ecnBach.parte1[10]"/>
+              <p>Matemáticas</p>
+            </label>
+            <label class="input-container" for="matesa">
+              <input type="checkbox" name="matesa" #matesa="ngModel" [(ngModel)]="ecnBach.parte1[11]"/>
+              <p>Matemáticas Aplicadas</p>
+            </label>
+            <label class="input-container" for="fis">
+              <input type="checkbox" name="fis" #fis="ngModel" [(ngModel)]="ecnBach.parte1[12]"/>
+              <p>Física</p>
+            </label>
+            <label class="input-container" for="quim">
+              <input type="checkbox" name="quim" #quim="ngModel" [(ngModel)]="ecnBach.parte1[13]"/>
+              <p>Química</p>
+            </label>
+            <label class="input-container" for="bio">
+              <input type="checkbox" name="bio" #bio="ngModel" [(ngModel)]="ecnBach.parte1[14]"/>
+              <p>Biología</p>
+            </label>
+            <label class="input-container" for="geolo">
+              <input type="checkbox" name="geolo" #geolo="ngModel" [(ngModel)]="ecnBach.parte1[15]"/>
+              <p>Geología</p>
+            </label>
+          </div>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte2()">
+              <h5>SIGUIENTE</h5>
+            </button>
+          </div>
+        </div>
+      </div>
+      <a id="parte2" class="formulario-parte">
+        <h5>CONFIRMAR FORMULARIO</h5>
+      </a>
+      <div id="contenedor2" class="formulario-contenedor">
+        <div class="completado">
+          <input class="input-email" type="text" placeholder="Introduce aquí tu email" name="email"
+                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #email="ngModel"
+                 [(ngModel)]="ecnBach.correo"/>
+          <label class="terminos" for="terminos">
+            <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
+            <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
+                   [(ngModel)]="ecnBach.terminos" required/>
+          </label>
+        </div>
+        <div class="siguiente">
+          <div class="botonera">
+            <button type="button" class="boton" (click)="irParte1()">
+              <h5>VOLVER</h5>
+            </button>
+            <button type="submit" class="boton m2" [disabled]="bachForm.invalid">
+              <h5>ENVIAR</h5>
+            </button>
+          </div>
+          <p>El formulario será revisado por nuestro profesorado.</p>
+          <p>Recibirás un correo con la respuesta.</p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <app-modal-terminos></app-modal-terminos>
+</div>

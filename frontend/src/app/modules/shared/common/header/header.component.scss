@@ -1,0 +1,277 @@
+@import "src/app/styles/index.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  height: 5rem;
+  background: $components-dark;
+
+  &-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 90%;
+
+    &-izquierda {
+      display: flex;
+      align-items: center;
+      width: 15rem;
+      height: 100%;
+      @include mobileS{
+        min-width: 4rem;
+      }
+      @include mobileS{
+        min-width: 3rem;
+      }
+
+      .logo {
+        img {
+          width: 11rem;
+          height: 4.5rem;
+          //min-height: 3.5rem;
+          cursor: pointer;
+
+          @include mobileL{
+            width: 8rem;
+            height: 3.5rem;
+            margin-right: 1.5rem;
+          }
+          @include mobileM{
+            width: 7rem;
+            height: 3rem;
+          }
+          @include mobileS{
+            width: 6rem;
+            height: 2.5rem;
+          }
+        }
+      }
+
+      .busqueda {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+
+        @include tablet{
+          display: none;
+        }
+      }
+    }
+
+    &-medio {
+      display: flex;
+      align-items: center;
+      width: 55em;
+      height: 100%;
+      @include tablet{
+        display:none;
+      }
+
+      .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        &-navegador {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          width: 100%;
+
+          &-elemento {
+            cursor: pointer;
+            position: relative;
+
+            .elemento-titulo {
+              transition: 0.3s;
+              padding: 1rem;
+            }
+
+            &:hover {
+              .elemento-titulo {
+                color: $text-color-hover;
+              }
+            }
+          }
+        }
+      }
+
+      .disabled{
+        cursor: none;
+        pointer-events: none;
+      }
+
+      .buscador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+    }
+
+    &-derecha {
+      display: flex;
+      align-items: center;
+      width: 8rem;
+      min-width: 6rem;
+      height: 100%;
+
+      .botonera {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .botonNavLoged{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5rem;
+          background: none;
+          border: none;
+          cursor: pointer;
+          transition: 0.5s;
+          position: relative;
+          padding: 0.5rem;
+          padding: 0 10px 0 10px;
+          
+          .boton-nav-icon{
+            margin-right: 10px;
+          }
+
+          &:hover {
+            background: $text-color-dark;
+        
+            .boton-nav-icon, .boton-nav-text {
+              color: $text-color-hover;
+            }
+          }
+        }
+
+        .botonNav{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5rem;
+          background: none;
+          border: none;
+          cursor: pointer;
+          transition: 0.5s;
+          position: relative;
+          padding: 0.5rem;
+
+          &:hover{
+            background: $text-color-dark;
+
+            .botonNav-text{
+              color: $text-color-hover;
+              }
+          }
+        }
+
+        #perfil {
+          .dropdown {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.dropbuscarDesplegable{
+  position: absolute;
+  background-color: $components-light;
+
+  @include tablet{
+    width: 17rem;
+
+  }
+
+  .dropbuscarDesplegable-item{
+    height: 2rem;
+
+    @include tablet{
+      border-bottom: 1px solid $components-dark;
+    }
+
+    h5{
+      height: 2rem;
+    }
+  }
+}
+
+
+
+.menuResponsive, .menuResponsive1, #dropbuscador, .boton-menu, .menuResponsive-elemento-titulo{
+  display:none;
+}
+
+@include tablet{
+  .menuResponsive1{
+    display: none;
+  }
+  .menuResponsive {
+    display: block;
+    width: 17em;
+    height: 25em;
+    background-color: $components-dark;
+    position: absolute;
+    border-bottom-right-radius: 3em;
+    transition: 0.3s linear;
+    z-index: 9999;
+    @include mobileL{
+      height: 23em;
+    }
+    @include mobileS{
+      height: 22em;
+    }
+
+    &-menuNavegador{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-lista{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-elemento{
+      cursor: pointer;
+      //position: relative;
+      border-bottom: 2px solid $text-color-hover;
+    }
+    &-elemento-titulo{
+      display: block;
+      width: 17rem;
+      transition: 0.3s;
+      padding: 1rem;
+    }
+
+  }
+
+  .boton-menu{
+    display:block;
+    border: none;
+    background-color: $components-dark;
+    font-size: 1.4rem;
+    color: $components-light;
+  }
+  #dropbuscador{
+    display:block;
+  }
+}

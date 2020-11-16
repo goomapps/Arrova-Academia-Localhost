@@ -1,0 +1,173 @@
+@import "src/app/styles/index.scss";
+
+.estudia {
+  display: flex;
+  justify-content: center;
+  width: 1592px;
+
+  @include laptop{
+    width: 55rem;
+  }
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 2rem 2rem 3rem 2rem;
+      border-radius: 3rem;
+      width: 76%;
+      @include laptop{
+        text-align: center;
+      }
+      @include mobileL {
+        padding: 1.5rem;
+        width: 24rem;
+      }
+      @include mobileM {
+        padding: 1rem;
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
+      &-titulo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      &-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5rem 0 5rem;
+
+        @include mobileL {
+          padding: 0;
+        }
+
+        p {
+          text-align: center;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .cursos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3rem;
+      width: 100%;
+
+      @include mobileL {
+        width: 24rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
+      &-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        .curso {
+          padding-bottom: 3rem;
+          width: 76%;
+          @include mobileL {
+            width: 24rem;
+          }
+          @include mobileM {
+            width: 22rem;
+          }
+          @include mobileS {
+            width: 19rem;
+          }
+
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $components-dark;
+            padding: 2rem;
+            border: 3px solid transparent;
+            border-radius: 3rem;
+            text-decoration: none;
+
+            
+            &.disabled {
+              cursor: none;
+              pointer-events: none;
+            }
+
+            .curso-texto {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 40rem;
+
+              @include mobileL {
+                width: 10.5rem;
+              }
+            }
+
+            .curso-imagen {
+              img {
+                width: 10rem;
+
+                @include tablet {
+                  width: 9rem;
+                }
+                @include mobileL {
+                  width: 7rem;
+                }
+                @include mobileM {
+                  width: 6rem;
+                }
+                @include mobileS {
+                  width: 5rem;
+                }
+              }
+            }
+
+            &:hover {
+              border: 3px solid $text-color-hover;
+              .curso-texto {
+                h5, p {
+                  color: $text-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

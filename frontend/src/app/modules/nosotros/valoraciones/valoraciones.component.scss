@@ -1,0 +1,217 @@
+@import 'src/app/styles/index.scss';
+
+.valoraciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40rem;
+
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
+  &-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    background: $components-dark;
+    border-radius: 2rem;
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 22rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+
+        p {
+          margin-bottom: 0.5rem;
+        }
+
+        input {
+          width: 15rem;
+          padding: 0.5rem;
+          color: $text-color-hover;
+          background-color: $text-color-dark;
+          border: 1px dotted $text-color-hover;
+        }
+
+        textarea {
+          padding: 0.5rem;
+          color: $text-color-hover;
+          background-color: $text-color-dark;
+          border: 1px dotted $text-color-hover;
+
+          @include mobileL {
+            width: 20rem;
+          }
+          @include mobileM {
+            width: 17rem;
+          }
+          @include mobileS {
+            width: 16rem;
+          }
+        }
+      }
+
+      .picker {
+        position: relative;
+
+        &:hover .left {
+          display: block;
+        }
+
+        .left {
+          display: none;
+        }
+
+        .dropdown {
+          left: 0;
+          position: absolute;
+          top: 100%;
+          background: $text_color-light;
+          z-index: 9999;
+          width: 20rem;
+          height: 13rem;
+
+          @include laptopL {
+            width: 15.5rem;
+          }
+          @include mobileL {
+            width: 15rem;
+            height: 11.5rem;
+          }
+
+          ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            width: 100%;
+            height: 12rem;
+
+            li {
+              display: flex;
+              flex-direction: row;
+              justify-content: flex-start;
+              align-items: center;
+              height: 2.5rem;
+              width: 19rem;
+              padding-left: 1rem;
+
+              @include mobileL {
+                width: 10rem;
+              }
+
+              p {
+                color: $text-color-dark;
+              }
+
+              &:hover {
+                background: $text-color-hover;
+              }
+            }
+          }
+        }
+      }
+
+      .p-rating {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .p-rating .p-rating-star:hover,
+      .p-rating .p-rating-star:hover~.p-rating-star {
+        color: $text-color-hover;
+      }
+
+      .p-rating .p-rating-star:hover:before,
+      .p-rating .p-rating-star:hover~.p-rating-star:before {
+        color: $text_color-light;
+        left: 0;
+        position: absolute;
+      }
+
+      .p-rating-star {
+        background-color: transparent;
+        border: transparent;
+        margin: 0 2px;
+        padding: 0;
+        color: $text_color-light;
+        position: relative;
+
+        .icon {
+          font-size: 1.5rem;
+        }
+      }
+
+      .rated {
+        color: $text-color-hover;
+      }
+    }
+  }
+
+  &-messages {
+    width: 100%;
+
+    .valoracion {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem;
+      border-radius: 2rem;
+      width: 90%;
+      background: $components-dark;
+
+      .header {
+        padding: 1rem;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .icon {
+          color: $text-color-hover;
+        }
+      }
+
+      .contenido {
+        margin-bottom: 2rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+      }
+    }
+  }
+}

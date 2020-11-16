@@ -1,0 +1,321 @@
+<div class="reproductor">
+  <div class="reproductor-contenedor">
+    <div class="video">
+      <div class="video-reproductor">
+        <video id="video" class="player" controls controlsList="nodownload" (contextmenu)="onRightClick()">
+          <source src="{{videoSrc[videoSrcNum]}}" type="video/mp4">
+        </video>
+      </div>
+      <div class="resumen">
+        <ul>
+          <li>
+            <h5>DESCRIPCIÓ</h5>
+          </li>
+        </ul>
+        <div class="descripcion">
+          <h5>{{desc[descNum]}}</h5>
+          <p>{{resumen[resumenNum]}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="indice">
+      <div class="unidades">
+        <ul>
+          <li id="unidad1">
+            <h5>UNITATS</h5>
+          </li>
+          <li id="unidad2">
+            <h5>CLASES GRABADES</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="videos">
+        <ul>
+          <li id="item1">
+            <p>EXPRESSIÓ I INTERACCIÓ ESCRITES 1</p>
+            <div id="dropeie1" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item2">
+            <p>EXPRESSIÓ I INTERACCIÓ ESCRITES 2</p>
+            <div id="dropeie2" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item3">
+            <p>EXPRESSIÓ I INTERACCIÓ ESCRITES 3</p>
+            <div id="dropeie3" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item4">
+            <p>EXPRESSIÓ I INTERACCIÓ ESCRITES 4</p>
+            <div id="dropeie4" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item5">
+            <p>EXPRESSIÓ I INTERACCIÓ ESCRITES 5</p>
+          </li>
+          <li id="item6">
+            <p>MORFOSINTAXIS</p>
+            <div id="dropmorf" class="dropdown right">
+              <ul class="full">
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>SOLUCIONARI</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>TEORIA</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item7">
+            <p>ORTOGRAFÍA</p><div id="droporto" class="dropdown right">
+            <ul>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>ACTIVITATS</h5>
+                </a>
+              </li>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>ACTIVITATS</h5>
+                </a>
+              </li>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>ACTIVITATS</h5>
+                </a>
+              </li>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>SOLUCIONARI</h5>
+                </a>
+              </li>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>TEORIA</h5>
+                </a>
+              </li>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>TEORIA</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </li>
+          <li id="item8">
+            <p>FLEXIÓ VERBAL</p>
+            <div id="dropfv" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>SOLUCIONARI</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>TEORIA</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>TEORIA</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item9">
+            <p>EXPRESSIÓ I INTERACCIÓ ORAL</p>
+            <div id="dropeio" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item10">
+            <p>COMPRENSIÓ ESCRITA</p>
+            <div id="dropce" class="dropdown right">
+            <ul>
+              <li>
+                <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                  <h5>ACTIVITATS</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+          </li>
+          <li id="item11">
+            <p>MONÓLEG</p>
+          </li>
+          <li id="item12">
+            <p>SIMULACRE FÍ CURS</p>
+            <div id="dropfc" class="dropdown right">
+              <ul>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a href="assets/ejercicios/U2_Activitats_F_E_O.pdf" download="Activitats_FEO01.pdf">
+                    <h5>SOLUCIONARI</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li id="item13">
+            <p>CLASE DIA 20/10 PART 1</p>
+          </li>
+          <li id="item14">
+            <p>CLASE DIA 20/10 PART 2</p>
+          </li>
+          <li id="item15">
+            <p>CLASE DIA 20/10 PART 3</p>
+          </li>
+          <li id="item16">
+            <p>CLASE DIA 20/10 PART 4</p>
+          </li>
+          <li id="item17">
+            <p>CLASE DIA 22/10 PART 1</p>
+          </li>
+          <li id="item18">
+            <p>CLASE DIA 22/10 PART 2</p>
+          </li>
+          <li id="item19">
+            <p>CLASE DIA 22/10 PART 3</p>
+          </li>
+          <li id="item20">
+            <p>CLASE DIA 22/10 PART 4</p>
+          </li>
+          <li id="item21">
+            <p>CLASE DIA 3/11 PART 1</p>
+          </li>
+          <li id="item22">
+            <p>CLASE DIA 3/11 PART 2</p>
+          </li>
+          <li id="item23">
+            <p>CLASE DIA 3/11 PART 3</p>
+          </li>
+          <li id="item24">
+            <p>CLASE DIA 3/11 PART 4</p>
+          </li>
+          <li id="item25">
+            <p>CLASE DIA 5/11 PART 1</p>
+          </li>
+          <li id="item26">
+            <p>CLASE DIA 5/11 PART 2</p>
+          </li>
+          <li id="item27">
+            <p>CLASE DIA 5/11 PART 3</p>
+          </li>
+          <li id="item28">
+            <p>CLASE DIA 5/11 PART 4</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

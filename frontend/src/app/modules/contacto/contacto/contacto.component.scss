@@ -1,0 +1,131 @@
+@import 'src/app/styles/index.scss';
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  app-modal-terminos {
+    position: absolute;
+  }
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    @include laptop{
+      width: 100%;
+    }
+
+    .formulario {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: $components-dark;
+      padding: 2rem;
+      border-radius: 2rem;
+      @include tablet{
+        width: 40rem;
+      }
+      @include mobileL{
+        width: 24rem;
+      }
+      @include mobileM{
+        width: 22rem;
+      }
+      @include mobileS{
+        width: 19rem;
+      }
+
+      h3 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .input-email {
+          padding: 0.5rem;
+          color: $components-light;
+          background-color: $text-color-dark;
+          border: 1px dotted $text-color-hover;
+          width: 20rem;
+          margin-bottom: 0.5rem;
+          @include mobileM{
+            width: 17rem;
+          }
+          @include mobileS{
+            width: 17rem;
+          }
+
+          &:hover {
+            border: 1px solid $text-color-hover;
+          }
+
+          &::placeholder {
+            color: $components-light;
+          }
+        }
+
+        .text-area {
+          padding: 0.5rem;
+          color: $components-light;
+          background-color: $text-color-dark;
+          border: 1px dotted $text-color-hover;
+          margin-bottom: 0.5rem;
+          @include mobileL{
+            width: 20rem;
+          }
+          @include mobileM{
+            width: 17rem;
+          }
+          @include mobileS{
+            width: 17rem;
+            height: 6rem;
+          }
+
+          &:hover {
+            border: 1px solid $text-color-hover;
+          }
+
+          &::placeholder {
+            color: $components-light;
+          }
+        }
+
+        &.terminos {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1em;
+          text-align: center;
+          margin-bottom: 1rem;
+
+          .checkbox {
+            width: 1.3em;
+            height: 1.3em;
+            cursor: pointer;
+            border: none;
+            box-shadow: inset 0 0 0 10px $components-light;
+
+            &:hover {
+              box-shadow: inset 0 0 0 10px $text-color-hover;
+            }
+
+            &:checked {
+              box-shadow: inset 0 0 0 10px $text-color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

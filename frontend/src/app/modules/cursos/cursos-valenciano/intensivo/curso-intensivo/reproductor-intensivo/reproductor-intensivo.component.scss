@@ -1,0 +1,200 @@
+@import "src/app/styles/index.scss";
+
+.reproductor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-contenedor {
+    display: flex;
+    justify-content: center;
+    width: 90rem;
+    background: $components-dark;
+
+    @include laptop {
+      width: 63rem;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    @include tablet {
+      width: 48rem;
+    }
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 23rem;
+    }
+    @include mobileS {
+      width: 20rem;
+    }
+
+    .video {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+
+      &-reproductor {
+        width: 100%;
+
+        .player {
+          width: 100%;
+        }
+      }
+
+      .resumen {
+        ul {
+          display: flex;
+          align-items: center;
+          list-style: none;
+          height: 5rem;
+          margin-left: 3rem;
+
+          li {
+            padding: 1rem;
+
+            &:hover {
+              cursor: pointer;
+
+              h5 {
+                color: $text-color-hover;
+              }
+            }
+          }
+        }
+        .descripcion {
+          margin-left: 3rem;
+          margin-bottom: 2rem;
+
+          @include mobileL{
+            margin-left: 0;
+          }
+
+          h5 {
+            margin-bottom: 2rem;
+          }
+
+          p {
+            margin-left: 2rem;
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+
+    .indice {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      @include laptop {
+        width: 70%;
+      }
+      @include mobileL{
+        width: 85%;
+      }
+      @include mobileM{
+        width: 80%;
+      }
+      @include mobileS{
+        width: 80%;
+      }
+
+      .unidades {
+        margin-top: 3rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        @include laptop{
+          width: 100%;
+        }
+        @include mobileL{
+          margin-left: 0;
+        }
+        @include mobileS{
+          width: 16rem;
+        }
+
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          list-style: none;
+
+          @include mobileL{
+            flex-wrap: nowrap;
+          }
+
+          li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 12rem;
+            height: 6rem;
+            border: 1px solid $text-color-hover;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &.disabled {
+              pointer-events: none;
+              background: $components-light;
+              cursor: none;
+            }
+
+            &:hover {
+              background: $text-color-hover;
+
+              h5 {
+                color: $text-color-dark;
+              }
+            }
+          }
+        }
+      }
+
+      .videos {
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+
+        ul {
+          list-style: none;
+
+          li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            position: relative;
+
+            p {
+              width: 100%;
+              padding: 1rem 0 1rem 2rem;
+              transition: 0.3s;
+            }
+
+            &:hover {
+              p {
+                cursor: pointer;
+                background: $text-color-hover;
+                color: $text-color-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#dropmorf {
+  width: 60rem;
+  height: 11.5rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      height: 3.5rem;
+    }
+  }
+}

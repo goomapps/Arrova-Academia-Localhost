@@ -1,0 +1,103 @@
+@import "src/app/styles/index.scss";
+
+.estudia {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .cursos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      @include mobileL {
+        width: 24rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
+      &-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        width: 100%;
+
+        .curso {
+          padding: 1rem;
+          width: 100%;
+
+          a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $components-dark;
+            padding: 2rem;
+            border: 3px solid transparent;
+            border-radius: 3rem;
+            text-decoration: none;
+
+            .curso-texto {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 40rem;
+
+              @include mobileL {
+                width: 10.5rem;
+              }
+            }
+
+            .curso-imagen {
+              img {
+                width: 10rem;
+
+                @include mobileL {
+                  width: 10rem;
+                }
+                @include mobileM {
+                  width: 9rem;
+                }
+                @include mobileS {
+                  width: 7rem;
+                }
+              }
+            }
+
+            &:hover {
+              border: 3px solid $text-color-hover;
+              .curso-texto {
+                h5, p {
+                  color: $text-color-hover;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

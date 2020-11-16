@@ -1,0 +1,195 @@
+@import 'src/app/styles/index.scss';
+
+.titulaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  app-modal-terminos {
+    position: absolute;
+  }
+
+  @include tablet {
+    width: 48rem;
+  }
+  @include mobileL {
+    width: 25rem;
+  }
+  @include mobileM {
+    width: 23.5rem;
+  }
+  @include mobileS {
+    width: 20rem;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+    &-parte {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background: $components-dark;
+      width: 45rem;
+      border-bottom: 1px solid $text-color-light;
+
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+    }
+
+    &-contenedor {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 1rem 5rem 1rem 5rem;
+      background: $components-dark;
+      width: 100%;
+      border-bottom: 1px solid $text-color-light;
+
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
+      .form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        @include mobileL {
+          flex-direction: column;
+        }
+
+        &-cb {
+          .input-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 0.5rem;
+
+            input {
+              width: 1.3em;
+              height: 1.3em;
+              cursor: pointer;
+              border: none;
+              box-shadow: inset 0 0 0 10px $components-light;
+              margin-right: 0.5rem;
+
+              &:hover {
+                box-shadow: inset 0 0 0 10px $text-color-hover;
+              }
+
+              &:checked {
+                box-shadow: inset 0 0 0 10px $text-color-hover;
+              }
+            }
+          }
+        }
+
+        &-tb {
+          textarea {
+            padding: 0.5rem;
+            border: 1px dotted $text-color-hover;
+            background: $text-color-dark;
+            color: $components-light;
+
+            &:hover {
+              border: 1px solid $text-color-hover;
+            }
+          }
+        }
+      }
+
+      .siguiente {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+
+        .botonera {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+      }
+
+      .completado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .terminos {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 1em;
+          text-align: center;
+
+          .checkbox {
+            width: 1.3em;
+            height: 1.3em;
+            cursor: pointer;
+            border: none;
+            box-shadow: inset 0 0 0 10px $components-light;
+
+            &:hover {
+              box-shadow: inset 0 0 0 10px $text-color-hover;
+            }
+
+            &:checked {
+              box-shadow: inset 0 0 0 10px $text-color-hover;
+            }
+          }
+        }
+
+        .input-email {
+          padding: 0.5rem;
+          color: $components-light;
+          background-color: $text-color-dark;
+          border: 1px dotted $text-color-hover;
+          width: 20em;
+          margin-bottom: 0.5rem;
+
+          &:hover {
+            border: 1px solid $text-color-hover;
+          }
+
+          &::placeholder {
+            color: $components-light;
+          }
+        }
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
+}
