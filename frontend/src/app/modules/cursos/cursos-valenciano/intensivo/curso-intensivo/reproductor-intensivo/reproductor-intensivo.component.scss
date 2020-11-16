@@ -127,8 +127,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 5rem;
-            height: 5rem;
+            width: 12rem;
+            height: 6rem;
             border: 1px solid $text-color-hover;
             cursor: pointer;
             transition: 0.3s;
@@ -179,6 +179,22 @@
           }
         }
       }
+    }
+  }
+}
+
+#dropmorf {
+  width: 60rem;
+  height: 11.5rem;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      flex-wrap: wrap;
+      height: 3.5rem;
     }
   }
 }

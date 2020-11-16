@@ -43,6 +43,7 @@ export class UserService {
   setUser(user: Usuario): void {
     this.user = user;
   }
+
   getUser(): Usuario {
     return this.user;
   }
