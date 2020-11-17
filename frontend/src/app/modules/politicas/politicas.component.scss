@@ -33,6 +33,9 @@
       background: $components-dark;
       padding: 2rem;
 
+      @include laptopL{
+        width: 25rem;
+      }
       @include laptop {
         width: 20rem;
       }

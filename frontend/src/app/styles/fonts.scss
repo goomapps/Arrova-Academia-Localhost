@@ -77,8 +77,11 @@ h5 {
   font-weight: 500;
   font-size: 1.5rem;
   color: $text-color-light;
+  @include laptopL{
+    font-size: 1.1rem;
+  }
   @include laptop{
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   @include mobileL{
     font-size: 0.7rem;
@@ -96,6 +99,9 @@ p {
   font-family: 'Montserrat', sans-serif;
   color: $text-color-light;
   text-align: justify;
+  @include mobileL{
+    font-size: 0.8rem;
+  }
   @include mobileL{
     font-size: 0.6rem;
   }

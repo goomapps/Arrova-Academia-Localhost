@@ -18,20 +18,12 @@
     &-izquierda {
       display: flex;
       align-items: center;
-      width: 15rem;
       height: 100%;
-      @include mobileS{
-        min-width: 4rem;
-      }
-      @include mobileS{
-        min-width: 3rem;
-      }
 
       .logo {
         img {
           width: 11rem;
           height: 4.5rem;
-          //min-height: 3.5rem;
           cursor: pointer;
 
           @include mobileL{
@@ -66,7 +58,6 @@
     &-medio {
       display: flex;
       align-items: center;
-      width: 55em;
       height: 100%;
       @include tablet{
         display:none;
@@ -119,7 +110,7 @@
     &-derecha {
       display: flex;
       align-items: center;
-      width: 8rem;
+      //width: 8rem;
       min-width: 6rem;
       height: 100%;
 
@@ -166,7 +157,11 @@
           transition: 0.5s;
           position: relative;
           padding: 0.5rem;
-
+          
+          @include laptop{
+            font-size: 11px;
+          }
+          
           &:hover{
             background: $text-color-dark;
 
