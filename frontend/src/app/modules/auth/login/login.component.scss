@@ -72,6 +72,15 @@
               height: 2.4rem;
             }
 
+            .inputText{
+              @include mobileL{
+                font-size: 12px;
+              }
+              @include mobileS{
+                font-size: 10px;
+              }
+            }
+
             &:hover {
               border: 1px solid $text-color-hover;
 
@@ -101,6 +110,8 @@
               @include mobileL {
                 width: 10rem;
               }
+
+              
 
               &::placeholder {
                 color: $components-light;

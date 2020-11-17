@@ -18,6 +18,19 @@
     padding: 3rem;
     border-radius: 2rem;
 
+    @include tablet {
+      width: 46rem;
+    }
+    @include mobileL {
+      width: 24rem;
+    }
+    @include mobileM {
+      width: 22rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
+
     .formulario-contenedor {
       display: flex;
       flex-direction: column;
@@ -42,7 +55,20 @@
           cursor: pointer;
 
           @include mobileL {
-            height: 2.4rem;
+            height: 2rem;
+            font-weight: 200;
+          }
+          @include mobileS {
+            height: 1.7rem;
+          }
+
+          .inputText{
+            @include mobileL{
+              font-size: 12px;
+            }
+            @include mobileS{
+              font-size: 10px;
+            }
           }
 
           &:hover {
@@ -60,6 +86,9 @@
 
             @include mobileL {
               font-size: 1.1rem;
+            }
+            @include mobileM {
+              font-size: 0.9rem;
             }
           }
 

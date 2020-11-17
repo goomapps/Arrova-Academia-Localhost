@@ -5,6 +5,9 @@
   justify-content: center;
   width: 1592px;
 
+  @include laptopL{
+    width: 60rem;
+  }
   @include laptop{
     width: 55rem;
   }
@@ -36,7 +39,8 @@
       padding: 2rem 2rem 3rem 2rem;
       border-radius: 3rem;
       width: 76%;
-      @include laptop{
+      
+      @include laptopL{
         text-align: center;
       }
       @include mobileL {

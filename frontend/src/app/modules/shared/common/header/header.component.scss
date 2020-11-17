@@ -18,20 +18,12 @@
     &-izquierda {
       display: flex;
       align-items: center;
-      width: 15rem;
       height: 100%;
-      @include mobileS{
-        min-width: 4rem;
-      }
-      @include mobileS{
-        min-width: 3rem;
-      }
 
       .logo {
         img {
           width: 11rem;
           height: 4.5rem;
-          //min-height: 3.5rem;
           cursor: pointer;
 
           @include mobileL{
@@ -66,7 +58,6 @@
     &-medio {
       display: flex;
       align-items: center;
-      width: 55em;
       height: 100%;
       @include tablet{
         display:none;
@@ -119,7 +110,7 @@
     &-derecha {
       display: flex;
       align-items: center;
-      width: 8rem;
+      //width: 8rem;
       min-width: 6rem;
       height: 100%;
 
@@ -140,6 +131,7 @@
           position: relative;
           padding: 0.5rem;
           padding: 0 10px 0 10px;
+          margin-left: 30px;
           
           .boton-nav-icon{
             margin-right: 10px;
@@ -165,7 +157,11 @@
           transition: 0.5s;
           position: relative;
           padding: 0.5rem;
-
+          
+          @include laptop{
+            font-size: 11px;
+          }
+          
           &:hover{
             background: $text-color-dark;
 
@@ -222,6 +218,9 @@
     display: block;
     width: 17em;
     height: 25em;
+    top: 0;
+    margin-top: 80px;
+    left: 0;
     background-color: $components-dark;
     position: absolute;
     border-bottom-right-radius: 3em;
@@ -252,7 +251,6 @@
 
     &-elemento{
       cursor: pointer;
-      //position: relative;
       border-bottom: 2px solid $text-color-hover;
     }
     &-elemento-titulo{
@@ -270,6 +268,13 @@
     background-color: $components-dark;
     font-size: 1.4rem;
     color: $components-light;
+
+    @include tablet{
+      margin-left: 1rem;
+    }
+    @include mobileL{
+      margin-left: 0;
+    }
   }
   #dropbuscador{
     display:block;

@@ -81,6 +81,13 @@
                     height: 9rem;
                     border:1px solid $text-color-emphasis;
                     margin-right: 5px;
+
+                    @include tablet{
+                        margin: 0;
+                    }
+                    @include tablet{
+                        width: 100%;
+                    }
                 }
 
                 &-calendario{
@@ -88,6 +95,13 @@
                     height: 9rem;
                     border:1px solid $text-color-emphasis;
                     margin-left: 5px;
+
+                    @include tablet{
+                        margin: 0;
+                    }
+                    @include tablet{
+                        width: 100%;
+                    }
                 }
             }
 
