@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {UserService} from "../../../auth/services/user.service";
+import {UserService} from '../../../auth/services/user.service';
 
 @Component({
   selector: 'app-c1',
@@ -16,15 +16,15 @@ export class C1Component implements OnInit {
   lengua: string = 'Idioma: ';
   lengua_valenciano: string = 'Valenciano';
   precio_mes: string = '35€/mes o 270€/curso';
-  incluye: string = 'Este curso incluye:';
+  incluye: string = 'Este curs inclou:';
   videos: string = '10 vídeos per unitat';
   exercicis1: string = 'Exercicis per mòdul';
   exercicis2: string = 'Exercicis-Simulacre d`Examen';
   exercicis3: string = 'Exercicis d`Expressió i Interacció Oral';
   dossier: string = 'Dossier de teoria complementari';
-  examen: string = 'Exámen cada tres temes';
+  examen: string = 'Examen cada tres temes';
   practiques: string = 'Práctiques redacció';
-  acceso: string = 'Accés en dispositus mòbils';
+  acceso: string = 'Accés amb dispositus mòbils';
   objetivos: string = 'Objectius del curs:';
   desc_objetivos: string =
     'D’acord amb les entitats certificadores de coneixements de valencià, segons s’estableix al Marc Comú Europeu de Referència per a les llengües (MCER), el curs s’organitza en les següents àrees de treball i de coneixements:';

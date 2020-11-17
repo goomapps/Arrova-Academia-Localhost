@@ -197,7 +197,7 @@
     <div class="contenedor-descargable">
       <div *ngIf="!userService.loginDone()">
         <button class="boton" routerLink="/usuario/registro">
-          <h5>MATRICULATE</h5>
+          <h5>MATRICÚLATE</h5>
         </button>
       </div>
       <div *ngIf="userService.loginDone()">
@@ -211,15 +211,6 @@
       >
         <h5 class="download">
           {{ boletin_informativo | uppercase }}
-          <i class="fas fa-file-pdf"></i>
-        </h5>
-      </a>
-      <a
-        download="Hoja_Inscripcion_Curso_C1.pdf"
-        href="assets/documentacion/full_inscripcio.pdf"
-      >
-        <h5 class="download">
-          {{ hoja_inscripcion | uppercase }}
           <i class="fas fa-file-pdf"></i>
         </h5>
       </a>

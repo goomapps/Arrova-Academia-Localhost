@@ -1,7 +1,7 @@
 <div class="contacto">
   <div class="contacto-contenedor">
     <form class="formulario" #contactForm="ngForm" (ngSubmit)="insert()">
-      <h3>ENVIANOS TUS DUDAS, QUEJAS O PROBLEMAS Y SERÁN ATENDIDAS EN LA MAYOR BREVEDAD DE TIEMPO</h3>
+      <h3>ENVÍANOS TUS DUDAS, QUEJAS O PROBLEMAS Y SERÁN ATENDIDAS EN LA MAYOR BREVEDAD DE TIEMPO</h3>
       <label for="nombre">
         <h5>NOMBRE</h5>
         <input class="input-email" type="text" name="nombre" #nombre="ngModel" [(ngModel)]="contacto.nombre"
@@ -18,7 +18,7 @@
                   rows="8" pattern="^[A-Za-z\s]+$" required></textarea>
       </label>
       <label class="terminos" for="terminos">
-        <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
+        <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TÉRMINOS</p>
         <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
                [(ngModel)]="contacto.terminos" required/>
       </label>
