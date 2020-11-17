@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/shared/common/header/header.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/styles/classes.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
