@@ -140,6 +140,7 @@
           position: relative;
           padding: 0.5rem;
           padding: 0 10px 0 10px;
+          margin-left: 30px;
           
           .boton-nav-icon{
             margin-right: 10px;
@@ -222,6 +223,9 @@
     display: block;
     width: 17em;
     height: 25em;
+    top: 0;
+    margin-top: 80px;
+    left: 0;
     background-color: $components-dark;
     position: absolute;
     border-bottom-right-radius: 3em;
@@ -252,7 +256,6 @@
 
     &-elemento{
       cursor: pointer;
-      //position: relative;
       border-bottom: 2px solid $text-color-hover;
     }
     &-elemento-titulo{
@@ -270,6 +273,13 @@
     background-color: $components-dark;
     font-size: 1.4rem;
     color: $components-light;
+
+    @include tablet{
+      margin-left: 1rem;
+    }
+    @include mobileL{
+      margin-left: 0;
+    }
   }
   #dropbuscador{
     display:block;

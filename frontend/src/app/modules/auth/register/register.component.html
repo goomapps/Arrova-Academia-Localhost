@@ -9,7 +9,7 @@
             <p class="frase-importante">Nombre:</p>
             <div class="input">
               <i class="fas fa-user input-icon"></i>
-              <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre"
+              <input class="inputText" type="text" name="nombre" #nombre="ngModel" [(ngModel)]="usuario.nombre"
                      placeholder="nombre" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
@@ -17,7 +17,7 @@
             <p class="frase-importante">Primer Apellido:</p>
             <div class="input">
               <i class="fas fa-user input-icon"></i>
-              <input type="text" name="papellido" #papellido="ngModel" [(ngModel)]="usuario.apellido1"
+              <input class="inputText" type="text" name="papellido" #papellido="ngModel" [(ngModel)]="usuario.apellido1"
                      placeholder="primer apellido" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
@@ -25,7 +25,7 @@
             <p class="frase-importante">Segundo Apellido:</p>
             <div class="input">
               <i class="fas fa-user input-icon"></i>
-              <input type="text" name="sapellido" #sapellido="ngModel" [(ngModel)]="usuario.apellido2"
+              <input class="inputText" type="text" name="sapellido" #sapellido="ngModel" [(ngModel)]="usuario.apellido2"
                      placeholder="segundo apellido" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
@@ -33,7 +33,7 @@
             <p class="frase-importante">Nombre de Usuario:</p>
             <div class="input">
               <i class="fas fa-user input-icon"></i>
-              <input type="text" name="username" #username="ngModel" [(ngModel)]="usuario.nombreUsuario"
+              <input class="inputText" type="text" name="username" #username="ngModel" [(ngModel)]="usuario.nombreUsuario"
                      placeholder="nombre de usuario" required pattern="^[A-Za-z\s]+$">
             </div>
           </div>
@@ -41,7 +41,7 @@
             <p class="frase-importante">Correo electrónico:</p>
             <div class="input">
               <i class="fas fa-envelope input-icon"></i>
-              <input type="text" name="email" #email="ngModel" [(ngModel)]="usuario.correo"
+              <input class="inputText" type="text" name="email" #email="ngModel" [(ngModel)]="usuario.correo"
                      placeholder="nombre@dominio.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
             </div>
           </div>
@@ -67,7 +67,7 @@
             <p class="frase-importante">Fecha de Nacimiento:</p>
             <div class="input">
               <i class="fas fa-calendar-alt input-icon"></i>
-              <input type="date" name="birth" #birth="ngModel" [(ngModel)]="usuario.fechaNacimiento" required>
+              <input class="inputText" type="date" name="birth" #birth="ngModel" [(ngModel)]="usuario.fechaNacimiento" required>
             </div>
           </div>
           <label class="terminos" for="terminos">
