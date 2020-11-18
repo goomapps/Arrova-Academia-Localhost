@@ -74,6 +74,10 @@
         align-items: center;
         width: 100%;
 
+        @include mobileL {
+          flex-direction: column;
+        }
+
         &-cb {
           .input-container {
             display: flex;
