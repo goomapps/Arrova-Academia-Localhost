@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .contenedor-container {
   display: flex;
@@ -26,7 +26,7 @@
   border-radius: 2rem;
   width: 65rem;
 
-  @include laptop{
+  @include laptop {
     width: 55rem;
   }
   @include tablet {
@@ -55,6 +55,9 @@
       padding: 1rem;
       width: 70%;
 
+      @include tablet {
+        width: 60%;
+      }
       @include mobileL {
         width: 20.5rem;
       }
@@ -79,7 +82,10 @@
     .previa {
       width: 30%;
       padding: 1rem;
-      
+
+      @include tablet {
+        width: 40%;
+      }
       @include mobileL {
         width: 20.5rem;
       }
@@ -167,7 +173,6 @@
       text-decoration: none;
 
       .contenedor:hover {
-
         h3,
         i {
           color: $text-color-hover;

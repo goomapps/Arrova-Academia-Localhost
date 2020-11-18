@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .matricula {
   display: flex;
@@ -17,6 +17,19 @@
     background: $components-dark;
     padding: 3rem;
     border-radius: 2rem;
+
+    @include tablet {
+      width: 46rem;
+    }
+    @include mobileL {
+      width: 24rem;
+    }
+    @include mobileM {
+      width: 22rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
 
     .formulario-contenedor {
       display: flex;
@@ -42,7 +55,11 @@
           cursor: pointer;
 
           @include mobileL {
-            height: 2.4rem;
+            height: 2rem;
+            font-weight: 200;
+          }
+          @include mobileS {
+            height: 1.7rem;
           }
 
           &:hover {
@@ -61,6 +78,9 @@
             @include mobileL {
               font-size: 1.1rem;
             }
+            @include mobileM {
+              font-size: 0.9rem;
+            }
           }
 
           input {
@@ -72,7 +92,11 @@
             color: $text-color-emphasis;
 
             @include mobileL {
+              font-size: 12px;
               width: 10rem;
+            }
+            @include mobileS {
+              font-size: 10px;
             }
 
             &::placeholder {
@@ -107,6 +131,5 @@
         }
       }
     }
-
   }
 }
