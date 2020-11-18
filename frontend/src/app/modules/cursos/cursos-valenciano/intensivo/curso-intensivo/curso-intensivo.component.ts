@@ -8,23 +8,23 @@ import {UserService} from "../../../../auth/services/user.service";
 })
 export class CursoIntensivoComponent implements OnInit {
   title: string = 'Curs C1 de Valencià (JQCV, EOI, CIEAcova)';
-  desc: string = 'El curs de C1 de valencià té com a objectiu principal l’adquisició de coneixements de valencià per part de l’alumnat per tal que aquest siga capaç d’usar la llengua, en qualsevol dels àmbits lingüístics, tant de forma oral com escrita, en un registre estàndard, així com de demostrar els dits coneixements en les proves de certificació que permetran l’obtenció del títol de suficiència en coneixements de valencià mitjançant qualsevol de les entitats certificadores (JQCV, EOI o CIEAcova).';
+  desc: string = 'El curs intensiu de C1 de preparació per a les proves de certificació de gener de CIEAcova té com a objectiu l`assoliment i perfeccionament del nivell de suficiència en un espai de temps molt breu. En aquest cas el treball consta de dos àrees diferents: d`una banda, les classes per videoconferència, en què es treballarà principalment la morfosintaxi i el lèxic i semàntica; de l`altra, l`accés a la plataforma web on tindreu accés als diferents dossiers de teoria i d`activitats, així com al vídeos explicatius de les àrees d`expressió i interacció, tant oral com escrita, a més de a les activitats per posar-ho en pràctica. Farem espacial èmfasi en la preparació concreta de l`examen, de manera que també trobareu exercicis segons el model de l`examen de CIEAcova, així com redaccions i exercicis orals d`altres convocatòries, i un simulacre d`examen final.';
   usuarios: string = 'Usuarios que han cursado o están cursando el curso: ';
   numusuarios: number = 8;
   creado: string = 'Creado por:';
   adrian: string = 'Adrián González';
   lengua: string = 'Idioma: ';
   lengua_valenciano: string = 'Valenciano';
-  precio_mes: string = '200€/curso';
-  incluye: string = 'Este curso incluye:';
-  videos: string = 'Vídeos per unitat';
-  exercicis1: string = 'Exercicis per mòdul';
-  exercicis2: string = 'Exercicis-Simulacre d`Examen';
-  exercicis3: string = 'Exercicis d`Expressió i Interacció Oral';
-  dossier: string = 'Dossier de teoria complementari';
-  examen: string = 'Clases online';
-  practiques: string = 'Práctiques redacció';
-  acceso: string = 'Accés en dispositus mòbils';
+  precio_mes: string = '115€/mes';
+  incluye: string = 'Este curs inclou:';
+  videos: string = '18 sessions de dues hores';
+  exercicis1: string = 'Activitats de reforç';
+  exercicis2: string = 'Pràctiques d`expressió i interacció escrita';
+  exercicis3: string = 'Exercicis d`expressió i interacció Oral';
+  dossier: string = 'Dossier de teoria';
+  examen: string = 'Activitats model d`examen';
+  practiques: string = 'Simulacre d`examen';
+  acceso: string = 'Accés amb dispositus mòbils';
   objetivos: string = 'Objectius del curs:';
   desc_objetivos: string =
     'D’acord amb les entitats certificadores de coneixements de valencià, segons s’estableix al Marc Comú Europeu de Referència per a les llengües (MCER), el curs s’organitza en les següents àrees de treball i de coneixements:';
