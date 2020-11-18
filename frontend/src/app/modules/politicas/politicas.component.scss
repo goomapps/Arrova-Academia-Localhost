@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .politicas {
   display: flex;
@@ -10,7 +10,7 @@
     justify-content: center;
 
     @include laptop {
-      width: 62rem;
+      width: 55rem;
     }
     @include tablet {
       flex-direction: column;
@@ -33,7 +33,7 @@
       background: $components-dark;
       padding: 2rem;
 
-      @include laptopL{
+      @include laptopL {
         width: 25rem;
       }
       @include laptop {
@@ -48,13 +48,13 @@
         padding: 0.5rem;
         width: 32rem;
       }
-      @include mobileL{
+      @include mobileL {
         width: 25rem;
       }
-      @include mobileM{
+      @include mobileM {
         width: 20rem;
       }
-      @include mobileM{
+      @include mobileM {
         width: 19rem;
       }
 
@@ -85,20 +85,9 @@
       display: block;
       flex: 1;
 
-      /*@include laptop{
-        width: 35rem;
-      }*/
-
       .dnone {
         display: none;
       }
     }
-    
-  }
-}
-
-.contenedor-container{
-  @include laptop{
-    width: 35rem;
   }
 }
