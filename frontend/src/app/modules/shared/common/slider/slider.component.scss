@@ -15,7 +15,7 @@
   display: flex;
   padding: 0;
   margin: 1.5rem 0 0 0;
-  width: 400%;
+  width: 500%;
   animation: cambio 15s infinite alternate;
 }
 .slider li {
@@ -34,28 +34,35 @@
   0% {
     margin-left: 0;
   }
-  20% {
+  16% {
     margin-left: 0;
   }
 
-  25% {
+  20% {
     margin-left: -100%;
   }
-  45% {
+  36% {
     margin-left: -100%;
   }
 
-  50% {
+  40% {
     margin-left: -200%;
   }
-  70% {
+  56% {
     margin-left: -200%;
   }
 
-  75% {
+  60% {
     margin-left: -300%;
+  }
+  76% {
+    margin-left: -300%;
+  }
+
+  82% {
+    margin-left: -400%;
   }
   100% {
-    margin-left: -300%;
+    margin-left: -400%;
   }
 }
