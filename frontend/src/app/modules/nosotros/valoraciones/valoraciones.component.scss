@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .valoraciones {
   display: flex;
@@ -11,7 +11,7 @@
     width: 25rem;
   }
   @include mobileM {
-    width: 23.5rem;
+    width: 22rem;
   }
   @include mobileS {
     width: 20rem;
@@ -150,12 +150,12 @@
       }
 
       .p-rating .p-rating-star:hover,
-      .p-rating .p-rating-star:hover~.p-rating-star {
+      .p-rating .p-rating-star:hover ~ .p-rating-star {
         color: $text-color-hover;
       }
 
       .p-rating .p-rating-star:hover:before,
-      .p-rating .p-rating-star:hover~.p-rating-star:before {
+      .p-rating .p-rating-star:hover ~ .p-rating-star:before {
         color: $text_color-light;
         left: 0;
         position: absolute;

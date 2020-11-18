@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .contenedor-container {
   display: flex;
@@ -13,7 +13,7 @@
     width: 25rem;
   }
   @include mobileM {
-    width: 23.5rem;
+    width: 22rem;
   }
   @include mobileS {
     width: 20rem;
@@ -26,7 +26,7 @@
   border-radius: 2rem;
   width: 65rem;
 
-  @include laptop{
+  @include laptop {
     width: 55rem;
   }
   @include tablet {
@@ -54,7 +54,7 @@
       flex-direction: column;
       padding: 1rem;
       width: 70%;
-      @include tablet{
+      @include tablet {
         width: 60%;
       }
       @include mobileL {
@@ -82,7 +82,7 @@
       width: 30%;
       padding: 1rem;
 
-      @include tablet{
+      @include tablet {
         width: 40%;
       }
       @include mobileL {
@@ -172,7 +172,6 @@
       text-decoration: none;
 
       .contenedor:hover {
-
         h3,
         i {
           color: $text-color-hover;
