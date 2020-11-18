@@ -37,6 +37,7 @@ export class MatriculaComponent implements OnInit {
       codigoPostal: '',
       telefono: '',
       metodoPago: '',
+      numeroCuenta: '',
       proteccionDatos: false
     };
   }
@@ -81,6 +82,7 @@ export class MatriculaComponent implements OnInit {
     });
     document.getElementById('pago2').addEventListener('click', () => {
       this.matricula.metodoPago = 'TRANSFERENCIA';
+      this.matricula.numeroCuenta = 'ES55 2100 3932 5602 0025 9667';
     });
 
     const cb = document.getElementById('cb');

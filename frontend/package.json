@@ -34,7 +34,7 @@
     "@angular/router": "~9.0.2",
     "@types/jquery": "3.5.4",
     "jquery": "3.5.1",
-    "lint-staged": "^10.5.1",
+    "lint-staged": "10.5.1",
     "ngx-logger": "4.1.9",
     "ngx-spinner": "10.0.1",
     "ngx-toastr": "13.1.0",
@@ -62,7 +62,7 @@
     "prettier": "2.1.2",
     "protractor": "7.0.0",
     "ts-node": "~8.3.0",
-    "tslint": "~5.18.0",
+    "tslint": "5.18.0",
     "typescript": "~3.7.5"
   }
 }

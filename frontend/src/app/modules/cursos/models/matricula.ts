@@ -10,6 +10,7 @@ export class Matricula {
   codigoPostal: number;
   telefono: number;
   metodoPago: string;
+  numeroCuenta: number;
   proteccionDatos: boolean;
   constructor(
     usuario,
@@ -23,6 +24,7 @@ export class Matricula {
     codigoPostal,
     telefono,
     metodoPago,
+    numeroCuenta,
     proteccionDatos
   ) {
     this.usuario = usuario;
@@ -36,6 +38,7 @@ export class Matricula {
     this.codigoPostal = codigoPostal;
     this.telefono = telefono;
     this.metodoPago = metodoPago;
+    this.numeroCuenta = numeroCuenta;
     this.proteccionDatos = proteccionDatos;
   }
 }
