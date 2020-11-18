@@ -54,6 +54,9 @@
       flex-direction: column;
       padding: 1rem;
       width: 70%;
+      @include tablet{
+        width: 60%;
+      }
       @include mobileL {
         width: 20.5rem;
       }
@@ -79,6 +82,9 @@
       width: 30%;
       padding: 1rem;
 
+      @include tablet{
+        width: 40%;
+      }
       @include mobileL {
         width: 20.5rem;
       }
