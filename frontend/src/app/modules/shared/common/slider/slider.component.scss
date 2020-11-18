@@ -5,6 +5,11 @@
   overflow: hidden;
   background: $components-dark;
   border-radius: 3rem;
+  border-bottom: 0.5rem solid $components-dark;
+
+  @include mobileL {
+    border-bottom: 1rem solid $components-dark;
+  }
 }
 .slider ul {
   display: flex;
