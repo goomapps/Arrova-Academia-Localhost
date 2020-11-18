@@ -25,9 +25,6 @@
           <input type="text" name="tipo" #tipo="ngModel" [(ngModel)]="matricula.precio" readonly required>
           <div id="droptipo" class="dropdown left">
             <ul>
-              <li id="tipo1" class="item2">
-                <p>DOS PAGOS</p>
-              </li>
               <li id="tipo2" class="item2">
                 <p>TOTAL</p>
               </li>
@@ -92,13 +89,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-      <div class="input-contenedor">
-        <p class="frase-importante">Numero de Cuenta:</p>
-        <div id="cuenta" class="input">
-          <i class="far fa-credit-card input-icon"></i>
-          <input type="text" name="cuenta" #cuenta="ngModel" [(ngModel)]="matricula.numeroCuenta" required>
         </div>
       </div>
       <label class="terminos" for="terminos">
