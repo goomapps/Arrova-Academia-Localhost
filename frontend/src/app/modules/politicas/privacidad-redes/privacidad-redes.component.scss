@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .contenedor-container {
   display: flex;
@@ -9,7 +9,7 @@
   align-items: initial;
 
   @include laptop {
-    width: 48rem;
+    width: 31rem;
   }
   @include tablet {
     width: 32rem;
@@ -17,10 +17,10 @@
   @include mobileL {
     width: 25rem;
   }
-  @include mobileM{
+  @include mobileM {
     width: 20rem;
   }
-  @include mobileM{
+  @include mobileM {
     width: 19rem;
   }
 
@@ -31,7 +31,6 @@
   .p4 {
     padding: 1rem;
   }
-
 }
 
 .subtitle {

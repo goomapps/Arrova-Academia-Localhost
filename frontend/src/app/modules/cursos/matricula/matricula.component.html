@@ -94,6 +94,13 @@
           </div>
         </div>
       </div>
+      <div class="input-contenedor">
+        <p class="frase-importante">Numero de Cuenta:</p>
+        <div id="cuenta" class="input">
+          <i class="far fa-credit-card input-icon"></i>
+          <input type="text" name="cuenta" #cuenta="ngModel" [(ngModel)]="matricula.numeroCuenta" required>
+        </div>
+      </div>
       <label class="terminos" for="terminos">
         <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
         <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"

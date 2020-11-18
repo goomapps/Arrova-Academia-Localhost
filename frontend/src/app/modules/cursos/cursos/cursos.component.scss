@@ -5,10 +5,10 @@
   justify-content: center;
   width: 1592px;
 
-  @include laptopL{
+  @include laptopL {
     width: 60rem;
   }
-  @include laptop{
+  @include laptop {
     width: 55rem;
   }
   @include tablet {
@@ -18,7 +18,7 @@
     width: 25rem;
   }
   @include mobileM {
-    width: 23.5rem;
+    width: 22rem;
   }
   @include mobileS {
     width: 20rem;
@@ -39,8 +39,8 @@
       padding: 2rem 2rem 3rem 2rem;
       border-radius: 3rem;
       width: 76%;
-      
-      @include laptopL{
+
+      @include laptopL {
         text-align: center;
       }
       @include mobileL {
@@ -125,7 +125,6 @@
             border-radius: 3rem;
             text-decoration: none;
 
-            
             &.disabled {
               cursor: none;
               pointer-events: none;
@@ -164,7 +163,8 @@
             &:hover {
               border: 3px solid $text-color-hover;
               .curso-texto {
-                h5, p {
+                h5,
+                p {
                   color: $text-color-hover;
                 }
               }

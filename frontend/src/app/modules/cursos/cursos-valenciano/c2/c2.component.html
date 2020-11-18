@@ -3,13 +3,11 @@
     <a routerLink="/cursos" routerLinkActive="router-link-active">
       <p>Cursos</p>
     </a>
-    <p class="separator"> > </p>
-    <a
-      routerLink="/cursos/valenciano"
-    >
+    <p class="separator">></p>
+    <a routerLink="/cursos/valenciano">
       <p>Valenciano</p>
     </a>
-    <p class="separator"> > </p>
+    <p class="separator">></p>
     <a>
       <p>C2</p>
     </a>
@@ -20,7 +18,7 @@
         <h3>
           {{ title | uppercase }}
         </h3>
-        <p>
+        <p class="descripcionCursos">
           {{ desc | uppercase }}
         </p>
         <p>{{ usuarios }}{{ numusuarios }}</p>
@@ -223,8 +221,8 @@
         </h5>
       </a>
       <a
-        download="Hoja_Inscripcion_Curso_C2.pdf"
-        href="assets/documentacion/full_inscripcio.pdf"
+        download="Full_Inscripcio_C2.pdf"
+        href="assets/documentacion/full_inscripcio_c1_c2.pdf"
       >
         <h5 class="download">
           {{ hoja_inscripcion | uppercase }}

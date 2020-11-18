@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
-import {NGXLogger} from 'ngx-logger';
-import {ToastrService} from 'ngx-toastr';
+import { NGXLogger } from 'ngx-logger';
+import { ToastrService } from 'ngx-toastr';
 
-import {EstudiaConNosotrosService} from '../../services/estudia-con-nosotros.service';
-import {EcnRefuerzos} from '../../models/ecn-refuerzos';
+import { EstudiaConNosotrosService } from '../../services/estudia-con-nosotros.service';
+import { EcnRefuerzos } from '../../models/ecn-refuerzos';
 
 @Component({
   selector: 'app-eso',
   templateUrl: './eso.component.html',
-  styleUrls: ['./eso.component.scss']
+  styleUrls: ['./eso.component.scss'],
 })
 export class EsoComponent implements OnInit {
   ecnESO;
@@ -22,8 +22,9 @@ export class EsoComponent implements OnInit {
   ) {
     this.ecnESO = {
       parte1: ['', '', '', '', '', '', '', ''],
+      comentario: '',
       correo: '',
-      terminos: false
+      terminos: false,
     };
   }
 
@@ -50,7 +51,7 @@ export class EsoComponent implements OnInit {
       next: (data) => {
         this.logger.log('ESO INSERTADO CORRECTAMENTE');
         this.toastr.success('FORMULARIO ENVIADO', 'ESO', {
-          toastClass: 'toast success'
+          toastClass: 'toast success',
         });
         setTimeout(() => {
           this.router.navigate(['/estudia-con-nosotros/successfull']);
@@ -58,9 +59,13 @@ export class EsoComponent implements OnInit {
       },
       error: (error) => {
         this.logger.error('FORMULARIO NO SE HA INSERTADO CORRECTAMENTE');
-        this.toastr.error('EL FORMULARIO NO SE HA RELLENADO CORRECTAMENTE', 'HA HABIDO UN ERROR', {
-          toastClass: 'toast error'
-        });
+        this.toastr.error(
+          'EL FORMULARIO NO SE HA RELLENADO CORRECTAMENTE',
+          'HA HABIDO UN ERROR',
+          {
+            toastClass: 'toast error',
+          }
+        );
       },
     });
   }

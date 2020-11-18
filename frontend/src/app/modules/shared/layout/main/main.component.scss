@@ -1,10 +1,10 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .main {
   display: flex;
   justify-content: center;
   width: 100%;
-  @include mobileS{
+  @include mobileS {
     width: 20rem;
   }
 
@@ -13,16 +13,16 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    @include tablet{
+    @include tablet {
       width: 35rem;
     }
-    @include mobileL{
+    @include mobileL {
       width: 24rem;
     }
-    @include mobileM{
+    @include mobileM {
       width: 22rem;
     }
-    @include mobileS{
+    @include mobileS {
       width: 20rem;
     }
 
@@ -33,16 +33,16 @@
 
       app-slider {
         width: 80%;
-        @include laptop{
+        @include laptop {
           width: 100%;
         }
-        @include mobileL{
+        @include mobileL {
           width: 24rem;
         }
-        @include mobileM{
+        @include mobileM {
           width: 22rem;
         }
-        @include mobileS{
+        @include mobileS {
           width: 19rem;
         }
       }
@@ -57,18 +57,18 @@
       width: 80%;
       margin-top: 3rem;
       border-radius: 3rem;
-      @include laptop{
+      @include laptop {
         flex-direction: column;
         text-align: center;
         width: 35rem;
       }
-      @include mobileL{
+      @include mobileL {
         width: 24rem;
       }
-      @include mobileM{
+      @include mobileM {
         width: 22rem;
       }
-      @include mobileS{
+      @include mobileS {
         width: 19rem;
       }
 
@@ -76,17 +76,16 @@
         img {
           width: 22rem;
 
-          @include tablet{
+          @include tablet {
             width: 16rem;
           }
-          @include mobileL{
+          @include mobileL {
             width: 13rem;
           }
-          @include mobileS{
+          @include mobileS {
             width: 12rem;
           }
         }
-        
       }
     }
 
@@ -101,21 +100,21 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
-      @include laptopL{
+      @include laptopL {
         text-align: center;
       }
-      @include laptop{
+      @include laptop {
         flex-direction: column;
         text-align: center;
         width: 35rem;
       }
-      @include mobileL{
+      @include mobileL {
         width: 24rem;
       }
-      @include mobileM{
+      @include mobileM {
         width: 22rem;
       }
-      @include mobileS{
+      @include mobileS {
         width: 19rem;
       }
 
@@ -127,7 +126,7 @@
         flex-wrap: wrap;
         padding: 3rem 3rem 1rem 3rem;
 
-        @include mobileS{
+        @include mobileS {
           padding-left: 0;
           padding-right: 0;
         }
@@ -146,14 +145,14 @@
           @include laptopL {
             width: 80%;
           }
-          @include laptop{
+          @include laptop {
             text-align: center;
             width: 21rem;
           }
-          @include mobileL{
+          @include mobileL {
             width: 15rem;
           }
-          
+
           &-icon {
             font-size: 2.5rem;
             color: $text-color-hover;
@@ -181,18 +180,20 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
-      @include laptop{
-        flex-direction: column;
+      @include laptopL {
         text-align: center;
+      }
+      @include laptop {
+        flex-direction: column;
         width: 35rem;
       }
-      @include mobileL{
+      @include mobileL {
         width: 24rem;
       }
-      @include mobileM{
+      @include mobileM {
         width: 22rem;
       }
-      @include mobileS{
+      @include mobileS {
         width: 19rem;
       }
 
@@ -237,18 +238,20 @@
       margin-top: 3rem;
       border-radius: 3rem;
 
-      @include laptop{
-        flex-direction: column;
+      @include laptopL {
         text-align: center;
+      }
+      @include laptop {
+        flex-direction: column;
         width: 35rem;
       }
-      @include mobileL{
+      @include mobileL {
         width: 24rem;
       }
-      @include mobileM{
+      @include mobileM {
         width: 22rem;
       }
-      @include mobileS{
+      @include mobileS {
         width: 19rem;
       }
 
@@ -259,15 +262,19 @@
         margin-bottom: 0.5rem;
       }
 
-      &-imagen{
-        img{
-          @include tablet{
+      &-imagen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          margin: 1rem 0 1rem 0;
+          @include tablet {
             width: 16rem;
           }
-          @include mobileL{
+          @include mobileL {
             width: 13rem;
           }
-          @include mobileS{
+          @include mobileS {
             width: 11rem;
           }
         }

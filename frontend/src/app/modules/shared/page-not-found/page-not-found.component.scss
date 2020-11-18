@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .page-not-found {
   display: flex;
@@ -6,6 +6,19 @@
   align-items: center;
   width: 60rem;
   background: $components-dark;
+
+  @include tablet {
+    width: 46rem;
+  }
+  @include mobileL {
+    width: 24rem;
+  }
+  @include mobileM {
+    width: 22rem;
+  }
+  @include mobileS {
+    width: 19rem;
+  }
 
   &-contenedor {
     display: flex;
@@ -23,11 +36,31 @@
         font-size: 6rem;
         font-style: italic;
         color: $color-warning;
+
+        @include mobileL {
+          font-size: 3rem;
+        }
+        @include mobileM {
+          font-size: 2.5rem;
+        }
+        @include mobileS {
+          font-size: 2rem;
+        }
       }
 
       &-icon {
         font-size: 8rem;
         color: $color-warning;
+
+        @include mobileL {
+          font-size: 4rem;
+        }
+        @include mobileM {
+          font-size: 3.5rem;
+        }
+        @include mobileS {
+          font-size: 3rem;
+        }
       }
     }
 

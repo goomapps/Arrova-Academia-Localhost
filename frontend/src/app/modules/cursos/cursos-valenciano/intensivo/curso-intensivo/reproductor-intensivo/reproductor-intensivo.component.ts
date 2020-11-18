@@ -4,7 +4,7 @@ import * as $ from 'jquery';
 @Component({
   selector: 'app-reproductor-intensivo',
   templateUrl: './reproductor-intensivo.component.html',
-  styleUrls: ['./reproductor-intensivo.component.scss']
+  styleUrls: ['./reproductor-intensivo.component.scss'],
 })
 export class ReproductorIntensivoComponent implements OnInit {
   videoSrc: string[];
@@ -45,7 +45,10 @@ export class ReproductorIntensivoComponent implements OnInit {
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_Classe_5_11_2020_GrupA_Part1.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_Classe_5_11_2020_GrupA_Part2.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_Classe_5_11_2020_GrupA_Part3.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_Classe_5_11_2020_GrupA_Part4.mp4'
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_Classe_5_11_2020_GrupA_Part4.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_C1_JQCV_GrupA_17_11_2020_Part1.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_C1_JQCV_GrupA_17_11_2020_Part2.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Intensiu_C1_JQCV_GrupA_17_11_2020_Part3.mp4',
     ];
     this.desc = [
       'Expressió i interacció escrites 1',
@@ -75,7 +78,10 @@ export class ReproductorIntensivoComponent implements OnInit {
       'Clase 5/11 Part 1',
       'Clase 5/11 Part 2',
       'Clase 5/11 Part 3',
-      'Clase 5/11 Part 4'
+      'Clase 5/11 Part 4',
+      'Clase 17/11 Part 1',
+      'Clase 17/11 Part 2',
+      'Clase 17/11 Part 3',
     ];
     this.resumen = [
       '',
@@ -105,7 +111,10 @@ export class ReproductorIntensivoComponent implements OnInit {
       '',
       '',
       '',
-      ''
+      '',
+      '',
+      '',
+      '',
     ];
     this.descNum = 0;
     this.resumenNum = 0;
@@ -114,65 +123,95 @@ export class ReproductorIntensivoComponent implements OnInit {
 
   ngOnInit(): void {
     $('#dropeie1').css('display', 'none');
-    $('#item1').hover(() => {
-      $('#dropeie1').show('slow');
-    }, () => {
-      $('#dropeie1').css('display', 'none');
-    });
+    $('#item1').hover(
+      () => {
+        $('#dropeie1').show('slow');
+      },
+      () => {
+        $('#dropeie1').css('display', 'none');
+      }
+    );
     $('#dropeie2').css('display', 'none');
-    $('#item2').hover(() => {
-      $('#dropeie2').show('slow');
-    }, () => {
-      $('#dropeie2').css('display', 'none');
-    });
+    $('#item2').hover(
+      () => {
+        $('#dropeie2').show('slow');
+      },
+      () => {
+        $('#dropeie2').css('display', 'none');
+      }
+    );
     $('#dropeie3').css('display', 'none');
-    $('#item3').hover(() => {
-      $('#dropeie3').show('slow');
-    }, () => {
-      $('#dropeie3').css('display', 'none');
-    });
+    $('#item3').hover(
+      () => {
+        $('#dropeie3').show('slow');
+      },
+      () => {
+        $('#dropeie3').css('display', 'none');
+      }
+    );
     $('#dropeie4').css('display', 'none');
-    $('#item4').hover(() => {
-      $('#dropeie4').show('slow');
-    }, () => {
-      $('#dropeie4').css('display', 'none');
-    });
+    $('#item4').hover(
+      () => {
+        $('#dropeie4').show('slow');
+      },
+      () => {
+        $('#dropeie4').css('display', 'none');
+      }
+    );
     $('#dropmorf').css('display', 'none');
-    $('#item6').hover(() => {
-      $('#dropmorf').show('slow');
-    }, () => {
-      $('#dropmorf').css('display', 'none');
-    });
+    $('#item6').hover(
+      () => {
+        $('#dropmorf').show('slow');
+      },
+      () => {
+        $('#dropmorf').css('display', 'none');
+      }
+    );
     $('#droporto').css('display', 'none');
-    $('#item7').hover(() => {
-      $('#droporto').show('slow');
-    }, () => {
-      $('#droporto').css('display', 'none');
-    });
+    $('#item7').hover(
+      () => {
+        $('#droporto').show('slow');
+      },
+      () => {
+        $('#droporto').css('display', 'none');
+      }
+    );
     $('#dropfv').css('display', 'none');
-    $('#item8').hover(() => {
-      $('#dropfv').show('slow');
-    }, () => {
-      $('#dropfv').css('display', 'none');
-    });
+    $('#item8').hover(
+      () => {
+        $('#dropfv').show('slow');
+      },
+      () => {
+        $('#dropfv').css('display', 'none');
+      }
+    );
     $('#dropeio').css('display', 'none');
-    $('#item9').hover(() => {
-      $('#dropeio').show('slow');
-    }, () => {
-      $('#dropeio').css('display', 'none');
-    });
+    $('#item9').hover(
+      () => {
+        $('#dropeio').show('slow');
+      },
+      () => {
+        $('#dropeio').css('display', 'none');
+      }
+    );
     $('#dropce').css('display', 'none');
-    $('#item10').hover(() => {
-      $('#dropce').show('slow');
-    }, () => {
-      $('#dropce').css('display', 'none');
-    });
+    $('#item10').hover(
+      () => {
+        $('#dropce').show('slow');
+      },
+      () => {
+        $('#dropce').css('display', 'none');
+      }
+    );
     $('#dropfc').css('display', 'none');
-    $('#item12').hover(() => {
-      $('#dropfc').show('slow');
-    }, () => {
-      $('#dropfc').css('display', 'none');
-    });
+    $('#item12').hover(
+      () => {
+        $('#dropfc').show('slow');
+      },
+      () => {
+        $('#dropfc').css('display', 'none');
+      }
+    );
     $('#item13').css('display', 'none');
     $('#item14').css('display', 'none');
     $('#item15').css('display', 'none');
@@ -190,6 +229,8 @@ export class ReproductorIntensivoComponent implements OnInit {
     $('#item27').css('display', 'none');
     $('#item28').css('display', 'none');
     $('#item29').css('display', 'none');
+    $('#item30').css('display', 'none');
+    $('#item31').css('display', 'none');
 
     const unidad1 = document.getElementById('unidad1');
     const unidad2 = document.getElementById('unidad2');
@@ -224,6 +265,8 @@ export class ReproductorIntensivoComponent implements OnInit {
       $('#item27').css('display', 'none');
       $('#item28').css('display', 'none');
       $('#item29').css('display', 'none');
+      $('#item30').css('display', 'none');
+      $('#item31').css('display', 'none');
     });
 
     unidad2.addEventListener('click', () => {
@@ -256,6 +299,8 @@ export class ReproductorIntensivoComponent implements OnInit {
       $('#item27').css('display', 'block');
       $('#item28').css('display', 'block');
       $('#item29').css('display', 'block');
+      $('#item30').css('display', 'block');
+      $('#item31').css('display', 'block');
     });
 
     const item1 = document.getElementById('item1');
@@ -286,6 +331,9 @@ export class ReproductorIntensivoComponent implements OnInit {
     const item26 = document.getElementById('item26');
     const item27 = document.getElementById('item27');
     const item28 = document.getElementById('item28');
+    const item29 = document.getElementById('item29');
+    const item30 = document.getElementById('item30');
+    const item31 = document.getElementById('item31');
     const video = document.querySelector('video');
 
     item1.addEventListener('click', () => {
@@ -455,6 +503,24 @@ export class ReproductorIntensivoComponent implements OnInit {
       video.src = this.videoSrc[27];
       this.descNum = 27;
       this.resumenNum = 27;
+    });
+    item29.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[28];
+      this.descNum = 28;
+      this.resumenNum = 28;
+    });
+    item30.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[29];
+      this.descNum = 29;
+      this.resumenNum = 29;
+    });
+    item31.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[30];
+      this.descNum = 30;
+      this.resumenNum = 30;
     });
   }
 

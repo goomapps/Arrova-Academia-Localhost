@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
-import {NGXLogger} from 'ngx-logger';
-import {ToastrService} from 'ngx-toastr';
+import { NGXLogger } from 'ngx-logger';
+import { ToastrService } from 'ngx-toastr';
 
-import {EstudiaConNosotrosService} from '../../services/estudia-con-nosotros.service';
-import {EcnRefuerzos} from '../../models/ecn-refuerzos';
+import { EstudiaConNosotrosService } from '../../services/estudia-con-nosotros.service';
+import { EcnRefuerzos } from '../../models/ecn-refuerzos';
 
 @Component({
   selector: 'app-uni',
   templateUrl: './uni.component.html',
-  styleUrls: ['./uni.component.scss']
+  styleUrls: ['./uni.component.scss'],
 })
 export class UniComponent implements OnInit {
   ecnUniversidad;
@@ -21,9 +21,9 @@ export class UniComponent implements OnInit {
     private toastr: ToastrService
   ) {
     this.ecnUniversidad = {
-      comentario1: '',
+      comentario: '',
       correo: '',
-      terminos: false
+      terminos: false,
     };
   }
 
@@ -50,7 +50,7 @@ export class UniComponent implements OnInit {
       next: (data) => {
         this.logger.log('UNIVERSIDAD INSERTADO CORRECTAMENTE');
         this.toastr.success('FORMULARIO ENVIADO', 'UNIVERSIDAD', {
-          toastClass: 'toast success'
+          toastClass: 'toast success',
         });
         setTimeout(() => {
           this.router.navigate(['/estudia-con-nosotros/successfull']);
@@ -58,9 +58,13 @@ export class UniComponent implements OnInit {
       },
       error: (error) => {
         this.logger.error('FORMULARIO NO SE HA INSERTADO CORRECTAMENTE');
-        this.toastr.error('EL FORMULARIO NO SE HA RELLENADO CORRECTAMENTE', 'HA HABIDO UN ERROR', {
-          toastClass: 'toast error'
-        });
+        this.toastr.error(
+          'EL FORMULARIO NO SE HA RELLENADO CORRECTAMENTE',
+          'HA HABIDO UN ERROR',
+          {
+            toastClass: 'toast error',
+          }
+        );
       },
     });
   }

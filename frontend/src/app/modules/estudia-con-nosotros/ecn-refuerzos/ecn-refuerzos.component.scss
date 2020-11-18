@@ -12,7 +12,7 @@
     width: 25rem;
   }
   @include mobileM {
-    width: 23.5rem;
+    width: 22rem;
   }
   @include mobileS {
     width: 20rem;
@@ -90,7 +90,8 @@
             &:hover {
               border: 3px solid $text-color-hover;
               .curso-texto {
-                h5, p {
+                h5,
+                p {
                   color: $text-color-hover;
                 }
               }
