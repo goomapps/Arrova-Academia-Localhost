@@ -1,12 +1,12 @@
 {
   "name": "backend-arrovacademia",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "backend arrovacademia",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "start:dev": "nodemon index.js",
-    "start:prod": "node --experimental-modules index.js",
+    "start": "node --experimental-modules index.js",
     "test": "jest"
   },
   "keywords": [
