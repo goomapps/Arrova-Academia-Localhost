@@ -3,11 +3,11 @@
     <a routerLink="/estudia-con-nosotros">
       <p>Estudia con nosotros</p>
     </a>
-    <p class="separator"> > </p>
+    <p class="separator">></p>
     <a routerLink="/estudia-con-nosotros/refuerzos">
       <p>Refuerzos</p>
     </a>
-    <p class="separator"> > </p>
+    <p class="separator">></p>
     <p>Universidad</p>
   </div>
   <div class="formulario">
@@ -18,8 +18,15 @@
       <div id="contenedor1" class="formulario-contenedor active">
         <div class="form">
           <div class="form-tb">
-            <textarea name="comentuni" #comentuni="ngModel" [(ngModel)]="ecnUniversidad.comentario1"
-                      cols="30" rows="7" pattern="^[A-Za-z\s]+$" required></textarea>
+            <textarea
+              name="comentuni"
+              #comentuni="ngModel"
+              [(ngModel)]="ecnUniversidad.comentario"
+              cols="30"
+              rows="7"
+              pattern="^[A-Za-zÀ-ÿ\s]+$"
+              required
+            ></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -36,13 +43,27 @@
       </a>
       <div id="contenedor2" class="formulario-contenedor">
         <div class="completado">
-          <input class="input-email" type="text" placeholder="Introduce aquí tu email" name="email"
-                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #email="ngModel"
-                 [(ngModel)]="ecnUniversidad.correo"/>
+          <input
+            class="input-email"
+            type="text"
+            placeholder="Introduce aquí tu email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+            #email="ngModel"
+            [(ngModel)]="ecnUniversidad.correo"
+          />
           <label class="terminos" for="terminos">
             <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
-            <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
-                   [(ngModel)]="ecnUniversidad.terminos" required/>
+            <input
+              id="cb"
+              class="checkbox mt2"
+              type="checkbox"
+              name="terminos"
+              #terminos="ngModel"
+              [(ngModel)]="ecnUniversidad.terminos"
+              required
+            />
           </label>
         </div>
         <div class="siguiente">

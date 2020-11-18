@@ -3,12 +3,12 @@
     <a routerLink="/estudia-con-nosotros">
       <p>Estudia con nosotros</p>
     </a>
-    <p class="separator"> > </p>
+    <p class="separator">></p>
     <a routerLink="/estudia-con-nosotros/refuerzos">
       <p>Refuerzos</p>
     </a>
-    <p class="separator"> > </p>
-      <p>ESO</p>
+    <p class="separator">></p>
+    <p>ESO</p>
   </div>
   <div class="formulario">
     <form #esoForm="ngForm" (ngSubmit)="insert()">
@@ -20,38 +20,89 @@
           <div class="form-cb">
             <h5>LETRAS</h5>
             <label class="input-container" for="val">
-              <input type="checkbox" name="val" #val="ngModel" [(ngModel)]="ecnESO.parte1[0]"/>
+              <input
+                type="checkbox"
+                name="val"
+                #val="ngModel"
+                [(ngModel)]="ecnESO.parte1[0]"
+              />
               <p>Valenciano</p>
             </label>
             <label class="input-container" for="cas">
-              <input type="checkbox" name="cas" #cas="ngModel" [(ngModel)]="ecnESO.parte1[1]"/>
+              <input
+                type="checkbox"
+                name="cas"
+                #cas="ngModel"
+                [(ngModel)]="ecnESO.parte1[1]"
+              />
               <p>Castellano</p>
             </label>
             <label class="input-container" for="latin">
-              <input type="checkbox" name="latin" #latin="ngModel" [(ngModel)]="ecnESO.parte1[2]"/>
+              <input
+                type="checkbox"
+                name="latin"
+                #latin="ngModel"
+                [(ngModel)]="ecnESO.parte1[2]"
+              />
               <p>Latín</p>
             </label>
             <label class="input-container" for="ingles">
-              <input type="checkbox" name="ingles" #ingles="ngModel" [(ngModel)]="ecnESO.parte1[3]"/>
+              <input
+                type="checkbox"
+                name="ingles"
+                #ingles="ngModel"
+                [(ngModel)]="ecnESO.parte1[3]"
+              />
               <p>Inglés</p>
             </label>
             <label class="input-container" for="geh">
-              <input type="checkbox" name="geh" #geh="ngModel" [(ngModel)]="ecnESO.parte1[4]"/>
+              <input
+                type="checkbox"
+                name="geh"
+                #geh="ngModel"
+                [(ngModel)]="ecnESO.parte1[4]"
+              />
               <p>Geografía e Historia</p>
             </label>
             <h5>CIENCIAS</h5>
             <label class="input-container" for="mates">
-              <input type="checkbox" name="mates" #mates="ngModel" [(ngModel)]="ecnESO.parte1[5]"/>
+              <input
+                type="checkbox"
+                name="mates"
+                #mates="ngModel"
+                [(ngModel)]="ecnESO.parte1[5]"
+              />
               <p>Matemáticas</p>
             </label>
             <label class="input-container" for="fiq">
-              <input type="checkbox" name="fiq" #fiq="ngModel" [(ngModel)]="ecnESO.parte1[6]"/>
+              <input
+                type="checkbox"
+                name="fiq"
+                #fiq="ngModel"
+                [(ngModel)]="ecnESO.parte1[6]"
+              />
               <p>Física y Química</p>
             </label>
             <label class="input-container" for="bio">
-              <input type="checkbox" name="bio" #bio="ngModel" [(ngModel)]="ecnESO.parte1[7]"/>
+              <input
+                type="checkbox"
+                name="bio"
+                #bio="ngModel"
+                [(ngModel)]="ecnESO.parte1[7]"
+              />
               <p>Biología y Geología</p>
             </label>
+          </div>
+          <div class="form-tb">
+            <textarea
+              name="comentuni"
+              #comentuni="ngModel"
+              [(ngModel)]="ecnESO.comentario"
+              cols="30"
+              rows="7"
+              pattern="^[A-Za-zÀ-ÿ\s]+$"
+              required
+            ></textarea>
           </div>
         </div>
         <div class="siguiente">
@@ -67,13 +118,27 @@
       </a>
       <div id="contenedor2" class="formulario-contenedor">
         <div class="completado">
-          <input class="input-email" type="text" placeholder="Introduce aquí tu email" name="email"
-                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required #email="ngModel"
-                 [(ngModel)]="ecnESO.correo"/>
+          <input
+            class="input-email"
+            type="text"
+            placeholder="Introduce aquí tu email"
+            name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+            #email="ngModel"
+            [(ngModel)]="ecnESO.correo"
+          />
           <label class="terminos" for="terminos">
             <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
-            <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
-                   [(ngModel)]="ecnESO.terminos" required/>
+            <input
+              id="cb"
+              class="checkbox mt2"
+              type="checkbox"
+              name="terminos"
+              #terminos="ngModel"
+              [(ngModel)]="ecnESO.terminos"
+              required
+            />
           </label>
         </div>
         <div class="siguiente">
