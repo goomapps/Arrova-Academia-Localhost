@@ -1,4 +1,4 @@
-@import 'src/app/styles/index.scss';
+@import "src/app/styles/index.scss";
 
 .modal {
   display: block;
@@ -8,6 +8,19 @@
   width: 40rem;
   background: $components-dark;
   padding: 2rem;
+
+  @include tablet {
+    width: 47.3rem;
+  }
+  @include mobileL {
+    width: 25.3rem;
+  }
+  @include mobileM {
+    width: 22.3rem;
+  }
+  @include mobileS {
+    width: 19.3rem;
+  }
 
   .header-modal {
     display: flex;
