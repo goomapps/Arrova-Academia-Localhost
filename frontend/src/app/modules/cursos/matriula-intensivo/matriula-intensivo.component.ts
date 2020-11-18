@@ -35,6 +35,7 @@ export class MatriulaIntensivoComponent implements OnInit {
       codigoPostal: '',
       telefono: '',
       metodoPago: '',
+      numeroCuenta: '',
       proteccionDatos: false
     };
   }
@@ -66,6 +67,10 @@ export class MatriulaIntensivoComponent implements OnInit {
     document.getElementById('nombre2').addEventListener('click', () => {
       this.matricula.nombre = 'VALENCIANO INTENSIVO CIEACOVA';
     });
+    document.getElementById('tipo1').addEventListener('click', () => {
+      this.matricula.precio = 'DOS PAGOS';
+      this.matricula.cantidad = 115;
+    });
     document.getElementById('tipo2').addEventListener('click', () => {
       this.matricula.precio = 'TOTAL';
       this.matricula.cantidad = 200;
@@ -75,6 +80,7 @@ export class MatriulaIntensivoComponent implements OnInit {
     });
     document.getElementById('pago2').addEventListener('click', () => {
       this.matricula.metodoPago = 'TRANSFERENCIA';
+      this.matricula.numeroCuenta = 'ES55 2100 3932 5602 0025 9667';
     });
 
     const cb = document.getElementById('cb');
