@@ -67,7 +67,7 @@
           margin-left: 3rem;
           margin-bottom: 2rem;
 
-          @include mobileL{
+          @include mobileL {
             margin-left: 0;
           }
 
@@ -90,13 +90,13 @@
       @include laptop {
         width: 70%;
       }
-      @include mobileL{
+      @include mobileL {
         width: 85%;
       }
-      @include mobileM{
+      @include mobileM {
         width: 80%;
       }
-      @include mobileS{
+      @include mobileS {
         width: 80%;
       }
 
@@ -104,13 +104,13 @@
         margin-top: 3rem;
         margin-left: 1rem;
         margin-bottom: 2rem;
-        @include laptop{
+        @include laptop {
           width: 100%;
         }
-        @include mobileL{
+        @include mobileL {
           margin-left: 0;
         }
-        @include mobileS{
+        @include mobileS {
           width: 16rem;
         }
 
@@ -119,7 +119,7 @@
           flex-wrap: wrap;
           list-style: none;
 
-          @include mobileL{
+          @include mobileL {
             flex-wrap: nowrap;
           }
 
@@ -127,8 +127,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 5rem;
-            height: 5rem;
+            width: 12rem;
+            height: 6rem;
             border: 1px solid $text-color-hover;
             cursor: pointer;
             transition: 0.3s;
