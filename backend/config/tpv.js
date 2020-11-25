@@ -1,12 +1,14 @@
-import { SANDBOX_URLS, 
-         Redsys,
-         PRODUCTION_URLS, 
-         TRANSACTION_TYPES,
-         randomTransactionId,
-         getResponseCodeMessage  } from 'redsys-easy'
+import {
+    SANDBOX_URLS,
+    PRODUCTION_URLS,
+    Redsys,
+    TRANSACTION_TYPES,
+    randomTransactionId,
+    getResponseCodeMessage
+} from 'readsys-easy'
 
 const redsys = new Redsys({
-    secretkey: 'sq7HjrUOBfKmC576iLgskD5srU870gj7',
+    secretkey: 'sq7HjrUOBfKmC576ILgskD5srU870gJ7',
     URL: SANDBOX_URLS,
 })
 
