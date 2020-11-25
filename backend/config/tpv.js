@@ -1,26 +1,13 @@
 import { SANDBOX_URLS, 
+         Redsys,
          PRODUCTION_URLS, 
-         Redsys, 
          TRANSACTION_TYPES,
          randomTransactionId,
-         getResponseCodeMessage  } from 'readsys-easy'
+         getResponseCodeMessage  } from 'redsys-easy'
 
 const redsys = new Redsys({
     secretkey: 'sq7HjrUOBfKmC576iLgskD5srU870gj7',
     URL: SANDBOX_URLS,
 })
 
-const pago = {
-   amount:3500,
-   currency: '978',
-   order: randomTransactionId,
-   merchantName: 'Arrova Academia',
-   merchantCode: '351985874',
-   terminal: '1',
-   transactionType: TRANSACTION_TYPES.AUTHORIZATION,
-   MERCANTURL: '',
-   successURL: '',
-   errorURL: '' 
-}
-
-const form = redsys.redirectPetition(pago);
+export default redsys;
