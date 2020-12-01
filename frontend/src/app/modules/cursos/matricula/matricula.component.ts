@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import {Router} from '@angular/router';
+import { Router } from '@angular/router';
 
-import {NGXLogger} from 'ngx-logger';
-import {ToastrService} from 'ngx-toastr';
+import { NGXLogger } from 'ngx-logger';
+import { ToastrService } from 'ngx-toastr';
 
-import {CursoService} from '../services/curso.service';
-import {Matricula} from '../models/matricula';
-import {UserService} from '../../auth/services/user.service';
-import * as $ from "jquery";
+import { CursoService } from '../services/curso.service';
+import { Matricula } from '../models/matricula';
+import { UserService } from '../../auth/services/user.service';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-matricula',
   templateUrl: './matricula.component.html',
-  styleUrls: ['./matricula.component.scss']
+  styleUrls: ['./matricula.component.scss'],
 })
 export class MatriculaComponent implements OnInit {
   matricula;
@@ -38,7 +38,7 @@ export class MatriculaComponent implements OnInit {
       telefono: '',
       metodoPago: '',
       numeroCuenta: '',
-      proteccionDatos: false
+      proteccionDatos: false,
     };
   }
 
@@ -47,21 +47,30 @@ export class MatriculaComponent implements OnInit {
     $('#droptipo').css('display', 'none');
     $('#droppago').css('display', 'none');
 
-    $('#nombre').hover(() => {
-      $('#dropnombre').show('slow');
-    }, () => {
-      $('#dropnombre').css('display', 'none');
-    });
-    $('#tipo').hover(() => {
-      $('#droptipo').show('slow');
-    }, () => {
-      $('#droptipo').css('display', 'none');
-    });
-    $('#pago').hover(() => {
-      $('#droppago').show('slow');
-    }, () => {
-      $('#droppago').css('display', 'none');
-    });
+    $('#nombre').hover(
+      () => {
+        $('#dropnombre').show('slow');
+      },
+      () => {
+        $('#dropnombre').css('display', 'none');
+      }
+    );
+    $('#tipo').hover(
+      () => {
+        $('#droptipo').show('slow');
+      },
+      () => {
+        $('#droptipo').css('display', 'none');
+      }
+    );
+    $('#pago').hover(
+      () => {
+        $('#droppago').show('slow');
+      },
+      () => {
+        $('#droppago').css('display', 'none');
+      }
+    );
 
     document.getElementById('nombre1').addEventListener('click', () => {
       this.matricula.nombre = 'VALENCIANO C1';
@@ -99,7 +108,7 @@ export class MatriculaComponent implements OnInit {
         console.log(formulario);
         this.logger.log('MATRICULA INSERTADA CORRECTAMENTE');
         this.toastr.success('FORMULARIO ENVIADO', 'MATRICULA', {
-          toastClass: 'toast success'
+          toastClass: 'toast success',
         });
         setTimeout(() => {
           this.router.navigate(['/usuario']);
@@ -107,12 +116,14 @@ export class MatriculaComponent implements OnInit {
       },
       error: (error) => {
         this.logger.error('FORMULARIO NO SE HA INSERTADO CORRECTAMENTE');
-        this.toastr.error('EL FORMULARIO NO SE HA RELLENADO CORRECTAMENTE', 'HA HABIDO UN ERROR', {
-          toastClass: 'toast error'
-        });
+        this.toastr.error(
+          'EL FORMULARIO NO SE HA RELLENADO CORRECTAMENTE',
+          'HA HABIDO UN ERROR',
+          {
+            toastClass: 'toast error',
+          }
+        );
       },
     });
   }
-
-
 }
