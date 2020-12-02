@@ -111,7 +111,7 @@ export class MatriculaComponent implements OnInit {
           toastClass: 'toast success',
         });
         setTimeout(() => {
-          this.router.navigate(['/usuario']);
+          this.router.navigate(['/usuario/pago']);
         }, 1000);
       },
       error: (error) => {
