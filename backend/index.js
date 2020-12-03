@@ -15,6 +15,7 @@ import cursoRouter from "./routes/cursoRoute.js";
 import ecnRouter from "./routes/ecnRoute.js";
 import profesionalRouter from "./routes/profesionalRoute.js"
 import logRouter from "./routes/logRoute.js";
+import tpvRouter from "./routes/tpvRoute.js";
 
 // MIDDLEWARES
 app.use(morgan("combined"));
@@ -35,6 +36,7 @@ app.use("/cursos", cursoRouter);
 app.use("/estudia-con-nosotros", ecnRouter);
 app.use("/profesional", profesionalRouter);
 app.use("/logs", logRouter);
+app.use("/tpv", tpvRouter);
 
 // LEVANTAMOS SERVIDOR
 app.listen(PORT, () => console.log("SERVIDOR CORRIENDO EN EL PUERTO " + PORT));
