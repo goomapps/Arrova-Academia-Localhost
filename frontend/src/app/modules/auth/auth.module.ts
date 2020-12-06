@@ -9,7 +9,6 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { OlvidadoComponent } from './olvidado/olvidado.component';
 import { ConfirmadoComponent } from './confirmado/confirmado.component';
-import { PagoComponent } from './pago/pago.component';
 import { SharedModule } from '../shared/shared.module';
 import { UserService } from './services/user.service';
 import { AuthGuard } from './guards/auth.guard';
@@ -21,7 +20,6 @@ import { AuthGuard } from './guards/auth.guard';
     RegisterComponent,
     OlvidadoComponent,
     ConfirmadoComponent,
-    PagoComponent,
   ],
   imports: [CommonModule, AuthRoutingModule, FormsModule, SharedModule],
   providers: [AuthGuard, UserService],

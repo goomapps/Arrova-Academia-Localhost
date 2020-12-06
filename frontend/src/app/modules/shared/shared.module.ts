@@ -8,6 +8,7 @@ import { MainComponent } from './layout/main/main.component';
 import { SliderComponent } from './common/slider/slider.component';
 import { ModalTerminosComponent } from './common/modal-terminos/modal-terminos.component';
 import { BuscadorComponent } from './common/buscador/buscador.component';
+import { PagoNotFoundComponent } from './pago-not-found/pago-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { BuscadorComponent } from './common/buscador/buscador.component';
     SliderComponent,
     ModalTerminosComponent,
     BuscadorComponent,
+    PagoNotFoundComponent,
   ],
   exports: [BuscadorComponent, ModalTerminosComponent],
   imports: [CommonModule, SharedRoutingModule, ReactiveFormsModule],
