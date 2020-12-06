@@ -161,11 +161,14 @@
               <li id="pago2" class="item2">
                 <p>TRANSFERENCIA BANCARIA</p>
               </li>
+              <li id="pago3" class="item3">
+                <p>TARJETA DE CREDITO</p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="input-contenedor">
+      <div class="input-contenedor input-contenedor-numeroCuenta">
         <p class="frase-importante">Numero de Cuenta:</p>
         <div id="cuenta" class="input">
           <i class="far fa-credit-card input-icon"></i>
@@ -190,7 +193,21 @@
           required
         />
       </label>
-      <button type="submit" class="boton m2" [disabled]="matriculaForm.invalid">
+      <button
+        *ngIf="matricula.metodoPago == 'TARJETA'"
+        (click)="checkout()"
+        type="submit"
+        class="boton m2"
+        [disabled]="matriculaForm.invalid"
+      >
+        <h5>ENVIAR</h5>
+      </button>
+      <button
+        *ngIf="matricula.metodoPago != 'TARJETA'"
+        type="submit"
+        class="boton m2"
+        [disabled]="matriculaForm.invalid"
+      >
         <h5>ENVIAR</h5>
       </button>
     </form>

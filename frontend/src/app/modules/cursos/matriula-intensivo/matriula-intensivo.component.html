@@ -1,11 +1,22 @@
 <div class="matricula">
   <div class="matricula-contenedor">
-    <form class="formulario-contenedor" #matriculaForm="ngForm" (ngSubmit)="enviarMatricula()">
+    <form
+      class="formulario-contenedor"
+      #matriculaForm="ngForm"
+      (ngSubmit)="enviarMatricula()"
+    >
       <div class="input-contenedor">
         <p class="frase-importante">Nombre del curso:</p>
         <div id="nombre" class="input">
           <i class="fas fa-chalkboard-teacher input-icon"></i>
-          <input type="text" name="nombre" #nombre="ngModel" [(ngModel)]="matricula.nombre" readonly required>
+          <input
+            type="text"
+            name="nombre"
+            #nombre="ngModel"
+            [(ngModel)]="matricula.nombre"
+            readonly
+            required
+          />
           <div id="dropnombre" class="dropdown left">
             <ul>
               <li id="nombre1" class="item2">
@@ -22,7 +33,14 @@
         <p class="frase-importante">Tipo de pago:</p>
         <div id="tipo" class="input">
           <i class="fas fa-money-bill-wave-alt input-icon"></i>
-          <input type="text" name="tipo" #tipo="ngModel" [(ngModel)]="matricula.precio" readonly required>
+          <input
+            type="text"
+            name="tipo"
+            #tipo="ngModel"
+            [(ngModel)]="matricula.precio"
+            readonly
+            required
+          />
           <div id="droptipo" class="dropdown left">
             <ul>
               <li id="tipo1" class="item2">
@@ -39,49 +57,93 @@
         <p class="frase-importante">Cantidad:</p>
         <div class="input">
           <i class="fas fa-money-bill-wave-alt input-icon"></i>
-          <input type="text" name="cantidad" #cantidad="ngModel" [(ngModel)]="matricula.cantidad" readonly required>
+          <input
+            type="text"
+            name="cantidad"
+            #cantidad="ngModel"
+            [(ngModel)]="matricula.cantidad"
+            readonly
+            required
+          />
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Dirección:</p>
         <div class="input">
           <i class="fas fa-road input-icon"></i>
-          <input type="text" name="direccion" #direccion="ngModel" [(ngModel)]="matricula.direccion" required>
+          <input
+            type="text"
+            name="direccion"
+            #direccion="ngModel"
+            [(ngModel)]="matricula.direccion"
+            required
+          />
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Población:</p>
         <div class="input">
           <i class="fas fa-house-user input-icon"></i>
-          <input type="text" name="poblacion" #poblacion="ngModel" [(ngModel)]="matricula.poblacion" required>
+          <input
+            type="text"
+            name="poblacion"
+            #poblacion="ngModel"
+            [(ngModel)]="matricula.poblacion"
+            required
+          />
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Provincia:</p>
         <div class="input">
           <i class="fas fa-house-user input-icon"></i>
-          <input type="text" name="provincia" #provincia="ngModel" [(ngModel)]="matricula.provincia" required>
+          <input
+            type="text"
+            name="provincia"
+            #provincia="ngModel"
+            [(ngModel)]="matricula.provincia"
+            required
+          />
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Código Postal:</p>
         <div class="input">
           <i class="fas fa-house-user input-icon"></i>
-          <input type="text" name="cp" #cp="ngModel" [(ngModel)]="matricula.codigoPostal" required>
+          <input
+            type="text"
+            name="cp"
+            #cp="ngModel"
+            [(ngModel)]="matricula.codigoPostal"
+            required
+          />
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Teléfono:</p>
         <div class="input">
           <i class="fas fa-phone input-icon"></i>
-          <input type="text" name="telefono" #telefono="ngModel" [(ngModel)]="matricula.telefono" required>
+          <input
+            type="text"
+            name="telefono"
+            #telefono="ngModel"
+            [(ngModel)]="matricula.telefono"
+            required
+          />
         </div>
       </div>
       <div class="input-contenedor">
         <p class="frase-importante">Método de Pago:</p>
         <div id="pago" class="input">
           <i class="far fa-credit-card input-icon"></i>
-          <input type="text" name="metodo" #metodo="ngModel" [(ngModel)]="matricula.metodoPago" readonly required>
+          <input
+            type="text"
+            name="metodo"
+            #metodo="ngModel"
+            [(ngModel)]="matricula.metodoPago"
+            readonly
+            required
+          />
           <div id="droppago" class="dropdown left">
             <ul>
               <li id="pago1" class="item1">
@@ -90,23 +152,53 @@
               <li id="pago2" class="item2">
                 <p>TRANSFERENCIA BANCARIA</p>
               </li>
+              <li id="pago3" class="item3">
+                <p>TARJETA DE CREDITO</p>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="input-contenedor">
+      <div class="input-contenedor input-contenedor-numeroCuenta">
         <p class="frase-importante">Numero de Cuenta:</p>
         <div id="cuenta" class="input">
           <i class="far fa-credit-card input-icon"></i>
-          <input type="text" name="cuenta" #cuenta="ngModel" [(ngModel)]="matricula.numeroCuenta" required>
+          <input
+            type="text"
+            name="cuenta"
+            #cuenta="ngModel"
+            [(ngModel)]="matricula.numeroCuenta"
+            required
+          />
         </div>
       </div>
       <label class="terminos" for="terminos">
         <p>HAZ CLICK PARA LEER Y ACEPTAR LOS TERMINOS</p>
-        <input id="cb" class="checkbox mt2" type="checkbox" name="terminos" #terminos="ngModel"
-               [(ngModel)]="matricula.proteccionDatos" required/>
+        <input
+          id="cb"
+          class="checkbox mt2"
+          type="checkbox"
+          name="terminos"
+          #terminos="ngModel"
+          [(ngModel)]="matricula.proteccionDatos"
+          required
+        />
       </label>
-      <button type="submit" class="boton m2" [disabled]="matriculaForm.invalid">
+      <button
+        *ngIf="matricula.metodoPago == 'TARJETA'"
+        (click)="checkout()"
+        type="submit"
+        class="boton m2"
+        [disabled]="matriculaForm.invalid"
+      >
+        <h5>ENVIAR</h5>
+      </button>
+      <button
+        *ngIf="matricula.metodoPago != 'TARJETA'"
+        type="submit"
+        class="boton m2"
+        [disabled]="matriculaForm.invalid"
+      >
         <h5>ENVIAR</h5>
       </button>
     </form>
