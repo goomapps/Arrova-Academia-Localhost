@@ -1,28 +1,10 @@
 import CursoModel from "../models/cursoDTO.js";
 import transporter from "../config/nodemailer.js";
-import tpv from "../config/tpv.js";
 
 const CursoController = {
     async insert(req, res) {
         try {
             const curso = await CursoModel.create(req.body);
-
-            const pago = {
-                amount: curso.cantidad,
-                currency: '978',
-                order: 123456789123,
-                merchantName: 'Arrova Academia',
-                merchantCode: '351985874',
-                terminal: '1',
-                transactionType: 1,
-                MERCANTURL: '',
-                successURL: '',
-                errorURL: '',
-                raw:{
-                    DS_MERCHANT_MERCHANTDATA: 'foo',
-                } 
-             }
-             tpv.processNotification(pago);
             
             const mailOptions = {
                 from: 'contacto@arrovacademia.es',
@@ -53,6 +35,10 @@ const CursoController = {
                 error,
             });
         }
+    },
+
+    async pago (){
+
     },
 
     async getCursosByUserId(req, res) {

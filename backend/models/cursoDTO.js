@@ -48,7 +48,7 @@ const CursoSchema = new mongoose.Schema(
         },
         metodoPago: {
             type: String,
-            enum: ['DOMICILIACIÓN', 'TRANSFERENCIA'],
+            enum: ['DOMICILIACIÓN', 'TRANSFERENCIA', 'TARJETA'],
             required: true,
             uppercase: true
         },
