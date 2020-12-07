@@ -1,11 +1,11 @@
-import { NgxLoggerLevel } from "ngx-logger";
+import { NgxLoggerLevel } from 'ngx-logger';
 
 export const environment = {
   production: true,
-  API_URL: "http://159.65.117.26:3001",
+  API_URL: 'http://159.65.117.26:3001',
   logLevel: NgxLoggerLevel.TRACE,
   serverLogLevel: NgxLoggerLevel.WARN,
 
   stripe_key:
-    "pk_test_51HsW6ND0onrjQj4P9FklT1fHyGyplPvNzHzeCKs2nyEZ2NgImtg3J80keFHX5xp5Z8jvTJXob7SJJPjaaxjiU71I00QsKhwQZ7",
+    'pk_live_51HsW6ND0onrjQj4PEqsNiDN6DRzI2zIwN9NfXm5LVLX1i0kYSWLjr8MHNgNW4Uv7xbVjuMzI561tqSe0NRMvVmks00ENr7bAMx',
 };
