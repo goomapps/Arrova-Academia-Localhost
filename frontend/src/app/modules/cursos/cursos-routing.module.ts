@@ -18,6 +18,10 @@ import {ReproductorC1Component} from './cursos-valenciano/c1/reproductor-c1/repr
 import {ReproductorIntensivoComponent} from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component';
 import {ReproductorIntensivoCieacovaComponent} from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component';
 import {MatriulaIntensivoComponent} from './matriula-intensivo/matriula-intensivo.component';
+import {SemiintensivosComponent} from './cursos-valenciano/semiintensivos/semiintensivos.component';
+import {SemiintensivoB1Component} from './cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component';
+import {SemiintensivoC1Component} from './cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component';
+import {SemiintensivoC2Component} from './cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component';
 
 const routes: Routes = [
   {path: '', component: CursosComponent},
@@ -30,6 +34,13 @@ const routes: Routes = [
   {path: 'valenciano/c1', component: C1Component},
   {path: 'valenciano/c1/reproductor', component: ReproductorC1Component},
   {path: 'valenciano/c2', component: C2Component},
+  {path: 'valenciano/semiintensivos', component: SemiintensivosComponent},
+  {path: 'valenciano/semiintensivos/curso-semiintensivo/b1', component: SemiintensivoB1Component},
+  {path: 'valenciano/semiintensivos/curso-semiintensivo/c1', component: SemiintensivoC1Component},
+  {path: 'valenciano/semiintensivos/curso-semiintensivo/c2', component: SemiintensivoC2Component},
+  {path: 'valenciano/semiintensivos/curso-semiintensivo/b1/reproductor', component: SemiintensivoB1Component},
+  {path: 'valenciano/semiintensivos/curso-semiintensivo/c1/reproductor', component: SemiintensivoC1Component},
+  {path: 'valenciano/semiintensivos/curso-semiintensivo/c2/reproductor', component: SemiintensivoC2Component},
   {path: 'valenciano/intensivos', component: IntensivoComponent},
   {path: 'valenciano/intensivos/curso-intensivo', component: CursoIntensivoComponent},
   {path: 'valenciano/intensivos/curso-intensivo/jqcv/reproductor', component: ReproductorIntensivoComponent},

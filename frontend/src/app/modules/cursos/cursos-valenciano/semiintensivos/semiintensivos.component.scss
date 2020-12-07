@@ -1,0 +1,76 @@
+@import "src/app/styles/index.scss";
+
+.intensivo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      width: 48rem;
+    }
+    @include mobileL {
+      width: 25rem;
+    }
+    @include mobileM {
+      width: 23.5rem;
+    }
+    @include mobileS {
+      width: 20rem;
+    }
+
+    .curso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: initial;
+      width: 45rem;
+      background: $components-dark;
+      padding: 2rem;
+      margin: 2rem;
+      border: 3px solid transparent;
+      border-radius: 2rem;
+      text-align: center;
+      cursor: pointer;
+
+      @include mobileL {
+        width: 25rem;
+      }
+      @include mobileM {
+        width: 22rem;
+      }
+      @include mobileS {
+        width: 19rem;
+      }
+
+      &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+
+      a {
+        text-decoration: none;
+
+        .curso-texto {
+          text-align: center;
+          h5 {
+            margin-bottom: 1rem;
+          }
+
+          p {
+            text-align: center;
+          }
+        }
+      }
+
+      &:hover {
+        border: 3px solid $text-color-hover;
+      }
+    }
+  }
+}
