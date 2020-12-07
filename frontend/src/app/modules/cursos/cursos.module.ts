@@ -22,6 +22,10 @@ import {FormsModule} from "@angular/forms";
 import {SharedModule} from "../shared/shared.module";
 import { ReproductorIntensivoCieacovaComponent } from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component';
 import { MatriulaIntensivoComponent } from './matriula-intensivo/matriula-intensivo.component';
+import { SemiintensivosComponent } from './cursos-valenciano/semiintensivos/semiintensivos.component';
+import { SemiintensivoB1Component } from './cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component';
+import { SemiintensivoC1Component } from './cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component';
+import { SemiintensivoC2Component } from './cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +45,11 @@ import { MatriulaIntensivoComponent } from './matriula-intensivo/matriula-intens
     ReproductorC1Component,
     ReproductorIntensivoComponent,
     ReproductorIntensivoCieacovaComponent,
-    MatriulaIntensivoComponent
+    MatriulaIntensivoComponent,
+    SemiintensivosComponent,
+    SemiintensivoB1Component,
+    SemiintensivoC1Component,
+    SemiintensivoC2Component
   ],
     imports: [
         CommonModule,
