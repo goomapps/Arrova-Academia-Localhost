@@ -1,10 +1,10 @@
-import { Component, OnInit } from "@angular/core";
-import * as $ from "jquery";
+import {Component, OnInit} from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
-  selector: "app-reproductor-intensivo-cieacova",
-  templateUrl: "./reproductor-intensivo-cieacova.component.html",
-  styleUrls: ["./reproductor-intensivo-cieacova.component.scss"],
+  selector: 'app-reproductor-intensivo-cieacova',
+  templateUrl: './reproductor-intensivo-cieacova.component.html',
+  styleUrls: ['./reproductor-intensivo-cieacova.component.scss'],
 })
 export class ReproductorIntensivoCieacovaComponent implements OnInit {
   videoSrc: string[];

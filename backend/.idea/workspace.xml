@@ -20,7 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula-semiintensivo/matricula-semiintensivo.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula-semiintensivo/matricula-semiintensivo.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula-semiintensivo/matricula-semiintensivo.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Expressio_Escrita2_Cieacova.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U2_Activitats_Morfosintaxi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/exercicis_CEiEO.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matriula-intensivo/matriula-intensivo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matriula-intensivo/matriula-intensivo.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,8 +101,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +155,8 @@
       <workItem from="1607530404554" duration="1082000" />
       <workItem from="1607542875193" duration="147000" />
       <workItem from="1607760937741" duration="362000" />
+      <workItem from="1607463835622" duration="465000" />
+      <workItem from="1607530404554" duration="1082000" />
     </task>
     <servers />
   </component>
