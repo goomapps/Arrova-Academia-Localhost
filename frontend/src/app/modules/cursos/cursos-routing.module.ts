@@ -22,11 +22,13 @@ import {SemiintensivosComponent} from './cursos-valenciano/semiintensivos/semiin
 import {SemiintensivoB1Component} from './cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component';
 import {SemiintensivoC1Component} from './cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component';
 import {SemiintensivoC2Component} from './cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component';
+import {MatriculaSemiintensivoComponent} from './matricula-semiintensivo/matricula-semiintensivo.component';
 
 const routes: Routes = [
   {path: '', component: CursosComponent},
   {path: 'matricula', component: MatriculaComponent},
   {path: 'matricula-intensivo', component: MatriulaIntensivoComponent},
+  {path: 'matricula-semiintensivo', component: MatriculaSemiintensivoComponent},
   {path: 'valenciano', component: CursosValencianoComponent},
   {path: 'valenciano/a2', component: A2Component},
   {path: 'valenciano/b1', component: B1Component},

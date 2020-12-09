@@ -28,7 +28,10 @@ export class ReproductorC1Component implements OnInit {
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_Lexic_Semantica.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_EE.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U1_EIO.mp4',
-      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U2_F_E_O.mp4'
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U2_F_E_O.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/U2_Morfosintaxi1.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_U2_Morfosintaxi2.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_U2_Morfosintaxi3.mp4'
     ];
     this.desc = [
       'U1.Fonètica, Elocució i Ortografia 1',
@@ -42,7 +45,6 @@ export class ReproductorC1Component implements OnInit {
       'U1.Expressió i Interacció Escrites',
       'U1.Expressió i Interacció Orals',
       'U2.Fonètica, Elocució i Ortografia',
-      'U2.Fonètica, Elocució i Ortografia 2',
       'U2.Morfosintaxis 1',
       'U2.Morfosintaxis 2',
       'U2.Morfosintaxis 3',
@@ -99,6 +101,12 @@ export class ReproductorC1Component implements OnInit {
     }, () => {
       $('#dropfeou2').css('display', 'none');
     });
+    $('#dropmorfu2').css('display', 'none');
+    $('#item14').hover(() => {
+      $('#dropmorfu2').show('slow');
+    }, () => {
+      $('#dropmorfu2').css('display', 'none');
+    });
 
     $('#item11').css('display', 'none');
     /*
@@ -139,10 +147,10 @@ export class ReproductorC1Component implements OnInit {
       $('#item9').css('display', 'block');
       $('#item10').css('display', 'block');
       $('#item11').css('display', 'none');
-      /*
       $('#item12').css('display', 'none');
       $('#item13').css('display', 'none');
       $('#item14').css('display', 'none');
+      /*
       $('#item15').css('display', 'none');
       $('#item16').css('display', 'none');
       $('#item17').css('display', 'none');
@@ -164,10 +172,10 @@ export class ReproductorC1Component implements OnInit {
       $('#item9').css('display', 'none');
       $('#item10').css('display', 'none');
       $('#item11').css('display', 'block');
-      /*
-      $('#item12').css('display', 'block');
       $('#item13').css('display', 'block');
       $('#item14').css('display', 'block');
+      $('#item15').css('display', 'block');
+      /*
       $('#item15').css('display', 'block');
       $('#item16').css('display', 'block');
       $('#item17').css('display', 'block');
@@ -188,10 +196,10 @@ export class ReproductorC1Component implements OnInit {
     const item9 = document.getElementById('item9');
     const item10 = document.getElementById('item10');
     const item11 = document.getElementById('item11');
-    /*
     const item12 = document.getElementById('item12');
     const item13 = document.getElementById('item13');
     const item14 = document.getElementById('item14');
+    /*
     const item15 = document.getElementById('item15');
     const item16 = document.getElementById('item16');
     const item17 = document.getElementById('item17');
@@ -266,7 +274,6 @@ export class ReproductorC1Component implements OnInit {
       this.descNum = 10;
       this.resumenNum = 10;
     });
-    /*
     item12.addEventListener('click', () => {
       video.pause();
       video.src = this.videoSrc[11];
@@ -285,6 +292,7 @@ export class ReproductorC1Component implements OnInit {
       this.descNum = 13;
       this.resumenNum = 13;
     });
+    /*
     item15.addEventListener('click', () => {
       video.pause();
       video.src = this.videoSrc[14];

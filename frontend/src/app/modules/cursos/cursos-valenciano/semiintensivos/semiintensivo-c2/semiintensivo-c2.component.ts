@@ -15,16 +15,16 @@ export class SemiintensivoC2Component implements OnInit {
   adrian: string = 'Adrián González';
   lengua: string = 'Idioma: ';
   lengua_valenciano: string = 'Valenciano';
-  precio_mes: string = '35€/mes o 270€/curso';
+  precio_mes: string = '55€/mes o 300€/curso';
   incluye: string = 'Este curs inclou:';
-  videos: string = '10 vídeos por unitat';
-  exercicis1: string = 'Exercicis per módul';
-  exercicis2: string = 'Exercicis simulacre d`examen';
-  exercicis3: string = 'Exercicis EIO';
-  dossier: string = 'Dossier Teoria';
-  examen: string = 'Examen cada 3 temes';
-  practiques: string = 'Pràctiques redacció';
-  acceso: string = 'Acceso amb dispositivos móviles';
+  videos: string = '18 sessions de dues hores';
+  exercicis1: string = 'Activitats de reforç';
+  exercicis2: string = 'Pràctiques d`expressió i interacció escrita';
+  exercicis3: string = 'Exercicis d`expressió i interacció Oral';
+  dossier: string = 'Dossier de teoria';
+  examen: string = 'Activitats model d`examen';
+  practiques: string = 'Simulacre d`examen';
+  acceso: string = 'Accés amb dispositus mòbils';
   objetivos: string = 'Objectius del curs:';
   desc_objetivos: string =
     'Tal com s’estableix al Marc Comú Europeu de Referència per a les llengües (MCER), i d’acord amb allò establert per les esmentades entitats, el curs s’estructura d’acord amb les següents àrees de treball i de coneixements:';
@@ -88,7 +88,7 @@ export class SemiintensivoC2Component implements OnInit {
     'Coneixement dels diferents registres i varietats lingüísti-ques.';
   ls8: string =
     'Ús de la semàntica pragmàtica: substitucions, pressuposi-cions, sobreentesos, interferències, ironia.';
-  boletin_informativo: string = 'Butlletí Informatiu del Curs C2 de Valencià';
+  boletin_informativo: string = 'Butlletí Informatiu del Curs Semi Intensiu C2 de Valencià';
   hoja_inscripcion: string = 'Full d´Inscripció';
   proteccion_datos: string = 'Protecció de Dades';
 

@@ -19,7 +19,7 @@ const CursoSchema = new mongoose.Schema(
         },
         cantidad: {
             type: Number,
-            enum: [35, 270, 200, 115],
+            enum: [35, 270, 200, 115, 55, 300],
             required: true
         },
         activo: {

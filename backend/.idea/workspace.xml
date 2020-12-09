@@ -20,12 +20,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d41ce49d-a56d-4776-b052-fe0c4822eb6a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula-semiintensivo/matricula-semiintensivo.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula-semiintensivo/matricula-semiintensivo.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula-semiintensivo/matricula-semiintensivo.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/Expressio_Escrita2_Cieacova.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/U2_Activitats_Morfosintaxi.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../frontend/src/assets/ejercicios/exercicis_CEiEO.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/cursoDTO.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/cursoDTO.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/auth/perfil/perfil.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/c1/reproductor-c1/reproductor-c1.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/cursos.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matricula/matricula.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matriula-intensivo/matriula-intensivo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/modules/cursos/matriula-intensivo/matriula-intensivo.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start:dev" />
       </list>
     </recent_temporary>
   </component>
@@ -133,6 +150,8 @@
       <workItem from="1605715705022" duration="196000" />
       <workItem from="1605717217509" duration="2076000" />
       <workItem from="1605726259715" duration="1817000" />
+      <workItem from="1607463835622" duration="465000" />
+      <workItem from="1607530404554" duration="1082000" />
     </task>
     <servers />
   </component>
@@ -163,93 +182,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1181" y="274" key="FileChooserDialogImpl" timestamp="1605726277706">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1181" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605726277705" />
-    <state x="739" y="274" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605715900474" />
-    <state width="1897" height="221" key="GridCell.Tab.0.bottom" timestamp="1605719963089">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="221" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605719963089" />
-    <state width="1880" height="219" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605372772149" />
-    <state width="1897" height="221" key="GridCell.Tab.0.center" timestamp="1605719963089">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="221" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605719963089" />
-    <state width="1880" height="219" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605372772149" />
-    <state width="1897" height="221" key="GridCell.Tab.0.left" timestamp="1605719963089">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="221" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605719963089" />
-    <state width="1880" height="219" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605372772149" />
-    <state width="1897" height="221" key="GridCell.Tab.0.right" timestamp="1605719963089">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="221" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605719963089" />
-    <state width="1880" height="219" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1605372772149" />
-    <state width="1897" height="347" key="GridCell.Tab.1.bottom" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.1.center" timestamp="1603779795136">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795136" />
-    <state width="1897" height="347" key="GridCell.Tab.1.left" timestamp="1603779795136">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795136" />
-    <state width="1897" height="347" key="GridCell.Tab.1.right" timestamp="1603779795136">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795136" />
-    <state width="1897" height="347" key="GridCell.Tab.2.bottom" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.2.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.2.center" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.2.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.2.left" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.2.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.2.right" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.2.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.3.bottom" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.3.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.3.center" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.3.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.3.left" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.3.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state width="1897" height="347" key="GridCell.Tab.3.right" timestamp="1603779795137">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1897" height="347" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603779795137" />
-    <state x="-1241" y="139" key="RollbackChangesDialog" timestamp="1605351098058">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1241" y="139" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605351098058" />
-    <state x="460" y="164" key="SettingsEditor" timestamp="1603738158345">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="460" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603738158345" />
-    <state x="-1253" y="101" width="585" height="837" key="find.popup" timestamp="1605122150728">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1253" y="101" width="585" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1605122150728" />
-    <state x="667" y="101" width="585" height="837" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1603739055782" />
   </component>
 </project>

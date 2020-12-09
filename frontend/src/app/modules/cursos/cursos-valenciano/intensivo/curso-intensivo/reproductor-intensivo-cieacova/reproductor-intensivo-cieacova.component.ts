@@ -34,7 +34,10 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_C1_CIEAcova_24_11_2020_Part3.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/Curs_Intensiu_C1_CIEAcova_24_11_2020_Part4.mp4',
       '',
-      '',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/EE1.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_CIEAcova_EE2.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_CIEAcova_CEEIO_1.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/flexio+verbal.mp4'
     ];
     this.desc = [
       'Morfosintaxis',
@@ -55,6 +58,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       'Clase 24/11 Part 4',
       'Lèxic i semàntica',
       'Expressió i interacció escrites',
+      'Expressió i interacció escrites 2',
+      'Expressió i interacció orals',
+      'Flexio Verbal',
     ];
     this.resumen = [
       '',
@@ -85,6 +91,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
     $('#dropmorf').css('display', 'none');
     $('#dropls').css('display', 'none');
     $('#dropeie').css('display', 'none');
+    $('#dropee2').css('display', 'none');
+    $('#dropeeo1').css('display', 'none');
+    $('#dropfv2').css('display', 'none');
     $('#item1').hover(
       () => {
         $('#dropmorf').show('slow');
@@ -107,6 +116,30 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       },
       () => {
         $('#dropeie').css('display', 'none');
+      }
+    );
+    $('#item19').hover(
+      () => {
+        $('#dropee2').show('slow');
+      },
+      () => {
+        $('#dropee2').css('display', 'none');
+      }
+    );
+    $('#item20').hover(
+      () => {
+        $('#dropeeo1').show('slow');
+      },
+      () => {
+        $('#dropeeo1').css('display', 'none');
+      }
+    );
+    $('#item21').hover(
+      () => {
+        $('#dropfv2').show('slow');
+      },
+      () => {
+        $('#dropfv2').css('display', 'none');
       }
     );
     $('#item2').css('display', 'none');
@@ -132,6 +165,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       $('#item1').css('display', 'block');
       $('#item17').css('display', 'block');
       $('#item18').css('display', 'block');
+      $('#item19').css('display', 'block');
+      $('#item20').css('display', 'block');
+      $('#item21').css('display', 'block');
       $('#item2').css('display', 'none');
       $('#item3').css('display', 'none');
       $('#item4').css('display', 'none');
@@ -153,6 +189,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       $('#item1').css('display', 'none');
       $('#item17').css('display', 'none');
       $('#item18').css('display', 'none');
+      $('#item19').css('display', 'none');
+      $('#item20').css('display', 'none');
+      $('#item21').css('display', 'none');
       $('#item2').css('display', 'block');
       $('#item3').css('display', 'block');
       $('#item4').css('display', 'block');
@@ -188,6 +227,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
     const item16 = document.getElementById('item16');
     const item17 = document.getElementById('item17');
     const item18 = document.getElementById('item18');
+    const item19 = document.getElementById('item19');
+    const item20 = document.getElementById('item20');
+    const item21 = document.getElementById('item21');
     const video = document.querySelector('video');
 
     item1.addEventListener('click', () => {
@@ -297,6 +339,24 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       video.src = this.videoSrc[17];
       this.descNum = 17;
       this.resumenNum = 17;
+    });
+    item19.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[18];
+      this.descNum = 18;
+      this.resumenNum = 18;
+    });
+    item20.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[19];
+      this.descNum = 19;
+      this.resumenNum = 19;
+    });
+    item21.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[20];
+      this.descNum = 20;
+      this.resumenNum = 20;
     });
   }
 

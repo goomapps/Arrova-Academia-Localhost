@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start:dev": "nodemon index.js",
-    "start": "node --experimental-modules index.js",
+    "start": "node index.js",
     "test": "jest"
   },
   "keywords": [

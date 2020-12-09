@@ -54,6 +54,21 @@
                 <p>{{curso[0].nombre}}</p>
               </a>
             </div>
+            <div *ngIf="curso[0].nombre === 'VALENCIANO SEMI INTENSIVO B1'">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/semiintensivos/curso-semiintensivo/b1/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
+            <div *ngIf="curso[0].nombre === 'VALENCIANO SEMI INTENSIVO C1'">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/semiintensivos/curso-semiintensivo/c1/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
+            <div *ngIf="curso[0].nombre === 'VALENCIANO SEMI INTENSIVO C2'">
+              <a class="perfilCursos" routerLink="/cursos/valenciano/semiintensivos/curso-semiintensivo/c2/reproductor">
+                <p>{{curso[0].nombre}}</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>

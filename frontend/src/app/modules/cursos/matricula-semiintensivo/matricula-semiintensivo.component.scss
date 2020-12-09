@@ -1,0 +1,142 @@
+@import "src/app/styles/index.scss";
+
+.matricula {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  app-modal-terminos {
+    position: absolute;
+  }
+
+  &-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60em;
+    background: $components-dark;
+    padding: 3rem;
+    border-radius: 2rem;
+
+    @include tablet {
+      width: 46rem;
+    }
+    @include mobileL {
+      width: 24rem;
+    }
+    @include mobileM {
+      width: 22rem;
+    }
+    @include mobileS {
+      width: 19rem;
+    }
+
+    .formulario-contenedor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+
+      .input-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        position: relative;
+        margin-bottom: 1rem;
+
+        .input {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          padding: 0.5rem;
+          background: $text-color-dark;
+          border: 1px dotted $text-color-hover;
+          border-radius: 0.5rem;
+          cursor: pointer;
+
+          @include mobileL {
+            height: 2rem;
+            font-weight: 200;
+          }
+          @include mobileS {
+            height: 1.7rem;
+          }
+
+          &:hover {
+            border: 1px solid $text-color-hover;
+
+            .input-icon {
+              color: $text-color-hover;
+            }
+          }
+
+          &-icon {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            color: $components-light;
+
+            @include mobileL {
+              font-size: 1.1rem;
+            }
+            @include mobileM {
+              font-size: 0.9rem;
+            }
+          }
+
+          input {
+            font-size: 1.3rem;
+            padding: 0.5rem;
+            flex-grow: 1;
+            background: none;
+            border: none;
+            color: $text-color-emphasis;
+
+            @include mobileL {
+              font-size: 12px;
+              width: 10rem;
+            }
+            @include mobileS {
+              font-size: 10px;
+            }
+
+            &::placeholder {
+              color: $components-light;
+            }
+          }
+        }
+      }
+
+      .item1,
+      .item2,
+      .item3 {
+        font-size: 12px;
+      }
+
+      .terminos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: center;
+
+        .checkbox {
+          width: 1.3em;
+          height: 1.3em;
+          cursor: pointer;
+          border: none;
+          box-shadow: inset 0 0 0 10px $components-light;
+
+          &:hover {
+            box-shadow: inset 0 0 0 10px $text-color-hover;
+          }
+
+          &:checked {
+            box-shadow: inset 0 0 0 10px $text-color-hover;
+          }
+        }
+      }
+    }
+  }
+}

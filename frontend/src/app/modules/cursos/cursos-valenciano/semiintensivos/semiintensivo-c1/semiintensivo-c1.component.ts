@@ -15,15 +15,15 @@ export class SemiintensivoC1Component implements OnInit {
   adrian: string = 'Adrián González';
   lengua: string = 'Idioma: ';
   lengua_valenciano: string = 'Valenciano';
-  precio_mes: string = '35€/mes o 270€/curso';
+  precio_mes: string = '55€/mes o 300€/curso';
   incluye: string = 'Este curs inclou:';
-  videos: string = '10 vídeos per unitat';
-  exercicis1: string = 'Exercicis per mòdul';
-  exercicis2: string = 'Exercicis-Simulacre d`Examen';
-  exercicis3: string = 'Exercicis d`Expressió i Interacció Oral';
-  dossier: string = 'Dossier de teoria complementari';
-  examen: string = 'Examen cada tres temes';
-  practiques: string = 'Práctiques redacció';
+  videos: string = '18 sessions de dues hores';
+  exercicis1: string = 'Activitats de reforç';
+  exercicis2: string = 'Pràctiques d`expressió i interacció escrita';
+  exercicis3: string = 'Exercicis d`expressió i interacció Oral';
+  dossier: string = 'Dossier de teoria';
+  examen: string = 'Activitats model d`examen';
+  practiques: string = 'Simulacre d`examen';
   acceso: string = 'Accés amb dispositus mòbils';
   objetivos: string = 'Objectius del curs:';
   desc_objetivos: string =
@@ -86,7 +86,7 @@ export class SemiintensivoC1Component implements OnInit {
     'Relacions semàntiques: coneixement dels principals fenòmens (polisèmia, sinonímia i geosinònims, falsos sinònims, antonímia. Ús de la referència lèxica i del sentit.';
   ls5: string =
     'Usos figurats del lèxics: comparació, analogia, metàfora, metonímia, sinècdoque… Onomatopeies.';
-  boletin_informativo: string = 'Butlletí Informatiu del Curs C1 de Valencià';
+  boletin_informativo: string = 'Butlletí Informatiu del Curs Semi Intensiu C1 de Valencià';
   hoja_inscripcion: string = 'Full d´Inscripció';
   proteccion_datos: string = 'Protecció de Dades';
 
