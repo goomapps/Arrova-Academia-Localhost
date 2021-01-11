@@ -79,6 +79,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       "https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_Intensiu_CIEAcova_classe_28_12_Part3.mp4",
       "https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_Intensiu_CIEAcova_classe_30_12_Part1.mp4",
       "https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_Intensiu_CIEAcova_classe_30_12_Part2.mp4",
+      "https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_CIEAcova_EE3.mp4",
+      "https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_CIEAcova_EE4.mp4",
+      "https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C1_CIEAcova_CEEIO_2.mp4",
     ];
     this.desc = [
       "Morfosintaxis",
@@ -135,6 +138,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       "CLASE DIA 26/12 PART 2",
       "CLASE DIA 26/12 PART 3",
       "CLASE DIA 26/12 PART 4",
+      "EXPRESSIÓ I INTERACCIÓ ESCRITES 3",
+      "EXPRESSIÓ I INTERACCIÓ ESCRITES 4",
+      "EXPRESSIÓ I INTERACCIÓ ORALS 2",
     ];
     this.resumen = [
       "",
@@ -200,7 +206,10 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
     $("#dropls").css("display", "none");
     $("#dropeie").css("display", "none");
     $("#dropee2").css("display", "none");
+    $("#dropee3").css("display", "none");
+    $("#dropee4").css("display", "none");
     $("#dropeeo1").css("display", "none");
+    $("#dropeeo2").css("display", "none");
     $("#dropfv2").css("display", "none");
     $("#droppf").css("display", "none");
     $("#droppre").css("display", "none");
@@ -277,6 +286,30 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
         $("#droprel").css("display", "none");
       }
     );
+    $("#item63").hover(
+      () => {
+        $("#dropee3").show("slow");
+      },
+      () => {
+        $("#dropee3").css("display", "none");
+      }
+    );
+    $("#item64").hover(
+      () => {
+        $("#dropee4").show("slow");
+      },
+      () => {
+        $("#dropee3").css("display", "none");
+      }
+    );
+    $("#item65").hover(
+      () => {
+        $("#dropeeo2").show("slow");
+      },
+      () => {
+        $("#dropeeo2").css("display", "none");
+      }
+    );
     $("#item2").css("display", "none");
     $("#item3").css("display", "none");
     $("#item4").css("display", "none");
@@ -330,6 +363,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
     $("#item60").css("display", "none");
     $("#item61").css("display", "none");
     $("#item62").css("display", "none");
+    $("#item63").css("display", "block");
+    $("#item64").css("display", "block");
+    $("#item65").css("display", "block");
 
     const unidad1 = document.getElementById("unidad1");
     const unidad2 = document.getElementById("unidad2");
@@ -397,6 +433,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       $("#item60").css("display", "none");
       $("#item61").css("display", "none");
       $("#item62").css("display", "none");
+      $("#item63").css("display", "block");
+      $("#item64").css("display", "block");
+      $("#item65").css("display", "block");
     });
 
     unidad2.addEventListener("click", () => {
@@ -462,6 +501,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       $("#item60").css("display", "block");
       $("#item61").css("display", "block");
       $("#item62").css("display", "block");
+      $("#item63").css("display", "none");
+      $("#item64").css("display", "none");
+      $("#item65").css("display", "none");
     });
 
     const item1 = document.getElementById("item1");
@@ -526,6 +568,9 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
     const item60 = document.getElementById("item60");
     const item61 = document.getElementById("item61");
     const item62 = document.getElementById("item62");
+    const item63 = document.getElementById("item63");
+    const item64 = document.getElementById("item64");
+    const item65 = document.getElementById("item65");
     const video = document.querySelector("video");
 
     item1.addEventListener("click", () => {
@@ -899,6 +944,24 @@ export class ReproductorIntensivoCieacovaComponent implements OnInit {
       video.src = this.videoSrc[61];
       this.descNum = 61;
       this.resumenNum = 61;
+    });
+    item63.addEventListener("click", () => {
+      video.pause();
+      video.src = this.videoSrc[62];
+      this.descNum = 62;
+      this.resumenNum = 62;
+    });
+    item64.addEventListener("click", () => {
+      video.pause();
+      video.src = this.videoSrc[63];
+      this.descNum = 63;
+      this.resumenNum = 63;
+    });
+    item65.addEventListener("click", () => {
+      video.pause();
+      video.src = this.videoSrc[64];
+      this.descNum = 64;
+      this.resumenNum = 64;
     });
   }
 
