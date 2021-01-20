@@ -18,15 +18,16 @@ import { CursoIntensivoComponent } from './cursos-valenciano/intensivo/curso-int
 import { MatriculaComponent } from './matricula/matricula.component';
 import { ReproductorC1Component } from './cursos-valenciano/c1/reproductor-c1/reproductor-c1.component';
 import { ReproductorIntensivoComponent } from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo/reproductor-intensivo.component';
-import {FormsModule} from "@angular/forms";
-import {SharedModule} from "../shared/shared.module";
+import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 import { ReproductorIntensivoCieacovaComponent } from './cursos-valenciano/intensivo/curso-intensivo/reproductor-intensivo-cieacova/reproductor-intensivo-cieacova.component';
 import { MatriulaIntensivoComponent } from './matriula-intensivo/matriula-intensivo.component';
 import { SemiintensivosComponent } from './cursos-valenciano/semiintensivos/semiintensivos.component';
 import { SemiintensivoB1Component } from './cursos-valenciano/semiintensivos/semiintensivo-b1/semiintensivo-b1.component';
 import { SemiintensivoC1Component } from './cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component';
 import { SemiintensivoC2Component } from './cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component';
-import { ReproductorComponent } from './cursos-valenciano/semiintensivos/semiintensivo-c2/reproductor/reproductor.component';
+import { ReproductorSemiC2Component } from './cursos-valenciano/semiintensivos/semiintensivo-c2/reproductor/reproductor.component';
+import { ReproductorSemiC1Component } from './cursos-valenciano/semiintensivos/semiintensivo-c1/reproductor/reproductor.component';
 import { MatriculaSemiintensivoComponent } from './matricula-semiintensivo/matricula-semiintensivo.component';
 
 @NgModule({
@@ -52,14 +53,10 @@ import { MatriculaSemiintensivoComponent } from './matricula-semiintensivo/matri
     SemiintensivoB1Component,
     SemiintensivoC1Component,
     SemiintensivoC2Component,
-    ReproductorComponent,
-    MatriculaSemiintensivoComponent
+    ReproductorSemiC2Component,
+    ReproductorSemiC1Component,
+    MatriculaSemiintensivoComponent,
   ],
-    imports: [
-        CommonModule,
-        CursosRoutingModule,
-        FormsModule,
-        SharedModule
-    ]
+  imports: [CommonModule, CursosRoutingModule, FormsModule, SharedModule],
 })
-export class CursosModule { }
+export class CursosModule {}

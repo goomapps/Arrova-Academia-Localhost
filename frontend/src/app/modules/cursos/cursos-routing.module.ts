@@ -23,7 +23,8 @@ import { SemiintensivoB1Component } from "./cursos-valenciano/semiintensivos/sem
 import { SemiintensivoC1Component } from "./cursos-valenciano/semiintensivos/semiintensivo-c1/semiintensivo-c1.component";
 import { SemiintensivoC2Component } from "./cursos-valenciano/semiintensivos/semiintensivo-c2/semiintensivo-c2.component";
 import { MatriculaSemiintensivoComponent } from "./matricula-semiintensivo/matricula-semiintensivo.component";
-import { ReproductorComponent } from "./cursos-valenciano/semiintensivos/semiintensivo-c2/reproductor/reproductor.component";
+import { ReproductorSemiC2Component } from "./cursos-valenciano/semiintensivos/semiintensivo-c2/reproductor/reproductor.component";
+import { ReproductorSemiC1Component } from "./cursos-valenciano/semiintensivos/semiintensivo-c1/reproductor/reproductor.component";
 
 const routes: Routes = [
   { path: "", component: CursosComponent },
@@ -63,7 +64,11 @@ const routes: Routes = [
   },
   {
     path: "valenciano/semiintensivos/curso-semiintensivo/c2/reproductor",
-    component: ReproductorComponent,
+    component: ReproductorSemiC2Component,
+  },
+  {
+    path: "valenciano/semiintensivos/curso-semiintensivo/c2/reproductor",
+    component: ReproductorSemiC1Component,
   },
   { path: "valenciano/intensivos", component: IntensivoComponent },
   {
