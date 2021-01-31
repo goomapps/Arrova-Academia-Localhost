@@ -1,0 +1,101 @@
+<div class="reproductor">
+  <div class="reproductor-contenedor">
+    <div class="video">
+      <div class="video-reproductor">
+        <video
+          id="video"
+          class="player"
+          controls
+          controlsList="nodownload"
+          (contextmenu)="onRightClick()"
+        >
+          <source src="{{ videoSrc[videoSrcNum] }}" type="video/mp4" />
+        </video>
+      </div>
+      <div class="resumen">
+        <ul>
+          <li>
+            <h5>DESCRIPCIÓ</h5>
+          </li>
+        </ul>
+        <div class="descripcion">
+          <h5>{{ desc[descNum] }}</h5>
+          <p>{{ resumen[resumenNum] }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="indice">
+      <div class="unidades">
+        <ul>
+          <li id="unidad1">
+            <h5>U. 1</h5>
+          </li>
+          <li id="unidad2">
+            <h5>U. 2</h5>
+          </li>
+          <li id="unidad3" class="disabled">
+            <h5>U. 3</h5>
+          </li>
+          <li id="unidad4" class="disabled">
+            <h5>U. 4</h5>
+          </li>
+          <li id="unidad5" class="disabled">
+            <h5>U. 5</h5>
+          </li>
+          <li id="unidad6" class="disabled">
+            <h5>U. 6</h5>
+          </li>
+          <li id="unidad7" class="disabled">
+            <h5>U. 7</h5>
+          </li>
+          <li id="unidad8" class="disabled">
+            <h5>U. 8</h5>
+          </li>
+          <li id="unidad9" class="disabled">
+            <h5>U. 9</h5>
+          </li>
+          <li id="unidad0" class="disabled">
+            <h5>U. 10</h5>
+          </li>
+        </ul>
+      </div>
+      <div class="videos">
+        <ul>
+          <h3>UNITAT {{ unidad[unidadNum] }}</h3>
+          <li id="item1">
+            <p>Expressió i Interacció Escrites</p>
+          </li>
+          <li id="item2">
+            <p>Fonètica, Elocució i Ortografia 1</p>
+          </li>
+          <li id="item3">
+            <p>Fonètica, Elocució i Ortografia 2</p>
+          </li>
+          <li id="item4">
+            <p>Fonètica, Elocució i Ortografia 3</p>
+            <div id="dropfeoc2" class="dropdown right">
+              <ul>
+                <li>
+                  <a
+                    href="assets/ejercicios/U1_Activitats_F_E_O_c2.pdf"
+                    download="Activitats_FEO.pdf"
+                  >
+                    <h5>ACTIVITATS</h5>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="assets/ejercicios/U1_fonetica_elocucio_ortografia_c2.pdf"
+                    download="Dossier_FEO.pdf"
+                  >
+                    <h5>DOSSIER TEORIC</h5>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

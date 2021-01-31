@@ -29,6 +29,7 @@ import { SemiintensivoC2Component } from './cursos-valenciano/semiintensivos/sem
 import { ReproductorSemiC2Component } from './cursos-valenciano/semiintensivos/semiintensivo-c2/reproductor/reproductor.component';
 import { ReproductorSemiC1Component } from './cursos-valenciano/semiintensivos/semiintensivo-c1/reproductor/reproductor.component';
 import { MatriculaSemiintensivoComponent } from './matricula-semiintensivo/matricula-semiintensivo.component';
+import { ReproductorC2Component } from './cursos-valenciano/c2/reproductor-c2/reproductor-c2.component';
 
 @NgModule({
   declarations: [
@@ -56,6 +57,7 @@ import { MatriculaSemiintensivoComponent } from './matricula-semiintensivo/matri
     ReproductorSemiC2Component,
     ReproductorSemiC1Component,
     MatriculaSemiintensivoComponent,
+    ReproductorC2Component,
   ],
   imports: [CommonModule, CursosRoutingModule, FormsModule, SharedModule],
 })
