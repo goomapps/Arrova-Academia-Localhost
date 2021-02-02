@@ -22,6 +22,9 @@ export class ReproductorC2Component implements OnInit {
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C2_U1_F_E_O_1.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C2_U1_F_E_O_2.mp4',
       'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C2_U1_F_E_O_3.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C2_U1_Morfosintaxi_1.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C2_U1_Morfosintaxi_2.mp4',
+      'https://arrovacademia.s3.eu-west-2.amazonaws.com/videos/C2_U1_Morfosintaxi_3.mp4',
     ];
     this.desc = [];
     this.resumen = [];
@@ -43,6 +46,15 @@ export class ReproductorC2Component implements OnInit {
       }
     );
 
+    $('#dropmorfu1').css('display', 'none');
+    $('#item7').hover(
+      () => {
+        $('#dropmorfu1').show('slow');
+      },
+      () => {
+        $('#dropmorfu1').css('display', 'none');
+      }
+    );
     const unidad1 = document.getElementById('unidad1');
     const unidad2 = document.getElementById('unidad2');
     /*
@@ -62,6 +74,9 @@ export class ReproductorC2Component implements OnInit {
       $('#item2').css('display', 'block');
       $('#item3').css('display', 'block');
       $('#item4').css('display', 'block');
+      $('#item5').css('display', 'block');
+      $('#item6').css('display', 'block');
+      $('#item7').css('display', 'block');
     });
     unidad2.addEventListener('click', () => {
       this.unidadNum = 1;
@@ -69,12 +84,18 @@ export class ReproductorC2Component implements OnInit {
       $('#item2').css('display', 'none');
       $('#item3').css('display', 'none');
       $('#item4').css('display', 'none');
+      $('#item5').css('display', 'none');
+      $('#item6').css('display', 'none');
+      $('#item7').css('display', 'none');
     });
 
     const item1 = document.getElementById('item1');
     const item2 = document.getElementById('item2');
     const item3 = document.getElementById('item3');
     const item4 = document.getElementById('item4');
+    const item5 = document.getElementById('item5');
+    const item6 = document.getElementById('item6');
+    const item7 = document.getElementById('item7');
     const video = document.querySelector('video');
 
     item1.addEventListener('click', () => {
@@ -100,6 +121,24 @@ export class ReproductorC2Component implements OnInit {
       video.src = this.videoSrc[3];
       this.descNum = 3;
       this.resumenNum = 3;
+    });
+    item5.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[4];
+      this.descNum = 4;
+      this.resumenNum = 4;
+    });
+    item6.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[5];
+      this.descNum = 5;
+      this.resumenNum = 5;
+    });
+    item7.addEventListener('click', () => {
+      video.pause();
+      video.src = this.videoSrc[6];
+      this.descNum = 6;
+      this.resumenNum = 6;
     });
   }
 
